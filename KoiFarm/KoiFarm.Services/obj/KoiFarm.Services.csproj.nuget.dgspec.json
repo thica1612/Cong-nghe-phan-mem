@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "F:\\UTH\\N2\\HK1_2\\Công nghệ phần mềm\\Bài tập\\KoiFarm\\KoiFarm.Services\\KoiFarm.Services.csproj": {}
+    "D:\\HT2301C\\CNPM\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Services\\KoiFarm.Services.csproj": {}
   },
   "projects": {
-    "F:\\UTH\\N2\\HK1_2\\Công nghệ phần mềm\\Bài tập\\KoiFarm\\KoiFarm.Services\\KoiFarm.Services.csproj": {
+    "D:\\HT2301C\\CNPM\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Services\\KoiFarm.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\UTH\\N2\\HK1_2\\Công nghệ phần mềm\\Bài tập\\KoiFarm\\KoiFarm.Services\\KoiFarm.Services.csproj",
+        "projectUniqueName": "D:\\HT2301C\\CNPM\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Services\\KoiFarm.Services.csproj",
         "projectName": "KoiFarm.Services",
-        "projectPath": "F:\\UTH\\N2\\HK1_2\\Công nghệ phần mềm\\Bài tập\\KoiFarm\\KoiFarm.Services\\KoiFarm.Services.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "F:\\UTH\\N2\\HK1_2\\Công nghệ phần mềm\\Bài tập\\KoiFarm\\KoiFarm.Services\\obj\\",
+        "projectPath": "D:\\HT2301C\\CNPM\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Services\\KoiFarm.Services.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\HT2301C\\CNPM\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Services\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -65,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
