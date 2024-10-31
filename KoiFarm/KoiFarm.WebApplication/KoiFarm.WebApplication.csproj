@@ -6,4 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\KoiFarm.Services\KoiFarm.Services.csproj" />
+  </ItemGroup>
+
 </Project>
