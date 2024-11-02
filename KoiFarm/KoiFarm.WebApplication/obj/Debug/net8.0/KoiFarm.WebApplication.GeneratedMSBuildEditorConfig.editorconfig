@@ -18,12 +18,28 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\HT2301C\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/HT2301C/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Contact/Contact_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdFxDb250YWN0X0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HT2301C/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Contact/Contact_View.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdFxDb250YWN0X1ZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/HT2301C/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/HT2301C/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HT2301C/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Introduce/Introduce_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW50cm9kdWNlXEludHJvZHVjZV9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HT2301C/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Introduce/Introduce_View.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW50cm9kdWNlXEludHJvZHVjZV9WaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/HT2301C/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Privacy.cshtml]

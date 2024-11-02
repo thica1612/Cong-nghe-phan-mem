@@ -1,0 +1,15 @@
+D:\HT2301C\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\bin\Debug\net8.0\KoiFarm.Repositories.deps.json
+D:\HT2301C\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\bin\Debug\net8.0\KoiFarm.Repositories.runtimeconfig.json
+D:\HT2301C\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\bin\Debug\net8.0\KoiFarm.Repositories.dll
+D:\HT2301C\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\bin\Debug\net8.0\KoiFarm.Repositories.pdb
+D:\HT2301C\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\obj\Debug\net8.0\KoiFarm.Repositories.csproj.AssemblyReference.cache
+D:\HT2301C\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\obj\Debug\net8.0\KoiFarm.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+D:\HT2301C\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\obj\Debug\net8.0\KoiFarm.Repositories.AssemblyInfoInputs.cache
+D:\HT2301C\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\obj\Debug\net8.0\KoiFarm.Repositories.AssemblyInfo.cs
+D:\HT2301C\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\obj\Debug\net8.0\KoiFarm.Repositories.csproj.CoreCompileInputs.cache
+D:\HT2301C\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\obj\Debug\net8.0\KoiFarm.Repositories.sourcelink.json
+D:\HT2301C\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\obj\Debug\net8.0\KoiFarm.Repositories.dll
+D:\HT2301C\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\obj\Debug\net8.0\refint\KoiFarm.Repositories.dll
+D:\HT2301C\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\obj\Debug\net8.0\KoiFarm.Repositories.pdb
+D:\HT2301C\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\obj\Debug\net8.0\KoiFarm.Repositories.genruntimeconfig.cache
+D:\HT2301C\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\obj\Debug\net8.0\ref\KoiFarm.Repositories.dll

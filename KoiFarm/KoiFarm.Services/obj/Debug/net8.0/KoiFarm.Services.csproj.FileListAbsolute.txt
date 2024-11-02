@@ -1,0 +1,16 @@
+D:\HT2301C\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\bin\Debug\net8.0\KoiFarm.Services.deps.json
+D:\HT2301C\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\bin\Debug\net8.0\KoiFarm.Services.dll
+D:\HT2301C\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\bin\Debug\net8.0\KoiFarm.Services.pdb
+D:\HT2301C\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\bin\Debug\net8.0\KoiFarm.Repositories.dll
+D:\HT2301C\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\bin\Debug\net8.0\KoiFarm.Repositories.pdb
+D:\HT2301C\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\KoiFarm.Services.csproj.AssemblyReference.cache
+D:\HT2301C\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\KoiFarm.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\HT2301C\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\KoiFarm.Services.AssemblyInfoInputs.cache
+D:\HT2301C\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\KoiFarm.Services.AssemblyInfo.cs
+D:\HT2301C\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\KoiFarm.Services.csproj.CoreCompileInputs.cache
+D:\HT2301C\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\KoiFarm.Services.sourcelink.json
+D:\HT2301C\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\KoiFarm..C30C0949.Up2Date
+D:\HT2301C\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\KoiFarm.Services.dll
+D:\HT2301C\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\refint\KoiFarm.Services.dll
+D:\HT2301C\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\KoiFarm.Services.pdb
+D:\HT2301C\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\ref\KoiFarm.Services.dll
