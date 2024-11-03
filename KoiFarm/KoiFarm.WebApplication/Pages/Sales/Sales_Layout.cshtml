@@ -19,17 +19,16 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <!--Cart-->
-
-
                 <!--Menu-->
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <style>
+
                         .navbar-collapse {
                             display: flex;
                             overflow-x: auto;
                             white-space: nowrap;
                         }
+
                         .navbar-nav .nav-item {
                             margin-top: 80px;
                             margin-right: 30px;
@@ -43,7 +42,6 @@
                             color: #121010;
                         }
 
-
                         a:hover, a:active {
                             color: black;
                             text-decoration: underline;
@@ -52,11 +50,11 @@
                     <ul class="navbar-nav flex-grow-1">
 
                         <li class="nav-item">
-                            <a class="nav-link" style="font-weight: bold;" asp-area="" asp-page="/Index">TRANG CHỦ</a>
+                            <a class="nav-link" asp-area="" asp-page="/Index">TRANG CHỦ</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" asp-page="/Introduce/Introduce_View">GIỚI THIỆU</a>
+                            <a class="nav-link" asp-area="" asp-page="/Introduce/Introduce_View">GIỚI THIỆU</a>
                         </li>
 
                         <li class="nav-item">
@@ -64,7 +62,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-page="/Sales/Sales_View">KHUYẾN MÃI</a>
+                            <a class="nav-link" style="font-weight: bold;" asp-area="" asp-page="/Sales/Sales_View">KHUYẾN MÃI</a>
                         </li>
 
                         <li class="nav-item">
@@ -76,35 +74,9 @@
                         </li>
                     </ul>
 
-                    <style>
-
-                        .search-bar {
-                            display: flex;
-                            align-items: center;
-                            border: 2px solid #ccc;
-                            border-radius: 25px;
-                            padding: 5px;
-                            background-color: white;
-                        }
-
-                            .search-bar input[type="text"] {
-                                border: none;
-                                outline: none;
-                                padding: 5px;
-                                flex: 1;
-                            }
-
-                            .search-bar button {
-                                border: none;
-                                background: none;
-                                cursor: pointer;
-                                padding: 5px;
-                            }
-
-                    </style>
-
                     <!--Search-->
                     <div class="search-bar">
+
                         <style>
                             .search-bar {
                                 display: flex;
@@ -112,14 +84,12 @@
                                 align-items: center;
                                 padding: 6px 8px;
                                 gap: 6px;
-                                
                                 position: absolute;
-                                width: 600px; 
-                                height: 30px; 
-                                left: 50%; 
-                                top: 30px; 
-                                transform: translateX(-50%); 
-
+                                width: 600px;
+                                height: 30px;
+                                left: 50%;
+                                top: 30px;
+                                transform: translateX(-50%);
                                 background: rgba(20, 18, 24, 0.16);
                                 border: 1px solid #D9D9D9;
                                 border-radius: 9999px;
@@ -145,28 +115,32 @@
                         <button type="submit">Search</button>
                     </div>
 
-
                     <!--Sign in, sign up-->
                     <nav class="navbar-nav ms-auto">
                         <style>
                             .nav-sign {
                                 font-family: 'Inter';
                                 margin: 0;
+                                display: flex;
                                 justify-content: space-between;
                                 align-items: center;
+                                background-color: #333;
+                                padding: 10px 20px;
                                 color: white;
                                 font-size: 10px;
                                 display: flex;
                                 margin-left: auto;
                                 margin-bottom: 30px;
                                 color: white;
+                                text-decoration: none;
                                 padding: 10px 15px;
+                                margin-left: 15px;
                                 transition: background-color 0.3s;
                                 background-color: white;
                                 color: #333;
                                 padding-right: 10px;
-                                margin-right: 10px;
-                                }
+                                margin-right: 10px
+                            }
                         </style>
                         <a href="Sign" class="nav-sign">Đăng nhập /Đăng ký</a>
                     </nav>
@@ -179,9 +153,7 @@
     <div class="container-fluid">
         @RenderBody()
         <main role="main" class="pb-3">
-            <img src="~/images/16.png" style="width: 100%; height: auto;" />
-            <img src="~/images/15.png" style="width: 100%; height: auto;" />
-            <img src="~/images/17.png" style="width: 100%; height: auto;" />
+
             <img src="~/images/14.png" style="width: 100%; height: auto;" />
         </main>
     </div>
