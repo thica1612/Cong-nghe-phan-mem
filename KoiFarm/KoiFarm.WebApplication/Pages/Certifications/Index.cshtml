@@ -1,0 +1,48 @@
+﻿@page
+@model KoiFarm.WebApplication.Pages.Certifications.IndexModel
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Certification[0].OriginCertificate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Certification[0].HealthCertificate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Certification[0].CertificationDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Certification[0].Koi)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Certification) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.OriginCertificate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HealthCertificate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CertificationDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Koi.KoiId)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.CertificationId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.CertificationId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.CertificationId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

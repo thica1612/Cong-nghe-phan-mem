@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pTex8q6o+UATdP3SEnUKqgIjUwS0Akl28dPYo4MHnw4=",
+  "Hash": "tzAxW/3T8jjZQ7VydFGKM93zPegVTGBOJ3DD7ayHEW4=",
   "Source": "KoiFarm.WebApplication",
   "BasePath": "_content/KoiFarm.WebApplication",
   "Mode": "Default",
@@ -16,44 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "D:\\Kì1-Năm2\\CNPM\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\obj\\Debug\\net8.0\\scopedcss\\bundle\\KoiFarm.WebApplication.styles.css",
-      "SourceId": "KoiFarm.WebApplication",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\Kì1-Năm2\\CNPM\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
-      "BasePath": "_content/KoiFarm.WebApplication",
-      "RelativePath": "KoiFarm.WebApplication.styles.css",
-      "AssetKind": "All",
-      "AssetMode": "CurrentProject",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ApplicationBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Kì1-Năm2\\CNPM\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\obj\\Debug\\net8.0\\scopedcss\\bundle\\KoiFarm.WebApplication.styles.css"
-    },
-    {
-      "Identity": "D:\\Kì1-Năm2\\CNPM\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\KoiFarm.WebApplication.bundle.scp.css",
-      "SourceId": "KoiFarm.WebApplication",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\Kì1-Năm2\\CNPM\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
-      "BasePath": "_content/KoiFarm.WebApplication",
-      "RelativePath": "KoiFarm.WebApplication.bundle.scp.css",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ProjectBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Kì1-Năm2\\CNPM\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\KoiFarm.WebApplication.bundle.scp.css"
-    },
     {
       "Identity": "D:\\Kì1-Năm2\\CNPM\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\wwwroot\\css\\site.css",
       "SourceId": "KoiFarm.WebApplication",
