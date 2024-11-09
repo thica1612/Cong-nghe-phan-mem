@@ -1,0 +1,13 @@
+﻿@page
+@model KoiFarm.WebApplication.Pages.User.DeleteModel
+@{
+    ViewData["Title"] = "Xóa người dùng";
+}
+
+<h1>Xóa người dùng</h1>
+<p>Bạn có chắc chắn muốn xóa người dùng: @Model.User.UserName không?</p>
+
+<form method="post">
+    <button type="submit" class="btn btn-danger">Xóa</button>
+    <a asp-page="./Index" class="btn btn-secondary">Hủy</a>
+</form>

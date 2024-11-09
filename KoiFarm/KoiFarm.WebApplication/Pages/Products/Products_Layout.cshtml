@@ -7,13 +7,110 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/KoiFarm.WebApplication.styles.css" asp-append-version="true" />
+    <style>
+        /* Group 197 */
+        .group-197 {
+            position: relative; /* Để sử dụng với các phần tử bên trong */
+            width: 443px;
+            height: 776px;
+            background: #DAC8C8;
+            border: 1.0552px solid rgba(0, 22, 10, 0.1);
+            box-shadow: -33px 33px 33px rgba(0, 22, 10, 0.1);
+            border-radius: 54.9586px;
+        }
+
+        /* Blob */
+        .blob {
+            position: absolute;
+            left: 1%;
+            right: 74.05%;
+            top: 4.18%;
+            bottom: 85.71%;
+            background: #73ACCD;
+        }
+
+        /* Button */
+        .button {
+            position: absolute;
+            width: 261.64px; /* Độ rộng của nút */
+            height: 69.92px; /* Chiều cao của nút */
+            left: 96.49px;
+            top: 613.52px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: transparent; /* Nền trong suốt */
+            color: #FFFFFF;
+            font-family: 'Anton', sans-serif;
+            font-size: 30px;
+            line-height: 45px;
+            text-align: center;
+        }
+
+        /* Rectangle */
+        .rectangle {
+            position: absolute;
+            left: 0%;
+            right: 0.03%;
+            top: 0%;
+            bottom: 0.72%;
+            background: #FF0303;
+            border-radius: 30.7768px;
+        }
+
+        /* Message Sent */
+        .message-sent {
+            position: absolute;
+            left: 2.72%;
+            right: 76.01%;
+            top: 1.55%;
+            bottom: 96.4%;
+            font-family: 'Inter', sans-serif;
+            font-weight: 900;
+            font-size: 45px;
+            line-height: 54px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.29228px;
+            color: #060016;
+        }
+
+        /* How does one go about */
+        .how-does-one-go-abou {
+            position: absolute;
+            left: 7%;
+            right: 80.11%;
+            top: 15.16%;
+            bottom: 77.48%;
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 28px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #060016;
+        }
+
+        /* Image 4 */
+        .img-4 {
+            position: absolute;
+            width: 165px;
+            height: 443px;
+            left: 0px;
+            top: 330px;
+            background: url(image.png);
+            transform: rotate(-90deg);
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <!--Logo-->
-                <a class="navbar-brand" style="margin-right: 90px;padding-left: 0px; margin-left: 0px;" asp-area="" asp-page="/"> <img src="~/images/logot.png" alt="TheAquaKoi" style="width: 120px;" /></a>
+                <a class="navbar-brand" style="margin-right: 145px;padding-left: 20px; margin-left: 20px;" asp-area="" asp-page="/"> <img src="~/images/logot.png" alt="TheAquaKoi" style="width: 145px;" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -37,7 +134,7 @@
                         .navbar-nav .nav-link {
                             font-family: 'Inter';
                             font-weight: 300;
-                            font-size: 16px;
+                            font-size: 19px;
                             line-height: 15px;
                             color: #121010;
                         }
@@ -66,7 +163,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-page="/Index">KÝ GỬI</a>
+                            <a class="nav-link" asp-area="" asp-page="/Consignment/Consignment_View">KÝ GỬI</a>
                         </li>
 
                         <li class="nav-item">
@@ -116,40 +213,182 @@
                     </div>
 
                     <!--Sign in, sign up-->
-                    <nav class="navbar-nav ms-auto">
+                    <nav class="dangnhapdangki">
                         <style>
-                            .nav-sign {
-                                font-family: 'Inter';
-                                margin: 0;
+                            /* Thiết lập chung cho thanh điều hướng */
+                            .dangnhapdangki {
                                 display: flex;
-                                justify-content: space-between;
+                                justify-content: flex-end;
+                                gap: 8px;
+                                padding: 0 16px;
+                                background: #FFFFFF;
+                                width: 100%;
+                                height: 50px;
+                                box-sizing: border-box;
+                                position: relative; /* Cho phép di chuyển */
+                                top: -4px; /* Điều chỉnh khoảng cách từ trên xuống */
+                                right: 2px;
+                            }
+
+                                .dangnhapdangki ul {
+                                    list-style: none;
+                                    display: flex;
+                                    gap: 8px;
+                                    padding: 0;
+                                    margin: 0;
+                                }
+
+                            /* Định dạng các nút Đăng nhập và Đăng kí */
+                            .dangnhap .button2, .dangki .button1 {
+                                display: flex;
+                                justify-content: center;
                                 align-items: center;
-                                background-color: #333;
-                                padding: 10px 20px;
-                                color: white;
-                                font-size: 10px;
-                                display: flex;
-                                margin-left: auto;
-                                margin-bottom: 30px;
-                                color: white;
+                                padding: 2px 6px; /* Giảm padding */
+                                font-family: 'Inter', sans-serif;
+                                font-size: 12px; /* Giảm kích thước chữ */
+                                color: #1E1E1E;
                                 text-decoration: none;
-                                padding: 10px 15px;
-                                margin-left: 15px;
-                                transition: background-color 0.3s;
-                                background-color: white;
-                                color: #333;
-                                padding-right: 10px;
-                                margin-right: 10px
+                                border-radius: 10px; /* Giảm border-radius */
+                                border: 1px solid #767676;
+                                width: 60px; /* Giảm chiều rộng */
+                                height: 24px; /* Giảm chiều cao */
+                            }
+
+                            .dangnhap .button2 {
+                                background-color: #E3E3E3;
+                            }
+
+                            .dangki .button1 {
+                                background-color: #2C2C2C;
+                                color: #F5F5F5;
+                                border: 1px solid #2C2C2C;
+                            }
+
+                            .dangnhap .button2:active, .dangnhap .button2:focus {
+                                background-color: #B4B4B4; /* Màu nền khi nhấn */
+                                color: #FFFFFF; /* Màu chữ khi nhấn */
+                            }
+
+                            .dangki .button1:active, .dangki .button1:focus {
+                                background-color: #4A4A4A; /* Màu nền khi nhấn */
+                                color: #FFFFFF; /* Màu chữ khi nhấn */
                             }
                         </style>
-                        <a href="Sign" class="nav-sign">Đăng nhập /Đăng ký</a>
+                        <ul>
+                            <li class="dangnhap"><a href="#" title="Đăng nhập" class="button2">Đăng nhập</a></li>
+                            <li class="dangki"><a href="#" title="Đăng kí" class="button1">Đăng kí</a></li>
+                        </ul>
                     </nav>
                 </div>
 
             </div>
         </nav>
     </header>
+    <!--ban hang -->
+    <div class="banhang">
+        <div class="group197">
+            <style>
 
+                /* Để căn giữa group197 */
+                .banhang {
+                    display: flex;
+                    justify-content: center; /* Căn giữa theo chiều ngang */
+                    align-items: center; /* Căn giữa theo chiều dọc */
+                    height: calc(100vh - 150px); /* Chiều cao tùy chỉnh để căn giữa giữa header và footer */
+                }
+
+                /* Group 197 */
+                .group197 {
+                    position: relative; /* Để sử dụng với các phần tử bên trong */
+                    width: 150px; /* Chiều rộng của group197 */
+                    height: 300px; /* Chiều cao của group197 */
+                    background: #DAC8C8;
+                    border: 1px solid rgba(0, 22, 10, 0.1);
+                    border-radius: 5px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                }
+
+                /* img4 */
+                .img4 {
+                    position: absolute;
+                    width: 80px; /* Kích thước hình ảnh */
+                    height: 200px; /* Chiều cao hình ảnh */
+                    left: 5px; /* Vị trí hình ảnh */
+                    top: 10px; /* Vị trí hình ảnh */
+                    background: url(image.png);
+                    transform: rotate(-90deg);
+                }
+
+
+                /* blood */
+                .blood {
+                    position: absolute;
+                    width: 250px; /* Kích thước blood */
+                    height: 170px; /* Chiều cao blood */
+                    left: 5px; /* Vị trí blood */
+                    top: 150px; /* Vị trí blood */
+                }
+
+                /* button */
+                .button {
+                    position: absolute;
+                    width: 100px; /* Kích thước button */
+                    height: 25px; /* Chiều cao button */
+                    left: 25px; /* Vị trí button */
+                    top: 220px; /* Vị trí button */
+                    background: #FF0303; /* Màu nền của button */
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    font-family: 'Anton';
+                    font-size: 12px; /* Kích thước chữ */
+                }
+
+                /* Messenger Sent */
+                .Messenger {
+                    position: absolute;
+                    left: 5%;
+                    right: 5%;
+                    top: 5px; /* Vị trí Messenger */
+                    font-family: 'Inter';
+                    font-weight: 900;
+                    font-size: 12px; /* Kích thước chữ */
+                    color: #060016;
+                }
+
+                /* How does one go about */
+                .Howdoesonegoabout {
+                    position: absolute;
+                    left: 5%;
+                    right: 5%;
+                    top: 25px; /* Vị trí Howdoesonegoabout */
+                    font-family: 'Inter';
+                    font-weight: 700;
+                    font-size: 10px; /* Kích thước chữ */
+                    color: #060016;
+                }
+            </style>
+
+            <div class="img4">
+            </div>
+            <div class="device"></div>
+            <div class="blood">
+                <img src="~/images/Blob.png" style="width: 100%; height: auto;" />
+
+            </div>
+            <div class="button">
+                800
+            </div>
+            <div class="Messenger Sent">Message Sent</div>
+            <div class="Howdoesonegoabout">How does one go about</div>
+        </div>
+
+
+
+
+    </div>
     <div class="container-fluid">
         @RenderBody()
         <main role="main" class="pb-3">
@@ -171,3 +410,4 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+

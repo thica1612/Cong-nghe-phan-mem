@@ -1,0 +1,36 @@
+﻿@page
+@model KoiFarm.WebApplication.Pages.User.IndexModel
+@{
+    ViewData["Title"] = "Danh sách người dùng";
+}
+
+<h1>Danh sách người dùng</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Tên người dùng</th>
+            <th>Email</th>
+            <th>Email</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model.Users)
+        {
+            <tr>
+                <td>@user.UserId</td>
+                <td>@user.UserName</td>
+                <td>@user.Email</td>
+                <td>
+                    <a asp-page="./Details" asp-route-id="@user.UserId">Xem</a> |
+                    <a asp-page="./Edit" asp-route-id="@user.UserId">Sửa</a> |
+                    <a asp-page="./Delete" asp-route-id="@user.UserId">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-page="./Create" class="btn btn-primary">Thêm người dùng mới</a>

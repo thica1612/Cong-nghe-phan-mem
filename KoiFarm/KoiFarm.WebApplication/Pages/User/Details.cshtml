@@ -1,0 +1,14 @@
+﻿@page
+@model KoiFarm.WebApplication.Pages.User.DetailsModel
+@{
+    ViewData["Title"] = "Chi tiết người dùng";
+}
+
+<h1>Chi tiết người dùng</h1>
+
+<div>
+    <h4>Tên người dùng: @Model.User.UserName</h4>
+    <h4>Email: @Model.User.Email</h4>
+</div>
+
+<a asp-page="./Index" class="btn btn-secondary">Quay lại</a>

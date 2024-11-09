@@ -1,9 +1,24 @@
+using KoiFarm.Repositories;
+using KoiFarm.Repositories.Entities;
+using KoiFarm.Repositories.Interfaces;
+using KoiFarm.Services;
+using KoiFarm.Services.Interfaces;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+//DI 
+builder.Services.AddDbContext<KoiFarmContext>();
+//DI Repository
+builder.Services.AddScoped<IKoiUserRepository, KoiUserRepository>();
+//DI Services
+builder.Services.AddScoped<IKoiUserService, KoiUserService>();
+
 
 var app = builder.Build();
+
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
