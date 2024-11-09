@@ -1,8 +1,10 @@
+using FluentAssertions.Common;
 using KoiFarm.Repositories;
 using KoiFarm.Repositories.Entities;
 using KoiFarm.Repositories.Interfaces;
 using KoiFarm.Services;
 using KoiFarm.Services.Interfaces;
+using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +17,25 @@ builder.Services.AddScoped<IKoiUserRepository, KoiUserRepository>();
 //DI Services
 builder.Services.AddScoped<IKoiUserService, KoiUserService>();
 
+//DI Repository Certification
+builder.Services.AddScoped<ICertificationRepository, CertificationRepository>();
+//DI Services Certification
+builder.Services.AddScoped<ICertificationService, CertificationService>();
+
+//DI Repository CertificationKoiSale
+builder.Services.AddScoped<ICertificationKoiSaleRepository, CertificationKoiSaleRepository>();
+//DI Services CertificationKoiSale
+builder.Services.AddScoped<ICertificationKoiSaleService, CertificationKoiSaleService>();
+
+//DI Repository Koi
+builder.Services.AddScoped<IKoiRepository, KoiRepository>();
+//DI Services Koi
+builder.Services.AddScoped<IKoiService, KoiService>();
+
+//DI Repository KoiSale
+builder.Services.AddScoped<IKoiSaleRepository, KoiSaleRepository>();
+//DI Services KoiSale
+builder.Services.AddScoped<IKoiSaleService, KoiSaleService>();
 
 var app = builder.Build();
 
@@ -27,6 +48,8 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
+
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

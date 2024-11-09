@@ -1,0 +1,73 @@
+﻿@page
+@model KoiFarm.WebApplication.Pages.Kois.DetailsModel
+
+<div>
+    <h4>Koi</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Koi.KoiName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Koi.KoiName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Koi.KoiOrigin)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Koi.KoiOrigin)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Koi.KoiGender)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Koi.KoiGender)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Koi.KoiYear)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Koi.KoiYear)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Koi.KoiSize)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Koi.KoiSize)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Koi.KoiPrice)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Koi.KoiPrice)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Koi.Stock)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Koi.Stock)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Koi.KoiImage)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Koi.KoiImage)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Koi.Dailyfood)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Koi.Dailyfood)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Koi.Screeningrate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Koi.Screeningrate)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Koi.KoiId">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

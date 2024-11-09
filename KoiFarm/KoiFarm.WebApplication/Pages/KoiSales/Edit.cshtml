@@ -1,0 +1,94 @@
+﻿@page
+@model KoiFarm.WebApplication.Pages.KoiSales.EditModel
+
+<h4>KoiSale</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="KoiSale.KoiSaleId" />
+            <div class="form-group">
+                <label asp-for="KoiSale.KoiSaleName" class="control-label"></label>
+                <input asp-for="KoiSale.KoiSaleName" class="form-control" />
+                <span asp-validation-for="KoiSale.KoiSaleName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KoiSale.KoiSaleOrigin" class="control-label"></label>
+                <input asp-for="KoiSale.KoiSaleOrigin" class="form-control" />
+                <span asp-validation-for="KoiSale.KoiSaleOrigin" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KoiSale.KoiSaleGender" class="control-label"></label>
+                <input asp-for="KoiSale.KoiSaleGender" class="form-control" />
+                <span asp-validation-for="KoiSale.KoiSaleGender" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KoiSale.KoiSaleYear" class="control-label"></label>
+                <input asp-for="KoiSale.KoiSaleYear" class="form-control" />
+                <span asp-validation-for="KoiSale.KoiSaleYear" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KoiSale.KoiSaleSize" class="control-label"></label>
+                <input asp-for="KoiSale.KoiSaleSize" class="form-control" />
+                <span asp-validation-for="KoiSale.KoiSaleSize" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KoiSale.KoiSalePrice" class="control-label"></label>
+                <input asp-for="KoiSale.KoiSalePrice" class="form-control" />
+                <span asp-validation-for="KoiSale.KoiSalePrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KoiSale.KoiSalePriceLater" class="control-label"></label>
+                <input asp-for="KoiSale.KoiSalePriceLater" class="form-control" />
+                <span asp-validation-for="KoiSale.KoiSalePriceLater" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KoiSale.DiscountPercent" class="control-label"></label>
+                <input asp-for="KoiSale.DiscountPercent" class="form-control" />
+                <span asp-validation-for="KoiSale.DiscountPercent" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KoiSale.StartDate" class="control-label"></label>
+                <input asp-for="KoiSale.StartDate" class="form-control" />
+                <span asp-validation-for="KoiSale.StartDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KoiSale.Enddate" class="control-label"></label>
+                <input asp-for="KoiSale.Enddate" class="form-control" />
+                <span asp-validation-for="KoiSale.Enddate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KoiSale.StockKoiSale" class="control-label"></label>
+                <input asp-for="KoiSale.StockKoiSale" class="form-control" />
+                <span asp-validation-for="KoiSale.StockKoiSale" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KoiSale.KoiImageKoiSale" class="control-label"></label>
+                <input asp-for="KoiSale.KoiImageKoiSale" class="form-control" />
+                <span asp-validation-for="KoiSale.KoiImageKoiSale" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KoiSale.DailyfoodKoiSale" class="control-label"></label>
+                <input asp-for="KoiSale.DailyfoodKoiSale" class="form-control" />
+                <span asp-validation-for="KoiSale.DailyfoodKoiSale" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KoiSale.ScreeningrateKoiSale" class="control-label"></label>
+                <input asp-for="KoiSale.ScreeningrateKoiSale" class="form-control" />
+                <span asp-validation-for="KoiSale.ScreeningrateKoiSale" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

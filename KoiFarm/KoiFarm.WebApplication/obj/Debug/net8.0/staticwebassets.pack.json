@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "D:\\Kì1-Năm2\\CNPM\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\KoiFarm.WebApplication.bundle.scp.css",
-      "PackagePath": "staticwebassets\\KoiFarm.WebApplication.bundle.scp.css"
-    },
-    {
       "Id": "D:\\Kì1-Năm2\\CNPM\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
