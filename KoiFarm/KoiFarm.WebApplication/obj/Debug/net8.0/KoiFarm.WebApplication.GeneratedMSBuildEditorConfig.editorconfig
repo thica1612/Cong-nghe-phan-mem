@@ -17,143 +17,183 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = KoiFarm.WebApplication
 build_property.RootNamespace = KoiFarm.WebApplication
-build_property.ProjectDir = D:\Kì1-Năm2\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\
+build_property.ProjectDir = H:\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Kì1-Năm2\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication
+build_property.MSBuildProjectDirectory = H:\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/CertificationKoiSales/Create.cshtml]
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/CertificationKoiSales/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2VydGlmaWNhdGlvbktvaVNhbGVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/CertificationKoiSales/Delete.cshtml]
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/CertificationKoiSales/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2VydGlmaWNhdGlvbktvaVNhbGVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/CertificationKoiSales/Details.cshtml]
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/CertificationKoiSales/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2VydGlmaWNhdGlvbktvaVNhbGVzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/CertificationKoiSales/Edit.cshtml]
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/CertificationKoiSales/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2VydGlmaWNhdGlvbktvaVNhbGVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/CertificationKoiSales/Index.cshtml]
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/CertificationKoiSales/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2VydGlmaWNhdGlvbktvaVNhbGVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Certifications/Create.cshtml]
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Certifications/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2VydGlmaWNhdGlvbnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Certifications/Delete.cshtml]
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Certifications/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2VydGlmaWNhdGlvbnNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Certifications/Details.cshtml]
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Certifications/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2VydGlmaWNhdGlvbnNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Certifications/Edit.cshtml]
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Certifications/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2VydGlmaWNhdGlvbnNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Certifications/Index.cshtml]
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Certifications/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2VydGlmaWNhdGlvbnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Consignment/Consignment_Layout.cshtml]
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Consignment/Consignment_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29uc2lnbm1lbnRcQ29uc2lnbm1lbnRfTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Consignment/Consignment_View.cshtml]
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Consignment/Consignment_View.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29uc2lnbm1lbnRcQ29uc2lnbm1lbnRfVmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Contact/Contact_Layout.cshtml]
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Contact/Contact_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdFxDb250YWN0X0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Contact/Contact_View.cshtml]
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Contact/Contact_View.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdFxDb250YWN0X1ZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Error.cshtml]
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Home/Home_Layout.cshtml]
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Home/Home_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVxIb21lX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Index.cshtml]
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Introduce/Introduce_Layout.cshtml]
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Introduce/Introduce_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW50cm9kdWNlXEludHJvZHVjZV9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Introduce/Introduce_View.cshtml]
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Introduce/Introduce_View.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW50cm9kdWNlXEludHJvZHVjZV9WaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Privacy.cshtml]
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/KoiSales/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcS29pU2FsZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/KoiSales/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcS29pU2FsZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/KoiSales/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcS29pU2FsZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/KoiSales/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcS29pU2FsZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/KoiSales/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcS29pU2FsZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Kois/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcS29pc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Kois/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcS29pc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Kois/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcS29pc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Kois/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcS29pc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Kois/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcS29pc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Products/Products_Layout.cshtml]
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Products/Products_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcUHJvZHVjdHNfTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Products/Products_View.cshtml]
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Products/Products_View.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcUHJvZHVjdHNfVmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Sales/Sales_Layout.cshtml]
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Sales/Sales_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2FsZXNcU2FsZXNfTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Sales/Sales_View.cshtml]
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Sales/Sales_View.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2FsZXNcU2FsZXNfVmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Shared/_Layout.cshtml]
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/User/Create.cshtml]
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/User/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/User/Delete.cshtml]
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/User/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/User/Details.cshtml]
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/User/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/User/Edit.cshtml]
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/User/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/User/Index.cshtml]
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/_ViewImports.cshtml]
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/_ViewStart.cshtml]
+[H:/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

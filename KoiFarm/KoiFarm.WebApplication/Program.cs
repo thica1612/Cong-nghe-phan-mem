@@ -27,10 +27,15 @@ builder.Services.AddScoped<ICertificationKoiSaleRepository, CertificationKoiSale
 //DI Services CertificationKoiSale
 builder.Services.AddScoped<ICertificationKoiSaleService, CertificationKoiSaleService>();
 
-//DI Repository
-//builder.Services.AddScoped<IKoiRepository, KoiRepository>();
-//DI Services
-//builder.Services.AddScoped<IKoiService, KoiService>();
+//DI Repository Koi
+builder.Services.AddScoped<IKoiRepository, KoiRepository>();
+//DI Services Koi
+builder.Services.AddScoped<IKoiService, KoiService>();
+
+//DI Repository KoiSale
+builder.Services.AddScoped<IKoiSaleRepository, KoiSaleRepository>();
+//DI Services KoiSale
+builder.Services.AddScoped<IKoiSaleService, KoiSaleService>();
 
 var app = builder.Build();
 

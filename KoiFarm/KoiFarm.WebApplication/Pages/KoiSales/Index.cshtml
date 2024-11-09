@@ -1,0 +1,108 @@
+﻿@page
+@model KoiFarm.WebApplication.Pages.KoiSales.IndexModel
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.KoiSale[0].KoiSaleName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KoiSale[0].KoiSaleOrigin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KoiSale[0].KoiSaleGender)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KoiSale[0].KoiSaleYear)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KoiSale[0].KoiSaleSize)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KoiSale[0].KoiSalePrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KoiSale[0].KoiSalePriceLater)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KoiSale[0].DiscountPercent)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KoiSale[0].StartDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KoiSale[0].Enddate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KoiSale[0].StockKoiSale)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KoiSale[0].KoiImageKoiSale)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KoiSale[0].DailyfoodKoiSale)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KoiSale[0].ScreeningrateKoiSale)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.KoiSale) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.KoiSaleName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KoiSaleOrigin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KoiSaleGender)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KoiSaleYear)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KoiSaleSize)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KoiSalePrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KoiSalePriceLater)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DiscountPercent)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StartDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Enddate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StockKoiSale)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KoiImageKoiSale)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DailyfoodKoiSale)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ScreeningrateKoiSale)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.KoiSaleId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.KoiSaleId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.KoiSaleId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

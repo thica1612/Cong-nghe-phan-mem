@@ -1,0 +1,84 @@
+﻿@page
+@model KoiFarm.WebApplication.Pages.Kois.IndexModel
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Koi[0].KoiName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Koi[0].KoiOrigin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Koi[0].KoiGender)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Koi[0].KoiYear)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Koi[0].KoiSize)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Koi[0].KoiPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Koi[0].Stock)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Koi[0].KoiImage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Koi[0].Dailyfood)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Koi[0].Screeningrate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Koi) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.KoiName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KoiOrigin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KoiGender)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KoiYear)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KoiSize)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KoiPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Stock)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KoiImage)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dailyfood)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Screeningrate)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.KoiId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.KoiId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.KoiId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
