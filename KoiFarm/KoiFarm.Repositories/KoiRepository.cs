@@ -22,11 +22,8 @@ namespace KoiFarm.Repositories
                 _context.Kois.Add(koi);
                 _context.SaveChanges();
                 return true;
-            }
-            catch (Exception ex)
-            {
-                throw new NotImplementedException(ex.ToString());
-            }
+            }catch (Exception ex) { throw new NotImplementedException(); }
+            
         }
 
         public bool DeleteKoi(Koi koi)
@@ -63,14 +60,18 @@ namespace KoiFarm.Repositories
             return await _context.Kois.ToListAsync();  
         }
 
-        public Task<Koi> GetKoiById(string KoiID)
+        public async Task<Koi> GetKoiById(string KoiID)
         {
-            throw new NotImplementedException();
+            return await _context.Kois.Where(p => p.KoiId.Equals(KoiID)).FirstOrDefaultAsync();
         }
 
         public bool UpdateKoi(Koi koi)
         {
-            throw new NotImplementedException();
+            try
+            {
+                _context.Kois.Update(koi);
+                return true;
+            }catch(Exception ex) { return false; }
         }
     }
 }

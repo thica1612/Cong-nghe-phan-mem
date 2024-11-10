@@ -24,17 +24,17 @@ namespace KoiFarm.Services
 
         public bool DeleteKoi(Koi koi)
         {
-            throw new NotImplementedException();
+            return _repository.DeleteKoi(koi);
         }
 
         public bool DelKoi(string KoiID)
         {
-            throw new NotImplementedException();
+            return _repository.DelKoi(KoiID);
         }
 
         public Task<Koi> GetKoiById(string KoiID)
         {
-            throw new NotImplementedException();
+            return _repository.GetKoiById(KoiID);
         }
 
         public Task<List<Koi>> Kois()
@@ -44,7 +44,7 @@ namespace KoiFarm.Services
 
         public bool UpdateKoi(Koi koi)
         {
-            throw new NotImplementedException();
+            return _repository.UpdateKoi(koi);
         }
     }
 }

@@ -6,16 +6,17 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using KoiFarm.Repositories.Entities;
+using KoiFarm.Services.Interfaces;
 
 namespace KoiFarm.WebApplication.Pages.KoiSales
 {
     public class DeleteModel : PageModel
     {
-        private readonly KoiFarm.Repositories.Entities.KoiFarmContext _context;
 
-        public DeleteModel(KoiFarm.Repositories.Entities.KoiFarmContext context)
+        private readonly IKoiSaleService _service;
+        public DeleteModel(IKoiSaleService service)
         {
-            _context = context;
+            _service=service;
         }
 
         [BindProperty]
@@ -28,7 +29,7 @@ namespace KoiFarm.WebApplication.Pages.KoiSales
                 return NotFound();
             }
 
-            var koisale = await _context.KoiSales.FirstOrDefaultAsync(m => m.KoiSaleId == id);
+            var koisale = await _service.GetKoiSaleById( id);
 
             if (koisale == null)
             {
@@ -48,13 +49,8 @@ namespace KoiFarm.WebApplication.Pages.KoiSales
                 return NotFound();
             }
 
-            var koisale = await _context.KoiSales.FindAsync(id);
-            if (koisale != null)
-            {
-                KoiSale = koisale;
-                _context.KoiSales.Remove(KoiSale);
-                await _context.SaveChangesAsync();
-            }
+            _service.DelKoiSale( id);
+           
 
             return RedirectToPage("./Index");
         }

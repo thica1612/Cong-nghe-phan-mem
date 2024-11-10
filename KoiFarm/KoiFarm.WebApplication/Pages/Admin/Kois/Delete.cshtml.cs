@@ -51,12 +51,7 @@ namespace KoiFarm.WebApplication.Pages.Kois
                 return NotFound();
             }
 
-            var koi = await _service.GetKoiById(id);
-            if (koi != null)
-            {
-                Koi = koi;
-                _service.DelKoi(id);
-            }
+             _service.DelKoi(id);
 
             return RedirectToPage("./Index");
         }
