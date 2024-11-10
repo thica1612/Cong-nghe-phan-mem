@@ -8,56 +8,48 @@ using Microsoft.EntityFrameworkCore;
 using KoiFarm.Repositories.Entities;
 using KoiFarm.Services.Interfaces;
 
-namespace KoiFarm.WebApplication.Pages.Kois
+namespace KoiFarm.WebApplication.Pages.Certifications
 {
     public class DeleteModel : PageModel
     {
-        private readonly IKoiService _service;
+        private readonly ICertificationService _service;
 
-        public DeleteModel(IKoiService service)
+        public DeleteModel(ICertificationService service)
         {
             _service = service;
         }
 
         [BindProperty]
-        public Koi Koi { get; set; } = default!;
+        public Certification Certification { get; set; } = default!;
 
-        public async Task<IActionResult> OnGetAsync(string id)
+        public async Task<IActionResult> OnGetAsync(string CertificationID)
         {
-            
-            if (id == null)
+            if (CertificationID == null)
             {
                 return NotFound();
             }
 
-            var koi = await 
-                _service.GetKoiById(id);
+            var certification = await _service.GetCertificationByID(CertificationID);
 
-            if (koi == null)
+            if (certification == null)
             {
                 return NotFound();
             }
             else
             {
-                Koi = koi;
+                Certification = certification;
             }
             return Page();
         }
 
-        public async Task<IActionResult> OnPostAsync(string id)
+        public async Task<IActionResult> OnPostAsync(string CertificationID)
         {
-            if (id == null)
+            if (CertificationID == null)
             {
                 return NotFound();
             }
+            _service.DelCertification(Certification);
 
-            var koi = await _context.Kois.FindAsync(id);
-            if (koi != null)
-            {
-                Koi = koi;
-                _context.Kois.Remove(Koi);
-                await _context.SaveChangesAsync();
-            }
 
             return RedirectToPage("./Index");
         }

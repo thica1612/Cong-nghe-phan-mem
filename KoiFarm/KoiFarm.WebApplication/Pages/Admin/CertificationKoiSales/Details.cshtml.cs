@@ -10,27 +10,25 @@ using KoiFarm.Services.Interfaces;
 
 namespace KoiFarm.WebApplication.Pages.CertificationKoiSales
 {
-    public class DeleteModel : PageModel
+    public class DetailsModel : PageModel
     {
         private readonly ICertificationKoiSaleService _service;
 
-        public DeleteModel(ICertificationKoiSaleService service)
+        public DetailsModel(ICertificationKoiSaleService service)
         {
             _service = service;
         }
 
-        [BindProperty]
         public CertificationKoiSale CertificationKoiSale { get; set; } = default!;
 
-        public async Task<IActionResult> OnGetAsync(string id)
+        public async Task<IActionResult> OnGetAsync(string CertificationKSID)
         {
-            if (id == null)
+            if (CertificationKSID == null)
             {
                 return NotFound();
             }
 
-            var certificationkoisale = await _service.GetCertificationKoiSaleByID(id);
-
+            var certificationkoisale = await _service.GetCertificationKoiSaleByID(CertificationKSID);
             if (certificationkoisale == null)
             {
                 return NotFound();
@@ -40,17 +38,6 @@ namespace KoiFarm.WebApplication.Pages.CertificationKoiSales
                 CertificationKoiSale = certificationkoisale;
             }
             return Page();
-        }
-
-        public async Task<IActionResult> OnPostAsync(string id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-            _service.DelCertificationKoiSale(id);
-
-            return RedirectToPage("./Index");
         }
     }
 }

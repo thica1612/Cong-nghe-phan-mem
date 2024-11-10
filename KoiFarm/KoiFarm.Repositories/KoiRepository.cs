@@ -17,7 +17,16 @@ namespace KoiFarm.Repositories
 
         public bool AddKoi(Koi koi)
         {
-            throw new NotImplementedException();
+            try
+            {
+                _context.Kois.Add(koi);
+                _context.SaveChanges();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw new NotImplementedException(ex.ToString());
+            }
         }
 
         public bool DeleteKoi(Koi koi)

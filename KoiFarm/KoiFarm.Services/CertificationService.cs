@@ -17,9 +17,34 @@ namespace KoiFarm.Services
             _repository = repository;
         }
 
+        public bool AddCertification(Certification certification)
+        {
+            return _repository.AddCertification(certification);
+        }
+
         public Task<List<Certification>> Certifications()
         {
             return _repository.GetAllCertification();
+        }
+
+        public bool DelCertification(string CertificationID)
+        {
+            return _repository.DelCertification(CertificationID);
+        }
+
+        public bool DelCertification(Certification certification)
+        {
+            return _repository.DelCertification(certification);
+        }
+
+        public Task<Certification> GetCertificationByID(string CertificationID)
+        {
+            return _repository.GetCertificationByID(CertificationID);
+        }
+
+        public bool UpdCertification(Certification certification)
+        {
+            return _repository.UpdCertification(certification);
         }
     }
 }

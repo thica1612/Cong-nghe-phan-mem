@@ -19,7 +19,7 @@ namespace KoiFarm.Services
 
         public bool AddKoi(Koi koi)
         {
-           return _repository.AddKoi();
+           return _repository.AddKoi(koi);
         }
 
         public bool DeleteKoi(Koi koi)

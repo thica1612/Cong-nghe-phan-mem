@@ -2,7 +2,7 @@
 @model KoiFarm.WebApplication.Pages.CertificationKoiSales.IndexModel
 
 <p>
-    <a asp-page="Create">Create New</a>
+    <a asp-page="/Pages/CertificationKoiSales/Create">Thêm</a>
 </p>
 <table class="table">
     <thead>
@@ -38,9 +38,9 @@
                 @Html.DisplayFor(modelItem => item.KoiSale.KoiSaleId)
             </td>
             <td>
-                <a asp-page="./Edit" asp-route-id="@item.CertificationKsid">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.CertificationKsid">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.CertificationKsid">Delete</a>
+                    <a asp-page="/Pages/CertificationKoiSales/Edit" asp-route-id="@item.CertificationKsid">Sửa</a> |
+                    <a asp-page="/Pages/CertificationKoiSales/Details" asp-route-id="@item.CertificationKsid">Chi tiết</a> |
+                    <a asp-page="/Pages/CertificationKoiSales/Delete" asp-route-id="@item.CertificationKsid">Xóa</a>
             </td>
         </tr>
 }

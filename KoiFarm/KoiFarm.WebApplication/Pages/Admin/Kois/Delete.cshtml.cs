@@ -6,37 +6,40 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using KoiFarm.Repositories.Entities;
+using KoiFarm.Services.Interfaces;
 
-namespace KoiFarm.WebApplication.Pages.Certifications
+namespace KoiFarm.WebApplication.Pages.Kois
 {
     public class DeleteModel : PageModel
     {
-        private readonly KoiFarm.Repositories.Entities.KoiFarmContext _context;
+        private readonly IKoiService _service;
 
-        public DeleteModel(KoiFarm.Repositories.Entities.KoiFarmContext context)
+        public DeleteModel(IKoiService service)
         {
-            _context = context;
+            _service = service;
         }
 
         [BindProperty]
-        public Certification Certification { get; set; } = default!;
+        public Koi Koi { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(string id)
         {
+            
             if (id == null)
             {
                 return NotFound();
             }
 
-            var certification = await _context.Certifications.FirstOrDefaultAsync(m => m.CertificationId == id);
+            var koi = await 
+                _service.GetKoiById(id);
 
-            if (certification == null)
+            if (koi == null)
             {
                 return NotFound();
             }
             else
             {
-                Certification = certification;
+                Koi = koi;
             }
             return Page();
         }
@@ -48,12 +51,11 @@ namespace KoiFarm.WebApplication.Pages.Certifications
                 return NotFound();
             }
 
-            var certification = await _context.Certifications.FindAsync(id);
-            if (certification != null)
+            var koi = await _service.GetKoiById(id);
+            if (koi != null)
             {
-                Certification = certification;
-                _context.Certifications.Remove(Certification);
-                await _context.SaveChangesAsync();
+                Koi = koi;
+                _service.DelKoi(id);
             }
 
             return RedirectToPage("./Index");

@@ -6,21 +6,27 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using KoiFarm.Repositories.Entities;
+using KoiFarm.Services.Interfaces;
 
 namespace KoiFarm.WebApplication.Pages.Certifications
 {
     public class CreateModel : PageModel
     {
-        private readonly KoiFarm.Repositories.Entities.KoiFarmContext _context;
+        private readonly ICertificationService _service;
 
-        public CreateModel(KoiFarm.Repositories.Entities.KoiFarmContext context)
+        public CreateModel(ICertificationService service)
         {
-            _context = context;
+            _service = service;
         }
 
-        public IActionResult OnGet()
+        public IActionResult OnGet(string CertificationID)
         {
-        ViewData["KoiId"] = new SelectList(_context.Kois, "KoiId", "KoiId");
+            if (string.IsNullOrEmpty(CertificationID))
+            {
+                ModelState.AddModelError("", "CertificationID is required.");
+                return Page();
+            }
+            ViewData["KoiId"] = new SelectList((System.Collections.IEnumerable)_service.GetCertificationByID(CertificationID), "KoiId", "KoiId");
             return Page();
         }
 
@@ -35,9 +41,7 @@ namespace KoiFarm.WebApplication.Pages.Certifications
                 return Page();
             }
 
-            _context.Certifications.Add(Certification);
-            await _context.SaveChangesAsync();
-
+            _service.AddCertification(Certification);
             return RedirectToPage("./Index");
         }
     }

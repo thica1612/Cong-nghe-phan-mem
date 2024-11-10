@@ -7,35 +7,36 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using KoiFarm.Repositories.Entities;
+using KoiFarm.Services.Interfaces;
 
 namespace KoiFarm.WebApplication.Pages.Certifications
 {
     public class EditModel : PageModel
     {
-        private readonly KoiFarm.Repositories.Entities.KoiFarmContext _context;
+        private readonly ICertificationService _service;
 
-        public EditModel(KoiFarm.Repositories.Entities.KoiFarmContext context)
+        public EditModel(ICertificationService service)
         {
-            _context = context;
+            _service = service;
         }
 
         [BindProperty]
         public Certification Certification { get; set; } = default!;
 
-        public async Task<IActionResult> OnGetAsync(string id)
+        public async Task<IActionResult> OnGetAsync(string CertificationID)
         {
-            if (id == null)
+            if (CertificationID == null)
             {
                 return NotFound();
             }
 
-            var certification =  await _context.Certifications.FirstOrDefaultAsync(m => m.CertificationId == id);
+            var certification = await _service.GetCertificationByID(CertificationID);
             if (certification == null)
             {
                 return NotFound();
             }
             Certification = certification;
-           ViewData["KoiId"] = new SelectList(_context.Kois, "KoiId", "KoiId");
+            ViewData["KoiId"] = new SelectList((System.Collections.IEnumerable)_service.GetCertificationByID(CertificationID), "KoiId", "KoiId");
             return Page();
         }
 
@@ -47,31 +48,8 @@ namespace KoiFarm.WebApplication.Pages.Certifications
             {
                 return Page();
             }
-
-            _context.Attach(Certification).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!CertificationExists(Certification.CertificationId))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
+            _service.UpdCertification(Certification);
             return RedirectToPage("./Index");
-        }
-
-        private bool CertificationExists(string id)
-        {
-            return _context.Certifications.Any(e => e.CertificationId == id);
         }
     }
 }

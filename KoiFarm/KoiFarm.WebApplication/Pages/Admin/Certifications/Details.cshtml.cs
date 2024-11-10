@@ -6,28 +6,29 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using KoiFarm.Repositories.Entities;
+using KoiFarm.Services.Interfaces;
 
 namespace KoiFarm.WebApplication.Pages.Certifications
 {
     public class DetailsModel : PageModel
     {
-        private readonly KoiFarm.Repositories.Entities.KoiFarmContext _context;
+        private readonly ICertificationService _service;
 
-        public DetailsModel(KoiFarm.Repositories.Entities.KoiFarmContext context)
+        public DetailsModel(ICertificationService service)
         {
-            _context = context;
+            _service = service;
         }
 
         public Certification Certification { get; set; } = default!;
 
-        public async Task<IActionResult> OnGetAsync(string id)
+        public async Task<IActionResult> OnGetAsync(string CertificationID)
         {
-            if (id == null)
+            if (CertificationID == null)
             {
                 return NotFound();
             }
 
-            var certification = await _context.Certifications.FirstOrDefaultAsync(m => m.CertificationId == id);
+            var certification = await _service.GetCertificationByID(CertificationID);
             if (certification == null)
             {
                 return NotFound();

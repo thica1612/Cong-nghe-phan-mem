@@ -7,35 +7,36 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using KoiFarm.Repositories.Entities;
+using KoiFarm.Services.Interfaces;
 
 namespace KoiFarm.WebApplication.Pages.CertificationKoiSales
 {
     public class EditModel : PageModel
     {
-        private readonly KoiFarm.Repositories.Entities.KoiFarmContext _context;
+        private readonly ICertificationKoiSaleService _service;
 
-        public EditModel(KoiFarm.Repositories.Entities.KoiFarmContext context)
+        public EditModel(ICertificationKoiSaleService service)
         {
-            _context = context;
+            _service = service;
         }
 
         [BindProperty]
         public CertificationKoiSale CertificationKoiSale { get; set; } = default!;
 
-        public async Task<IActionResult> OnGetAsync(string id)
+        public async Task<IActionResult> OnGetAsync(string CertificationKSID)
         {
-            if (id == null)
+            if (CertificationKSID == null)
             {
                 return NotFound();
             }
 
-            var certificationkoisale =  await _context.CertificationKoiSales.FirstOrDefaultAsync(m => m.CertificationKsid == id);
+            var certificationkoisale =  await _service.GetCertificationKoiSaleByID(CertificationKSID);
             if (certificationkoisale == null)
             {
                 return NotFound();
             }
             CertificationKoiSale = certificationkoisale;
-           ViewData["KoiSaleId"] = new SelectList(_context.KoiSales, "KoiSaleId", "KoiSaleId");
+            ViewData["KoiSaleId"] = new SelectList((System.Collections.IEnumerable)_service.GetCertificationKoiSaleByID(CertificationKSID), "KoiSaleId", "KoiSaleId");
             return Page();
         }
 
@@ -47,31 +48,8 @@ namespace KoiFarm.WebApplication.Pages.CertificationKoiSales
             {
                 return Page();
             }
-
-            _context.Attach(CertificationKoiSale).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!CertificationKoiSaleExists(CertificationKoiSale.CertificationKsid))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
+            _service.UpdCertificationKoiSale(CertificationKoiSale);
             return RedirectToPage("./Index");
-        }
-
-        private bool CertificationKoiSaleExists(string id)
-        {
-            return _context.CertificationKoiSales.Any(e => e.CertificationKsid == id);
         }
     }
 }

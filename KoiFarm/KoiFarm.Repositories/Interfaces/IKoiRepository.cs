@@ -14,6 +14,5 @@ namespace KoiFarm.Repositories.Interfaces
         Boolean AddKoi(Koi koi);
         Boolean UpdateKoi(Koi koi);
         Task<Koi> GetKoiById(String KoiID);
-
     }
 }
