@@ -46,3 +46,19 @@ H:\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\KoiFarm.Services
 H:\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\refint\KoiFarm.Services.dll
 H:\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\KoiFarm.Services.pdb
 H:\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\ref\KoiFarm.Services.dll
+F:\UTH\N2\HK1_2\Công nghệ phần mềm\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\bin\Debug\net8.0\KoiFarm.Services.deps.json
+F:\UTH\N2\HK1_2\Công nghệ phần mềm\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\bin\Debug\net8.0\KoiFarm.Services.dll
+F:\UTH\N2\HK1_2\Công nghệ phần mềm\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\bin\Debug\net8.0\KoiFarm.Services.pdb
+F:\UTH\N2\HK1_2\Công nghệ phần mềm\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\bin\Debug\net8.0\KoiFarm.Repositories.dll
+F:\UTH\N2\HK1_2\Công nghệ phần mềm\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\bin\Debug\net8.0\KoiFarm.Repositories.pdb
+F:\UTH\N2\HK1_2\Công nghệ phần mềm\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\KoiFarm.Services.csproj.AssemblyReference.cache
+F:\UTH\N2\HK1_2\Công nghệ phần mềm\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\KoiFarm.Services.GeneratedMSBuildEditorConfig.editorconfig
+F:\UTH\N2\HK1_2\Công nghệ phần mềm\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\KoiFarm.Services.AssemblyInfoInputs.cache
+F:\UTH\N2\HK1_2\Công nghệ phần mềm\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\KoiFarm.Services.AssemblyInfo.cs
+F:\UTH\N2\HK1_2\Công nghệ phần mềm\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\KoiFarm.Services.csproj.CoreCompileInputs.cache
+F:\UTH\N2\HK1_2\Công nghệ phần mềm\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\KoiFarm.Services.sourcelink.json
+F:\UTH\N2\HK1_2\Công nghệ phần mềm\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\KoiFarm..C30C0949.Up2Date
+F:\UTH\N2\HK1_2\Công nghệ phần mềm\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\KoiFarm.Services.dll
+F:\UTH\N2\HK1_2\Công nghệ phần mềm\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\refint\KoiFarm.Services.dll
+F:\UTH\N2\HK1_2\Công nghệ phần mềm\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\KoiFarm.Services.pdb
+F:\UTH\N2\HK1_2\Công nghệ phần mềm\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\ref\KoiFarm.Services.dll

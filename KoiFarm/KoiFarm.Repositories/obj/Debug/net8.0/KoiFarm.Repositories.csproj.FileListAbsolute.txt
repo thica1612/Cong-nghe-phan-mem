@@ -43,3 +43,18 @@ H:\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\obj\Debug\net8.0\refint\KoiFa
 H:\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\obj\Debug\net8.0\KoiFarm.Repositories.pdb
 H:\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\obj\Debug\net8.0\KoiFarm.Repositories.genruntimeconfig.cache
 H:\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\obj\Debug\net8.0\ref\KoiFarm.Repositories.dll
+F:\UTH\N2\HK1_2\Công nghệ phần mềm\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\bin\Debug\net8.0\KoiFarm.Repositories.deps.json
+F:\UTH\N2\HK1_2\Công nghệ phần mềm\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\bin\Debug\net8.0\KoiFarm.Repositories.runtimeconfig.json
+F:\UTH\N2\HK1_2\Công nghệ phần mềm\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\bin\Debug\net8.0\KoiFarm.Repositories.dll
+F:\UTH\N2\HK1_2\Công nghệ phần mềm\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\bin\Debug\net8.0\KoiFarm.Repositories.pdb
+F:\UTH\N2\HK1_2\Công nghệ phần mềm\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\obj\Debug\net8.0\KoiFarm.Repositories.csproj.AssemblyReference.cache
+F:\UTH\N2\HK1_2\Công nghệ phần mềm\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\obj\Debug\net8.0\KoiFarm.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+F:\UTH\N2\HK1_2\Công nghệ phần mềm\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\obj\Debug\net8.0\KoiFarm.Repositories.AssemblyInfoInputs.cache
+F:\UTH\N2\HK1_2\Công nghệ phần mềm\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\obj\Debug\net8.0\KoiFarm.Repositories.AssemblyInfo.cs
+F:\UTH\N2\HK1_2\Công nghệ phần mềm\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\obj\Debug\net8.0\KoiFarm.Repositories.csproj.CoreCompileInputs.cache
+F:\UTH\N2\HK1_2\Công nghệ phần mềm\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\obj\Debug\net8.0\KoiFarm.Repositories.sourcelink.json
+F:\UTH\N2\HK1_2\Công nghệ phần mềm\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\obj\Debug\net8.0\KoiFarm.Repositories.dll
+F:\UTH\N2\HK1_2\Công nghệ phần mềm\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\obj\Debug\net8.0\refint\KoiFarm.Repositories.dll
+F:\UTH\N2\HK1_2\Công nghệ phần mềm\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\obj\Debug\net8.0\KoiFarm.Repositories.pdb
+F:\UTH\N2\HK1_2\Công nghệ phần mềm\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\obj\Debug\net8.0\KoiFarm.Repositories.genruntimeconfig.cache
+F:\UTH\N2\HK1_2\Công nghệ phần mềm\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\obj\Debug\net8.0\ref\KoiFarm.Repositories.dll

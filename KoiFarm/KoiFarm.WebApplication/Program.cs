@@ -4,6 +4,7 @@ using KoiFarm.Repositories.Entities;
 using KoiFarm.Repositories.Interfaces;
 using KoiFarm.Services;
 using KoiFarm.Services.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,7 +12,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 //DI 
-builder.Services.AddDbContext<KoiFarmContext>();
+builder.Services.AddDbContext<KoiFarmContext>(options=>
+options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 //DI Repository
 builder.Services.AddScoped<IKoiUserRepository, KoiUserRepository>();
 //DI Services

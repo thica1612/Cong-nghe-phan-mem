@@ -25,7 +25,6 @@ namespace KoiFarm.Repositories
             try
             {
                 _dbContext.KoiUsers.Add(account);
-                //await _dbContext.PremierLeagueAccounts.AddAsync(account);
                 _dbContext.SaveChanges();
                 return true;
             }
