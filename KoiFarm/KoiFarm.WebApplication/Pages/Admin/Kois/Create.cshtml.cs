@@ -6,16 +6,18 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using KoiFarm.Repositories.Entities;
+using KoiFarm.Services.Interfaces;
+using KoiFarm.Services;
 
 namespace KoiFarm.WebApplication.Pages.Kois
 {
     public class CreateModel : PageModel
     {
-        private readonly KoiFarm.Repositories.Entities.KoiFarmContext _context;
+        private readonly IKoiService _service;
 
-        public CreateModel(KoiFarm.Repositories.Entities.KoiFarmContext context)
+        public CreateModel(IKoiService service)
         {
-            _context = context;
+            _service = service;
         }
 
         public IActionResult OnGet()
@@ -34,10 +36,29 @@ namespace KoiFarm.WebApplication.Pages.Kois
                 return Page();
             }
 
-            _context.Kois.Add(Koi);
-            await _context.SaveChangesAsync();
-
-            return RedirectToPage("./Index");
+            try
+            {
+                bool result = _service.AddKoi(Koi);
+                if (result)
+                {
+                    return RedirectToPage("./Index"); 
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Không thể thêm cá Koi. Vui lòng thử lại.");
+                    return Page();
+                }
+            }
+            catch (ArgumentException ex)
+            {
+                ModelState.AddModelError("", ex.Message);
+                return Page();
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", "Đã xảy ra lỗi không xác định. Vui lòng thử lại.");
+                return Page();
+            }
         }
     }
 }

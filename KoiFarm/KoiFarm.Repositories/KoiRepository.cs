@@ -70,6 +70,7 @@ namespace KoiFarm.Repositories
             try
             {
                 _context.Kois.Update(koi);
+                _context.SaveChanges();
                 return true;
             }catch(Exception ex) { return false; }
         }

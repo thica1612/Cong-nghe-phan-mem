@@ -6,20 +6,20 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using KoiFarm.Repositories.Entities;
+using KoiFarm.Services.Interfaces;
 
 namespace KoiFarm.WebApplication.Pages.Kois
 {
     public class DetailsModel : PageModel
     {
-        private readonly KoiFarm.Repositories.Entities.KoiFarmContext _context;
+        private readonly IKoiService _service;
 
-        public DetailsModel(KoiFarm.Repositories.Entities.KoiFarmContext context)
+        public DetailsModel(IKoiService service)
         {
-            _context = context;
+            _service = service;
         }
 
         public Koi Koi { get; set; } = default!;
-
         public async Task<IActionResult> OnGetAsync(string id)
         {
             if (id == null)
@@ -27,7 +27,7 @@ namespace KoiFarm.WebApplication.Pages.Kois
                 return NotFound();
             }
 
-            var koi = await _context.Kois.FirstOrDefaultAsync(m => m.KoiId == id);
+            var koi = await _service.GetKoiById (id);
             if (koi == null)
             {
                 return NotFound();
@@ -36,6 +36,7 @@ namespace KoiFarm.WebApplication.Pages.Kois
             {
                 Koi = koi;
             }
+
             return Page();
         }
     }
