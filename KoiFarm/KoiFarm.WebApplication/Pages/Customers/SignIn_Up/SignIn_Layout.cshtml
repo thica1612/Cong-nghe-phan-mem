@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <header>
+        <a class="navbar-brand" style="margin-right: 90px;padding-left: 500px; margin-left: 100px;" asp-area="" asp-page="/">
+            <img src="~/images/logot.png" alt="TheAquaKoi" style="width: 120px;" />
+        </a>
+    </header>
+    <div class="container-fluid">
+        @RenderBody()
+        <main role="main" class="pb-3">
+            
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container-fluid">
+            <img src="~/images/14.png" style="width: 100%; height: auto;" />
+            &copy; 2024 - KoiFarm.WebApplication - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

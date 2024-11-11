@@ -13,7 +13,9 @@
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <!--Logo-->
-                <a class="navbar-brand" style="margin-right: 90px;padding-left: 0px; margin-left: 0px;" asp-area="" asp-page="/"> <img src="~/images/logot.png" alt="TheAquaKoi" style="width: 120px;" /></a>
+                <a class="navbar-brand" style="margin-right: 90px;padding-left: 0px; margin-left: 0px;" asp-area="" asp-page="/">
+                    <img src="~/images/logot.png" alt="TheAquaKoi" style="width: 120px;" />
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -21,34 +23,7 @@
 
                 <!--Menu-->
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <style>
-
-                        .navbar-collapse {
-                            display: flex;
-                            overflow-x: auto;
-                            white-space: nowrap;
-                        }
-
-                        .navbar-nav .nav-item {
-                            margin-top: 80px;
-                            margin-right: 30px;
-                        }
-
-                        .navbar-nav .nav-link {
-                            font-family: 'Inter';
-                            font-weight: 300;
-                            font-size: 16px;
-                            line-height: 15px;
-                            color: #121010;
-                        }
-
-                        a:hover, a:active {
-                            color: black;
-                            text-decoration: underline;
-                        }
-                    </style>
                     <ul class="navbar-nav flex-grow-1">
-
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-page="/Index">TRANG CHỦ</a>
                         </li>
@@ -76,79 +51,22 @@
 
                     <!--Search-->
                     <div class="search-bar">
-
-                        <style>
-                            .search-bar {
-                                display: flex;
-                                flex-direction: row;
-                                align-items: center;
-                                padding: 6px 8px;
-                                gap: 6px;
-                                position: absolute;
-                                width: 600px;
-                                height: 30px;
-                                left: 50%;
-                                top: 30px;
-                                transform: translateX(-50%);
-                                background: rgba(20, 18, 24, 0.16);
-                                border: 1px solid #D9D9D9;
-                                border-radius: 9999px;
-                            }
-
-                                .search-bar input[type="text"] {
-                                    border: none;
-                                    outline: none;
-                                    flex: 1;
-                                    font-size: 12px;
-                                    background: transparent;
-                                }
-
-                                .search-bar button {
-                                    border: none;
-                                    background: none;
-                                    cursor: pointer;
-                                    font-size: 12px;
-                                }
-
-                        </style>
                         <input type="text" id="search" placeholder="Tìm kiếm (ví dụ: cá Koi Nhật Bản, cá Koi thuần chủng,...)" />
                         <button type="submit">Search</button>
                     </div>
 
                     <!--Sign in, sign up-->
                     <nav class="navbar-nav ms-auto">
-                        <style>
-                            .nav-sign {
-                                font-family: 'Inter';
-                                margin: 0;
-                                display: flex;
-                                justify-content: space-between;
-                                align-items: center;
-                                background-color: #333;
-                                padding: 10px 20px;
-                                color: white;
-                                font-size: 10px;
-                                display: flex;
-                                margin-left: auto;
-                                margin-bottom: 30px;
-                                color: white;
-                                text-decoration: none;
-                                padding: 10px 15px;
-                                margin-left: 15px;
-                                transition: background-color 0.3s;
-                                background-color: white;
-                                color: #333;
-                                padding-right: 10px;
-                                margin-right: 10px
-                            }
-                        </style>
-                        <a href="Sign" class="nav-sign">Đăng nhập /Đăng ký</a>
+                        <ul>
+                            <li class="dangnhap"><a href="" title="Đăng nhập" class="button2">Đăng nhập</a></li>
+                            <li class="dangki"><a href="#" title="Đăng kí" class="button1">Đăng kí</a></li>
+                        </ul>
                     </nav>
                 </div>
-
             </div>
         </nav>
     </header>
+
 
     <div class="container-fluid">
         @RenderBody()
@@ -159,7 +77,8 @@
     </div>
 
     <footer class="border-top footer text-muted">
-        <div class="container">
+        <div class="container-fluid">
+            <img src="~/images/14.png" style="width: 100%; height: auto;" />
             &copy; 2024 - KoiFarm.WebApplication - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
     </footer>
