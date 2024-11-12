@@ -1409,3 +1409,12 @@ D:\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.
 D:\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
 D:\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
 D:\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.JSInterop.dll
+D:\Kì1-Năm2\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+D:\Kì1-Năm2\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
+D:\Kì1-Năm2\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
+D:\Kì1-Năm2\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.AspNetCore.Components.QuickGrid.dll
+D:\Kì1-Năm2\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter.dll
+D:\Kì1-Năm2\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
+D:\Kì1-Năm2\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+D:\Kì1-Năm2\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+D:\Kì1-Năm2\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.JSInterop.dll

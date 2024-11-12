@@ -48,6 +48,8 @@ builder.Services.AddScoped<IFeedbackService, FeedbackService>();
 builder.Services.AddScoped<IPromotionRepository, PromotionRepository>();
 //DI Services Promotion
 builder.Services.AddScoped<IPromotionService, PromotionService>();
+
+
 //DI Repository TransactionHistory
 builder.Services.AddScoped<ITransactionHistoryRepository, TransactionHistoryRepository>();
 //DI Services TransactionHistory

@@ -4,11 +4,55 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/KoiFarm.WebApplication.styles.css" asp-append-version="true" />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 
 </head>
 <body>
-    <div>
+    <header style="background-color: white;">
+        <a class="navbar-brand" style="align-items: center; justify-content: center; display: flex;" asp-area="" asp-page="/Index">
+            <img src="~/images/logot.png" alt="TheAquaKoi" style="width: 120px;" />
+        </a>
+    </header>
+    <div class="container-fluid">
         @RenderBody()
+        <div class="hinhca">
+            <img src="~/images/20.png" />
+        </div>
+        <div class="dangnhap1">ĐĂNG KÝ</div>
+        <button class="google"> <img src="~/images/Google.png" /> Đăng ký bằng Google</button>
+        <div class="OR"><img src="~/images/OR.jpg" /></div>
+
+        <div>
+            <input type="text" id="form1" placeholder="Tên người dùng" />
+            <input type="text" id="form2" placeholder="Email" />
+            <input type="password" id="password1" placeholder="Mật khẩu" />
+            <input type="password" id="password2" placeholder="Xác nhận mật khẩu" />
+            <button class="btndky">
+                Đăng ký
+            </button>
+            <div class="signin-link">
+                <span>Đã có tài khoản?</span>
+                <a href="./SignIn_View">Đăng nhập</a>
+            </div>
+
+        </div>
     </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container-fluid">
+            <img src="~/images/14.png" style="width: 100%; height: auto;" />
+            &copy; 2024 - KoiFarm.WebApplication - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
