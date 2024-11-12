@@ -19,8 +19,4 @@
     <ProjectReference Include="..\KoiFarm.Services\KoiFarm.Services.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Pages\Customers\OrderDetail\" />
-  </ItemGroup>
-
 </Project>

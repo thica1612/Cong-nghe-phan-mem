@@ -48,7 +48,8 @@ builder.Services.AddScoped<IFeedbackService, FeedbackService>();
 // Đăng ký Repository cho Order
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 builder.Services.AddScoped<IOrderService, OrderService>();
-
+builder.Services.AddScoped<IOrderDetailRepository, OrderDetailRepository>();
+builder.Services.AddScoped<IOrderDetailService, OrderDetailService>();
 var app = builder.Build();
 
 
