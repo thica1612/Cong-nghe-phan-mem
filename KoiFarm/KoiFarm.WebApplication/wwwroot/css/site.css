@@ -140,3 +140,13 @@ ul {
     background-color: #4A4A4A;
     color: #FFFFFF;
 }
+.hinhca {
+    width: 750px;
+    height: 1000px;
+    margin-top: 0px; /* Điều chỉnh khoảng cách giữa header và hình ảnh */
+}
+
+/* Đảm bảo phần main có đủ khoảng trống dưới hình ảnh */
+main {
+    padding-bottom: 0px; /* Thêm khoảng trống dưới main để không bị dính vào footer */
+}
