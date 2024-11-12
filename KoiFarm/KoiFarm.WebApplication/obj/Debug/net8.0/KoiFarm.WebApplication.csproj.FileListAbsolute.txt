@@ -1123,7 +1123,6 @@ D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\obj\Debug\net8.0\stati
 D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.KoiFarm.WebApplication.props
 D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\obj\Debug\net8.0\staticwebassets.pack.json
 D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\obj\Debug\net8.0\scopedcss\bundle\KoiFarm.WebApplication.styles.css
-D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\obj\Debug\net8.0\KoiFarm..905DBD40.Up2Date
 D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\obj\Debug\net8.0\KoiFarm.WebApplication.dll
 D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\obj\Debug\net8.0\refint\KoiFarm.WebApplication.dll
 D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\obj\Debug\net8.0\KoiFarm.WebApplication.pdb
@@ -1391,3 +1390,13 @@ D:\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\obj\Debug\net8.0\refint\Koi
 D:\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\obj\Debug\net8.0\KoiFarm.WebApplication.pdb
 D:\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\obj\Debug\net8.0\KoiFarm.WebApplication.genruntimeconfig.cache
 D:\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\obj\Debug\net8.0\ref\KoiFarm.WebApplication.dll
+D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
+D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
+D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.AspNetCore.Components.QuickGrid.dll
+D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter.dll
+D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
+D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.JSInterop.dll
+D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\obj\Debug\net8.0\KoiFarm.WebApplication.csproj.CopyComplete

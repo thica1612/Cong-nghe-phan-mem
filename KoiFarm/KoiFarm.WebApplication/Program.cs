@@ -44,6 +44,15 @@ builder.Services.AddScoped<IFeedbackRepository, FeedbackRepository>();
 //DI Services Feedback
 builder.Services.AddScoped<IFeedbackService, FeedbackService>();
 
+//DI Repository Promotion
+builder.Services.AddScoped<IPromotionRepository, PromotionRepository>();
+//DI Services Promotion
+builder.Services.AddScoped<IPromotionService, PromotionService>();
+//DI Repository TransactionHistory
+builder.Services.AddScoped<ITransactionHistoryRepository, TransactionHistoryRepository>();
+//DI Services TransactionHistory
+builder.Services.AddScoped<ITransactionHistoryService, TransactionHistoryService>();
+
 //builder.Services.AddScoped<IOrderService, OrderDetailService>();
 // Đăng ký Repository cho Order
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
