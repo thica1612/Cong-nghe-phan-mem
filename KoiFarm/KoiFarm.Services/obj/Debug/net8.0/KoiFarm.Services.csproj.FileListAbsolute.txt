@@ -62,3 +62,19 @@ F:\UTH\N2\HK1_2\Công nghệ phần mềm\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Ser
 F:\UTH\N2\HK1_2\Công nghệ phần mềm\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\refint\KoiFarm.Services.dll
 F:\UTH\N2\HK1_2\Công nghệ phần mềm\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\KoiFarm.Services.pdb
 F:\UTH\N2\HK1_2\Công nghệ phần mềm\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\ref\KoiFarm.Services.dll
+D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\bin\Debug\net8.0\KoiFarm.Services.deps.json
+D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\bin\Debug\net8.0\KoiFarm.Services.dll
+D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\bin\Debug\net8.0\KoiFarm.Services.pdb
+D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\bin\Debug\net8.0\KoiFarm.Repositories.dll
+D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\bin\Debug\net8.0\KoiFarm.Repositories.pdb
+D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\KoiFarm.Services.csproj.AssemblyReference.cache
+D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\KoiFarm.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\KoiFarm.Services.AssemblyInfoInputs.cache
+D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\KoiFarm.Services.AssemblyInfo.cs
+D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\KoiFarm.Services.csproj.CoreCompileInputs.cache
+D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\KoiFarm.Services.sourcelink.json
+D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\KoiFarm..C30C0949.Up2Date
+D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\KoiFarm.Services.dll
+D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\refint\KoiFarm.Services.dll
+D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\KoiFarm.Services.pdb
+D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\ref\KoiFarm.Services.dll

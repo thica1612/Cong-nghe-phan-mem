@@ -38,6 +38,7 @@ builder.Services.AddScoped<IKoiService, KoiService>();
 builder.Services.AddScoped<IKoiSaleRepository, KoiSaleRepository>();
 //DI Services KoiSale
 builder.Services.AddScoped<IKoiSaleService, KoiSaleService>();
+builder.Services.AddScoped<IOrderService, OrderService>();
 
 var app = builder.Build();
 
