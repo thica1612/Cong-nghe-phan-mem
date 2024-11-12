@@ -394,3 +394,38 @@ a:hover, a:active {
     border: 0.3px solid #4277B8;
     font-size: 13px;
 }
+/* Ẩn danh sách con theo mặc định */
+.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hiển thị danh sách khi rê chuột vào KÝ GỬI */
+.nav-item:hover .sub-menu {
+    display: block;
+}
+
+/* Định dạng cho các mục trong danh sách */
+.menu-item {
+    padding: 10px 15px;
+}
+
+    .menu-item a {
+        font-family: 'Inter';
+        text-decoration: none;
+        color: #333;
+        display: block;
+    }
+
+        /* Thêm hiệu ứng hover */
+        .menu-item a:hover {
+            background-color: #f1f1f1;
+            color: #000;
+        }
+
+
