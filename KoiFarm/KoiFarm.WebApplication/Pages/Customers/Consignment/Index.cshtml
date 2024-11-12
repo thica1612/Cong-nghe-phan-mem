@@ -1,0 +1,48 @@
+﻿@page
+@model KoiFarm.WebApplication.Pages.Customers.Consignment.IndexModel
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Consignment[0].ConsignmentType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Consignment[0].RequestDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Consignment[0].AgreedPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Consignment[0].ConsignmentStatus)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Consignment) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ConsignmentType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RequestDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AgreedPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ConsignmentStatus)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ConsignmentId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ConsignmentId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ConsignmentId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

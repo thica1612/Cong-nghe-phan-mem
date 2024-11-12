@@ -1,0 +1,48 @@
+﻿@page
+@model KoiFarm.WebApplication.Pages.Customers.Consignment.CreateModel
+
+<h4>Consignment</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Consignment.ConsignmentId" class="control-label"></label>
+                <input asp-for="Consignment.ConsignmentId" class="form-control" />
+                <span asp-validation-for="Consignment.ConsignmentId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Consignment.ConsignmentType" class="control-label"></label>
+                <input asp-for="Consignment.ConsignmentType" class="form-control" />
+                <span asp-validation-for="Consignment.ConsignmentType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Consignment.RequestDate" class="control-label"></label>
+                <input asp-for="Consignment.RequestDate" class="form-control" />
+                <span asp-validation-for="Consignment.RequestDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Consignment.AgreedPrice" class="control-label"></label>
+                <input asp-for="Consignment.AgreedPrice" class="form-control" />
+                <span asp-validation-for="Consignment.AgreedPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Consignment.ConsignmentStatus" class="control-label"></label>
+                <input asp-for="Consignment.ConsignmentStatus" class="form-control" />
+                <span asp-validation-for="Consignment.ConsignmentStatus" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

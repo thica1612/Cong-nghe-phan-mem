@@ -1400,3 +1400,12 @@ D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Micro
 D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
 D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.JSInterop.dll
 D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\obj\Debug\net8.0\KoiFarm..905DBD40.Up2Date
+D:\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+D:\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
+D:\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
+D:\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.AspNetCore.Components.QuickGrid.dll
+D:\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter.dll
+D:\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
+D:\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+D:\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+D:\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.JSInterop.dll

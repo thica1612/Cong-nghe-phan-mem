@@ -53,6 +53,13 @@ builder.Services.AddScoped<ITransactionHistoryRepository, TransactionHistoryRepo
 //DI Services TransactionHistory
 builder.Services.AddScoped<ITransactionHistoryService, TransactionHistoryService>();
 
+
+//DI Repository Consignment
+builder.Services.AddScoped<IConsignmentRepository, ConsignmentRepository>();
+//DI Services Consignment
+builder.Services.AddScoped<IConsignmentService, ConsignmentService>();
+
+
 //builder.Services.AddScoped<IOrderService, OrderDetailService>();
 // Đăng ký Repository cho Order
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
