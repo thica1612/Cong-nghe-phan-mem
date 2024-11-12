@@ -39,6 +39,11 @@ builder.Services.AddScoped<IKoiSaleRepository, KoiSaleRepository>();
 //DI Services KoiSale
 builder.Services.AddScoped<IKoiSaleService, KoiSaleService>();
 
+//DI Repository Feedback
+builder.Services.AddScoped<IFeedbackRepository, FeedbackRepository>();
+//DI Services Feedback
+builder.Services.AddScoped<IFeedbackService, FeedbackService>();
+
 //builder.Services.AddScoped<IOrderService, OrderDetailService>();
 // Đăng ký Repository cho Order
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
