@@ -16,7 +16,7 @@ namespace KoiFarm.Services
             _repository = repository;
         }
 
-        public async Task<bool> AddOrder(Order order)
+        public async Task<bool> AddOrder(KoiOrder order)
         {
             return await _repository.AddOrder(order);
         }
@@ -26,22 +26,22 @@ namespace KoiFarm.Services
             return await _repository.DelOrder(orderId);
         }
 
-        public async Task<bool> DelOrder(Order order)
+        public async Task<bool> DelOrder(KoiOrder order)
         {
             return await _repository.DelOrder(order);
         }
 
-        public async Task<Order> GetOrderById(int orderId)
+        public async Task<KoiOrder> GetOrderById(int orderId)
         {
             return await _repository.GetOrderById(orderId);
         }
 
-        public async Task<List<Order>> GetAllOrders()
+        public async Task<List<KoiOrder>> GetAllOrders()
         {
             return await _repository.GetAllOrders();
         }
 
-        public async Task<bool> UpdateOrder(Order order)
+        public async Task<bool> UpdateOrder(KoiOrder order)
         {
             return await _repository.UpdateOrder(order);
         }

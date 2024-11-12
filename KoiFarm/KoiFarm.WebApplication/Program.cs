@@ -1,4 +1,4 @@
-using FluentAssertions.Common;
+﻿using FluentAssertions.Common;
 using KoiFarm.Repositories;
 using KoiFarm.Repositories.Entities;
 using KoiFarm.Repositories.Interfaces;
@@ -38,6 +38,10 @@ builder.Services.AddScoped<IKoiService, KoiService>();
 builder.Services.AddScoped<IKoiSaleRepository, KoiSaleRepository>();
 //DI Services KoiSale
 builder.Services.AddScoped<IKoiSaleService, KoiSaleService>();
+
+//builder.Services.AddScoped<IOrderService, OrderDetailService>();
+// Đăng ký Repository cho Order
+builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 builder.Services.AddScoped<IOrderService, OrderService>();
 
 var app = builder.Build();

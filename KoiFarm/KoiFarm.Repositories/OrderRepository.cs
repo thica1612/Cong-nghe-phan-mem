@@ -1,27 +1,59 @@
-﻿using System;
+﻿using KoiFarm.Repositories.Entities;
+using KoiFarm.Repositories.Interfaces;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace KoiFarm.Repositories
 {
-    public class Order
+    public class OrderRepository : IOrderRepository
     {
-        public int OrderID { get; set; }
-        public string CustomerID { get; set; }
-        public DateTime OrderDate { get; set; }
-        public decimal TotalAmount { get; set; }
-        public string Status { get; set; }
+        private readonly KoiFarmContext _dbcontext;
 
-        public Order(int orderID, string customerID, DateTime orderDate, decimal totalAmount, string status)
+        public OrderRepository(KoiFarmContext dbcontext)
         {
-            OrderID = orderID;
-            CustomerID = customerID;
-            OrderDate = orderDate;
-            TotalAmount = totalAmount;
-            Status = status;
+            _dbcontext = dbcontext;
+        }
+
+        public async Task<bool> AddOrder(KoiOrder order)
+        {
+            _dbcontext.Set<KoiOrder>().Add(order);
+            return await _dbcontext.SaveChangesAsync() > 0;
+        }
+
+        public async Task<bool> DelOrder(int orderId)
+        {
+            var order = await GetOrderById(orderId);
+            if (order == null) return false;
+
+            _dbcontext.Set<KoiOrder>().Remove(order);
+            return await _dbcontext.SaveChangesAsync() > 0;
+        }
+
+        public async Task<bool> DelOrder(KoiOrder order)
+        {
+            _dbcontext.Set<KoiOrder>().Remove(order);
+            return await _dbcontext.SaveChangesAsync() > 0;
+        }
+
+        public async Task<KoiOrder> GetOrderById(int orderId)
+        {
+            return await _dbcontext.Set<KoiOrder>().FindAsync(orderId);
+        }
+
+        public async Task<List<KoiOrder>> GetAllOrders()
+        {
+            return await _dbcontext.Set<KoiOrder>().ToListAsync();
+        }
+
+        public async Task<bool> UpdateOrder(KoiOrder order)
+        {
+            _dbcontext.Set<KoiOrder>().Update(order);
+            return await _dbcontext.SaveChangesAsync() > 0;
         }
     }
-
 }

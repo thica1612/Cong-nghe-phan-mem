@@ -6,11 +6,11 @@ namespace KoiFarm.Repositories.Interfaces
 {
     public interface IOrderRepository
     {
-        Task<bool> AddOrder(Order order);
+        Task<bool> AddOrder(KoiOrder order);
         Task<bool> DelOrder(int orderId);
-        Task<bool> DelOrder(Order order);
-        Task<Order> GetOrderById(int orderId);
-        Task<List<Order>> GetAllOrders();
-        Task<bool> UpdateOrder(Order order);
+        Task<bool> DelOrder(KoiOrder order);
+        Task<KoiOrder> GetOrderById(int orderId);
+        Task<List<KoiOrder>> GetAllOrders();
+        Task<bool> UpdateOrder(KoiOrder order);
     }
 }
