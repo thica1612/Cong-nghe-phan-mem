@@ -435,7 +435,7 @@ a:hover, a:active {
     position: absolute;
     height: 60px;
     right: 155px;
-    top: 160px;
+    top: 188px;
     font-family: 'Anton', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -591,4 +591,44 @@ a:hover, a:active {
     border: 0.3px solid #3C4242;
     background: #FEF7FF;
     border-radius: 8px;
+}
+
+.submitsell {
+    font-size: 23px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 20px;
+    gap: 12px;
+    position: absolute;
+    width: 620px;
+    height: 50px;
+    left: 600px;
+    top: 780px;
+    background: #4277B8;
+    border-radius: 8px;
+    color: white;
+    border: 0.3px solid #3C4242;
+}
+
+.submitbuy {
+    font-size: 23px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 20px;
+    gap: 12px;
+    position: absolute;
+    width: 620px;
+    height: 50px;
+    left: 600px;
+    top: 700px;
+    background: #4277B8;
+    border-radius: 8px;
+    color: white;
+    border: 0.3px solid #3C4242;
 }
