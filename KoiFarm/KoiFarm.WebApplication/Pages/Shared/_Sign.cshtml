@@ -12,33 +12,13 @@
 
 </head>
 <body>
-    <header style ="background-color: white;">
+    <header style="background-color: white;">
         <a class="navbar-brand" style="align-items: center; justify-content: center; display: flex;" asp-area="" asp-page="/Index">
             <img src="~/images/logot.png" alt="TheAquaKoi" style="width: 120px;" />
         </a>
     </header>
     <div class="container-fluid">
         @RenderBody()
-        <div class="hinhca">
-            <img src="~/images/19.png" />
-        </div>
-        <div class="dangnhap1">ĐĂNG NHẬP</div>
-        <button class="google"> <img src="~/images/Google.png" /> Đăng nhập bằng Google</button>
-        <div class="OR"><img src="~/images/OR.jpg" /></div>
-
-        <div>
-            <input type="text" id="form" placeholder="Tên người dùng hoặc email" />
-            <input type="password" id="password" placeholder="Mật khẩu" />
-            <a class="forgot" asp-area="" asp-page="/">Quên mật khẩu</a>
-            <button class="btndnhap">
-                Đăng nhập
-            </button>
-            <div class="signup-link">
-                <span>Chưa có tài khoản?</span>
-                <a href="./SignUp_View">Đăng ký</a>
-            </div>
-
-        </div>
     </div>
 
     <footer class="border-top footer text-muted">

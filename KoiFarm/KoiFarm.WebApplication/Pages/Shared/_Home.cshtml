@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/KoiFarm.WebApplication.styles.css" asp-append-version="true" />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -25,36 +30,36 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link" style="font-weight: bold;" asp-area="" asp-page="/Index">TRANG CHỦ</a>
+                            <a class="nav-link" asp-area="" asp-page="Index">TRANG CHỦ</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link"  asp-area="" asp-page="/Customers/Introduce/Introduce_View">GIỚI THIỆU</a>
+                            <a class="nav-link" asp-area="" asp-page="AboutUs">GIỚI THIỆU</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-page="/Customers/Products/Products_View">SẢN PHẨM</a>
+                            <a class="nav-link" asp-area="" asp-page="Product">SẢN PHẨM</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-page="/Customers/Sales/Sales_View">KHUYẾN MÃI</a>
+                            <a class="nav-link" asp-area="" asp-page="Sale">KHUYẾN MÃI</a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-page="/">KÝ GỬI</a>
                             <ul class="sub-menu">
                                 <li class="menu-item BUY">
-                                    <a href="/Customers/Consignment/Buy/Buy_View">KÝ GỬI NUÔI</a>
+                                    <a asp-page="FeedConsign">KÝ GỬI NUÔI</a>
                                 </li>
                                 <li class="menu-item Sell">
-                                    <a href="/Customers/Consignment/Sell/Sell_View">KÝ GỬI BÁN</a>
+                                    <a asp-page="SellConsign">KÝ GỬI BÁN</a>
                                 </li>
                             </ul>
                         </li>
 
 
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-page="/Customers/Contact/Contact_View">LIÊN HỆ</a>
+                            <a class="nav-link" asp-area="" asp-page="Contact">LIÊN HỆ</a>
                         </li>
                     </ul>
 
@@ -65,23 +70,23 @@
                     </div>
 
                     <!--Cart-->
-                    <a class="cart" href="#">
+                    <a class="cart" asp-page="Cart">
                         <img src="~/images/Cart.png" />
                     </a>
 
                     <!--Sign in, sign up-->
-                    <form asp-page="/Customers/SignIn_Up/SignIn_View">
+                    <form asp-page="SignIn">
                         <button class="dnhap">
                             Đăng nhập
                         </button>
                     </form>
-                    <form asp-page="/Customers/SignIn_Up/SignUp_View">
+                    <form asp-page="SignUp">
                         <button class="dky">
                             Đăng ký
                         </button>
                     </form>
-                        
-                    
+
+
                 </div>
             </div>
         </nav>
@@ -89,11 +94,7 @@
 
     <div class="container-fluid">
         @RenderBody()
-        <main role="main">
-            <img src="~/images/16.png" style="width: 100%; height: auto;" />
-            <img src="~/images/15.png" style="width: 100%; height: auto;" />
-            <img src="~/images/17.png" style="width: 100%; height: auto;" />
-        </main>
+  
     </div>
 
     <footer class="border-top footer text-muted">

@@ -1,0 +1,30 @@
+﻿@page
+@{
+    ViewData["Title"] = "Đăng ký";
+    Layout = "_Sign";
+}
+
+
+<div>
+    <div class="hinhca">
+        <img src="~/images/20.png" />
+    </div>
+    <div class="dangky1">ĐĂNG KÝ</div>
+    <button class="google"> <img src="~/images/Google.png" /> Đăng ký bằng Google</button>
+    <div class="OR"><img src="~/images/OR.jpg" /></div>
+
+    <div>
+        <input type="text" id="form1" placeholder="Tên người dùng" />
+        <input type="text" id="form2" placeholder="Email" />
+        <input type="password" id="password1" placeholder="Mật khẩu" />
+        <input type="password" id="password2" placeholder="Xác nhận mật khẩu" />
+        <button class="btndky">
+            Đăng ký
+        </button>
+        <div class="signin-link">
+            <span>Đã có tài khoản?</span>
+            <a asp-page ="SignIn">Đăng nhập</a>
+        </div>
+
+    </div>
+</div>

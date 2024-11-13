@@ -142,10 +142,10 @@ a:hover, a:active {
 
 
 .hinhca {
-    width: 530px; /* Chiều rộng mong muốn */
-    height: 790px; /* Thêm chiều cao mong muốn */
-    margin-top: 0px; /* Điều chỉnh khoảng cách giữa header và hình ảnh */
-    overflow: hidden; /* Đảm bảo hình ảnh không vượt ra ngoài khung */
+    width: 465px;
+    height: 720px;
+    margin-top: 0px;
+    overflow: hidden;
 }
 
     .hinhca img {
@@ -157,33 +157,27 @@ a:hover, a:active {
 .dangnhap1 {
     position: absolute;
     height: 60px;
-    right: 230px;
-    top: 140px;
-    /* ĐĂNG NHẬP */
+    right: 260px;
+    top: 180px;
     font-family: 'Anton', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 49px;
     line-height: 98px;
-    /* identical to box height */
     display: flex;
     align-items: center;
     color: #333333;
 }
 .google {
-    width: 236px;
-    height: 26px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
-    /* identical to box height */
     display: flex;
     text-align: center;
     color: #0B0A0A;
     box-sizing: border-box;
-    /* Auto layout */
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -192,8 +186,8 @@ a:hover, a:active {
     position: absolute;
     width: 435px;
     height: 50px;
-    left: 710px;
-    top: 265px;
+    left: 680px;
+    top: 295px;
     border: 1px solid #3C4242;
     border-radius: 8px;
     background: #FEF7FF;
@@ -202,14 +196,15 @@ a:hover, a:active {
     overflow: hidden; /* Đảm bảo hình ảnh không vượt ra ngoài khung */
     position: absolute;
     width: 474px;
-    left: 695px;
-    top: 360px;
+    left: 665px;
+    top: 375px;
 }
     .OR img {
         width: 100%; /* Hình ảnh sẽ vừa với chiều rộng khung cha */
         height: 100%; /* Hình ảnh sẽ vừa với chiều cao khung cha */
         object-fit: cover; /* Cắt hoặc thu nhỏ hình ảnh để vừa khung mà không bị biến dạng */
     }
+
 
 #form {
     display: flex;
@@ -221,7 +216,7 @@ a:hover, a:active {
     position: absolute;
     width: 465px;
     height: 50px;
-    left: 700px;
+    left: 670px;
     top: 450px;
     border: 0.3px solid #3C4242;
     background: #FEF7FF;
@@ -238,7 +233,7 @@ a:hover, a:active {
     position: absolute;
     width: 465px;
     height: 50px;
-    left: 700px;
+    left: 670px;
     top: 530px;
     border: 0.3px solid #3C4242;
     background: #FEF7FF;
@@ -249,7 +244,7 @@ a:hover, a:active {
     position: absolute;
     width: 83px;
     height: 25px;
-    left: 1077px;
+    left: 1050px;
     top: 590px;
     font-family: 'Roboto';
     font-style: normal;
@@ -272,8 +267,8 @@ a:hover, a:active {
     position: absolute;
     width: 115px;
     height: 35px;
-    left: 700px;
-    top: 640px;
+    left: 670px;
+    top: 630px;
     background: #4277B8;
     font-weight: bold;
     border-radius: 8px;
@@ -286,8 +281,8 @@ a:hover, a:active {
     position: absolute;
     width: 198px;
     height: 19px;
-    left: 701px;
-    top: 680px;
+    left: 670px;
+    top: 670px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 100;
@@ -303,6 +298,21 @@ a:hover, a:active {
     }
 
 
+.dangky1 {
+    position: absolute;
+    height: 60px;
+    right: 290px;
+    top: 180px;
+    font-family: 'Anton', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 49px;
+    line-height: 98px;
+    display: flex;
+    align-items: center;
+    color: #333333;
+}
+
 #form1 {
     display: flex;
     flex-direction: row;
@@ -313,7 +323,7 @@ a:hover, a:active {
     position: absolute;
     width: 310px;
     height: 50px;
-    left: 600px;
+    left: 570px;
     top: 450px;
     border: 0.3px solid #3C4242;
     background: #FEF7FF;
@@ -330,7 +340,7 @@ a:hover, a:active {
     position: absolute;
     width: 310px;
     height: 50px;
-    left: 600px;
+    left: 570px;
     top: 530px;
     border: 0.3px solid #3C4242;
     background: #FEF7FF;
@@ -347,7 +357,7 @@ a:hover, a:active {
     position: absolute;
     width: 310px;
     height: 50px;
-    left: 945px;
+    left: 920px;
     top: 450px;
     border: 0.3px solid #3C4242;
     background: #FEF7FF;
@@ -364,7 +374,7 @@ a:hover, a:active {
     position: absolute;
     width: 310px;
     height: 50px;
-    left: 945px;
+    left: 920px;
     top: 530px;
     border: 0.3px solid #3C4242;
     border-radius: 8px;
@@ -375,8 +385,8 @@ a:hover, a:active {
     position: absolute;
     width: 198px;
     height: 19px;
-    left: 860px;
-    top: 680px;
+    left: 825px;
+    top: 670px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 100;
@@ -402,8 +412,8 @@ a:hover, a:active {
     position: absolute;
     width: 115px;
     height: 35px;
-    left: 869px;
-    top: 640px;
+    left: 835px;
+    top: 635px;
     background: #4277B8;
     font-weight: bold;
     border-radius: 8px;
@@ -621,7 +631,7 @@ a:hover, a:active {
     width: 620px;
     height: 50px;
     left: 600px;
-    top: 780px;
+    top: 765px;
     background: #4277B8;
     border-radius: 8px;
     color: white;
@@ -826,4 +836,72 @@ a:hover, a:active {
 
 .pb-3 {
     min-height: 100vh;
+<<<<<<< HEAD
+}
+
+.txtcart {
+    position: absolute;
+    width: 1255px;
+    height: 55px;
+    left: 0px;
+    top: 150px;
+    background: #303F82;
+    color: white;
+    font-weight: 500;
+}
+.txt1 {
+    position: absolute;
+    top: 15px;
+    left: 60px;
+    align-content:center;
+}
+.txt2 {
+    position: absolute;
+    top: 15px;
+    left: 400px;
+    align-content: center;
+}
+.txt3 {
+    position: absolute;
+    top: 15px;
+    left: 590px;
+    align-content: center;
+}
+.txt4 {
+    position: absolute;
+    top: 15px;
+    left: 740px;
+    align-content: center;
+}
+.txt5 {
+    position: absolute;
+    top: 15px;
+    left: 950px;
+    align-content: center;
+}
+.txt6 {
+    position: absolute;
+    top: 15px;
+    left: 1110px;
+    align-content: center;
+}
+
+
+.product {
+    position: relative;
+    background-color: #FEF7FF;
+    border: 0.5px solid #BEBCBD;
+    top: 205px;
+    height: 120px;
+    width: 1275px;
+}
+.total {
+    position: absolute;
+    width: 1255px;
+    height: 150px;
+    left: 0px;
+    top: 600px;
+    background: #EBE4E4;
+=======
+>>>>>>> c2ee16957cd9e88f65844a08a1447d7a457208db
 }
