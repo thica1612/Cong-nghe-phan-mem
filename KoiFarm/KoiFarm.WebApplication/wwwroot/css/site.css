@@ -632,3 +632,150 @@ a:hover, a:active {
     color: white;
     border: 0.3px solid #3C4242;
 }
+
+.banhang {
+    height: 790px; /* Thêm chiều cao mong muốn */
+}
+
+.ca1 {
+    position: relative;
+    width: 176px;
+    height: 350px;
+    background: #DAC8C8;
+    border: 1.0552px solid rgba(0, 22, 10, 0.1);
+    box-shadow: -27px 33px 33px rgba(0, 22, 10, 0.1);
+    border-radius: 30.9586px;
+    top: 20px;
+    left: 20px;
+}
+
+/* Blob */
+.blob {
+    position: absolute;
+    left: -3%;
+    top: 9.18%;
+    bottom: 123.71%;
+    background: #73ACCD;
+    width: 192px;
+    z-index: 1;
+}
+
+/* Button */
+.buttongia1 {
+    position: absolute;
+    width: 100px;
+    height: 36px;
+    left: 40px;
+    top: 266px;
+    background-color: #FF0303;
+    border-radius: 30.7768px;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+}
+
+    .buttongia1 a {
+        font-family: 'Anton', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 45px;
+        text-align: center;
+        text-align-last: center;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+/* Message Sent */
+.tenca {
+    position: absolute;
+    left: 22.72%;
+    /* right: 76.01%; */
+    top: 5.55%;
+    bottom: 96.4%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.29228px;
+    color: #060016;
+}
+
+
+/* How does one go about */
+.mieuta {
+    position: absolute;
+    left: 2%;
+    top: 145px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+    letter-spacing: 0.29228px;
+    color: #060016;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 90%;
+    min-width: 250px;
+    width: 80%;
+    height: auto;
+    max-height: 400px;
+    min-height: 100px;
+    box-sizing: border-box;
+}
+
+
+/* Image 4 */
+.imgca {
+    width: 200px; /* Đặt chiều rộng cố định cho khung */
+    height: 200px; /* Đặt chiều cao cố định cho khung */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .imgca img {
+        width: 100%;
+        height: auto;
+        object-fit: cover; /* Đảm bảo ảnh bao phủ toàn bộ khung chứa */
+        object-position: center; /* Canh giữa ảnh trong khung */
+        z-index: 2;
+    }
+
+.so-sanh {
+    position: absolute;
+    width: 94px;
+    height: 29px;
+    left: 40px;
+    top: 304px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 50;
+    font-size: 18px;
+    line-height: 35px;
+    text-align: center;
+}
+
+    .so-sanh a {
+        color: black;
+    }
+
+.ca2 {
+    position: relative;
+    width: 176px;
+    height: 350px;
+    background: #DAC8C8;
+    border: 1.0552px solid rgba(0, 22, 10, 0.1);
+    box-shadow: -27px 33px 33px rgba(0, 22, 10, 0.1);
+    border-radius: 30.9586px;
+    top: 40px;
+    left: 20px;
+}

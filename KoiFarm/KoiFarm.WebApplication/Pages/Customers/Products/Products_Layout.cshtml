@@ -7,107 +7,12 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/KoiFarm.WebApplication.styles.css" asp-append-version="true" />
-    <style>
-        /* Group 197 */
-        .group-197 {
-            position: relative; /* Để sử dụng với các phần tử bên trong */
-            width: 443px;
-            height: 776px;
-            background: #DAC8C8;
-            border: 1.0552px solid rgba(0, 22, 10, 0.1);
-            box-shadow: -33px 33px 33px rgba(0, 22, 10, 0.1);
-            border-radius: 54.9586px;
-        }
-
-        /* Blob */
-        .blob {
-            position: absolute;
-            left: 1%;
-            right: 74.05%;
-            top: 4.18%;
-            bottom: 85.71%;
-            background: #73ACCD;
-        }
-
-        /* Button */
-        .button {
-            position: absolute;
-            width: 261.64px; /* Độ rộng của nút */
-            height: 69.92px; /* Chiều cao của nút */
-            left: 96.49px;
-            top: 613.52px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: transparent; /* Nền trong suốt */
-            color: #FFFFFF;
-            font-family: 'Anton', sans-serif;
-            font-size: 30px;
-            line-height: 45px;
-            text-align: center;
-        }
-
-        /* Rectangle */
-        .rectangle {
-            position: absolute;
-            left: 0%;
-            right: 0.03%;
-            top: 0%;
-            bottom: 0.72%;
-            background: #FF0303;
-            border-radius: 30.7768px;
-        }
-
-        /* Message Sent */
-        .message-sent {
-            position: absolute;
-            left: 2.72%;
-            right: 76.01%;
-            top: 1.55%;
-            bottom: 96.4%;
-            font-family: 'Inter', sans-serif;
-            font-weight: 900;
-            font-size: 45px;
-            line-height: 54px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            letter-spacing: 0.29228px;
-            color: #060016;
-        }
-
-        /* How does one go about */
-        .how-does-one-go-abou {
-            position: absolute;
-            left: 7%;
-            right: 80.11%;
-            top: 15.16%;
-            bottom: 77.48%;
-            font-family: 'Inter', sans-serif;
-            font-weight: 700;
-            font-size: 22px;
-            line-height: 28px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            color: #060016;
-        }
-
-        /* Image 4 */
-        .img-4 {
-            position: absolute;
-            width: 165px;
-            height: 443px;
-            left: 0px;
-            top: 330px;
-            background: url(image.png);
-            transform: rotate(-90deg);
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+   
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-0">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <!--Logo-->
                 <a class="navbar-brand" style="margin-right: 90px;padding-left: 8px; margin-left: 8px;" asp-area="" asp-page="/Index">
@@ -130,7 +35,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" style="font-weight: bold;" asp-area="" asp-page="/Customers/Products/Products_View">SẢN PHẨM</a>
+                            <a class="nav-link" asp-area="" asp-page="/Customers/Products/Products_View">SẢN PHẨM</a>
                         </li>
 
                         <li class="nav-item">
@@ -141,7 +46,7 @@
                             <a class="nav-link" asp-area="" asp-page="/">KÝ GỬI</a>
                             <ul class="sub-menu">
                                 <li class="menu-item BUY">
-                                    <a href="/Customers/Consignment/Buy/Buy_View">KÝ GỬI NUÔI</a>
+                                    <a href="/Customers/Consignment/Buy/Buy_View">KÝ GỬI MUA</a>
                                 </li>
                                 <li class="menu-item Sell">
                                     <a href="/Customers/Consignment/Sell/Sell_View">KÝ GỬI BÁN</a>
@@ -150,7 +55,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-page="/Customers/Contact/Contact_View">LIÊN HỆ</a>
+                            <a class="nav-link" style="font-weight: bold;" asp-area="" asp-page="/Customers/Contact/Contact_View">LIÊN HỆ</a>
                         </li>
                     </ul>
 
@@ -177,114 +82,59 @@
     </header>
 
     <!--ban hang -->
-    <div class="banhang">
-        <div class="group197">
-            <style>
-
-                /* Để căn giữa group197 */
-                .banhang {
-                    display: flex;
-                    justify-content: center; /* Căn giữa theo chiều ngang */
-                    align-items: center; /* Căn giữa theo chiều dọc */
-                    height: calc(100vh - 150px); /* Chiều cao tùy chỉnh để căn giữa giữa header và footer */
-                }
-
-                /* Group 197 */
-                .group197 {
-                    position: relative; /* Để sử dụng với các phần tử bên trong */
-                    width: 150px; /* Chiều rộng của group197 */
-                    height: 300px; /* Chiều cao của group197 */
-                    background: #DAC8C8;
-                    border: 1px solid rgba(0, 22, 10, 0.1);
-                    border-radius: 5px;
-                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-                }
-
-                /* img4 */
-                .img4 {
-                    position: absolute;
-                    width: 80px; /* Kích thước hình ảnh */
-                    height: 200px; /* Chiều cao hình ảnh */
-                    left: 5px; /* Vị trí hình ảnh */
-                    top: 10px; /* Vị trí hình ảnh */
-                    background: url(image.png);
-                    transform: rotate(-90deg);
-                }
-
-
-                /* blood */
-                .blood {
-                    position: absolute;
-                    width: 250px; /* Kích thước blood */
-                    height: 170px; /* Chiều cao blood */
-                    left: 5px; /* Vị trí blood */
-                    top: 150px; /* Vị trí blood */
-                }
-
-                /* button */
-                .button {
-                    position: absolute;
-                    width: 100px; /* Kích thước button */
-                    height: 25px; /* Chiều cao button */
-                    left: 25px; /* Vị trí button */
-                    top: 220px; /* Vị trí button */
-                    background: #FF0303; /* Màu nền của button */
-                    border-radius: 10px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    color: white;
-                    font-family: 'Anton';
-                    font-size: 12px; /* Kích thước chữ */
-                }
-
-                /* Messenger Sent */
-                .Messenger {
-                    position: absolute;
-                    left: 5%;
-                    right: 5%;
-                    top: 5px; /* Vị trí Messenger */
-                    font-family: 'Inter';
-                    font-weight: 900;
-                    font-size: 12px; /* Kích thước chữ */
-                    color: #060016;
-                }
-
-                /* How does one go about */
-                .Howdoesonegoabout {
-                    position: absolute;
-                    left: 5%;
-                    right: 5%;
-                    top: 25px; /* Vị trí Howdoesonegoabout */
-                    font-family: 'Inter';
-                    font-weight: 700;
-                    font-size: 10px; /* Kích thước chữ */
-                    color: #060016;
-                }
-            </style>
-
-            <div class="img4">
-            </div>
-            <div class="device"></div>
-            <div class="blood">
-                <img src="~/images/Blob.png" style="width: 100%; height: auto;" />
-
-            </div>
-            <div class="button">
-                800
-            </div>
-            <div class="Messenger Sent">Message Sent</div>
-            <div class="Howdoesonegoabout">How does one go about</div>
-        </div>
-
-
-
-
-    </div>
+    
+   
     <div class="container-fluid">
         @RenderBody()
-        <main role="main">
+        <main role="main" class="pb-3">
+            <div class="banhang">
+                <div class="ca1">
+                    <div class="imgca">
+                        <img src="~/images/01.png" style="width: 100%; height: auto;" />
+                    </div>
+                    <div class="blob">
+                        <img src="~/images/Blob(1).png" style="width: 100%; height: auto;" />
+                    </div>
+                    <div class="buttongia1">
+                        <a href="link_to_another_page.html">800</a>
+                    </div>
+                    <div class="tenca">tencadb</div>
+                    <div class="mieuta">
+                        Nguồn gốc: Danichi <br>
+                        Giới tính: Koi cái <br>
+                        Năm sinh: 2020 <br>
+                        Kích thước: 70 cm <br>
+                        Giống: Showa
+                    </div>
+                   <div class="so-sanh"> <a href="link_to_another_page.html">  <img src="~/images" />So sánh</a></div>
+                        
+                  
+                </div>
+                <div class="ca2">
+                    <div class="imgca">
+                        <img src="~/images/02.png" style="width: 100%; height: auto;" />
+                    </div>
+                    <div class="blob">
+                        <img src="~/images/Blob(1).png" style="width: 100%; height: auto;" />
+                    </div>
+                    <div class="buttongia1">
+                        <a href="link_to_another_page.html">1200</a>
+                    </div>
+                    <div class="tenca">tencadb</div>
+                    <div class="mieuta">
+                        Nguồn gốc: Danichi <br>
+                        Giới tính: Koi cái <br>
+                        Năm sinh: 2020 <br>
+                        Kích thước: 70 cm <br>
+                        Giống: Showa
+                    </div>
+                   <div class="so-sanh"> <a href="link_to_another_page.html">So sánh</a></div>
+                        
+                  
+                </div>
+            </div>
 
+            
         </main>
     </div>
 
@@ -294,7 +144,6 @@
             &copy; 2024 - KoiFarm.WebApplication - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
     </footer>
-
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
@@ -302,4 +151,6 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+
+
 
