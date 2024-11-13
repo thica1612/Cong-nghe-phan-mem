@@ -649,10 +649,14 @@ a:hover, a:active {
 }
 
 .banhang {
-    height: 790px; /* Thêm chiều cao mong muốn */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Khoảng cách giữa các khối */
+    justify-content: center; /* Căn giữa các khối */
 }
 
-.ca1 {
+/* Lớp chung cho ca1 và ca2 */
+.ca {
     position: relative;
     width: 176px;
     height: 350px;
@@ -660,9 +664,9 @@ a:hover, a:active {
     border: 1.0552px solid rgba(0, 22, 10, 0.1);
     box-shadow: -27px 33px 33px rgba(0, 22, 10, 0.1);
     border-radius: 30.9586px;
-    top: 20px;
-    left: 20px;
+    margin: 20px 60px;
 }
+
 
 /* Blob */
 .blob {
@@ -701,6 +705,7 @@ a:hover, a:active {
         display: flex;
         align-items: center;
         justify-content: center;
+        text-decoration: none;
     }
 
 
@@ -755,6 +760,7 @@ a:hover, a:active {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: -6px;
 }
 
     .imgca img {
@@ -783,14 +789,41 @@ a:hover, a:active {
         color: black;
     }
 
-.ca2 {
-    position: relative;
-    width: 176px;
-    height: 350px;
-    background: #DAC8C8;
-    border: 1.0552px solid rgba(0, 22, 10, 0.1);
-    box-shadow: -27px 33px 33px rgba(0, 22, 10, 0.1);
-    border-radius: 30.9586px;
-    top: 40px;
-    left: 20px;
+    .so-sanh img {
+        width: 20px; /* Điều chỉnh kích thước theo ý muốn */
+        height: auto; /* Giữ tỉ lệ hình ảnh */
+        vertical-align: middle; /* Canh giữa với văn bản */
+    }
+
+.xemthem {
+    box-sizing: border-box;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    gap: 8px;
+    position: absolute;
+    width: 75px;
+    height: 25px;
+    left: 50%; /* Đặt vị trí phần tử ở giữa theo chiều ngang */
+    top: 1339px;
+    background: #2C2C2C;
+    border: 1px solid #2C2C2C;
+    border-radius: 8px;
+    transform: translateX(-50%); /* Điều chỉnh lại vị trí để phần tử căn giữa chính xác */
+}
+
+    .xemthem a {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 8px;
+        line-height: 100%;
+        color: #F5F5F5;
+    }
+
+.pb-3 {
+    min-height: 100vh;
 }
