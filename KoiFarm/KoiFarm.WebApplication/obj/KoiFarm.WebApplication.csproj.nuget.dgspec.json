@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "H:\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\KoiFarm.WebApplication.csproj": {}
+    "D:\\Kì1-Năm2\\CNPM\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\KoiFarm.WebApplication.csproj": {}
   },
   "projects": {
-    "H:\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Repositories\\KoiFarm.Repositories.csproj": {
+    "D:\\Kì1-Năm2\\CNPM\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Repositories\\KoiFarm.Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Repositories\\KoiFarm.Repositories.csproj",
+        "projectUniqueName": "D:\\Kì1-Năm2\\CNPM\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Repositories\\KoiFarm.Repositories.csproj",
         "projectName": "KoiFarm.Repositories",
-        "projectPath": "H:\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Repositories\\KoiFarm.Repositories.csproj",
-        "packagesPath": "C:\\Users\\MSI HAO\\.nuget\\packages\\",
-        "outputPath": "H:\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Repositories\\obj\\",
+        "projectPath": "D:\\Kì1-Năm2\\CNPM\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Repositories\\KoiFarm.Repositories.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Kì1-Năm2\\CNPM\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Repositories\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\MSI HAO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -76,21 +77,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "H:\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Services\\KoiFarm.Services.csproj": {
+    "D:\\Kì1-Năm2\\CNPM\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Services\\KoiFarm.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Services\\KoiFarm.Services.csproj",
+        "projectUniqueName": "D:\\Kì1-Năm2\\CNPM\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Services\\KoiFarm.Services.csproj",
         "projectName": "KoiFarm.Services",
-        "projectPath": "H:\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Services\\KoiFarm.Services.csproj",
-        "packagesPath": "C:\\Users\\MSI HAO\\.nuget\\packages\\",
-        "outputPath": "H:\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Services\\obj\\",
+        "projectPath": "D:\\Kì1-Năm2\\CNPM\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Services\\KoiFarm.Services.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Kì1-Năm2\\CNPM\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\MSI HAO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -98,14 +99,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "H:\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Repositories\\KoiFarm.Repositories.csproj": {
-                "projectPath": "H:\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Repositories\\KoiFarm.Repositories.csproj"
+              "D:\\Kì1-Năm2\\CNPM\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Repositories\\KoiFarm.Repositories.csproj": {
+                "projectPath": "D:\\Kì1-Năm2\\CNPM\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Repositories\\KoiFarm.Repositories.csproj"
               }
             }
           }
@@ -140,21 +142,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "H:\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\KoiFarm.WebApplication.csproj": {
+    "D:\\Kì1-Năm2\\CNPM\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\KoiFarm.WebApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\KoiFarm.WebApplication.csproj",
+        "projectUniqueName": "D:\\Kì1-Năm2\\CNPM\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\KoiFarm.WebApplication.csproj",
         "projectName": "KoiFarm.WebApplication",
-        "projectPath": "H:\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\KoiFarm.WebApplication.csproj",
-        "packagesPath": "C:\\Users\\MSI HAO\\.nuget\\packages\\",
-        "outputPath": "H:\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\obj\\",
+        "projectPath": "D:\\Kì1-Năm2\\CNPM\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\KoiFarm.WebApplication.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Kì1-Năm2\\CNPM\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\MSI HAO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -162,14 +164,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "H:\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Services\\KoiFarm.Services.csproj": {
-                "projectPath": "H:\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Services\\KoiFarm.Services.csproj"
+              "D:\\Kì1-Năm2\\CNPM\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Services\\KoiFarm.Services.csproj": {
+                "projectPath": "D:\\Kì1-Năm2\\CNPM\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Services\\KoiFarm.Services.csproj"
               }
             }
           }
@@ -231,7 +234,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
