@@ -21,14 +21,14 @@ namespace KoiFarm.WebApplication.Pages.Certifications
 
         public Certification Certification { get; set; } = default!;
 
-        public async Task<IActionResult> OnGetAsync(string CertificationID)
+        public async Task<IActionResult> OnGetAsync(string id)
         {
-            if (CertificationID == null)
+            if (id == null)
             {
                 return NotFound();
             }
 
-            var certification = await _service.GetCertificationByID(CertificationID);
+            var certification = await _service.GetCertificationByID(id);
             if (certification == null)
             {
                 return NotFound();

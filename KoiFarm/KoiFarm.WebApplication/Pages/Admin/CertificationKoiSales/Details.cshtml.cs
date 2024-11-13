@@ -21,14 +21,14 @@ namespace KoiFarm.WebApplication.Pages.CertificationKoiSales
 
         public CertificationKoiSale CertificationKoiSale { get; set; } = default!;
 
-        public async Task<IActionResult> OnGetAsync(string CertificationKSID)
+        public async Task<IActionResult> OnGetAsync(string id)
         {
-            if (CertificationKSID == null)
+            if (id == null)
             {
                 return NotFound();
             }
 
-            var certificationkoisale = await _service.GetCertificationKoiSaleByID(CertificationKSID);
+            var certificationkoisale = await _service.GetCertificationKoiSaleByID(id);
             if (certificationkoisale == null)
             {
                 return NotFound();

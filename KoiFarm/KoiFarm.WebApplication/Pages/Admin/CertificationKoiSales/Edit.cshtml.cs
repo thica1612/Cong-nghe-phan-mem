@@ -14,6 +14,7 @@ namespace KoiFarm.WebApplication.Pages.CertificationKoiSales
     public class EditModel : PageModel
     {
         private readonly ICertificationKoiSaleService _service;
+        private readonly IKoiSaleService _koiSaleService;
 
         public EditModel(ICertificationKoiSaleService service)
         {
@@ -23,20 +24,19 @@ namespace KoiFarm.WebApplication.Pages.CertificationKoiSales
         [BindProperty]
         public CertificationKoiSale CertificationKoiSale { get; set; } = default!;
 
-        public async Task<IActionResult> OnGetAsync(string CertificationKSID)
+        public async Task<IActionResult> OnGetAsync(string id)
         {
-            if (CertificationKSID == null)
+            if (id == null)
             {
                 return NotFound();
             }
 
-            var certificationkoisale =  await _service.GetCertificationKoiSaleByID(CertificationKSID);
+            var certificationkoisale =  await _service.GetCertificationKoiSaleByID(id);
             if (certificationkoisale == null)
             {
                 return NotFound();
             }
             CertificationKoiSale = certificationkoisale;
-            ViewData["KoiSaleId"] = new SelectList((System.Collections.IEnumerable)_service.GetCertificationKoiSaleByID(CertificationKSID), "KoiSaleId", "KoiSaleId");
             return Page();
         }
 
@@ -48,7 +48,15 @@ namespace KoiFarm.WebApplication.Pages.CertificationKoiSales
             {
                 return Page();
             }
-            _service.UpdCertificationKoiSale(CertificationKoiSale);
+
+            var isUpdated = _service.UpdCertificationKoiSale(CertificationKoiSale);
+
+            if (!isUpdated)
+            {
+                ModelState.AddModelError(string.Empty, "Chỉnh sửa không thành công");
+                return Page();
+            }
+
             return RedirectToPage("./Index");
         }
     }

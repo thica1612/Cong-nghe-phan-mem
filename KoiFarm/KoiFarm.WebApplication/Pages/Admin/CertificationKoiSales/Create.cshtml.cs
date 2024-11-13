@@ -19,14 +19,14 @@ namespace KoiFarm.WebApplication.Pages.CertificationKoiSales
             _service = service;
         }
 
-        public IActionResult OnGet(string CertificationKSID)
+        public IActionResult OnGet(string id)
         {
-            if (string.IsNullOrEmpty(CertificationKSID))
+            if (string.IsNullOrEmpty(id))
             {
                 ModelState.AddModelError("", "CertificationKSID is required.");
                 return Page();
             }
-            ViewData["KoiSaleId"] = new SelectList((System.Collections.IEnumerable)_service.GetCertificationKoiSaleByID(CertificationKSID), "KoiSaleId", "KoiSaleId");
+            ViewData["KoiSaleId"] = new SelectList((System.Collections.IEnumerable)_service.GetCertificationKoiSaleByID(id), "KoiSaleId", "KoiSaleId");
             return Page();
         }
 

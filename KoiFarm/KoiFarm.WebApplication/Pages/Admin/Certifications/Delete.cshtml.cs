@@ -22,14 +22,14 @@ namespace KoiFarm.WebApplication.Pages.Certifications
         [BindProperty]
         public Certification Certification { get; set; } = default!;
 
-        public async Task<IActionResult> OnGetAsync(string CertificationID)
+        public async Task<IActionResult> OnGetAsync(string id)
         {
-            if (CertificationID == null)
+            if (id == null)
             {
                 return NotFound();
             }
 
-            var certification = await _service.GetCertificationByID(CertificationID);
+            var certification = await _service.GetCertificationByID(id);
 
             if (certification == null)
             {
@@ -42,9 +42,9 @@ namespace KoiFarm.WebApplication.Pages.Certifications
             return Page();
         }
 
-        public async Task<IActionResult> OnPostAsync(string CertificationID)
+        public async Task<IActionResult> OnPostAsync(string id)
         {
-            if (CertificationID == null)
+            if (id == null)
             {
                 return NotFound();
             }

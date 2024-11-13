@@ -23,20 +23,19 @@ namespace KoiFarm.WebApplication.Pages.Certifications
         [BindProperty]
         public Certification Certification { get; set; } = default!;
 
-        public async Task<IActionResult> OnGetAsync(string CertificationID)
+        public async Task<IActionResult> OnGetAsync(string id)
         {
-            if (CertificationID == null)
+            if (id == null)
             {
                 return NotFound();
             }
 
-            var certification = await _service.GetCertificationByID(CertificationID);
+            var certification = await _service.GetCertificationByID(id);
             if (certification == null)
             {
                 return NotFound();
             }
             Certification = certification;
-            ViewData["KoiId"] = new SelectList((System.Collections.IEnumerable)_service.GetCertificationByID(CertificationID), "KoiId", "KoiId");
             return Page();
         }
 
@@ -48,7 +47,15 @@ namespace KoiFarm.WebApplication.Pages.Certifications
             {
                 return Page();
             }
-            _service.UpdCertification(Certification);
+
+            var isUpdated = _service.UpdCertification(Certification);
+
+            if (!isUpdated)
+            {
+                ModelState.AddModelError(string.Empty, "Chỉnh sửa không thành công");
+                return Page();
+            }
+
             return RedirectToPage("./Index");
         }
     }
