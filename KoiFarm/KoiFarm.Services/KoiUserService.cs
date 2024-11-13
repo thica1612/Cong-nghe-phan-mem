@@ -22,7 +22,7 @@ namespace KoiFarm.Services
             return _repository.AddKoiUser(account);
         }
 
-        public bool DelKoiUser(int Id)
+        public bool DelKoiUser(string Id)
         {
             return _repository.DelKoiUser(Id);
         }
@@ -32,7 +32,7 @@ namespace KoiFarm.Services
             return _repository.DelKoiUser(account);
         }
 
-        public Task<KoiUser> GetKoiUserById(int Id)
+        public Task<KoiUser> GetKoiUserById(string Id)
         {
             return _repository.GetKoiUserById(Id);
         }

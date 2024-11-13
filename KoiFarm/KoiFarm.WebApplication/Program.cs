@@ -68,6 +68,14 @@ builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddScoped<IOrderDetailRepository, OrderDetailRepository>();
 builder.Services.AddScoped<IOrderDetailService, OrderDetailService>();
+
+
+//DI Repository
+builder.Services.AddScoped<IDashboardDataRepository, DashboardDataRepository>();
+//DI Services
+builder.Services.AddScoped<IDashboardDataService, DashboardDataService>();
+
+
 var app = builder.Build();
 
 

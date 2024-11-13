@@ -10,10 +10,10 @@ namespace KoiFarm.Services.Interfaces
     public interface IKoiUserService
     {
         Task<List<KoiUser>> KoiUsers();
-        Boolean DelKoiUser(int Id);
+        Boolean DelKoiUser(string Id);
         Boolean DelKoiUser(KoiUser account);
         Boolean AddKoiUser(KoiUser account);
         Boolean UpKoiUser(KoiUser account);
-        Task<KoiUser> GetKoiUserById(int Id);
+        Task<KoiUser> GetKoiUserById(string Id);
     }
 }

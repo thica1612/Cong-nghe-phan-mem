@@ -1,0 +1,43 @@
+﻿@page
+@model KoiFarm.WebApplication.Pages.Admin.DashboardData.CreateModel
+
+<h4>DashboardDatum</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="DashboardDatum.ReportId" class="control-label"></label>
+                <input asp-for="DashboardDatum.ReportId" class="form-control" />
+                <span asp-validation-for="DashboardDatum.ReportId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DashboardDatum.MetricName" class="control-label"></label>
+                <input asp-for="DashboardDatum.MetricName" class="form-control" />
+                <span asp-validation-for="DashboardDatum.MetricName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DashboardDatum.MetricValue" class="control-label"></label>
+                <input asp-for="DashboardDatum.MetricValue" class="form-control" />
+                <span asp-validation-for="DashboardDatum.MetricValue" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DashboardDatum.ReportDate" class="control-label"></label>
+                <input asp-for="DashboardDatum.ReportDate" class="form-control" />
+                <span asp-validation-for="DashboardDatum.ReportDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

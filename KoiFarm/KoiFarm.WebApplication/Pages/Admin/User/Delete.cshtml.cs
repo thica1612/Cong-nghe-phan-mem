@@ -17,7 +17,7 @@ namespace KoiFarm.WebApplication.Pages.User
 
         public KoiUser User { get; set; }
 
-        public async Task<IActionResult> OnGetAsync(int id)
+        public async Task<IActionResult> OnGetAsync(string id)
         {
             User = await _userService.GetKoiUserById(id);
             if (User == null)
@@ -27,7 +27,7 @@ namespace KoiFarm.WebApplication.Pages.User
             return Page();
         }
 
-        public async Task<IActionResult> OnPostAsync(int id)
+        public async Task<IActionResult> OnPostAsync(string id)
         {
             bool result = _userService.DelKoiUser(User);
             if (result)

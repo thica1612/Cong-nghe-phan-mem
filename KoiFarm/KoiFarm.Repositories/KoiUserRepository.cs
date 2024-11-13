@@ -11,12 +11,12 @@ namespace KoiFarm.Repositories
 {
     public class KoiUserRepository : IKoiUserRepository
     {
-        private readonly KoiFarmContext _dbContext;
-        private KoiFarmContext dbContext;
+        private readonly KoiFarmContext _context;
+        private KoiFarmContext context;
 
-        public KoiUserRepository(KoiFarmContext dbContext)
+        public KoiUserRepository(KoiFarmContext context)
         {
-            _dbContext = dbContext ?? throw new ArgumentNullException(nameof(dbContext));
+            _context = context; 
         }
 
 
@@ -24,8 +24,8 @@ namespace KoiFarm.Repositories
         {
             try
             {
-                _dbContext.KoiUsers.Add(account);
-                _dbContext.SaveChanges();
+                _context.KoiUsers.Add(account);
+                _context.SaveChanges();
                 return true;
             }
             catch (Exception ex)
@@ -34,15 +34,15 @@ namespace KoiFarm.Repositories
             }
         }
 
-        public bool DelKoiUser(int Id)
+        public bool DelKoiUser(string Id)
         {
             try
             {
-                var objDel = _dbContext.KoiUsers.Where(p => p.UserId.Equals(Id)).FirstOrDefault();
+                var objDel = _context.KoiUsers.Where(p => p.UserId.Equals(Id)).FirstOrDefault();
                 if (objDel != null)
                 {
-                    _dbContext.KoiUsers.Remove(objDel);
-                    _dbContext.SaveChanges();
+                    _context.KoiUsers.Remove(objDel);
+                    _context.SaveChanges();
                     return true;
                 }
                 return false;
@@ -57,8 +57,8 @@ namespace KoiFarm.Repositories
         {
             try
             {
-                _dbContext.KoiUsers.Remove(account);
-                _dbContext.SaveChanges();
+                _context.KoiUsers.Remove(account);
+                _context.SaveChanges();
                 return true;
             }
             catch (Exception ex)
@@ -69,19 +69,19 @@ namespace KoiFarm.Repositories
 
         public async Task<List<KoiUser>> GetAllKoiUser()
         {
-            return await _dbContext.KoiUsers.ToListAsync();
+            return await _context.KoiUsers.ToListAsync();
         }
 
-        public async Task<KoiUser> GetKoiUserById(int Id)
+        public async Task<KoiUser> GetKoiUserById(string Id)
         {
-            return await _dbContext.KoiUsers.Where(p => p.UserId.Equals(Id)).FirstOrDefaultAsync();
+            return await _context.KoiUsers.Where(p => p.UserId.Equals(Id)).FirstOrDefaultAsync();
         }
 
         public bool UpKoiUser(KoiUser account)
         {
             try
             {
-                _dbContext.KoiUsers.Update(account);
+                _context.KoiUsers.Update(account);
                 return true;
             }
             catch (Exception ex)
