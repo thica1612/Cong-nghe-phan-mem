@@ -7,10 +7,14 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/KoiFarm.WebApplication.styles.css" asp-append-version="true" />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-0">
             <div class="container-fluid">
                 <!--Logo-->
                 <a class="navbar-brand" style="margin-right: 90px;padding-left: 8px; margin-left: 8px;" asp-area="" asp-page="/Index">
@@ -44,7 +48,7 @@
                             <a class="nav-link" style="font-weight: bold;" asp-area="" asp-page="/">KÝ GỬI</a>
                             <ul class="sub-menu">
                                 <li class="menu-item BUY">
-                                    <a href="/Customers/Consignment/Buy/Buy_View">KÝ GỬI MUA</a>
+                                    <a href="/Customers/Consignment/Buy/Buy_View">KÝ GỬI NUÔI</a>
                                 </li>
                                 <li class="menu-item Sell">
                                     <a href="/Customers/Consignment/Sell/Sell_View">KÝ GỬI BÁN</a>
@@ -71,6 +75,43 @@
     <div class="container-fluid">
         @RenderBody()
         <main role="main">
+            <div class="hinhca">
+                <img src="~/images/21.png" />
+            </div>
+            <div class="kygui">THÔNG TIN KÝ GỬI BÁN</div>
+            <div class="txtkygui1">
+                <span>Upload giấy chứng nhận của cá</span>
+                <button class="btnfile1">
+                    Chọn file<i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+            <div class="txtkygui2">
+                <span>Upload hình ảnh của cá</span>
+                <button class="btnfile2">
+                    Chọn file<i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+            <ul class="nhap">
+                <li>
+                    <span>Giới tính</span>
+                    <input type="text" id="gioitinh" />
+                </li>
+                <li>
+                    <span>Năm sinh</span>
+                    <input type="text" id="namsinh" />
+                    </li>
+                <li>
+                    <span>Kích thước (cm)</span>
+                    <input type="text" id="kichthuoc" />
+                    </li>
+                <li>
+                    <span>Giá muốn bán (VNĐ)</span>
+                    <input type="text" id="giaban" />
+                    </li>
+            </ul>
+            <button class="submitsell">
+                GỬI THÔNG TIN 
+            </button>
         </main>
     </div>
 

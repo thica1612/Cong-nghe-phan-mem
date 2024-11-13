@@ -17,6 +17,7 @@ html {
   min-height: 100%;
 }
 
+
 body {
     background-color: #FEF7FF;
     margin-bottom: 60px;
@@ -407,6 +408,7 @@ a:hover, a:active {
 
 /* Hiển thị danh sách khi rê chuột vào KÝ GỬI */
 .nav-item:hover .sub-menu {
+    z-index: 10;
     display: block;
 }
 
@@ -429,3 +431,164 @@ a:hover, a:active {
         }
 
 
+.kygui {
+    position: absolute;
+    height: 60px;
+    right: 155px;
+    top: 160px;
+    font-family: 'Anton', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 49px;
+    line-height: 98px;
+    display: flex;
+    align-items: center;
+    color: #333333;
+    z-index: 1;
+}
+
+.txtkygui1 {
+    font-size: 13px;
+    position: absolute;
+    width: 262px;
+    height: 21px;
+    left: 600px;
+    top: 290px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px;
+    /* identical to box height */
+    letter-spacing: 0.02em;
+    color: #3C4242;
+}
+    .txtkygui1 .btnfile1 {
+        font-weight: 100;
+        position: absolute;
+        font-size: 13px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px 20px;
+        gap: 10px;
+        width: 115px;
+        height: 30px;
+        background: #4277B8;
+        border-radius: 5px;
+        color: white;
+        border: 0.3px solid #4277B8;
+        top: 25px
+    }
+
+
+.txtkygui2 {
+    font-size: 13px;
+    position: absolute;
+    width: 262px;
+    height: 21px;
+    left: 600px;
+    top: 360px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px;
+    /* identical to box height */
+    letter-spacing: 0.02em;
+    color: #3C4242;
+}
+
+    .txtkygui2 .btnfile2 {
+        font-weight: 100;
+        position: absolute;
+        font-size: 13px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px 20px;
+        gap: 10px;
+        width: 115px;
+        height: 30px;
+        background: #4277B8;
+        border-radius: 5px;
+        color: white;
+        border: 0.3px solid #4277B8;
+        top: 25px
+    }
+
+
+
+.nhap {
+    list-style-type: none;
+    font-size: 13px;
+    position: absolute;
+    width: 262px;
+    height: 21px;
+    left: 570px;
+    top: 435px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px;
+    /* identical to box height */
+    letter-spacing: 0.02em;
+    color: #3C4242;
+}
+.nhap li {
+    margin-bottom: 60px;
+}
+#gioitinh {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 20px;
+    gap: 12px;
+    position: absolute;
+    width: 145px;
+    height: 40px;
+    border: 0.3px solid #3C4242;
+    background: #FEF7FF;
+    border-radius: 8px;
+}
+#namsinh {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 20px;
+    gap: 12px;
+    position: absolute;
+    width: 145px;
+    height: 40px;
+    border: 0.3px solid #3C4242;
+    background: #FEF7FF;
+    border-radius: 8px;
+}
+#kichthuoc {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 20px;
+    gap: 12px;
+    position: absolute;
+    width: 145px;
+    height: 40px;
+    border: 0.3px solid #3C4242;
+    background: #FEF7FF;
+    border-radius: 8px;
+}
+#giaban {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 20px;
+    gap: 12px;
+    position: absolute;
+    width: 215px;
+    height: 40px;
+    border: 0.3px solid #3C4242;
+    background: #FEF7FF;
+    border-radius: 8px;
+}
