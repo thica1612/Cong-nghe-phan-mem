@@ -8,7 +8,7 @@ namespace KoiFarm.Services.Interfaces
 {
     public interface IKoiService
     {
-        Task<List<Koi>> Kois();
+        Task<List<Koi>> KoiSales();
         Boolean DelKoi(String KoiID);
         Boolean DeleteKoi(Koi koi);
         Boolean AddKoi(Koi koi);

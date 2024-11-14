@@ -5,6 +5,29 @@
     Layout = "_Home";
 }
 
-<div>
-    <img src="~/images/10.png" style="width: 100%; height: auto;" />
+<div class="product-grid">
+    @foreach (var koi in Model.KoiSale.Take(9))
+    {
+        <div class="ca">
+            <div class="imgca">
+                <img src="@koi.KoiImageKoiSale" style="width: 100%; height: auto;" alt="Ảnh của @koi.KoiSaleName" />
+            </div>
+            <div class="blob">
+                <img src="~/images/Blob(1).png" style="width: 100%; height: auto;" alt="Ảnh blob" />
+            </div>
+            <div class="buttongia1">
+                Giá @koi.KoiSalePrice
+            </div>
+            <div class="tenca">@koi.KoiSaleName</div>
+            <div class="mieuta">
+                Nguồn gốc: @koi.KoiSaleOrigin <br>
+                Giới tính: @koi.KoiSaleGender <br>
+                Năm sinh: @koi.KoiSaleYear <br>
+                Kích thước: @koi.KoiSaleSize cm <br>
+            </div>
+            <div class="so-sanh">
+                <img src="~/images/iconplus.png" /> So sánh
+            </div>
+        </div>
+    }
 </div>

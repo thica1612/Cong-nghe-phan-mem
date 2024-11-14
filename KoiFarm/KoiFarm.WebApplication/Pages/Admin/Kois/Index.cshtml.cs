@@ -23,7 +23,7 @@ namespace KoiFarm.WebApplication.Pages.Kois
 
         public async Task OnGetAsync()
         {
-            Koi = await _service.Kois();
+            Koi = await _service.KoiSales();
         }
     }
 }
