@@ -4,8 +4,10 @@ using KoiFarm.Repositories.Entities;
 using KoiFarm.Repositories.Interfaces;
 using KoiFarm.Services;
 using KoiFarm.Services.Interfaces;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Options;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -77,6 +79,8 @@ builder.Services.AddScoped<IDashboardDataRepository, DashboardDataRepository>();
 builder.Services.AddScoped<IDashboardDataService, DashboardDataService>();
 
 
+//builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<KoiFarmContext>().AddDefaultTokenProviders();
+
 var app = builder.Build();
 
 
@@ -94,13 +98,12 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 
 
 
-
-
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapRazorPages();
