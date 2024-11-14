@@ -30,36 +30,36 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-page="Index">TRANG CHỦ</a>
+                            <a class="nav-link" asp-area="" asp-page="/Index">TRANG CHỦ</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-page="AboutUs">GIỚI THIỆU</a>
+                            <a class="nav-link" asp-area="" asp-page="/Customer/AboutUs">GIỚI THIỆU</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-page="Product">SẢN PHẨM</a>
+                            <a class="nav-link" asp-area="" asp-page="/Customer/Product">SẢN PHẨM</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-page="Sale">KHUYẾN MÃI</a>
+                            <a class="nav-link" asp-area="" asp-page="/Customer/Sale">KHUYẾN MÃI</a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-page="/">KÝ GỬI</a>
                             <ul class="sub-menu">
                                 <li class="menu-item BUY">
-                                    <a asp-page="FeedConsign">KÝ GỬI NUÔI</a>
+                                    <a asp-page="/Customer/FeedConsign">KÝ GỬI NUÔI</a>
                                 </li>
                                 <li class="menu-item Sell">
-                                    <a asp-page="SellConsign">KÝ GỬI BÁN</a>
+                                    <a asp-page="/Customer/SellConsign">KÝ GỬI BÁN</a>
                                 </li>
                             </ul>
                         </li>
 
 
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-page="Contact">LIÊN HỆ</a>
+                            <a class="nav-link" asp-area="" asp-page="/Customer/Contact">LIÊN HỆ</a>
                         </li>
                     </ul>
 
@@ -70,17 +70,17 @@
                     </div>
 
                     <!--Cart-->
-                    <a class="cart" asp-page="Cart">
+                    <a class="cart" asp-page="/Customer/Cart">
                         <img src="~/images/Cart.png" />
                     </a>
 
                     <!--Sign in, sign up-->
-                    <form asp-page="SignIn">
+                    <form asp-page="/Customer/SignIn">
                         <button class="dnhap">
                             Đăng nhập
                         </button>
                     </form>
-                    <form asp-page="SignUp">
+                    <form asp-page="/Customer/SignUp">
                         <button class="dky">
                             Đăng ký
                         </button>

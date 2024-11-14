@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KoiFarm.WebApplication", "KoiFarm.WebApplication\KoiFarm.WebApplication.csproj", "{661AF498-FB88-4193-A684-03063C34040E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KoiFarm.WebApplication", "KoiFarm.WebApplication\KoiFarm.WebApplication.csproj", "{661AF498-FB88-4193-A684-03063C34040E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KoiFarm.Repositories", "KoiFarm.Repositories\KoiFarm.Repositories.csproj", "{2ECB8FAA-E78C-4538-8F66-5F6D4295C9F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KoiFarm.Repositories", "KoiFarm.Repositories\KoiFarm.Repositories.csproj", "{2ECB8FAA-E78C-4538-8F66-5F6D4295C9F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KoiFarm.Services", "KoiFarm.Services\KoiFarm.Services.csproj", "{439C5B1E-912E-4F25-9F73-4C623C61C7CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KoiFarm.Services", "KoiFarm.Services\KoiFarm.Services.csproj", "{439C5B1E-912E-4F25-9F73-4C623C61C7CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

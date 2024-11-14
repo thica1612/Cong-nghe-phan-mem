@@ -1,0 +1,42 @@
+﻿@page
+@model KoiFarm.WebApplication.Pages.FeedConsignModel
+@{
+    ViewData["Title"] = "Ký gửi nuôi";
+    Layout = "_Home";
+}
+
+<div>
+    <div class="hinhca">
+        <img src="~/images/22.png" />
+    </div>
+    <div class="kygui">THÔNG TIN KÝ GỬI NUÔI</div>
+    <div class="txtkygui1">
+        <span>Upload giấy chứng nhận của cá</span>
+        <button class="btnfile1">
+            Chọn file<i class="fas fa-arrow-right"></i>
+        </button>
+    </div>
+    <div class="txtkygui2">
+        <span>Upload hình ảnh của cá</span>
+        <button class="btnfile2">
+            Chọn file<i class="fas fa-arrow-right"></i>
+        </button>
+    </div>
+    <ul class="nhap">
+        <li>
+            <span>Giới tính</span>
+            <input type="text" id="gioitinh" />
+        </li>
+        <li>
+            <span>Năm sinh</span>
+            <input type="text" id="namsinh" />
+        </li>
+        <li>
+            <span>Kích thước (cm)</span>
+            <input type="text" id="kichthuoc" />
+        </li>
+    </ul>
+    <button class="submitbuy" type="submit">
+        GỬI THÔNG TIN
+    </button>
+</div>

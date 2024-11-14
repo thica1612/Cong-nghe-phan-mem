@@ -7,6 +7,7 @@ using KoiFarm.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -89,6 +90,11 @@ if (!app.Environment.IsDevelopment())
 }
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+
+
+
+
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

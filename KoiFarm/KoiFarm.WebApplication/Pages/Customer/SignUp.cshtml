@@ -1,9 +1,9 @@
 ﻿@page
+@model KoiFarm.WebApplication.Pages.SignUpModel
 @{
     ViewData["Title"] = "Đăng ký";
     Layout = "_Sign";
 }
-
 
 <div>
     <div class="hinhca">
@@ -18,12 +18,12 @@
         <input type="text" id="form2" placeholder="Email" />
         <input type="password" id="password1" placeholder="Mật khẩu" />
         <input type="password" id="password2" placeholder="Xác nhận mật khẩu" />
-        <button class="btndky">
+        <button class="btndky" type="submit">
             Đăng ký
         </button>
         <div class="signin-link">
             <span>Đã có tài khoản?</span>
-            <a asp-page ="SignIn">Đăng nhập</a>
+            <a asp-page="SignIn">Đăng nhập</a>
         </div>
 
     </div>
