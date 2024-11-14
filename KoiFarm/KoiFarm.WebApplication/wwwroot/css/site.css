@@ -658,152 +658,67 @@ a:hover, a:active {
     border: 0.3px solid #3C4242;
 }
 
-.banhang {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* Khoảng cách giữa các khối */
-    justify-content: center; /* Căn giữa các khối */
+
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    gap: 170px;
+    margin-top: 45px;
 }
 
-/* Lớp chung cho ca1 và ca2 */
 .ca {
-    position: relative;
-    width: 176px;
-    height: 350px;
-    background: #DAC8C8;
-    border: 1.0552px solid rgba(0, 22, 10, 0.1);
-    box-shadow: -27px 33px 33px rgba(0, 22, 10, 0.1);
-    border-radius: 30.9586px;
-    margin: 20px 60px;
+    border: 1px solid #ccc;
+    padding: 85px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
 }
 
-
-/* Blob */
-.blob {
-    position: absolute;
-    left: -3%;
-    top: 9.18%;
-    bottom: 123.71%;
-    background: #73ACCD;
-    width: 192px;
-    z-index: 1;
+.imgca img, .blob img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
-/* Button */
-.buttongia1 {
-    position: absolute;
-    width: 100px;
-    height: 36px;
-    left: 40px;
-    top: 266px;
-    background-color: #FF0303;
-    border-radius: 30.7768px;
+.buttongia1 a {
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.so-sanh {
     justify-content: center;
-    cursor: pointer;
-    border: none;
-}
-
-    .buttongia1 a {
-        font-family: 'Anton', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 19px;
-        line-height: 45px;
-        text-align: center;
-        text-align-last: center;
-        color: #FFFFFF;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-decoration: none;
-    }
-
-
-
-/* Message Sent */
-.tenca {
-    position: absolute;
-    left: 22.72%;
-    /* right: 76.01%; */
-    top: 5.55%;
-    bottom: 96.4%;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 30px;
+    font-size: 15px;
+    font-family: 'Anton';
     display: flex;
     align-items: center;
-    text-align: center;
-    letter-spacing: 0.29228px;
-    color: #060016;
+    color: #555;
 }
 
+.so-sanh img {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    margin-top: 3px;
+}
 
-/* How does one go about */
 .mieuta {
-    position: absolute;
-    left: 2%;
-    top: 145px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 22px;
-    text-align: left;
-    letter-spacing: 0.29228px;
-    color: #060016;
-    padding: 10px;
-    border-radius: 10px;
-    max-width: 90%;
-    min-width: 250px;
-    width: 80%;
-    height: auto;
-    max-height: 400px;
-    min-height: 100px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Inter';
     box-sizing: border-box;
 }
 
 
-/* Image 4 */
-.imgca {
-    width: 200px; /* Đặt chiều rộng cố định cho khung */
-    height: 200px; /* Đặt chiều cao cố định cho khung */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: -6px;
-}
 
-    .imgca img {
-        width: 100%;
-        height: auto;
-        object-fit: cover; /* Đảm bảo ảnh bao phủ toàn bộ khung chứa */
-        object-position: center; /* Canh giữa ảnh trong khung */
-        z-index: 2;
-    }
 
-.so-sanh {
-    position: absolute;
-    width: 94px;
-    height: 29px;
-    left: 40px;
-    top: 304px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 50;
-    font-size: 18px;
-    line-height: 35px;
-    text-align: center;
-}
 
-    .so-sanh a {
-        color: black;
-    }
-
-    .so-sanh img {
-        width: 20px; /* Điều chỉnh kích thước theo ý muốn */
-        height: auto; /* Giữ tỉ lệ hình ảnh */
-        vertical-align: middle; /* Canh giữa với văn bản */
-    }
 
 .xemthem {
     box-sizing: border-box;
