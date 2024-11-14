@@ -1,0 +1,66 @@
+﻿/* Layout Styles */
+.layout {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #e6e6e6;
+}
+
+/* Logo */
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+    .header-logo .logo {
+        height: 50px; /* Chiều cao logo */
+        margin-right: 10px;
+    }
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+    .footer h3 {
+        margin-top: 10px;
+        color: #f1f1f1;
+    }
+
+    .footer p {
+        margin: 5px 0;
+        color: #ccc;
+    }
+
+    .footer .footer-logo {
+        width: 100%; /* Chiều rộng logo trong footer */
+        margin-bottom: auto;
+    }

@@ -2,6 +2,7 @@
 @model KoiFarm.WebApplication.Pages.User.IndexModel
 @{
     ViewData["Title"] = "Danh sách người dùng";
+    Layout = "~/Pages/Admin/User/_User.cshtml";
 }
 
 <h1>Danh sách người dùng</h1>
@@ -12,7 +13,11 @@
             <th>ID</th>
             <th>Tên người dùng</th>
             <th>Email</th>
-            <th>Email</th>
+            <th>Số điện thoại</th>
+            <th>Vai trò</th>
+            <th>Địa chỉ</th>
+            <th>Điểm tích luỹ</th>
+            <th>Ngày bắt đầu</th>
             <th>Hành động</th>
         </tr>
     </thead>
@@ -23,6 +28,11 @@
                 <td>@user.UserId</td>
                 <td>@user.UserName</td>
                 <td>@user.Email</td>
+                <td>@user.Phonenumber</td>
+                <td>@user.UserRole</td>
+                <td>@user.UserAddress</td>
+                <td>@user.PointBalance</td>
+                <td>@user.DateJoined</td>
                 <td>
                     <a asp-page="./Details" asp-route-id="@user.UserId">Xem</a> |
                     <a asp-page="./Edit" asp-route-id="@user.UserId">Sửa</a> |
