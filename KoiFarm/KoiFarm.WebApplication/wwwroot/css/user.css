@@ -1,0 +1,125 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+}
+
+.header {
+    display: flex;
+    flex-direction: column; /* Sắp xếp các phần tử theo chiều dọc */
+    align-items: center; /* Căn giữa theo chiều ngang */
+    width: 100%; /* Đảm bảo phần header chiếm hết chiều rộng màn hình */
+    padding: 5px 20px;
+    position: relative;
+}
+
+.user-info {
+    position: relative;
+    width: 100%; /* Đảm bảo đường ngăn cách kéo dài cả chiều rộng */
+    padding-bottom: 2px; /* Khoảng cách giữa thông tin người dùng và đường ngăn cách */
+    border-bottom: 1px solid #ccc; /* Đường ngăn cách giữa thông tin người dùng và logo */
+    text-align: right; /* Căn phải thông tin người dùng */
+    padding-right: 20px; /* Khoảng cách giữa thông tin người dùng và lề phải */
+}
+
+.header-logo {
+    margin-top: 20px; /* Khoảng cách giữa thông tin người dùng và logo */
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px; /* Khoảng cách giữa logo và phần tiếp theo */
+    border-bottom: 5px solid #ccc; /* Đường ngăn cách dưới logo */
+    width: 100%; /* Đảm bảo logo chiếm hết chiều rộng */
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #d1d8e0;
+    position: fixed;
+    top: 40px; /* Đảm bảo sidebar bắt đầu từ dưới logo */
+    bottom: 20px; /* Đảm bảo sidebar kéo dài đến trên footer */
+    padding-top: 20px;
+    margin-top: 0; /* Loại bỏ khoảng cách phía trên */
+}
+
+    .sidebar .user {
+        background-color: #8e9eab;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        .sidebar ul li {
+            padding: 10px 20px;
+        }
+
+            .sidebar ul li a {
+                text-decoration: none;
+                color: #333;
+                display: block;
+            }
+
+                .sidebar ul li a:hover {
+                    background-color: #b0bec5;
+                }
+
+.content {
+    margin-left: 220px;
+    padding: 20px;
+    height: calc(100vh - 60px);
+}
+
+    .content .title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .content .table-container {
+        background-color: #e0e7ff;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+        .content .table-container table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+            .content .table-container table th, .content .table-container table td {
+                padding: 10px;
+                text-align: left;
+                border-bottom: 1px solid #ccc;
+            }
+
+            .content .table-container table th {
+                background-color: #c5cae9;
+                color: #333;
+            }
+
+        .content .table-container .btn {
+            background-color: #8e9eab;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+    .footer p {
+        margin: 5px 0;
+    }
