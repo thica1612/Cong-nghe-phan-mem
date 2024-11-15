@@ -40,9 +40,10 @@ body {
 }
 
 .sidebar {
+    height: 507px;
     width: 200px;
     background-color: #d1d8e0;
-    position: fixed;
+    position: absolute;
     top: 180px; /* Điều chỉnh để bắt đầu ngay dưới thanh logo */
     bottom: 10px; /* Điều chỉnh để dừng trên footer */
     padding-top: 20px;
