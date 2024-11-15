@@ -17,7 +17,7 @@ namespace KoiFarm.WebApplication.Pages.User
 
         public KoiUser User { get; set; }
 
-        public async Task<IActionResult> OnGetAsync(string id)
+        public async Task<IActionResult> OnGetAsync(Guid id)
         {
             User = await _userService.GetKoiUserById(id);
             if (User == null)

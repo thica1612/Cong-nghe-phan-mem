@@ -23,15 +23,15 @@ CREATE TABLE Koi (
 
 INSERT INTO Koi (koiID, koiName, koiOrigin, koiGender, koiYear, koiSize, koiPrice, stock, koiImage, dailyfood, screeningrate)
 VALUES 
-('K001','Showa', 'Dainichi', 'Koi cái', 2020, 70, 650000, 10, 'LINK', 3, 0.5),
-('K002','Showa', 'Dainichi', 'Koi cái', 2018, 78, 700000, 5, 'LINK', 5, 0.7),
-('K003','Tancho', 'Dainichi', 'Koi cái', 2018, 80, 860000,7, 'LINK', 5, 0.5),
-('K004','Kohaku', 'Dainichi', 'Koi cái', 2017, 84, 350000,15, 'LINK', 6, 0.6),
-('K005','Kohaku', 'Dainichi', 'Koi cái', 2015, 94, 400000,14, 'LINK', 7, 0.5),
-('K006','Tancho', 'Dainichi', 'Koi cái', 2014, 91, 500000,7, 'LINK', 6, 0.5),
-('K007','Bekko', 'Dainichi', 'Koi cái', 2017, 86, 950000,6, 'LINK', 5, 0.5),
-('K008','Doitsu', 'Otsuka', 'Koi cái', 2016, 77, 600000,18, 'LINK', 4, 0.7),
-('K009','Goshiki', 'Oyaji', 'Koi cái', 2018, 67, 540000,20, 'LINK', 3, 0.5);
+('K001','Showa', 'Dainichi', 'Koi cái', 2020, 70, 650000, 10, '01', 3, 0.5),
+('K002','Showa', 'Dainichi', 'Koi cái', 2018, 78, 700000, 5, '02', 5, 0.7),
+('K003','Tancho', 'Dainichi', 'Koi cái', 2018, 80, 860000,7, '03', 5, 0.5),
+('K004','Kohaku', 'Dainichi', 'Koi cái', 2017, 84, 350000,15, '04', 6, 0.6),
+('K005','Kohaku', 'Dainichi', 'Koi cái', 2015, 94, 400000,14, '05', 7, 0.5),
+('K006','Tancho', 'Dainichi', 'Koi cái', 2014, 91, 500000,7, '06', 6, 0.5),
+('K007','Bekko', 'Dainichi', 'Koi cái', 2017, 86, 950000,6, '07', 5, 0.5),
+('K008','Doitsu', 'Otsuka', 'Koi cái', 2016, 77, 600000,18, '08', 4, 0.7),
+('K009','Goshiki', 'Oyaji', 'Koi cái', 2018, 67, 540000,20, '09', 3, 0.5);
 GO
 
 CREATE TABLE KoiSale (
@@ -54,15 +54,15 @@ CREATE TABLE KoiSale (
 
 INSERT INTO KoiSale (koiSaleID, koiSaleName, koiSaleOrigin, koiSaleGender, koiSaleYear, koiSaleSize, koiSalePrice, koiSalePriceLater, discountPercent, startDate, endDate, stockKoiSale, koiImageKoiSale, dailyfoodKoiSale, screeningrateKoiSale)
 VALUES 
-('KS001', 'Goshiki', 'Dainichi', 'Koi cái', 2018, 72, 600000, 300000, 0.5, '2024-11-10', '2024-11-25', 1, 'LINK', 3, 0.5),
-('KS002', 'Showa', 'Dainichi', 'Koi cái', 2017, 80, 700000, 490000, 0.3, '2024-11-10', '2024-11-25', 1, 'LINK', 4, 0.6),
-('KS003', 'Tancho', 'Dainichi', 'Koi cái', 2016, 90, 750000, 450000, 0.4, '2024-11-10', '2024-11-25', 1, 'LINK', 6, 0.7),
-('KS004', 'Kohaku', 'Dainichi', 'Koi cái', 2019, 76, 900000, 630000, 0.3, '2024-11-10', '2024-11-25', 1, 'LINK', 4, 0.7),
-('KS005', 'Doitsu', 'Oyaji', 'Koi cái', 2016, 88, 800000, 640000, 0.2, '2024-11-10', '2024-11-25', 1, 'LINK', 3, 0.7),
-('KS006', 'Tancho', 'Dainichi', 'Koi cái', 2014, 91, 600000, 300000, 0.5, '2024-11-10', '2024-11-25', 1, 'LINK', 6, 0.5),
-('KS007', 'Bekko', 'Otsuka', 'Koi cái', 2015, 90, 700000, 350000, 0.5, '2024-11-10', '2024-11-25', 1, 'LINK', 7, 0.6),
-('KS008', 'Doitsu', 'Oyaji', 'Koi cái', 2017, 75, 900000, 630000, 0.3, '2024-11-10', '2024-11-25', 1, 'LINK', 4, 0.8),
-('KS009', 'Goshiki', 'Danichi', 'Koi cái', 2020, 70, 800000, 640000, 0.2, '2024-11-10', '2024-11-25', 1, 'LINK', 3, 0.7);
+('KS001', 'Goshiki', 'Dainichi', 'Koi cái', 2018, 72, 600000, 300000, 0.5, '2024-11-10', '2024-11-25', 1, '06', 3, 0.5),
+('KS002', 'Showa', 'Dainichi', 'Koi cái', 2017, 80, 700000, 490000, 0.3, '2024-11-10', '2024-11-25', 1, '08', 4, 0.6),
+('KS003', 'Tancho', 'Dainichi', 'Koi cái', 2016, 90, 750000, 450000, 0.4, '2024-11-10', '2024-11-25', 1, '02', 6, 0.7),
+('KS004', 'Kohaku', 'Dainichi', 'Koi cái', 2019, 76, 900000, 630000, 0.3, '2024-11-10', '2024-11-25', 1, '01', 4, 0.7),
+('KS005', 'Doitsu', 'Oyaji', 'Koi cái', 2016, 88, 800000, 640000, 0.2, '2024-11-10', '2024-11-25', 1, '03', 3, 0.7),
+('KS006', 'Tancho', 'Dainichi', 'Koi cái', 2014, 91, 600000, 300000, 0.5, '2024-11-10', '2024-11-25', 1, '04', 6, 0.5),
+('KS007', 'Bekko', 'Otsuka', 'Koi cái', 2015, 90, 700000, 350000, 0.5, '2024-11-10', '2024-11-25', 1, '07', 7, 0.6),
+('KS008', 'Doitsu', 'Oyaji', 'Koi cái', 2017, 75, 900000, 630000, 0.3, '2024-11-10', '2024-11-25', 1, '09', 4, 0.8),
+('KS009', 'Goshiki', 'Danichi', 'Koi cái', 2020, 70, 800000, 640000, 0.2, '2024-11-10', '2024-11-25', 1, '02', 3, 0.7);
 GO
 
 CREATE TABLE KoiUser (

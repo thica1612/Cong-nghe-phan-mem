@@ -112,6 +112,8 @@ body {
     }
 
     .content .table-container {
+        max-height: 400px; /* Chiều cao tối đa */
+        overflow-y: auto; /* Hiển thị thanh cuộn khi cần */
         background-color: #cdd4f0;
         padding: 20px;
         border-radius: 10px;

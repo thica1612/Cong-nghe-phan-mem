@@ -27,7 +27,7 @@ namespace KoiFarm.Services
             return _repository.AuthenUserAsync(userNameorEmail, userPassword);
         }
 
-        public bool DelKoiUser(string Id)
+        public bool DelKoiUser(Guid Id)
         {
             return _repository.DelKoiUser(Id);
         }
@@ -37,7 +37,7 @@ namespace KoiFarm.Services
             return _repository.DelKoiUser(account);
         }
 
-        public Task<KoiUser> GetKoiUserById(string Id)
+        public Task<KoiUser> GetKoiUserById(Guid Id)
         {
             return _repository.GetKoiUserById(Id);
         }

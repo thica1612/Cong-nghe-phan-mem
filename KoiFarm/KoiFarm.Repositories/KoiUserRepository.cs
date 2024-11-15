@@ -44,7 +44,7 @@ namespace KoiFarm.Repositories
             return false;
         }
 
-        public bool DelKoiUser(string Id)
+        public bool DelKoiUser(Guid Id)
         {
             try
             {
@@ -82,7 +82,7 @@ namespace KoiFarm.Repositories
             return await _context.KoiUsers.ToListAsync();
         }
 
-        public async Task<KoiUser> GetKoiUserById(string Id)
+        public async Task<KoiUser> GetKoiUserById(Guid Id)
         {
             return await _context.KoiUsers.Where(p => p.UserId.Equals(Id)).FirstOrDefaultAsync();
         }
@@ -97,6 +97,8 @@ namespace KoiFarm.Repositories
             }
             account.UserId = Guid.NewGuid();
             account.DateJoined = DateTime.Now;
+
+            Console.WriteLine($"UserName: {account.UserName}, Email: {account.Email}, Password: {account.UserPassword}");
 
             _context.KoiUsers.Add(account);
             _context.SaveChanges();

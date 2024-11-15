@@ -14,9 +14,20 @@ namespace KoiFarm.WebApplication.Pages
             _service = service;
         }
 
+        [BindProperty]
+        public string UserNameorEmail { get; set; }
+
+        [BindProperty]
+        public string UserPassword { get; set; }
+
         [HttpPost]
         public async Task<IActionResult> OnPostAsync(string userNameorEmail, string userPassword)
         {
+            if (string.IsNullOrEmpty(UserNameorEmail) || string.IsNullOrEmpty(UserPassword))
+            {
+                TempData["ErrorMessage"] = "Tên đăng nhập hoặc mật khẩu không được để trống.";
+                return Page();
+            }
             var user = await _service.AuthenUser(userNameorEmail, userPassword);
             if (user == true)
             {

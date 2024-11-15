@@ -11,6 +11,7 @@
     <a asp-page="./Create" class="btn-add">Thêm người dùng mới</a>
 </div>
 
+<div class="table-container">
 <table class="table">
     <thead>
         <tr>
@@ -26,24 +27,26 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var user in Model.Users)
-        {
-            <tr>
-                <td>@user.UserId</td>
-                <td>@user.UserName</td>
-                <td>@user.Email</td>
-                <td>@user.Phonenumber</td>
-                <td>@user.UserRole</td>
-                <td>@user.UserAddress</td>
-                <td>@user.PointBalance</td>
-                <td>@user.DateJoined</td>
-                <td>
-                    <a asp-page="./Details" asp-route-id="@user.UserId">Xem</a> |
-                    <a asp-page="./Edit" asp-route-id="@user.UserId">Sửa</a> |
-                    <a asp-page="./Delete" asp-route-id="@user.UserId">Xóa</a>
-                </td>
-            </tr>
-        }
+            @foreach (var user in Model.Users)
+            {
+                <tr>
+                    <td>@user.UserId</td>
+                    <td>@user.UserName</td>
+                    <td>@user.Email</td>
+                    <td>@user.Phonenumber</td>
+                    <td>@user.UserRole</td>
+                    <td>@user.UserAddress</td>
+                    <td>@user.PointBalance</td>
+                    <td>@user.DateJoined</td>
+                    <td>
+                        <a asp-page="./Details" asp-route-id="@user.UserId">Xem</a> |
+                        <a asp-page="./Edit" asp-route-id="@user.UserId">Sửa</a> |
+                        <a asp-page="./Delete" asp-route-id="@user.UserId">Xóa</a>
+                    </td>
+                </tr>
+            }
     </tbody>
 </table>
+</div>
+
 

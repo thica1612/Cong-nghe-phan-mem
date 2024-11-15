@@ -6,7 +6,7 @@
 }
 
 <div>
-    <form>
+    <form method="post">
         <div class="hinhca">
             <img src="~/images/20.png" />
         </div>
@@ -15,10 +15,10 @@
         <div class="OR"><img src="~/images/OR.jpg" /></div>
 
         <div>
-            <input type="text" id="form1" placeholder="Tên người dùng" asp-for="NewUser.UserName" />
-            <input type="text" id="form2" placeholder="Email" asp-for="NewUser.Email" />
-            <input type="password" id="password1" placeholder="Mật khẩu" asp-for="NewUser.UserPassword" />
-            <input type="password" id="password2" placeholder="Xác nhận mật khẩu" />
+            <input type="text" id="form1" placeholder="Tên người dùng" asp-for="account.UserName" required />
+            <input type="text" id="form2" placeholder="Email" asp-for="account.Email" required />
+            <input type="password" id="password1" placeholder="Mật khẩu" asp-for="account.UserPassword" required />
+            <input type="password" id="password2" placeholder="Xác nhận mật khẩu" asp-for="account.UserPassword" required />
             <button class="btndky" type="submit">
                 Đăng ký
             </button>

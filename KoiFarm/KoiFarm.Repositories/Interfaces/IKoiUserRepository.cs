@@ -11,11 +11,11 @@ namespace KoiFarm.Repositories.Interfaces
     public interface IKoiUserRepository
     {
         Task<List<KoiUser>> GetAllKoiUser();
-        Boolean DelKoiUser(string Id);
+        Boolean DelKoiUser(Guid Id);
         Boolean DelKoiUser(KoiUser account);
         Boolean AddKoiUser(KoiUser account);
         Boolean UpKoiUser(KoiUser account);
-        Task<KoiUser> GetKoiUserById(string Id);
+        Task<KoiUser> GetKoiUserById(Guid Id);
         Task<bool> AuthenUserAsync(string userNameorEmail, string userPassword);
         Task<bool> SignUpUserAsync(KoiUser account);
     }

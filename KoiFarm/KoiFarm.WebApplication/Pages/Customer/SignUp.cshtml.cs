@@ -16,17 +16,20 @@ namespace KoiFarm.WebApplication.Pages
         }
 
         [BindProperty]
-        public KoiUser NewUser { get; set; }
+        public KoiUser account { get; set; }
         public async Task<IActionResult> OnPostAsync()
         {
+            Console.WriteLine("Password1: " + account.UserPassword);
+            Console.WriteLine("Password2: " + Request.Form["password2"]);
+
             if (ModelState.IsValid)
             {
-                if (NewUser.UserPassword != Request.Form["password2"])
+                if (account.UserPassword != Request.Form["password2"])
                 {
                     TempData["ErrorMessage"] = "Mật khẩu và xác nhận mật khẩu không khớp";
                     return Page();
                 }
-                var result = await _service.SignUpUser(NewUser);
+                var result = await _service.SignUpUser(account);
                 if (result == true)
                 {
                     TempData["SuccessMessage"] = "Đăng ký thành công";
