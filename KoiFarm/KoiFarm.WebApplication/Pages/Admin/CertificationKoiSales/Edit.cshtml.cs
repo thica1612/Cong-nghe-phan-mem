@@ -26,6 +26,7 @@ namespace KoiFarm.WebApplication.Pages.CertificationKoiSales
 
         public async Task<IActionResult> OnGetAsync(string id)
         {
+
             if (id == null)
             {
                 return NotFound();

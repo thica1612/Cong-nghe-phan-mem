@@ -18,7 +18,7 @@ namespace KoiFarm.WebApplication.Pages.CertificationKoiSales
         {
             _service = service;
         }
-
+        
         public IList<CertificationKoiSale> CertificationKoiSale { get;set; } = default!;
 
         public async Task OnGetAsync()

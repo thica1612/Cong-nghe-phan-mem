@@ -21,6 +21,7 @@ namespace KoiFarm.WebApplication.Pages.CertificationKoiSales
 
         public IActionResult OnGet(string id)
         {
+
             if (string.IsNullOrEmpty(id))
             {
                 ModelState.AddModelError("", "CertificationKSID is required.");

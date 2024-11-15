@@ -2,6 +2,7 @@
 @model KoiFarm.WebApplication.Pages.CertificationKoiSales.EditModel
 @{
     ViewData["Tittle"] = "Chỉnh sửa giấy chứng nhận";
+    Layout = "_AdminLayout";
 }
 
 <h4>CertificationKoiSale</h4>
@@ -39,7 +40,7 @@
 </div>
 
 <div>
-    <a asp-page="./Index">Back to List</a>
+    <a asp-page="./Index">Danh sách giấy chứng nhận</a>
 </div>
 
 @section Scripts {
