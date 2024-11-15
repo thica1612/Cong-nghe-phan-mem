@@ -665,8 +665,9 @@ a:hover, a:active {
     display: grid;
     grid-template-columns: repeat(3, 0.5fr);
     gap: 70px 90px;
-    margin-top: 31px;
+    margin-top: 66px;
     margin-left: 185px;
+    margin-bottom: 80px;
 }
 
 .ca {
@@ -680,20 +681,22 @@ a:hover, a:active {
 }
 
 
-    .buttongia1 {
-        position: absolute;
-        width: 110px;
-        height: 36px;
-        left: 33px;
-        top: 266px;
-        background-color: #FF0303;
-        border-radius: 30.7768px;
-        display: flex; /* Để căn giữa nội dung */
-        align-items: center; /* Căn giữa theo chiều dọc */
-        justify-content: center; /* Căn giữa theo chiều ngang */
-        cursor: pointer;
-      
-    }
+.buttongia1 {
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    width: 110px;
+    height: 36px;
+    left: 33px;
+    top: 266px;
+    background-color: #FF0303;
+    border-radius: 30.7768px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
 
         .buttongia1 a {
             font-family: 'Anton', sans-serif;
@@ -734,39 +737,40 @@ a:hover, a:active {
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-    .tenca {
-        position: absolute;
-        left: 22.72%;
-        top: 4.55%;
-        bottom: 96.4%;
-        font-family: 'Inter', sans-serif;
-        font-weight: 400;
-        font-size: 26px;
-        line-height: 30px;
-        display: flex;
-        align-items: center;
         text-align: center;
-        letter-spacing: 0.29228px;
-        color: #060016;
     }
-    .imgca {
-        width: 200px !important; /* Đặt chiều rộng cố định cho khung */
-        height: 160px !important; /* Đặt chiều cao cố định cho khung */
-        display: flex;
-        align-items: center;
-        transform: scale(1.1);
-        justify-content: center;
-        margin-left: -6px;
-    }
+.tenca {
+    font-weight: bolder;
+    position: absolute;
+    left: 22.72%;
+    top: 4.55%;
+    bottom: 96.4%;
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.29228px;
+    color: #060016;
+}
+.imgca {
+    margin-top: 10px;
+    width: 200px !important; /* Đặt chiều rộng cố định cho khung */
+    height: 160px !important; /* Đặt chiều cao cố định cho khung */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -10px;
+}
 
 
         .imgca img {
             width: 207px;
-            height: 50px;
+            height: 78px;
             object-fit: cover;
-            object-position: center;
             z-index: 2;
+            object-position: center;
         }
     .blob {
         position: absolute;
@@ -775,9 +779,16 @@ a:hover, a:active {
         bottom: 123.71%;
         background: #73ACCD;
         width: 192px;
-        z-index: 1;
+        z-index:1;
     }
-
+.sale {
+    object-fit: cover;
+    position: absolute;
+    width: 62px;
+    height: auto;
+    left: 143px;
+    top: -54px;
+}
 
 
 
@@ -878,6 +889,4 @@ a:hover, a:active {
     left: 0px;
     top: 600px;
     background: #EBE4E4;
-=======
->>>>>>> c2ee16957cd9e88f65844a08a1447d7a457208db
 }
