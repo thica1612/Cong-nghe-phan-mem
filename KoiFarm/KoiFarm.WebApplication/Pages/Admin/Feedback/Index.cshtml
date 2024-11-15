@@ -1,9 +1,15 @@
 ﻿@page
 @model KoiFarm.WebApplication.Pages.Customers.Feedback.IndexModel
-
+@{
+    ViewData["Title"] = "Đánh giá";
+    Layout = "~/Pages/Admin/Feedback/_FeedbackLayout.cshtml";
+}
 <p>
-    <a asp-page="Create">Create New</a>
+    <div style="text-align: left; margin-bottom: 15px;">
+        <a asp-page="./Create" class="btn-add">Thêm đánh giá mới</a>
+    </div>
 </p>
+
 <table class="table">
     <thead>
         <tr>

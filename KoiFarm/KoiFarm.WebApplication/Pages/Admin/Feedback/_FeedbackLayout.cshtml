@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang Người Dùng - The Aqua Koi</title>
+    <link rel="stylesheet" href="~/css/admin.css" />
+</head>
+<body>
+    <div class="layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="user">
+                <h2>Nguyen Anh Huy (Manager)</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="/" class="sidebar-link">Trang chủ</a></li>
+                    <li><a href="#" class="sidebar-link">Đơn hàng</a></li>
+                    <li><a href="#" class="sidebar-link">Báo cáo doanh thu</a></li>
+                    <li><a href="#" class="sidebar-link">Danh sách khách hàng</a></li>
+                    <li><a href="#" class="sidebar-link">Cài đặt</a></li>
+                    <li><a href="#" class="sidebar-link">Đăng xuất</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Nội dung chính -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <div class="user-info">
+                    <p>Nguyen Anh Huy (Manager)</p>
+                </div>
+
+                <div class="header-logo">
+                    <img src="~/images/logot.png" alt="The Aqua Koi Logo" style="width: 150px;">
+                </div>
+
+            </header>
+
+            <!-- Phần nội dung -->
+            <section class="content">
+                <div class="table-container">
+                    <!-- Nội dung động như bảng khách hàng hoặc danh sách đơn hàng sẽ nằm ở đây -->
+                    @RenderBody()
+                    @RenderSection("Scripts", required: false)
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <!-- Thông tin liên hệ và hình ảnh trong footer -->
+                <img src="~/images/14.png" style="width: 100%; height: auto;">
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
