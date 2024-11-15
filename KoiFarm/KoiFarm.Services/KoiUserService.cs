@@ -22,6 +22,11 @@ namespace KoiFarm.Services
             return _repository.AddKoiUser(account);
         }
 
+        public Task<bool> AuthenUser(string userNameorEmail, string userPassword)
+        {
+            return _repository.AuthenUserAsync(userNameorEmail, userPassword);
+        }
+
         public bool DelKoiUser(string Id)
         {
             return _repository.DelKoiUser(Id);

@@ -1,5 +1,6 @@
 ﻿using KoiFarm.Repositories.Entities;
 using KoiFarm.Repositories.Interfaces;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -12,7 +13,6 @@ namespace KoiFarm.Repositories
     public class KoiUserRepository : IKoiUserRepository
     {
         private readonly KoiFarmContext _context;
-        private KoiFarmContext context;
 
         public KoiUserRepository(KoiFarmContext context)
         {
@@ -32,6 +32,16 @@ namespace KoiFarm.Repositories
             {
                 throw new NotImplementedException();
             }
+        }
+
+        public async Task<bool> AuthenUserAsync(string userNameorEmail, string userPassword)
+        {
+            var user = await _context.KoiUsers.Where(p => p.UserName.Equals(userNameorEmail) || p.Email.Equals(userNameorEmail)).FirstOrDefaultAsync();
+            if (user != null && userPassword == user.UserPassword)
+            {
+                return true;
+            }
+            return false;
         }
 
         public bool DelKoiUser(string Id)
@@ -75,6 +85,11 @@ namespace KoiFarm.Repositories
         public async Task<KoiUser> GetKoiUserById(string Id)
         {
             return await _context.KoiUsers.Where(p => p.UserId.Equals(Id)).FirstOrDefaultAsync();
+        }
+
+        public Task<KoiUser> GetKoiUserByUserName(string userName)
+        {
+            throw new NotImplementedException();
         }
 
         public bool UpKoiUser(KoiUser account)

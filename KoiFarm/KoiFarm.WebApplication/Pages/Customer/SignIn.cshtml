@@ -5,6 +5,14 @@
     Layout = "_Sign";
 }
 
+@if (TempData["ErroMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErroMessage"]
+    </div>
+}
+
+
 <div>
     <form method="post">
         <div class="hinhca">
@@ -15,8 +23,8 @@
         <div class="OR"><img src="~/images/OR.jpg" /></div>
 
         <div>
-            <input name="Username" type="text" id="form" placeholder="Tên người dùng hoặc email" />
-            <input name="Password" type="password" id="password" placeholder="Mật khẩu" />
+            <input name="userNameorEmail" type="text" id="form" placeholder="Tên người dùng hoặc email" required />
+            <input name="userPassword" type="password" id="password" placeholder="Mật khẩu" required/>
             <a class="forgot" asp-area="" asp-page="/">Quên mật khẩu</a>
             <button class="btndnhap" type="submit">
                 Đăng nhập

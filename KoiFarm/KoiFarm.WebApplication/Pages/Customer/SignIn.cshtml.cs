@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿
+using KoiFarm.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -6,46 +7,26 @@ namespace KoiFarm.WebApplication.Pages
 {
     public class SignInModel : PageModel
     {
-        private readonly SignInManager<IdentityUser> _signInManager;
-        private readonly UserManager<IdentityUser> _userManager;
+        private readonly IKoiUserService _service;
 
-        public SignInModel(SignInManager<IdentityUser> signInManager, UserManager<IdentityUser> userManager)
+        public SignInModel(IKoiUserService service)
         {
-            _signInManager = signInManager;
-            _userManager = userManager;
+            _service = service;
         }
 
-        [BindProperty]
-        public string Username { get; set; }
-
-        [BindProperty]
-        public string Password { get; set; }
-
-        public string ErrorMessage {  get; set; }
-
-        public async Task<IActionResult> OnPostAsync()
+        [HttpPost]
+        public async Task<IActionResult> OnPostAsync(string userNameorEmail, string userPassword)
         {
-            if (!ModelState.IsValid) {
-                ErrorMessage = "Thông tin đăng nhập không hợp lệ";
-                return Page();
-            }
-
-            var user = await _userManager.FindByNameAsync(Username) ?? await _userManager.FindByEmailAsync(Username);
-            if (user == null)
+            var user = await _service.AuthenUser(userNameorEmail, userPassword);
+            if (user == true)
             {
-                ErrorMessage = "Tên người dùng hoặc mật khẩu không đúng";
-                return Page();
-            }
-
-            var result = await _signInManager.PasswordSignInAsync(user, Password, isPersistent: false, lockoutOnFailure: false);
-            if (result.Succeeded)
-            {
+                HttpContext.Session.SetString("Username", userNameorEmail);
                 return RedirectToPage("/Index");
             }
             else
             {
-                ErrorMessage = "Tên người dùng hoặc mật khẩu không đúng";
-                return Page();
+                TempData["ErrorMessage"] = "Tên đăng nhập hoặc mật khẩu không hợp lệ";
+                return RedirectToPage("/Customer/SignIn");
             }
         }
     }
