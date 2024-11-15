@@ -34,7 +34,7 @@ namespace KoiFarm.Services
         }
 
 
-        public Task<List<Feedback>> GetFeedbacksByUser(string customerId)
+        public Task<List<Feedback>> GetFeedbacksByUser(Guid customerId)
         {
             return _repository.GetFeedbacksByUser(customerId);
         }

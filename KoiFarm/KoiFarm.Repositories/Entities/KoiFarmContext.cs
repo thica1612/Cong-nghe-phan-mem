@@ -146,9 +146,8 @@ public partial class KoiFarmContext : DbContext
                 .HasColumnName("FeedbackID");
             entity.Property(e => e.Comments).HasColumnType("text");
             entity.Property(e => e.CustomerId)
-                .HasMaxLength(30)
-                .IsUnicode(false)
-                .HasColumnName("CustomerID");
+                .HasColumnName("CustomerID")
+                .IsRequired();
             entity.Property(e => e.KoiId)
                 .HasMaxLength(30)
                 .IsUnicode(false)
@@ -156,7 +155,7 @@ public partial class KoiFarmContext : DbContext
 
             entity.HasOne(d => d.Customer).WithMany(p => p.Feedbacks)
                 .HasForeignKey(d => d.CustomerId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
+                .OnDelete(DeleteBehavior.Cascade)
                 .HasConstraintName("FK__Feedback__Custom__4CA06362");
 
             entity.HasOne(d => d.Koi).WithMany(p => p.Feedbacks)

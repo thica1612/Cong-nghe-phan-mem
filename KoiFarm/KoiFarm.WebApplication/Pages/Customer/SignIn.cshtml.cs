@@ -21,6 +21,7 @@ namespace KoiFarm.WebApplication.Pages
             if (user == true)
             {
                 HttpContext.Session.SetString("Username", userNameorEmail);
+                TempData["SuccessMessage"] = "Đăng nhập thành công";
                 return RedirectToPage("/Index");
             }
             else

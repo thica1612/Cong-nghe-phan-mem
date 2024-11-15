@@ -7,7 +7,7 @@ public partial class Feedback
 {
     public int FeedbackId { get; set; }
 
-    public string CustomerId { get; set; } = null!;
+    public Guid CustomerId { get; set; }
 
     public string KoiId { get; set; } = null!;
 

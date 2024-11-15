@@ -87,9 +87,20 @@ namespace KoiFarm.Repositories
             return await _context.KoiUsers.Where(p => p.UserId.Equals(Id)).FirstOrDefaultAsync();
         }
 
-        public Task<KoiUser> GetKoiUserByUserName(string userName)
+
+        public async Task<bool> SignUpUserAsync(KoiUser account)
         {
-            throw new NotImplementedException();
+            var exist = _context.KoiUsers.Where(p => p.UserName == account.UserName || p.Email == account.Email).FirstOrDefault();
+            if (exist != null)
+            {
+                return false;
+            }
+            account.UserId = Guid.NewGuid();
+            account.DateJoined = DateTime.Now;
+
+            _context.KoiUsers.Add(account);
+            _context.SaveChanges();
+            return true;
         }
 
         public bool UpKoiUser(KoiUser account)

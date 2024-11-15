@@ -47,6 +47,11 @@ namespace KoiFarm.Services
             return _repository.GetAllKoiUser();
         }
 
+        public Task<bool> SignUpUser(KoiUser account)
+        {
+            return _repository.SignUpUserAsync(account);
+        }
+
         public bool UpKoiUser(KoiUser account)
         {
             return _repository.UpKoiUser(account);

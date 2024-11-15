@@ -1,3 +1,6 @@
+﻿using KoiFarm.Repositories.Entities;
+using KoiFarm.Repositories.Interfaces;
+using KoiFarm.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -5,8 +8,37 @@ namespace KoiFarm.WebApplication.Pages
 {
     public class SignUpModel : PageModel
     {
-        public void OnGet()
+        private readonly IKoiUserService _service;
+
+        public SignUpModel(IKoiUserService service)
         {
+            _service = service;
+        }
+
+        [BindProperty]
+        public KoiUser NewUser { get; set; }
+        public async Task<IActionResult> OnPostAsync()
+        {
+            if (ModelState.IsValid)
+            {
+                if (NewUser.UserPassword != Request.Form["password2"])
+                {
+                    TempData["ErrorMessage"] = "Mật khẩu và xác nhận mật khẩu không khớp";
+                    return Page();
+                }
+                var result = await _service.SignUpUser(NewUser);
+                if (result == true)
+                {
+                    TempData["SuccessMessage"] = "Đăng ký thành công";
+                    return RedirectToPage("/Index");
+                }
+                else
+                {
+                    TempData["ErrorMessage"] = "Tên đăng nhập hoặc Email đã tồn tại";
+                    return Page(); 
+                }
+            }
+            return Page();
         }
     }
 }

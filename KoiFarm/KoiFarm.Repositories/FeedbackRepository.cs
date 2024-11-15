@@ -43,7 +43,7 @@ namespace KoiFarm.Repositories
         }
 
 
-        public async Task<List<Feedback>> GetFeedbacksByUser(string customerId)
+        public async Task<List<Feedback>> GetFeedbacksByUser(Guid customerId)
         {
             return await _context.Feedbacks
                                  .Where(f => f.CustomerId == customerId)

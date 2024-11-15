@@ -11,7 +11,7 @@ namespace KoiFarm.Services.Interfaces
     {
         Task<bool> AddFeedback(Feedback feedback);
         Task<List<Feedback>> GetAllFeedbacks();
-        Task<List<Feedback>> GetFeedbacksByUser(string customerId);
+        Task<List<Feedback>> GetFeedbacksByUser(Guid customerId);
         Task<bool> FeedbackExists(Feedback feedback);
     }
 }

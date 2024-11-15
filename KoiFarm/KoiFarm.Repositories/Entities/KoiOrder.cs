@@ -7,7 +7,7 @@ public partial class KoiOrder
 {
     public int OrderId { get; set; }
 
-    public string CustomerId { get; set; } = null!;
+    public Guid CustomerId { get; set; }
 
     public DateOnly? OrderDate { get; set; }
 

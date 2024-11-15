@@ -11,7 +11,7 @@ namespace KoiFarm.Repositories.Interfaces
     {
         Task<bool> AddFeedback(Feedback feedback);                 // Thêm phản hồi mới
         Task<List<Feedback>> GetAllFeedback();                     // Lấy tất cả phản hồi
-        Task<List<Feedback>> GetFeedbacksByUser(string customerId); // Lấy phản hồi của một người dùng cụ thể
+        Task<List<Feedback>> GetFeedbacksByUser(Guid customerId); // Lấy phản hồi của một người dùng cụ thể
         Task<bool> FeedbackExists(Feedback feedback);              // Kiểm tra phản hồi có tồn tại không
     }
 }

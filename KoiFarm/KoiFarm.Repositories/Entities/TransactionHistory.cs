@@ -7,7 +7,7 @@ public partial class TransactionHistory
 {
     public int TransactionId { get; set; }
 
-    public string CustomerId { get; set; } = null!;
+    public Guid CustomerId { get; set; }
 
     public DateOnly? TransactionDate { get; set; }
 
