@@ -37,12 +37,12 @@
       "PackagePath": "staticwebassets\\KoiImages\\09.png"
     },
     {
-      "Id": "F:\\UTH\\N2\\HK1_2\\Công nghệ phần mềm\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\wwwroot\\css\\site.css",
-      "PackagePath": "staticwebassets\\css\\site.css"
+      "Id": "F:\\UTH\\N2\\HK1_2\\Công nghệ phần mềm\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\wwwroot\\css\\admin.css",
+      "PackagePath": "staticwebassets\\css\\admin.css"
     },
     {
-      "Id": "F:\\UTH\\N2\\HK1_2\\Công nghệ phần mềm\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\wwwroot\\css\\user.css",
-      "PackagePath": "staticwebassets\\css\\user.css"
+      "Id": "F:\\UTH\\N2\\HK1_2\\Công nghệ phần mềm\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "F:\\UTH\\N2\\HK1_2\\Công nghệ phần mềm\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\wwwroot\\favicon.ico",

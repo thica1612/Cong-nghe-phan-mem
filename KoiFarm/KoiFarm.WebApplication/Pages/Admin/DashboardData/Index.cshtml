@@ -1,42 +1,43 @@
 ﻿@page
 @model KoiFarm.WebApplication.Pages.Admin.DashboardData.IndexModel
-
-<p>
-    <a asp-page="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.DashboardDatum[0].MetricName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DashboardDatum[0].MetricValue)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DashboardDatum[0].ReportDate)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model.DashboardDatum) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.MetricName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MetricValue)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ReportDate)
-            </td>
-            <td>
-                <a asp-page="./Edit" asp-route-id="@item.ReportId">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.ReportId">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.ReportId">Delete</a>
-            </td>
-        </tr>
+@{
+    ViewData["Title"] = "BÁO CÁO";
+    Layout = "~/Pages/Admin/_AdminLayout.cshtml";
 }
-    </tbody>
-</table>
+
+<div>
+    <p>
+        <a asp-page="Create" class="btn-add">Create New</a>
+    </p>
+    <div class="table-container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.DashboardDatum[0].MetricName)</th>
+                    <th>@Html.DisplayNameFor(model => model.DashboardDatum[0].MetricValue)</th>
+                    <th>@Html.DisplayNameFor(model => model.DashboardDatum[0].ReportDate)</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.DashboardDatum)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.MetricName)</td>
+                        <td>@Html.DisplayFor(modelItem => item.MetricValue)</td>
+                        <td>@Html.DisplayFor(modelItem => item.ReportDate)</td>
+                        <td>
+                            <a asp-page="./Edit" asp-route-id="@item.ReportId">Edit</a> |
+                            <a asp-page="./Details" asp-route-id="@item.ReportId">Details</a> |
+                            <a asp-page="./Delete" asp-route-id="@item.ReportId">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="button-container">
+        <a asp-page="./Index" class="btn btn-secondary">Quay lại</a>
+    </div>
+</div>
+

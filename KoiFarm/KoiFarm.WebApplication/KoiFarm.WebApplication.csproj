@@ -7,11 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\css\user.css" />
+    <None Include="wwwroot\css\admin.css" />
   </ItemGroup>
 
   <ItemGroup>
-    <Page Include="wwwroot\css\user.css" />
+    <Page Include="wwwroot\css\admin.css" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LIffwmn/efBT2zyMYDpFdFc/loajScjS7TiLTPAdLkA=",
+  "Hash": "NWXUjwL0KMszvL/bw16BBZgq4qzsGXcFspiotETLe5U=",
   "Source": "KoiFarm.WebApplication",
   "BasePath": "_content/KoiFarm.WebApplication",
   "Mode": "Default",
@@ -1214,6 +1214,25 @@
       "OriginalItemSpec": "F:\\UTH\\N2\\HK1_2\\Công nghệ phần mềm\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\obj\\Debug\\net8.0\\scopedcss\\bundle\\KoiFarm.WebApplication.styles.css"
     },
     {
+      "Identity": "F:\\UTH\\N2\\HK1_2\\Công nghệ phần mềm\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\wwwroot\\css\\admin.css",
+      "SourceId": "KoiFarm.WebApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\UTH\\N2\\HK1_2\\Công nghệ phần mềm\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\wwwroot\\",
+      "BasePath": "_content/KoiFarm.WebApplication",
+      "RelativePath": "css/admin.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\admin.css"
+    },
+    {
       "Identity": "F:\\UTH\\N2\\HK1_2\\Công nghệ phần mềm\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\wwwroot\\css\\site.css",
       "SourceId": "KoiFarm.WebApplication",
       "SourceType": "Discovered",
@@ -1231,25 +1250,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
-    },
-    {
-      "Identity": "F:\\UTH\\N2\\HK1_2\\Công nghệ phần mềm\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\wwwroot\\css\\user.css",
-      "SourceId": "KoiFarm.WebApplication",
-      "SourceType": "Discovered",
-      "ContentRoot": "F:\\UTH\\N2\\HK1_2\\Công nghệ phần mềm\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\wwwroot\\",
-      "BasePath": "_content/KoiFarm.WebApplication",
-      "RelativePath": "css/user.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\user.css"
     },
     {
       "Identity": "F:\\UTH\\N2\\HK1_2\\Công nghệ phần mềm\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\wwwroot\\favicon.ico",
