@@ -4,43 +4,15 @@
     ViewData["Title"] = "Đánh giá";
     Layout = "~/Pages/Admin/Feedback/_FeedbackLayout.cshtml";
 }
+
 <div>
-    <h4>Feedback</h4>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Feedback.Rating)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Feedback.Rating)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Feedback.Comments)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Feedback.Comments)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Feedback.FeedbackDate)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Feedback.FeedbackDate)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Feedback.Customer)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Feedback.Customer.UserId)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Feedback.Koi)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Feedback.Koi.KoiId)
-        </dd>
-    </dl>
+    <h1>Lượt đánh giá: @Model.Feedback.Rating</h1>
+    <h2>Lời đánh giá: @Model.Feedback.Comments</h2>
+    <h3>Ngày đánh giá: @Model.Feedback.FeedbackDate</h3>
+    <h4>Mã khách hàng: @Model.Feedback.CustomerId</h4>
+    <h5>Mã Koi: @Model.Feedback.KoiId</h5>
 </div>
-<div>
-    <a asp-page="./Edit" asp-route-id="@Model.Feedback.FeedbackId">Edit</a> |
-    <a asp-page="./Index">Back to List</a>
+
+<div class="button-container">
+    <a asp-page="./Index" class="btn btn-secondary">Quay lại</a>
 </div>

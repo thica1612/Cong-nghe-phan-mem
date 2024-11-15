@@ -4,49 +4,56 @@
     ViewData["Title"] = "Đánh giá";
     Layout = "~/Pages/Admin/Feedback/_FeedbackLayout.cshtml";
 }
-<h4>Feedback</h4>
+
+<h4 class="mb-4 text-primary">Chỉnh sửa Đánh giá</h4>
 <hr />
-<div class="row">
-    <div class="col-md-4">
-        <form method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Feedback.FeedbackId" />
-            <div class="form-group">
-                <label asp-for="Feedback.CustomerId" class="control-label"></label>
-                <select asp-for="Feedback.CustomerId" class="form-control" asp-items="ViewBag.CustomerId"></select>
-                <span asp-validation-for="Feedback.CustomerId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Feedback.KoiId" class="control-label"></label>
-                <select asp-for="Feedback.KoiId" class="form-control" asp-items="ViewBag.KoiId"></select>
-                <span asp-validation-for="Feedback.KoiId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Feedback.Rating" class="control-label"></label>
-                <input asp-for="Feedback.Rating" class="form-control" />
-                <span asp-validation-for="Feedback.Rating" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Feedback.Comments" class="control-label"></label>
-                <input asp-for="Feedback.Comments" class="form-control" />
-                <span asp-validation-for="Feedback.Comments" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Feedback.FeedbackDate" class="control-label"></label>
-                <input asp-for="Feedback.FeedbackDate" class="form-control" />
-                <span asp-validation-for="Feedback.FeedbackDate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form method="post" novalidate>
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+                <input type="hidden" asp-for="Feedback.FeedbackId" />
 
-<div>
-    <a asp-page="./Index">Back to List</a>
-</div>
+                <!-- Customer Selection -->
+                <div class="mb-3">
+                    <label asp-for="Feedback.CustomerId" class="form-label">Khách hàng</label>
+                    <select asp-for="Feedback.CustomerId" class="form-select" asp-items="ViewBag.CustomerId"></select>
+                    <span asp-validation-for="Feedback.CustomerId" class="text-danger"></span>
+                </div>
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+                <!-- Koi Selection -->
+                <div class="mb-3">
+                    <label asp-for="Feedback.KoiId" class="form-label">Mã Koi</label>
+                    <select asp-for="Feedback.KoiId" class="form-select" asp-items="ViewBag.KoiId"></select>
+                    <span asp-validation-for="Feedback.KoiId" class="text-danger"></span>
+                </div>
+
+                <!-- Rating -->
+                <div class="mb-3">
+                    <label asp-for="Feedback.Rating" class="form-label">Lượt đánh giá</label>
+                    <input asp-for="Feedback.Rating" class="form-control" />
+                    <span asp-validation-for="Feedback.Rating" class="text-danger"></span>
+                </div>
+
+                <!-- Comments -->
+                <div class="mb-3">
+                    <label asp-for="Feedback.Comments" class="form-label">Lời đánh giá</label>
+                    <textarea asp-for="Feedback.Comments" class="form-control" rows="3"></textarea>
+                    <span asp-validation-for="Feedback.Comments" class="text-danger"></span>
+                </div>
+
+                <!-- Feedback Date -->
+                <div class="mb-3">
+                    <label asp-for="Feedback.FeedbackDate" class="form-label">Ngày đánh giá</label>
+                    <input asp-for="Feedback.FeedbackDate" type="date" class="form-control" />
+                    <span asp-validation-for="Feedback.FeedbackDate" class="text-danger"></span>
+                </div>
+
+                <!-- Nút lưu thay đổi, centered -->
+                <div class="button-container">
+                    <button type="submit" class="btn-save">LƯU THAY ĐỔI</button>
+                </div>
+            </form>
+        </div>
+</div>
+</div>
