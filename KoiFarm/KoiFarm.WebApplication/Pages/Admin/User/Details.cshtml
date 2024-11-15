@@ -2,13 +2,18 @@
 @model KoiFarm.WebApplication.Pages.User.DetailsModel
 @{
     ViewData["Title"] = "Chi tiết người dùng";
+    Layout = "~/Pages/Admin/User/_UserLayout.cshtml";
 }
 
-<h1>Chi tiết người dùng</h1>
-
 <div>
-    <h4>Tên người dùng: @Model.User.UserName</h4>
+    <h1>@Model.User.UserName</h1>
+    <h2>Số điện thoại: @Model.User.Phonenumber</h2>
+    <h3>Địa chỉ: @Model.User.UserAddress</h3>
     <h4>Email: @Model.User.Email</h4>
+    <h5>Điểm tích luỹ: @Model.User.PointBalance</h5>
 </div>
 
-<a asp-page="./Index" class="btn btn-secondary">Quay lại</a>
+<div class="button-container">
+    <a asp-page="./Index" class="btn btn-secondary">Quay lại</a>
+</div>
+

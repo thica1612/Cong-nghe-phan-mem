@@ -31,7 +31,7 @@ body {
 }
 
 .header-logo {
-    margin-top: 20px;
+    margin-top: 15px;
     display: flex;
     justify-content: center;
     padding-bottom: 10px;
@@ -156,3 +156,74 @@ body {
     .footer p {
         margin: 5px 0;
     }
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Chia thành 2 cột */
+    gap: 20px; /* Khoảng cách giữa các cột */
+    margin-bottom: 15px; /* Khoảng cách giữa các hàng */
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Chia thành 2 cột */
+    gap: 20px; /* Khoảng cách giữa các cột */
+    margin-bottom: 15px; /* Khoảng cách giữa các hàng */
+    margin-top: 15px;
+}
+
+.input-group {
+    margin-bottom: 10px; /* Khoảng cách dưới mỗi input */
+}
+
+    .input-group label {
+        display: block; /* Đảm bảo label nằm phía trên input */
+        margin-bottom: 5px; /* Khoảng cách giữa label và input */
+        font-weight: bold;
+    }
+
+    .input-group input {
+        width: 100%; /* Đảm bảo input chiếm hết chiều rộng */
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+    }
+
+/* Center the button */
+.button-container {
+    text-align: center; /* Đặt nút vào giữa */
+    margin-top: 20px; /* Khoảng cách giữa các input và nút */
+}
+
+.btn-save {
+    background-color: #8d86e6; /* Màu nền mới */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto; /* Căn giữa nút */
+    display: block;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu */
+}
+
+    .btn-save:hover {
+        background-color: #7a75d1; /* Màu khi hover */
+    }
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 32px
+}
+h2, h3, h4, h5 {
+    margin-bottom: 15px;/* Giãn cách giữa các dòng */
+    font-size: 16px;
+}
+
+.btn-secondary {
+    margin-top: 1000px; /* Giãn cách giữa nút và các dòng trên */
+    text-align: center;
+}

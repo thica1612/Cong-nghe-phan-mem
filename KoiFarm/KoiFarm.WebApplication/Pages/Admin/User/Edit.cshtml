@@ -2,18 +2,45 @@
 @model KoiFarm.WebApplication.Pages.User.EditModel
 @{
     ViewData["Title"] = "Chỉnh sửa người dùng";
+    Layout = "~/Pages/Admin/User/_UserLayout.cshtml";
 }
 
-<h1>Chỉnh sửa người dùng</h1>
+<div class="form-container">
+    <h2>Chỉnh sửa người dùng</h2>
+    <form action="your-save-endpoint" method="post">
+        <!-- Sắp xếp các trường input thành 2 cột -->
+        <div class="form-row">
+            <div class="input-group">
+                <label for="username">Tên người dùng</label>
+                <input type="text" name="username" id="username">
+            </div>
 
-<form method="post">
-    <div class="form-group">
-        <label asp-for="User.UserName"></label>
-        <input type="text" class="form-control" asp-for="User.UserName" />
-    </div>
-    <div class="form-group">
-        <label asp-for="User.Email"></label>
-        <input type="email" class="form-control" asp-for="User.Email" />
-    </div>
-    <button type="submit" class="btn btn-primary">Lưu thay đổi</button>
-</form>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="input-group">
+                <label for="phone">Số điện thoại</label>
+                <input type="text" name="phone" id="phone">
+            </div>
+
+            <div class="input-group">
+                <label for="address">Địa chỉ</label>
+                <input type="text" name="address" id="address">
+            </div>
+        </div>
+
+        <!-- Nút lưu thay đổi, centered -->
+        <div class="button-container">
+            <button type="submit" class="btn-save">LƯU THAY ĐỔI</button>
+        </div>
+    </form>
+</div>
+
+
+
+
+
