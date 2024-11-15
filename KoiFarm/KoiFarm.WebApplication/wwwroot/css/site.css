@@ -664,58 +664,119 @@ a:hover, a:active {
 .product-grid {
     display: grid;
     grid-template-columns: repeat(3, 0.5fr);
-    gap: 170px;
-    margin-top: 45px;
+    gap: 70px 90px;
+    margin-top: 31px;
+    margin-left: 185px;
 }
 
 .ca {
-    border: 1px solid #ccc;
-    padding: 85px;
-    text-align: center;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-}
-
-.imgca img, .blob img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.buttongia1 a {
-    color: #fff;
-    background-color: #007bff;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-.so-sanh {
-    justify-content: center;
-    font-size: 15px;
-    font-family: 'Anton';
-    display: flex;
-    align-items: center;
-    color: #555;
-}
-
-.so-sanh img {
-    width: 15px;
-    height: 15px;
-    margin-right: 5px;
-    margin-top: 3px;
-}
-
-.mieuta {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 15px;
-    font-family: 'Inter';
-    box-sizing: border-box;
+    position: relative;
+    width: 176px;
+    height: 350px;
+    background: #DAC8C8;
+    border: 1.0552px solid rgba(0, 22, 10, 0.1);
+    box-shadow: -27px 33px 33px rgba(0, 22, 10, 0.1);
+    border-radius: 30.9586px;
 }
 
 
+    .buttongia1 {
+        position: absolute;
+        width: 110px;
+        height: 36px;
+        left: 33px;
+        top: 266px;
+        background-color: #FF0303;
+        border-radius: 30.7768px;
+        display: flex; /* Để căn giữa nội dung */
+        align-items: center; /* Căn giữa theo chiều dọc */
+        justify-content: center; /* Căn giữa theo chiều ngang */
+        cursor: pointer;
+      
+    }
+
+        .buttongia1 a {
+            font-family: 'Anton', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 19px;
+            line-height: normal; /* Bỏ line-height quá lớn */
+            text-align: center;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
+    .so-sanh {
+        position: absolute;
+        width: 94px;
+        height: 29px;
+        left: 40px;
+        top: 304px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 50;
+        font-size: 18px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+        .so-sanh img {
+            width: 20px; /* Điều chỉnh kích thước theo ý muốn */
+            height: auto; /* Giữ tỉ lệ hình ảnh */
+            vertical-align: middle; /* Canh giữa với văn bản */
+        }
+    .mieuta {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        font-family: 'Inter';
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .tenca {
+        position: absolute;
+        left: 22.72%;
+        top: 4.55%;
+        bottom: 96.4%;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 30px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.29228px;
+        color: #060016;
+    }
+    .imgca {
+        width: 200px !important; /* Đặt chiều rộng cố định cho khung */
+        height: 160px !important; /* Đặt chiều cao cố định cho khung */
+        display: flex;
+        align-items: center;
+        transform: scale(1.1);
+        justify-content: center;
+        margin-left: -6px;
+    }
+
+
+        .imgca img {
+            width: 207px;
+            height: 50px;
+            object-fit: cover;
+            object-position: center;
+            z-index: 2;
+        }
+    .blob {
+        position: absolute;
+        left: -3%;
+        top: 9.18%;
+        bottom: 123.71%;
+        background: #73ACCD;
+        width: 192px;
+        z-index: 1;
+    }
 
 
 
@@ -751,7 +812,7 @@ a:hover, a:active {
 
 .pb-3 {
     min-height: 100vh;
-
+<<<<<<< HEAD
 }
 
 .txtcart {
@@ -817,4 +878,6 @@ a:hover, a:active {
     left: 0px;
     top: 600px;
     background: #EBE4E4;
+=======
+>>>>>>> c2ee16957cd9e88f65844a08a1447d7a457208db
 }
