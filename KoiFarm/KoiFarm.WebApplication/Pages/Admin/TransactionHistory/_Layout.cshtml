@@ -15,12 +15,12 @@
             </div>
             <nav class="sidebar-nav">
                 <ul>
-                    <li><a href="#" class="sidebar-link">Trang chủ</a></li>
+                    <li><a href="/" class="sidebar-link">Trang chủ</a></li>
                     <li><a href="#" class="sidebar-link">Lịch sử đơn hàng</a></li>
                     <li><a href="#" class="sidebar-link">Đánh giá đơn hàng</a></li>
                     <li><a href="#" class="sidebar-link">Hỗ trợ khách hàng</a></li>
                     <li><a href="#" class="sidebar-link">Cài đặt</a></li>
-                    <li><a href="#" class="sidebar-link">Đăng xuất</a></li>
+                    <li><a href="/" class="sidebar-link">Đăng xuất</a></li>
                 </ul>
             </nav>
         </aside>
@@ -31,7 +31,10 @@
             </div>
 
             <div class="header-logo">
-                <img src="~/images/logot.png" alt="The Aqua Koi Logo" style="width: 150px;">
+                <a href="@Url.Page("/Index")">
+                    <img src="~/images/logot.png" alt="The Aqua Koi Logo" style="width: 150px;">
+                </a>
+
             </div>
 
         </header>
