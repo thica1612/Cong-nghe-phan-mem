@@ -1,13 +1,17 @@
 ﻿@page
 @model KoiFarm.WebApplication.Pages.CertificationKoiSales.IndexModel
 @{
-    Layout = "_AdminLayout";
+    ViewData["Tittle"] = "index";
+    Layout = "~/Pages/Admin/CertificationKoiSales/_CertificationKoiSalesLayout.cshtml";
 }
 
 
 <p>
-    <a asp-page="Create">Thêm</a>
+    <div style="text-align: left; margin-bottom: 15px;">
+        <a asp-page="./Create" class="btn-add">Thêm giấy chứng nhận mới</a>
+    </div>
 </p>
+
 <table class="table">
     <thead>
         <tr>
@@ -27,26 +31,27 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.CertificationKoiSale) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.OriginCertificateKs)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.HealthCertificateKs)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CertificationDateKs)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.KoiSale.KoiSaleId)
-            </td>
-            <td>
+        @foreach (var item in Model.CertificationKoiSale)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OriginCertificateKs)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HealthCertificateKs)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CertificationDateKs)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.KoiSale.KoiSaleId)
+                </td>
+                <td>
                     <a asp-page="./Edit" asp-route-id="@item.CertificationKsid">Sửa</a> |
                     <a asp-page="./Details" asp-route-id="@item.CertificationKsid">Chi tiết</a> |
                     <a asp-page="./Delete" asp-route-id="@item.CertificationKsid">Xóa</a>
-            </td>
-        </tr>
-}
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

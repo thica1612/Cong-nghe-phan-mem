@@ -1,8 +1,8 @@
 ﻿@page
 @model KoiFarm.WebApplication.Pages.CertificationKoiSales.CreateModel
 @{
-    ViewData["Tittle"] = "Thêm giấy chứng nhận";
-    Layout = "_AdminLayout";
+    ViewData["Title"] = "Thêm giấy chứng nhận";
+    Layout = "~/Pages/Admin/CertificationKoiSales/_CertificationKoiSalesLayout.cshtml";
 }
 
 
@@ -19,7 +19,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="CertificationKoiSale.KoiSaleId" class="control-label"></label>
-                <select asp-for="CertificationKoiSale.KoiSaleId" class ="form-control" asp-items="ViewBag.KoiSaleId"></select>
+                <select asp-for="CertificationKoiSale.KoiSaleId" class="form-control" asp-items="ViewBag.KoiSaleId"></select>
             </div>
             <div class="form-group">
                 <label asp-for="CertificationKoiSale.OriginCertificateKs" class="control-label"></label>
@@ -48,5 +48,7 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }
