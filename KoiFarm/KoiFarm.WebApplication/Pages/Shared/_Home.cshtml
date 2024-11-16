@@ -77,13 +77,13 @@
                     </a>
 
                     <!--Sign in, sign up-->
-                    @if (@Context.Session.GetString("username") != null)
+                    @if (@Context.Session.GetString("Username") != null)
                     {
                         <div class="dx">
                             <span class="name">
-                                @Context.Session.GetString("username")
+                                @Context.Session.GetString("Username")
                             </span>
-                            <form asp-page="/Customer/SignOut" method="get">
+                            <form asp-page="/Customer/SignIn" method="post">
                                 <button class="dxuat">
                                     Đăng xuất
                                 </button>

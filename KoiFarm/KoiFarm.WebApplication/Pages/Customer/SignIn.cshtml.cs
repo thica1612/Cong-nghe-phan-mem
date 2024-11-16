@@ -17,7 +17,8 @@ namespace KoiFarm.WebApplication.Pages
         [HttpPost]
         public async Task<IActionResult> OnPostAsync(string userNameorEmail, string userPassword)
         {
-        
+
+            HttpContext.Session.Remove("Username");
             int failedAttempts = HttpContext.Session.GetInt32("FailedLoginAttempts") ?? 0;
 
 
