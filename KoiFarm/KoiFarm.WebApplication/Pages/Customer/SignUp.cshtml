@@ -4,7 +4,12 @@
     ViewData["Title"] = "Đăng ký";
     Layout = "_Sign";
 }
-
+@if (!string.IsNullOrEmpty(TempData["ErrorMessage"]?.ToString()))
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
 <div>
     <form method="post">
         <div class="hinhca">
@@ -30,7 +35,4 @@
     </form>
     
 </div>
-<div>
-    @TempData["SuccessMessage"]
-    @TempData["ErrorMessage"]
-</div>
+

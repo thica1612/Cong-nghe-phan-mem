@@ -31,7 +31,7 @@ namespace KoiFarm.WebApplication.Pages
                 if (result == true)
                 {
                     TempData["SuccessMessage"] = "Đăng ký thành công";
-                    return RedirectToPage("/SignIn");
+                    return RedirectToPage("/Customer/SignIn");
                 }
                 else
                 {
