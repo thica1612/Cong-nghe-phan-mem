@@ -1,40 +1,50 @@
 ﻿@page
-@model KoiFarm.WebApplication.Pages.Customers.Order.DeleteModel
+@model KoiFarm.WebApplication.Pages.Customers.Order.EditModel
+@{
+    ViewData["Title"] = "Đơn hàng";
+    Layout = "~/Pages/Admin/Order/_OrderLayout.cshtml";
+}
 
-<h3>Are you sure you want to delete this?</h3>
-<div>
-    <h4>KoiOrder</h4>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.KoiOrder.OrderDate)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.KoiOrder.OrderDate)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.KoiOrder.TotalAmount)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.KoiOrder.TotalAmount)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.KoiOrder.Status)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.KoiOrder.Status)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.KoiOrder.Customer)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.KoiOrder.Customer.UserId)
-        </dd>
-    </dl>
-    
-    <form method="post">
-        <input type="hidden" asp-for="KoiOrder.OrderId" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-page="./Index">Back to List</a>
-    </form>
+<div class="container mt-5">
+    <div class="card shadow-sm">
+        <div class="card-header bg-danger text-white">
+            <h2>Xóa đơn hàng</h2>
+        </div>
+        <div class="card-body">
+            <p class="text-danger">
+                <strong>Bạn có chắc chắn muốn xóa đơn hàng của khách hàng dưới đây?</strong>
+            </p>
+            <table class="table table-bordered">
+                <tbody>
+                    <tr>
+                        <th>Ngày đặt hàng</th>
+                        <td>@Model.KoiOrder.OrderDate</td>
+                    </tr>
+                    <tr>
+                        <th>Tổng cộng</th>
+                        <td>@Model.KoiOrder.TotalAmount</td>
+                    </tr>
+                    <tr>
+                        <th>Trạng thái</th>
+                        <td>@Model.KoiOrder.Status</td>
+                    </tr>
+                    <tr>
+                        <th>Khách hàng</th>
+                        <td>@Model.KoiOrder.CustomerId</td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <form method="post" class="mt-4">
+                <div class="d-flex justify-content-between">
+                    <button type="submit" class="btn btn-danger">
+                        <i class="bi bi-trash"></i> Xóa
+                    </button>
+                    <a asp-page="./Index" class="btn btn-secondary">
+                        <i class="bi bi-arrow-left"></i> Hủy
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>

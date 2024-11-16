@@ -1,48 +1,49 @@
 ﻿@page
 @model KoiFarm.WebApplication.Pages.Customers.Order.IndexModel
+@{
+    ViewData["Title"] = "Giỏ hàng";
+    Layout = "~/Pages/Admin/Order/_OrderLayout.cshtml";
+}
 
 <p>
-    <a asp-page="Create">Create New</a>
+    <div style="text-align: left; margin-bottom: 15px;">
+        <a asp-page="./Create" class="btn-add">Tạo đơn hàng mới</a>
+    </div>
+</p>
 </p>
 <table class="table">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.KoiOrder[0].OrderDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.KoiOrder[0].TotalAmount)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.KoiOrder[0].Status)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.KoiOrder[0].Customer)
-            </th>
-            <th></th>
+            <th>Ngày đặt hàng</th>
+            <th>Tổng cộng</th>
+            <th>Trạng thái</th>
+            <th>Mã khách hàng</th>
+            <th>Hành động</th>
         </tr>
+
     </thead>
     <tbody>
-@foreach (var item in Model.KoiOrder) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.OrderDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TotalAmount)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Status)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Customer.UserId)
-            </td>
-            <td>
-                <a asp-page="./Edit" asp-route-id="@item.OrderId">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.OrderId">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.OrderId">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model.KoiOrder)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OrderDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TotalAmount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Customer.UserId)
+                </td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.OrderId">Sửa</a> |
+                    <a asp-page="./Details" asp-route-id="@item.OrderId">Chi tiết</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.OrderId">Xóa</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

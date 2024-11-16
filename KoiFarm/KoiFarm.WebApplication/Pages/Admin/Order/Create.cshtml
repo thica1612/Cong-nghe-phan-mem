@@ -1,47 +1,62 @@
 ﻿@page
 @model KoiFarm.WebApplication.Pages.Customers.Order.CreateModel
+@{
+    ViewData["Title"] = "Đơn hàng";
+    Layout = "~/Pages/Admin/Order/_OrderLayout.cshtml";
+}
 
-<h4>KoiOrder</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="KoiOrder.OrderId" class="control-label"></label>
+<div class="form-container">
+    <h2>Đơn hàng</h2>
+    <!-- Form chính -->
+    <form method="post">
+        @Html.AntiForgeryToken()
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <!-- Sắp xếp các trường input thành 2 cột -->
+        <div class="form-row">
+            <div class="input-group">
+                <label asp-for="KoiOrder.OrderId" class="control-label">Mã đơn hàng</label>
                 <input asp-for="KoiOrder.OrderId" class="form-control" />
                 <span asp-validation-for="KoiOrder.OrderId" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="KoiOrder.CustomerId" class="control-label"></label>
-                <select asp-for="KoiOrder.CustomerId" class ="form-control" asp-items="ViewBag.CustomerId"></select>
+
+            <div class="input-group">
+                <label asp-for="KoiOrder.CustomerId" class="control-label">Khách hàng</label>
+                <select asp-for="KoiOrder.CustomerId" class="form-control" asp-items="ViewBag.CustomerId"></select>
             </div>
-            <div class="form-group">
-                <label asp-for="KoiOrder.OrderDate" class="control-label"></label>
-                <input asp-for="KoiOrder.OrderDate" class="form-control" />
-                <span asp-validation-for="KoiOrder.OrderDate" class="text-danger"></span>
+        </div>
+
+        <div class="form-row">
+            <div class="input-group">
+                <label asp-for="KoiOrder.OrderDate" class="control-label">Ngày đặt hàng</label>
+                <select asp-for="KoiOrder.OrderDate" class="form-control" asp-items="ViewBag.KoiId"></select>
             </div>
-            <div class="form-group">
-                <label asp-for="KoiOrder.TotalAmount" class="control-label"></label>
+
+            <div class="input-group">
+                <label asp-for="KoiOrder.TotalAmount" class="control-label">Tổng cộng</label>
                 <input asp-for="KoiOrder.TotalAmount" class="form-control" />
                 <span asp-validation-for="KoiOrder.TotalAmount" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="KoiOrder.Status" class="control-label"></label>
+        </div>
+
+        <div class="form-row">
+            <div class="input-group">
+                <label asp-for="KoiOrder.Status" class="control-label">Trạng thái</label>
                 <input asp-for="KoiOrder.Status" class="form-control" />
                 <span asp-validation-for="KoiOrder.Status" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
 
-<div>
-    <a asp-page="Index">Back to List</a>
+
+            <!-- Nút lưu thay đổi và quay lại -->
+            <div class="button-container">
+                <button type="submit" class="btn-succect">Lưu thành công</button>
+                <a asp-page="./Index" class="btn btn-secondary">Quay lại</a>
+            </div>
+    </form>
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }
