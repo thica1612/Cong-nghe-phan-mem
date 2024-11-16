@@ -5,47 +5,61 @@
     Layout = "~/Pages/Admin/Feedback/_FeedbackLayout.cshtml";
 }
 
-<h4>ĐÁNH GIÁ</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
+<div class="form-container">
+    <h2>ĐÁNH GIÁ</h2>
+    <!-- Form chính -->
+    <form method="post">
+        @Html.AntiForgeryToken()
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <!-- Sắp xếp các trường input thành 2 cột -->
+        <div class="form-row">
+            <div class="input-group">
                 <label asp-for="Feedback.FeedbackId" class="control-label">Mã đánh giá</label>
                 <input asp-for="Feedback.FeedbackId" class="form-control" />
                 <span asp-validation-for="Feedback.FeedbackId" class="text-danger"></span>
             </div>
-            <div class="form-group">
+
+            <div class="input-group">
                 <label asp-for="Feedback.CustomerId" class="control-label">Mã khách hàng</label>
                 <select asp-for="Feedback.CustomerId" class="form-control" asp-items="ViewBag.CustomerId"></select>
             </div>
-            <div class="form-group">
+        </div>
+
+        <div class="form-row">
+            <div class="input-group">
                 <label asp-for="Feedback.KoiId" class="control-label">Mã Koi</label>
                 <select asp-for="Feedback.KoiId" class="form-control" asp-items="ViewBag.KoiId"></select>
             </div>
-            <div class="form-group">
+
+            <div class="input-group">
                 <label asp-for="Feedback.Rating" class="control-label">Lượt đánh giá</label>
                 <input asp-for="Feedback.Rating" class="form-control" />
                 <span asp-validation-for="Feedback.Rating" class="text-danger"></span>
             </div>
-            <div class="form-group">
+        </div>
+
+        <div class="form-row">
+            <div class="input-group">
                 <label asp-for="Feedback.Comments" class="control-label">Lời đánh giá</label>
                 <input asp-for="Feedback.Comments" class="form-control" />
                 <span asp-validation-for="Feedback.Comments" class="text-danger"></span>
             </div>
-            <div class="form-group">
+
+            <div class="input-group">
                 <label asp-for="Feedback.FeedbackDate" class="form-label">Ngày đánh giá</label>
                 <input asp-for="Feedback.FeedbackDate" type="date" class="form-control" />
                 <span asp-validation-for="Feedback.FeedbackDate" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Tạo đánh giá" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
+        </div>
 
+        <!-- Nút lưu thay đổi và quay lại -->
+        <div class="button-container">
+            <button type="submit" class="btn-save">TẠO ĐÁNH GIÁ</button>
+            <a asp-page="./Index" class="btn btn-secondary">Quay lại</a>
+        </div>
+    </form>
+</div>
 
 @section Scripts {
     @{
