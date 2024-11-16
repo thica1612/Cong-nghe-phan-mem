@@ -3,14 +3,15 @@
 @{
     ViewData["Title"] = "Đăng nhập";
     Layout = "_Sign";
-}
+}}
 
-@if (TempData["ErroMessage"] != null)
+@if (!string.IsNullOrEmpty(TempData["ErrorMessage"]?.ToString()))
 {
     <div class="alert alert-danger">
-        @TempData["ErroMessage"]
+        @TempData["ErrorMessage"]
     </div>
 }
+
 
 
 <div>

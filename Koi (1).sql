@@ -146,12 +146,12 @@ CREATE TABLE KoiOrder (
 GO
 
 INSERT INTO KoiOrder (OrderID, CustomerID, OrderDate, TotalAmount, Status) VALUES
-    (1, '8bcf45e1-1fbe-4fd9-99fb-467e142181ef', '2024-01-15', 1350000.00, 'Completed'),
-    (2, '2d880348-f135-490d-bf2d-78afe5de2e5c', '2024-02-20', 1210000.00, 'Completed'),
-    (3, '400aef7c-f638-4528-98f3-7fcc95c5f695', '2024-03-05', 1250000.00, 'Completed'),
-	(4, '9e1bd26f-c2ad-4639-9e22-b6d29069f701', '2024-03-02', 1450000.00, 'Completed'),
-	(5, '420e8ee0-330a-491f-896e-de527e818039', '2024-05-27', 600000.00, 'Completed'),
-	(6, '8bcf45e1-1fbe-4fd9-99fb-467e142181ef', '2024-06-22', 540000.00, 'Completed');
+    (1, 'f7f7fe75-0e21-4b9f-9442-0bcf49a9b0ad', '2024-01-15', 1350000.00, 'Completed'),
+    (2, 'a90c8168-eade-42d0-8bd4-f4fda98967a0', '2024-02-20', 1210000.00, 'Completed'),
+    (3, 'ff398fd9-c5a7-4fea-a360-5ceffa6f4342', '2024-03-05', 1250000.00, 'Completed'),
+	(4, '60872786-f0bd-455d-bd27-a1b845e5f564', '2024-03-02', 1450000.00, 'Completed'),
+	(5, 'ca9a11d1-2199-48a5-ba90-ce826225ca5f', '2024-05-27', 600000.00, 'Completed'),
+	(6, '763fa906-e5fd-468f-bed3-f1019c439df4', '2024-06-22', 540000.00, 'Completed');
 GO
 
 -- Bảng OrderDetail lưu chi tiết từng sản phẩm trong một đơn hàng
@@ -215,11 +215,11 @@ CREATE TABLE Feedback (
 GO
 
 INSERT INTO Feedback (FeedbackID, CustomerID, KoiID, Rating, Comments, FeedbackDate) VALUES
-    (1, '8bcf45e1-1fbe-4fd9-99fb-467e142181ef', 'K001', 5, 'Great fish, very healthy!', '2024-09-12'),
-    (2, '2d880348-f135-490d-bf2d-78afe5de2e5c', 'K002', 4, 'Beautiful Koi but a bit pricey.', '2024-08-15'),
-    (3, '400aef7c-f638-4528-98f3-7fcc95c5f695', 'K003', 5, 'Very satisfied with the quality!', '2024-07-25'),
-    (4, '9e1bd26f-c2ad-4639-9e22-b6d29069f701', 'K004', 3, 'Fish was nice but smaller than expected.', '2024-06-18'),
-    (5, '420e8ee0-330a-491f-896e-de527e818039', 'K005', 4, 'Good fish, decent service.', '2024-05-10');
+    (1, '763fa906-e5fd-468f-bed3-f1019c439df4', 'K001', 5, 'Great fish, very healthy!', '2024-09-12'),
+    (2, 'ca9a11d1-2199-48a5-ba90-ce826225ca5f', 'K002', 4, 'Beautiful Koi but a bit pricey.', '2024-08-15'),
+    (3, 'ea53ba2f-7bfb-4e47-85b1-e7ef2b8c8f49', 'K003', 5, 'Very satisfied with the quality!', '2024-07-25'),
+    (4, 'a90c8168-eade-42d0-8bd4-f4fda98967a0', 'K004', 3, 'Fish was nice but smaller than expected.', '2024-06-18'),
+    (5, 'ff398fd9-c5a7-4fea-a360-5ceffa6f4342', 'K005', 4, 'Good fish, decent service.', '2024-05-10');
 GO
 
 -- Tạo bảng Promotion
@@ -253,7 +253,7 @@ GO
 INSERT INTO TransactionHistory (TransactionID, CustomerID, TransactionDate, TransactionType, Amount) VALUES
     (1, '8bcf45e1-1fbe-4fd9-99fb-467e142181ef', '2024-01-15', 'Purchase', 1500000.00),
     (2, '2d880348-f135-490d-bf2d-78afe5de2e5c', '2024-02-20', 'Purchase', 2000000.00),
-    (3, '400aef7c-f638-4528-98f3-7fcc95c5f695', '2024-03-05', 'Purchase', 1800000.00),
+    (3, 'a90c8168-eade-42d0-8bd4-f4fda98967a0', '2024-03-05', 'Purchase', 1800000.00),
     (4, '9e1bd26f-c2ad-4639-9e22-b6d29069f701', '2024-05-27', 'Consignment', 3000000.00),
     (5, '420e8ee0-330a-491f-896e-de527e818039', '2024-06-22', 'Deposit', 1000000.00);
 GO

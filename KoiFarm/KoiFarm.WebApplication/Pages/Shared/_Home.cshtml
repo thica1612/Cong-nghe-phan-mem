@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"]</title>
+    <title>@ViewData["Title"] - KoiFarm.WebApplication</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/KoiFarm.WebApplication.styles.css" asp-append-version="true" />
@@ -70,26 +70,41 @@
                         <button type="submit">Search</button>
                     </div>
 
+
                     <!--Cart-->
                     <a class="cart" asp-page="/Customer/Cart">
                         <img src="~/images/Cart.png" />
                     </a>
 
                     <!--Sign in, sign up-->
-                    <form method="get" asp-page="/Customer/SignIn">
-                        <button type="submit" class="dnhap">
-                        Đăng nhập
-                    </button>
-                    </form>
-                    
-                    <form method="get" asp-page="/Customer/SignUp">
-                        <button type="submit" class="dky">
-                            Đăng ký
-                        </button>
-                    </form>
-                    
-                        
-                    
+                    @if (@Context.Session.GetString("username") != null)
+                    {
+                        <div class="dx">
+                            <span class="name">
+                                @Context.Session.GetString("username")
+                            </span>
+                            <form asp-page="/Customer/SignOut" method="get">
+                                <button class="dxuat">
+                                    Đăng xuất
+                                </button>
+                            </form>
+                        </div>
+
+                       
+                    }
+                    else
+                    {
+                        <form type= "submit" method="get" asp-page="/Customer/SignIn">
+                            <button class="dnhap">
+                                Đăng nhập
+                            </button>
+                        </form>
+                        <form type="submit" method="get" asp-page="/Customer/SignUp">
+                            <button class="dky">
+                                Đăng ký
+                            </button>
+                        </form>
+                    }
 
 
                 </div>

@@ -14,29 +14,33 @@ namespace KoiFarm.WebApplication.Pages
             _service = service;
         }
 
-        [BindProperty]
-        public string UserNameorEmail { get; set; }
-
-        [BindProperty]
-        public string UserPassword { get; set; }
-
         [HttpPost]
         public async Task<IActionResult> OnPostAsync(string userNameorEmail, string userPassword)
         {
-            if (string.IsNullOrEmpty(UserNameorEmail) || string.IsNullOrEmpty(UserPassword))
+        
+            int failedAttempts = HttpContext.Session.GetInt32("FailedLoginAttempts") ?? 0;
+
+
+            if (string.IsNullOrEmpty(userNameorEmail) || string.IsNullOrEmpty(userPassword))
             {
-                TempData["ErrorMessage"] = "Tên đăng nhập hoặc mật khẩu không được để trống.";
                 return Page();
             }
+
             var user = await _service.AuthenUser(userNameorEmail, userPassword);
-            if (user == true)
+
+            if (user) 
             {
                 HttpContext.Session.SetString("Username", userNameorEmail);
-                TempData["SuccessMessage"] = "Đăng nhập thành công";
                 return RedirectToPage("/Index");
             }
             else
             {
+                // Đăng nhập thất bại, tăng số lần đăng nhập sai
+                failedAttempts++;
+                HttpContext.Session.SetInt32("FailedLoginAttempts", failedAttempts);
+
+              
+                // Lỗi đăng nhập
                 TempData["ErrorMessage"] = "Tên đăng nhập hoặc mật khẩu không hợp lệ";
                 return RedirectToPage("/Customer/SignIn");
             }

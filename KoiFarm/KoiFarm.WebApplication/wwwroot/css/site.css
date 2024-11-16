@@ -890,3 +890,178 @@ a:hover, a:active {
     top: 600px;
     background: #EBE4E4;
 }
+
+.dx {
+    position: relative;
+    text-align: center; /* Căn giữa nội dung trong div */
+}
+
+.name {
+    position: absolute;
+    top: -29px;
+    left: -138px;
+    font-size: 14px;
+}
+
+
+.signout-form {
+    margin-top: 2px; /* Khoảng cách giữa tên người dùng và nút đăng xuất */
+}
+.dxuat {
+    position: absolute;
+    top: -16px;
+    left: -110px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    gap: 8px;
+    width: 60px;
+    height: 22px;
+    background: #E3E3E3;
+    border: 1px solid #767676;
+    border-radius: 8px;
+    font-size: 11px;
+    margin-top: 10px;
+}
+.mainchitiet {
+    display: flex;
+    justify-content: space-between; /* Đặt các phần tử con cách đều hoặc căn theo hai bên */
+    align-items: flex-start; /* Đảm bảo các phần tử con căn lên trên cùng */
+    gap: 20px; /* Khoảng cách giữa hinhKoi và chu */
+}
+.hinhKoi {
+    width: 495px;
+    height: 688px;
+    margin-top: 79px;
+    overflow: hidden;
+    margin-left: 77px;
+}
+.hinhKoi img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Phần tử cha */
+.chu {
+    position: relative; /* Đặt phần tử cha có position relative */
+    width: 500px;
+    height: 500px;
+    top: 20px;
+    text-align: left;
+    left: -180px;
+}
+
+/* Phần tử con */
+.gioithieu, .thongtin, .mieutachitiet, .themgiothang, .muangay {
+    position: absolute; /* Đặt tất cả các phần tử con có position absolute */
+}
+
+/* Định vị các phần tử con */
+.nameKoi {
+    position: absolute;
+    right: 27.4%;
+    top: 12.58%;
+    bottom: 73.94%;
+    font-family: 'Anton';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 145px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.29228px;
+    color: #060016;
+}
+
+.gioithieu {
+    top: 50px;
+    left: 10px;
+}
+
+.thongtin {
+    top: 170px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: justify;
+    color: #000000;
+}
+
+.mieutachitiet {
+    top: 236px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 117.33%;
+    text-align: justify;
+    color: #000000;
+}
+
+.themgiothang {
+    bottom: 50px;
+    right: 10px;
+}
+
+.muangay {
+    bottom: 10px;
+    right: 10px;
+}
+.themgiothang{
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    width: 125px;
+    height: 36px;
+    border-radius: 30.7768px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    left: -8px;
+    top: 512px;
+    background-color: #04032B;
+}
+
+    .themgiothang a  {
+        font-family: 'Anton', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: normal; /* Bỏ line-height quá lớn */
+        text-align: center;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+.muangay {
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    width: 110px;
+    height: 36px;
+    border-radius: 30.7768px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    left: 137px;
+    top: 512px;
+    background-color: #030085;
+}
+    .muangay a {
+        font-family: 'Anton', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: normal; /* Bỏ line-height quá lớn */
+        text-align: center;
+        color: #FFFFFF;
+        text-decoration: none;
+    }

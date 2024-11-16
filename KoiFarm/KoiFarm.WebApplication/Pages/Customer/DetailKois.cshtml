@@ -1,0 +1,29 @@
+﻿@page 
+@model KoiFarm.WebApplication.Pages.Customer.DetailKoisModel
+@{
+    ViewData["Title"] = "Chi Tiết";
+    Layout = "_Home";
+}
+<div class="mainchitiet">
+    <div class="hinhKoi">
+        <img src="~/images/19.png" />
+    </div>
+    <div class="chu"> 
+        <div class="nameKoi">Koi.KoiName </div>
+        <div class="gioi thieu"></div>
+        <div class="thongtin">THÔNG TIN CHI TIẾT </div>
+        <div class="mieutachitiet">
+            Giới tính: koi.KoiGender <br>
+            Năm sinh: koi.KoiYear <br>
+            Kích thước: koi.KoiSize cm <br>
+            Giống: koi.KoiGender <br>
+            Nguồn gốc: koi.KoiOrigin <br>
+            Giới tính: koi.KoiGender <br>
+            Giá:
+        </div>
+        <div class="themgiothang">  <a asp-page="/Customer/chitietsp"> thêm giỏ hàng </a></div>
+        <div class="muangay"> <a asp-page="/Customer/chitietsp">mua ngay</a></div>
+    </div>
+    </div>
+    
+</div> 
