@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace KoiFarm.WebApplication.Pages.User
+namespace KoiFarm.WebApplication.Pages.Admin.User
 {
     public class IndexModel : PageModel
     {

@@ -1,10 +1,9 @@
-﻿using KoiFarm.Services.Interfaces;
-using KoiFarm.Repositories.Entities;
-using Microsoft.AspNetCore.Mvc;
+﻿using KoiFarm.Repositories.Entities;
+using KoiFarm.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 
-namespace KoiFarm.WebApplication.Pages.User
+namespace KoiFarm.WebApplication.Pages.Admin.User
 {
     public class CreateModel : PageModel
     {
@@ -30,18 +29,18 @@ namespace KoiFarm.WebApplication.Pages.User
                 return Page();
             }
 
-            bool result = _userService.AddKoiUser(User);
+            bool result = await _userService.SignUpUser(User);
             if (result)
             {
+                // Chuyển hướng về trang Index sau khi lưu thành công
                 return RedirectToPage("./Index");
             }
             else
             {
-                // Xử lý khi cập nhật thất bại, có thể hiển thị lại trang với thông báo lỗi
-                ModelState.AddModelError(string.Empty, "Cập nhật người dùng thất bại.");
+                // Xử lý khi thêm người dùng thất bại
+                ModelState.AddModelError(string.Empty, "Không thể thêm người dùng.");
                 return Page();
             }
-
         }
     }
 }

@@ -17,339 +17,339 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = KoiFarm.WebApplication
 build_property.RootNamespace = KoiFarm.WebApplication
-build_property.ProjectDir = D:\Kì1-Năm2\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\
+build_property.ProjectDir = F:\UTH\N2\HK1_2\Công nghệ phần mềm\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Kì1-Năm2\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication
+build_property.MSBuildProjectDirectory = F:\UTH\N2\HK1_2\Công nghệ phần mềm\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/CertificationKoiSales/Create.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/CertificationKoiSales/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ2VydGlmaWNhdGlvbktvaVNhbGVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/CertificationKoiSales/Delete.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/CertificationKoiSales/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ2VydGlmaWNhdGlvbktvaVNhbGVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/CertificationKoiSales/Details.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/CertificationKoiSales/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ2VydGlmaWNhdGlvbktvaVNhbGVzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/CertificationKoiSales/Edit.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/CertificationKoiSales/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ2VydGlmaWNhdGlvbktvaVNhbGVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/CertificationKoiSales/Index.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/CertificationKoiSales/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ2VydGlmaWNhdGlvbktvaVNhbGVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Certifications/Create.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Certifications/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ2VydGlmaWNhdGlvbnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Certifications/Delete.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Certifications/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ2VydGlmaWNhdGlvbnNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Certifications/Details.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Certifications/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ2VydGlmaWNhdGlvbnNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Certifications/Edit.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Certifications/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ2VydGlmaWNhdGlvbnNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Certifications/Index.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Certifications/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ2VydGlmaWNhdGlvbnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Consignment/Create.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Consignment/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ29uc2lnbm1lbnRcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Consignment/Delete.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Consignment/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ29uc2lnbm1lbnRcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Consignment/Details.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Consignment/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ29uc2lnbm1lbnRcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Consignment/Edit.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Consignment/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ29uc2lnbm1lbnRcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Consignment/Index.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Consignment/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ29uc2lnbm1lbnRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/DashboardData/Create.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/DashboardData/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRGFzaGJvYXJkRGF0YVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/DashboardData/Delete.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/DashboardData/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRGFzaGJvYXJkRGF0YVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/DashboardData/Details.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/DashboardData/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRGFzaGJvYXJkRGF0YVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/DashboardData/Edit.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/DashboardData/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRGFzaGJvYXJkRGF0YVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/DashboardData/Index.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/DashboardData/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRGFzaGJvYXJkRGF0YVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/DashboardData/_DashboardDataLayout.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/DashboardData/_DashboardDataLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRGFzaGJvYXJkRGF0YVxfRGFzaGJvYXJkRGF0YUxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Feedback/Create.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Feedback/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRmVlZGJhY2tcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Feedback/Delete.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Feedback/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRmVlZGJhY2tcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Feedback/Details.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Feedback/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRmVlZGJhY2tcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Feedback/Edit.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Feedback/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRmVlZGJhY2tcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Feedback/Index.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Feedback/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRmVlZGJhY2tcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Feedback/_FeedbackLayout.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Feedback/_FeedbackLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRmVlZGJhY2tcX0ZlZWRiYWNrTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/KoiSales/Create.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/KoiSales/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cS29pU2FsZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/KoiSales/Delete.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/KoiSales/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cS29pU2FsZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/KoiSales/Details.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/KoiSales/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cS29pU2FsZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/KoiSales/Edit.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/KoiSales/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cS29pU2FsZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/KoiSales/Index.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/KoiSales/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cS29pU2FsZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Kois/Create.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Kois/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cS29pc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Kois/Delete.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Kois/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cS29pc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Kois/Details.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Kois/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cS29pc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Kois/Edit.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Kois/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cS29pc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Kois/Index.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Kois/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cS29pc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/OrderDetail/Create.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/OrderDetail/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cT3JkZXJEZXRhaWxcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/OrderDetail/Delete.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/OrderDetail/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cT3JkZXJEZXRhaWxcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/OrderDetail/Details.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/OrderDetail/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cT3JkZXJEZXRhaWxcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/OrderDetail/Edit.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/OrderDetail/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cT3JkZXJEZXRhaWxcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/OrderDetail/Index.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/OrderDetail/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cT3JkZXJEZXRhaWxcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Order/Create.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Order/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cT3JkZXJcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Order/Delete.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Order/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cT3JkZXJcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Order/Details.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Order/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cT3JkZXJcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Order/Edit.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Order/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cT3JkZXJcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Order/Index.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Order/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cT3JkZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Promotion/Create.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Promotion/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvbW90aW9uXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Promotion/Delete.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Promotion/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvbW90aW9uXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Promotion/Details.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Promotion/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvbW90aW9uXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Promotion/Edit.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Promotion/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvbW90aW9uXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Promotion/Index.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/Promotion/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvbW90aW9uXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/TransactionHistory/Create.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/TransactionHistory/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVHJhbnNhY3Rpb25IaXN0b3J5XENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/TransactionHistory/Delete.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/TransactionHistory/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVHJhbnNhY3Rpb25IaXN0b3J5XERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/TransactionHistory/Details.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/TransactionHistory/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVHJhbnNhY3Rpb25IaXN0b3J5XERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/TransactionHistory/Edit.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/TransactionHistory/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVHJhbnNhY3Rpb25IaXN0b3J5XEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/TransactionHistory/Index.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/TransactionHistory/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVHJhbnNhY3Rpb25IaXN0b3J5XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/TransactionHistory/_Layout.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/TransactionHistory/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVHJhbnNhY3Rpb25IaXN0b3J5XF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/User/Create.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/User/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVXNlclxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/User/Delete.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/User/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVXNlclxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/User/Details.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/User/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVXNlclxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/User/Edit.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/User/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVXNlclxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/User/Index.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/_AdminLayout.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Admin/_AdminLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cX0FkbWluTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Customer/AboutUs.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Customer/AboutUs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJcQWJvdXRVcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Customer/Cart.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Customer/Cart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJcQ2FydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Customer/Contact.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Customer/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJcQ29udGFjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Customer/FeedConsign.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Customer/FeedConsign.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJcRmVlZENvbnNpZ24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Customer/Kois.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Customer/Kois.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJcS29pcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Customer/Sale.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Customer/Sale.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJcU2FsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Customer/SellConsign.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Customer/SellConsign.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJcU2VsbENvbnNpZ24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Customer/SignIn.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Customer/SignIn.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJcU2lnbkluLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Customer/SignUp.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Customer/SignUp.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJcU2lnblVwLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Error.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Index.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Privacy.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Shared/_Home.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Shared/_Home.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Ib21lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Shared/_Layout.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Shared/_Sign.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Shared/_Sign.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9TaWduLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/_ViewImports.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Kì1-Năm2/CNPM/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/_ViewStart.cshtml]
+[F:/UTH/N2/HK1_2/Công nghệ phần mềm/Cong-nghe-phan-mem/KoiFarm/KoiFarm.WebApplication/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

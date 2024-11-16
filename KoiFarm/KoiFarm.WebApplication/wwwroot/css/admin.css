@@ -232,3 +232,51 @@ h2, h3, h4, h5 {
     text-align: center;
 }
 
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    flex: 0 0 48%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-save {
+    background-color: #8d86e6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn-secondary {
+    background-color: #8d86e6;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.btn-save:hover {
+    background-color: #7a75d1;
+}
+
+.btn-secondary:hover {
+    background-color: #7a75d1;
+}

@@ -1,5 +1,5 @@
 ﻿@page
-@model KoiFarm.WebApplication.Pages.User.CreateModel
+@model KoiFarm.WebApplication.Pages.Admin.User.CreateModel
 @{
     ViewData["Title"] = "Thêm người dùng mới";
     Layout = "~/Pages/Admin/_AdminLayout.cshtml";
@@ -7,35 +7,37 @@
 
 <div class="form-container">
     <h2>Chỉnh sửa người dùng</h2>
-    <form action="your-save-endpoint" method="post">
+    <!-- Form chính -->
+    <form method="post">
         <!-- Sắp xếp các trường input thành 2 cột -->
         <div class="form-row">
             <div class="input-group">
                 <label for="username">Tên người dùng</label>
-                <input type="text" name="username" id="username">
+                <input type="text" name="User.Username" id="username" value="@Model.User?.UserName">
             </div>
 
             <div class="input-group">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="User.Email" id="email" value="@Model.User?.Email">
             </div>
         </div>
 
         <div class="form-row">
             <div class="input-group">
                 <label for="phone">Số điện thoại</label>
-                <input type="text" name="phone" id="phone">
+                <input type="text" name="User.Phone" id="phone" value="@Model.User?.Phonenumber">
             </div>
 
             <div class="input-group">
                 <label for="address">Địa chỉ</label>
-                <input type="text" name="address" id="address">
+                <input type="text" name="User.Address" id="address" value="@Model.User?.UserAddress">
             </div>
         </div>
 
-        <!-- Nút lưu thay đổi, centered -->
+        <!-- Nút lưu thay đổi và quay lại -->
         <div class="button-container">
             <button type="submit" class="btn-save">LƯU THAY ĐỔI</button>
+            <a asp-page="./Index" class="btn btn-secondary">Quay lại</a>
         </div>
     </form>
 </div>

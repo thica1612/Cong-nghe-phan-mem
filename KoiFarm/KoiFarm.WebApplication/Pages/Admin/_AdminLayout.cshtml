@@ -17,10 +17,9 @@
                 <ul>
                     <li><a href="/" class="sidebar-link">Trang chủ</a></li>
                     <li><a href="#" class="sidebar-link">Đơn hàng</a></li>
-                    <li><a href="#" class="sidebar-link">Báo cáo doanh thu</a></li>
-                    <li><a href="#" class="sidebar-link">Danh sách khách hàng</a></li>
-                    <li><a href="#" class="sidebar-link">Cài đặt</a></li>
-                    <li><a href="#" class="sidebar-link">Đăng xuất</a></li>
+                    <li><a href="DashboardData" class="sidebar-link">Báo cáo doanh thu</a></li>
+                    <li><a href="User" class="sidebar-link">Danh sách khách hàng</a></li>
+                    <li><a href="/" class="sidebar-link">Đăng xuất</a></li>
                 </ul>
             </nav>
         </aside>
@@ -34,7 +33,9 @@
                 </div>
 
                 <div class="header-logo">
-                    <img src="~/images/logot.png" alt="The Aqua Koi Logo" style="width: 150px;">
+                    <a href="@Url.Page("/Index")">
+                        <img src="~/images/logot.png" alt="The Aqua Koi Logo" style="width: 150px;">
+                    </a>
                 </div>
 
             </header>
