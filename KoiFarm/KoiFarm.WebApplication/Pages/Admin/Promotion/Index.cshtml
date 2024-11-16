@@ -1,25 +1,16 @@
 ﻿@page
 @model KoiFarm.WebApplication.Pages.Admin.Promotion.IndexModel
 
-<p>
-    <a asp-page="Create">Create New</a>
-</p>
+<div style="text-align: right; margin-bottom: 15px;">
+    <a asp-page="./Create" class="btn-add">Thêm khuyến mãi mới</a>
+</div>
 <table class="table">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Promotion[0].PromotionName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Promotion[0].DiscountPercentage)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Promotion[0].StartDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Promotion[0].EndDate)
-            </th>
-            <th></th>
+            <th>Tên Khuyến mãi</th>
+            <th>Chiết khấu</th>
+            <th>Ngày bắt đầu</th>
+            <th>Ngày kết thúc</th>
         </tr>
     </thead>
     <tbody>
@@ -38,9 +29,9 @@
                 @Html.DisplayFor(modelItem => item.EndDate)
             </td>
             <td>
-                <a asp-page="./Edit" asp-route-id="@item.PromotionId">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.PromotionId">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.PromotionId">Delete</a>
+                <a asp-page="./Edit" asp-route-id="@item.PromotionId">Sửa</a> |
+                <a asp-page="./Details" asp-route-id="@item.PromotionId">Chi tiết</a> |
+                <a asp-page="./Delete" asp-route-id="@item.PromotionId">Xóa</a>
             </td>
         </tr>
 }

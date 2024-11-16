@@ -4,66 +4,44 @@
     ViewData["Title"] = "Lịch sử mua hàng";
     Layout = "~/Pages/Admin/TransactionHistory/_Layout.cshtml";
 }
-<!-- Nội dung chính -->
-<main class="flex-1 p-4 bg-gray-100">
-    <div class="bg-white shadow-md rounded p-4">
-        <table class="w-full text-left">
-            <thead>
-                <tr class="bg-purple-500 text-white">
-                    <th class="p-2">ĐƠN HÀNG</th>
-                    <th class="p-2">GIÁ TRỊ ĐƠN HÀNG</th>
-                    <th class="p-2">MÃ ĐƠN HÀNG</th>
-                    <th class="p-2">TRẠNG THÁI</th>
-                    <th class="p-2">ĐÁNH GIÁ</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="border-b">
-                    <td class="p-2 flex items-center">
-                        <img alt="Koi Bakki image" class="h-12 mr-2" height="50" src="01.png" width="50" />
-                        <div>
-                            <div class="font-bold">Koi Bakki</div>
-                            <div class="text-sm text-gray-600">Size: 20cm | Date: 2017</div>
-                        </div>
-                    </td>
-                    <td class="p-2">$50.00</td>
-                    <td class="p-2">TAB001</td>
-                    <td class="p-2">Đã giao</td>
-                    <td class="p-2">
-                        <button class="bg-purple-500 text-white py-1 px-2 rounded">Chưa đánh giá</button>
-                    </td>
-                </tr>
-                <tr class="border-b">
-                    <td class="p-2 flex items-center">
-                        <img alt="Koi Bakki image" class="h-12 mr-2" height="50" src="03.png" width="50" />
-                        <div>
-                            <div class="font-bold">Koi Bakki</div>
-                            <div class="text-sm text-gray-600">Size: 20cm | Date: 2017</div>
-                        </div>
-                    </td>
-                    <td class="p-2">$50.00</td>
-                    <td class="p-2">TAB001</td>
-                    <td class="p-2">Đã giao</td>
-                    <td class="p-2">
-                        <button class="bg-gray-300 text-gray-700 py-1 px-2 rounded">Đã đánh giá</button>
-                    </td>
-                </tr>
-                <tr class="border-b">
-                    <td class="p-2 flex items-center">
-                        <img alt="Koi Bakki image" class="h-12 mr-2" height="50" src="05.png" width="50" />
-                        <div>
-                            <div class="font-bold">Koi Bakki</div>
-                            <div class="text-sm text-gray-600">Size: 20cm | Date: 2023</div>
-                        </div>
-                    </td>
-                    <td class="p-2">$50.00</td>
-                    <td class="p-2">TAB001</td>
-                    <td class="p-2">Đã giao</td>
-                    <td class="p-2">
-                        <button class="bg-gray-300 text-gray-700 py-1 px-2 rounded">Đã đánh giá</button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</main>
+<div style="text-align: right; margin-bottom: 15px;">
+    <a asp-page="./Create" class="btn-add">Thêm giao dịch mới</a>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Mã giao dịch</th>
+            <th>Mã khách hàng</th>
+            <th>Ngày giao dịch</th>
+            <th>Loại giao dịch</th>
+            <th>Số tiền</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.TransactionHistory)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TransactionId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CustomerId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TransactionDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TransactionType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Amount)
+                </td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.TransactionId">Sửa</a>
+                    <a asp-page="./Details" asp-route-id="@item.TransactionId">Chi tiết</a>
+                    <a asp-page="./Delete" asp-route-id="@item.TransactionId">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

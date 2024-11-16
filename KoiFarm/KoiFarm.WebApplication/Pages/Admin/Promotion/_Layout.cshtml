@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lịch sử mua hàng - The Aqua Koi</title>
+    <link rel="stylesheet" href="~/css/customer.css" />
+</head>
+<body>
+    <div class="layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="/" class="sidebar-link">Trang chủ</a></li>
+                    <li><a href="Privacy" class="sidebar-link">Cài đặt</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <header class="header">
+            <div class="user-info">
+                <p>NGUYEN ANH HUY (Manager)</p>
+            </div>
+
+            <div class="header-logo">
+                <a href="@Url.Page("/Index")">
+                    <img src="~/images/logot.png" alt="The Aqua Koi Logo" style="width: 150px;">
+                </a>
+
+            </div>
+
+        </header>
+        <!-- Phần nội dung -->
+        <section class="content">
+            <div class="table-container">
+                <!-- Nội dung động như khuyến mãi hoặc chiết khấu sẽ nằm ở đây -->
+                @RenderBody()
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- Thông tin liên hệ và hình ảnh trong footer -->
+            <img src="~/images/14.png" style="width: 100%; height: auto;">
+        </footer>
+
+    </div>
+</body>
+</html>
