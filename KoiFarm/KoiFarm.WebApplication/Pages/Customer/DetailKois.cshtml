@@ -4,26 +4,24 @@
     ViewData["Title"] = "Chi Tiết";
     Layout = "_Home";
 }
+
 <div class="mainchitiet">
     <div class="hinhKoi">
-        <img src="~/images/19.png" />
+        <img src="@Url.Content("~/KoiImages2/" + @Model.Koi.KoiImage + ".png")" alt="Ảnh của @Model.Koi.KoiName" />
     </div>
     <div class="chu"> 
-        <div class="nameKoi">Koi.KoiName </div>
+        <div class="nameKoi"> KOI @Model.Koi.KoiName </div>
         <div class="gioi thieu"></div>
         <div class="thongtin">THÔNG TIN CHI TIẾT </div>
         <div class="mieutachitiet">
-            Giới tính: koi.KoiGender <br>
-            Năm sinh: koi.KoiYear <br>
-            Kích thước: koi.KoiSize cm <br>
-            Giống: koi.KoiGender <br>
-            Nguồn gốc: koi.KoiOrigin <br>
-            Giới tính: koi.KoiGender <br>
-            Giá:
+            Giới tính: @Model.Koi.KoiGender <br>
+            Năm sinh: @Model.Koi.KoiYear <br>
+            Kích thước: @Model.Koi.KoiSize cm <br>
+            Nguồn gốc: @Model.Koi.KoiOrigin <br>
+           
         </div>
-        <div class="themgiothang">  <a asp-page="/Customer/chitietsp"> thêm giỏ hàng </a></div>
-        <div class="muangay"> <a asp-page="/Customer/chitietsp">mua ngay</a></div>
+        <div class="giaca"> Giá: @Model.Koi.KoiPrice </div>
+        <div class="themgiothang">  <a asp-page="/Customer/chitietsp"> Thêm vào giỏ hàng </a></div>
+        <div class="muangay"> <a asp-page="/Customer/chitietsp">Thanh toán ngay</a></div>
     </div>
     </div>
-    
-</div> 

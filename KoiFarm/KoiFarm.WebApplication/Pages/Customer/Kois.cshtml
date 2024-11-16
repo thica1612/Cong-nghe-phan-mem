@@ -6,8 +6,9 @@
 }
 
 <div class="product-grid">
-    @foreach (var koi in Model.Koi.Take(9))
-    {
+@foreach (var koi in Model.Koi.Take(9))
+{
+    <a class="grid" asp-page="/Customer/DetailKois" asp-route-id="@koi.KoiId">
         <div class="ca">
             <div class="imgca">
                 <img src="@Url.Content("~/KoiImages/" + koi.KoiImage + ".png")" alt="Ảnh của @koi.KoiName" />
@@ -16,7 +17,7 @@
                 <img src="~/images/Blob(1).png" style="width: 100%; height: auto;" alt="Ảnh blob" />
             </div>
             <div class="buttongia1">
-                <a asp-page="/Customer/chitietsp" asp-route-id="@koi.KoiId">Giá @koi.KoiPrice</a>
+                Giá @koi.KoiPrice
             </div>
             <div class="tenca">@koi.KoiName</div>
             <div class="mieuta">
@@ -29,5 +30,6 @@
                 <img src="~/images/iconplus.png" /> So sánh
             </div>
         </div>
-    }
+    </a>
+}
 </div>

@@ -2034,3 +2034,14 @@ H:\KOI\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\obj\Debug\net8.0\refint
 H:\KOI\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\obj\Debug\net8.0\KoiFarm.WebApplication.pdb
 H:\KOI\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\obj\Debug\net8.0\KoiFarm.WebApplication.genruntimeconfig.cache
 H:\KOI\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\obj\Debug\net8.0\ref\KoiFarm.WebApplication.dll
+D:\Kì1-Năm2\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Google.dll
+D:\Kì1-Năm2\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Kì1-Năm2\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Kì1-Năm2\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Kì1-Năm2\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Kì1-Năm2\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.UI.dll
+D:\Kì1-Năm2\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.Bcl.TimeProvider.dll
+D:\Kì1-Năm2\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\Kì1-Năm2\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+D:\Kì1-Năm2\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+D:\Kì1-Năm2\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\obj\Debug\net8.0\KoiFarm.WebApplication.MvcApplicationPartsAssemblyInfo.cs
