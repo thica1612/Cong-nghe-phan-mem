@@ -101,7 +101,7 @@ namespace KoiFarm.Repositories
             Console.WriteLine($"UserName: {account.UserName}, Email: {account.Email}, Password: {account.UserPassword}");
 
             _context.KoiUsers.Add(account);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
             return true;
         }
 

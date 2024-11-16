@@ -17,6 +17,7 @@ namespace KoiFarm.WebApplication.Pages
 
         [BindProperty]
         public KoiUser account { get; set; }
+
         public async Task<IActionResult> OnPostAsync()
         {
             Console.WriteLine("Password1: " + account.UserPassword);

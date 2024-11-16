@@ -76,16 +76,20 @@
                     </a>
 
                     <!--Sign in, sign up-->
-                    <form asp-page="/Customer/SignIn">
-                        <button class="dnhap">
-                            Đăng nhập
-                        </button>
+                    <form method="get" asp-page="/Customer/SignIn">
+                        <button type="submit" class="dnhap">
+                        Đăng nhập
+                    </button>
                     </form>
-                    <form asp-page="/Customer/SignUp">
-                        <button class="dky">
+                    
+                    <form method="get" asp-page="/Customer/SignUp">
+                        <button type="submit" class="dky">
                             Đăng ký
                         </button>
                     </form>
+                    
+                        
+                    
 
 
                 </div>
