@@ -1,18 +1,45 @@
 ﻿@page
 @model KoiFarm.WebApplication.Pages.Customers.Feedback.DetailsModel
 @{
-    ViewData["Title"] = "Đánh giá";
+    ViewData["Title"] = "CHI TIẾT ĐÁNH GIÁ";
     Layout = "~/Pages/Admin/Feedback/_FeedbackLayout.cshtml";
 }
 
-<div>
-    <h1>Lượt đánh giá: @Model.Feedback.Rating</h1>
-    <h2>Lời đánh giá: @Model.Feedback.Comments</h2>
-    <h3>Ngày đánh giá: @Model.Feedback.FeedbackDate</h3>
-    <h4>Mã khách hàng: @Model.Feedback.CustomerId</h4>
-    <h5>Mã Koi: @Model.Feedback.KoiId</h5>
-</div>
-
-<div class="button-container">
-    <a asp-page="./Index" class="btn btn-secondary">Quay lại</a>
+<div class="container mt-5">
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+            <h2 class="mb-0">CHI TIẾT ĐÁNH GIÁ</h2>
+        </div>
+        <div class="card-body">
+            <table class="table table-striped">
+                <tbody>
+                    <tr>
+                        <th scope="row">Lượt đánh giá</th>
+                        <td>@Model.Feedback.Rating</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Lời đánh giá</th>
+                        <td>@Model.Feedback.Comments</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Ngày đánh giá</th>
+                        <td>@Model.Feedback.FeedbackDate</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Mã khách hàng</th>
+                        <td>@Model.Feedback.CustomerId</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Mã Koi</th>
+                        <td>@Model.Feedback.KoiId</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="card-footer text-end">
+            <a asp-page="./Index" class="btn btn-secondary">
+                <i class="bi bi-arrow-left"></i> Quay lại
+            </a>
+        </div>
+    </div>
 </div>

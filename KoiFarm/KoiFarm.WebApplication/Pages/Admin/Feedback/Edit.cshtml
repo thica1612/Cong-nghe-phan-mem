@@ -1,59 +1,68 @@
 ﻿@page
 @model KoiFarm.WebApplication.Pages.Customers.Feedback.EditModel
 @{
-    ViewData["Title"] = "Đánh giá";
+    ViewData["Title"] = "Chỉnh Sửa Đánh Giá";
     Layout = "~/Pages/Admin/Feedback/_FeedbackLayout.cshtml";
 }
 
-<h4 class="mb-4 text-primary">Chỉnh sửa Đánh giá</h4>
-<hr />
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-6">
-            <form method="post" novalidate>
-                <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
-                <input type="hidden" asp-for="Feedback.FeedbackId" />
+<div class="form-container">
+    <h2>CHỈNH SỬA ĐÁNH GIÁ</h2>
+    <!-- Form chính -->
+    <form method="post">
+        @Html.AntiForgeryToken()
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-                <!-- Customer Selection -->
-                <div class="mb-3">
-                    <label asp-for="Feedback.CustomerId" class="form-label">Khách hàng</label>
-                    <select asp-for="Feedback.CustomerId" class="form-select" asp-items="ViewBag.CustomerId"></select>
-                    <span asp-validation-for="Feedback.CustomerId" class="text-danger"></span>
-                </div>
+        <!-- Sắp xếp các trường input thành 2 cột -->
+        <div class="form-row">
+            <div class="input-group">
+                <label asp-for="Feedback.FeedbackId" class="control-label">Mã đánh giá</label>
+                <input asp-for="Feedback.FeedbackId" class="form-control" readonly />
+                <span asp-validation-for="Feedback.FeedbackId" class="text-danger"></span>
+            </div>
 
-                <!-- Koi Selection -->
-                <div class="mb-3">
-                    <label asp-for="Feedback.KoiId" class="form-label">Mã Koi</label>
-                    <select asp-for="Feedback.KoiId" class="form-select" asp-items="ViewBag.KoiId"></select>
-                    <span asp-validation-for="Feedback.KoiId" class="text-danger"></span>
-                </div>
-
-                <!-- Rating -->
-                <div class="mb-3">
-                    <label asp-for="Feedback.Rating" class="form-label">Lượt đánh giá</label>
-                    <input asp-for="Feedback.Rating" class="form-control" />
-                    <span asp-validation-for="Feedback.Rating" class="text-danger"></span>
-                </div>
-
-                <!-- Comments -->
-                <div class="mb-3">
-                    <label asp-for="Feedback.Comments" class="form-label">Lời đánh giá</label>
-                    <textarea asp-for="Feedback.Comments" class="form-control" rows="3"></textarea>
-                    <span asp-validation-for="Feedback.Comments" class="text-danger"></span>
-                </div>
-
-                <!-- Feedback Date -->
-                <div class="mb-3">
-                    <label asp-for="Feedback.FeedbackDate" class="form-label">Ngày đánh giá</label>
-                    <input asp-for="Feedback.FeedbackDate" type="date" class="form-control" />
-                    <span asp-validation-for="Feedback.FeedbackDate" class="text-danger"></span>
-                </div>
-
-                <!-- Nút lưu thay đổi, centered -->
-                <div class="button-container">
-                    <button type="submit" class="btn-save">LƯU THAY ĐỔI</button>
-                </div>
-            </form>
+            <div class="input-group">
+                <label asp-for="Feedback.CustomerId" class="control-label">Mã khách hàng</label>
+                <select asp-for="Feedback.CustomerId" class="form-control" asp-items="ViewBag.CustomerId"></select>
+                <span asp-validation-for="Feedback.CustomerId" class="text-danger"></span>
+            </div>
         </div>
+
+        <div class="form-row">
+            <div class="input-group">
+                <label asp-for="Feedback.KoiId" class="control-label">Mã Koi</label>
+                <select asp-for="Feedback.KoiId" class="form-control" asp-items="ViewBag.KoiId"></select>
+                <span asp-validation-for="Feedback.KoiId" class="text-danger"></span>
+            </div>
+
+            <div class="input-group">
+                <label asp-for="Feedback.Rating" class="control-label">Lượt đánh giá</label>
+                <input asp-for="Feedback.Rating" class="form-control" />
+                <span asp-validation-for="Feedback.Rating" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="input-group">
+                <label asp-for="Feedback.Comments" class="control-label">Lời đánh giá</label>
+                <textarea asp-for="Feedback.Comments" class="form-control" rows="3"></textarea>
+                <span asp-validation-for="Feedback.Comments" class="text-danger"></span>
+            </div>
+
+            <div class="input-group">
+                <label asp-for="Feedback.FeedbackDate" class="form-label">Ngày đánh giá</label>
+                <input asp-for="Feedback.FeedbackDate" type="date" class="form-control" />
+                <span asp-validation-for="Feedback.FeedbackDate" class="text-danger"></span>
+            </div>
+        </div>
+
+        <!-- Nút lưu thay đổi và quay lại -->
+        <div class="button-container">
+            <button type="submit" class="btn-save">LƯU THAY ĐỔI</button>
+            <a asp-page="./Index" class="btn btn-secondary">Quay lại</a>
+        </div>
+    </form>
 </div>
-</div>
+
+@* @section Scripts {
+    @await Html.RenderPartialAsync("_ValidationScriptsPartial")
+} *@
