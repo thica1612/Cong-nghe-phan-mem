@@ -825,54 +825,157 @@ a:hover, a:active {
     min-height: 100vh;
 <<<<<<< HEAD
 }
+/* Table Layout */
+.bitcart table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
 
-.txtcart {
-    position: absolute;
-    width: 1255px;
-    height: 55px;
-    left: 0px;
-    top: 150px;
-    background: #303F82;
+.bitcart thead tr {
+    background-color: #003366;
     color: white;
-    font-weight: 500;
-}
-.txt1 {
-    position: absolute;
-    top: 15px;
-    left: 60px;
-    align-content:center;
-}
-.txt2 {
-    position: absolute;
-    top: 15px;
-    left: 400px;
-    align-content: center;
-}
-.txt3 {
-    position: absolute;
-    top: 15px;
-    left: 590px;
-    align-content: center;
-}
-.txt4 {
-    position: absolute;
-    top: 15px;
-    left: 740px;
-    align-content: center;
-}
-.txt5 {
-    position: absolute;
-    top: 15px;
-    left: 950px;
-    align-content: center;
-}
-.txt6 {
-    position: absolute;
-    top: 15px;
-    left: 1110px;
-    align-content: center;
+    text-align: left;
 }
 
+.bitcart th, .bitcart td {
+    padding: 10px;
+    text-align: center;
+}
+
+.product-info {
+    display: flex;
+    align-items: center;
+}
+
+.product-image {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.product-details {
+    text-align: left;
+}
+
+    .product-details p {
+        margin: 0;
+        font-weight: bold;
+    }
+
+    .product-details span {
+        display: block;
+        font-size: 12px;
+        color: #666;
+    }
+
+/* Quantity Buttons */
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+
+    .quantity-control button {
+        background-color: #003366;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        font-weight: bold;
+        border-radius: 3px;
+    }
+
+        .quantity-control button:hover {
+            background-color: #002244;
+        }
+
+    .quantity-control input {
+        width: 50px;
+        text-align: center;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+/* Remove Button */
+.btn-remove {
+    background-color: transparent;
+    border: none;
+    color: #ff0000;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+    .btn-remove:hover {
+        color: #cc0000;
+    }
+
+/* Table Row Styles */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+/* Hộp tính tiền */
+.container {
+    display: flex;
+    justify-content: flex-end; /* Căn hộp sang góc phải */
+    margin-top: 20px; /* Khoảng cách phía trên */
+    width: 100%; /* Làm cho .container chiếm toàn bộ chiều rộng của trang */
+    /*  background-color: #EBE4E4; */
+    padding: 20px; /* Khoảng cách xung quanh để tạo không gian cho màu nền */
+    box-sizing: border-box; /* Đảm bảo padding không làm thay đổi kích thước tổng thể */
+}
+
+.summary-box {
+    width: 300px; /* Chiều rộng hộp */
+    background-color: #EBE4E4; /* Màu nền */
+
+    border-radius: 8px; /* Bo góc */
+    padding: 20px; /* Khoảng cách bên trong */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+    font-family: Arial, sans-serif;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between; /* Canh hai bên */
+    margin-bottom: 10px; /* Khoảng cách giữa các mục */
+    font-size: 14px;
+}
+
+.summary-item-total {
+    display: flex;
+    justify-content: space-between; /* Canh hai bên */
+    margin-bottom: 10px; /* Khoảng cách giữa các mục */
+    font-size: 14px;
+}
+
+.checkout-btn {
+    width: 100%; /* Nút rộng 100% hộp */
+    background-color: #003366; /* Màu nền */
+    color: white; /* Màu chữ */
+    border: none; /* Xóa viền */
+    border-radius: 4px; /* Bo góc nút */
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .checkout-btn:hover {
+        background-color: #00509e; /* Màu khi hover */
+    }
 
 .product {
     position: relative;
