@@ -12,5 +12,9 @@ namespace KoiFarm.Repositories.Interfaces
         Task<KoiOrder> GetOrderById(int orderId);
         Task<List<KoiOrder>> GetAllOrders();
         Task<bool> UpdateOrder(KoiOrder order);
+
+        Task AddToOrderAsync(Guid customerId, string koiId, int quantity);
+        Task<KoiOrder?> GetCurrentOrderAsync(Guid customerId);
+        Task<KoiOrder?> GetOrderByIdAsync(int orderId);
     }
 }

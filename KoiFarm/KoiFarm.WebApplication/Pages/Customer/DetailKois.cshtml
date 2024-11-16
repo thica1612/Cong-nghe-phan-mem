@@ -21,7 +21,12 @@
            
         </div>
         <div class="giaca"> Giá: @Model.Koi.KoiPrice </div>
-        <div class="themgiothang">  <a asp-page="/Customer/chitietsp"> Thêm vào giỏ hàng </a></div>
-        <div class="muangay"> <a asp-page="/Customer/chitietsp">Thanh toán ngay</a></div>
+
+        <form method="post" asp-page-handler="Cart">
+            <input type="hidden" name="koiId" value="@Model.Koi.KoiId"/>
+            <input type="number" name="quantity" value="1" min="1"/>
+            <button type="submit" class="themgiothang"> Thêm vào giỏ hàng </button>
+        </form>
+        <div class="muangay">Thanh toán ngay</div>
     </div>
     </div>

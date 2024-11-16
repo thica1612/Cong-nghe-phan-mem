@@ -8,10 +8,13 @@ namespace KoiFarm.WebApplication.Pages.Customer
     public class DetailKoisModel : PageModel
     {
         private readonly IKoiService _service;
+        private readonly IOrderService _orderService;
 
-        public DetailKoisModel(IKoiService service)
+
+        public DetailKoisModel(IKoiService service, IOrderService orderService)
         {
             _service = service;
+            _orderService = orderService;
         }
         public Koi Koi { get; set; } = default!;
 
@@ -32,6 +35,20 @@ namespace KoiFarm.WebApplication.Pages.Customer
                 Koi = koi;
             }
 
+            return Page();
+        }
+
+        public async Task<IActionResult> OnPostCartAsync(string koiId, int quantity)
+        {
+            var userIdstr = HttpContext.Session.GetString("CustomerId");
+            if (userIdstr == null)
+            {
+                return Redirect("/Customer/Login");
+            }
+
+            var userId = Guid.Parse(userIdstr);
+
+            await _orderService.AddToOrderAsync(userId, koiId, quantity);
             return Page();
         }
     }

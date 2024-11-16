@@ -45,5 +45,20 @@ namespace KoiFarm.Services
         {
             return await _repository.UpdateOrder(order);
         }
+
+        public Task AddToOrderAsync(Guid customerId, string koiId, int quantity)
+        {
+            return _repository.AddToOrderAsync(customerId, koiId, quantity);
+        }
+
+        public Task<KoiOrder?> GetCurrentOrderAsync(Guid customerId)
+        {
+            return _repository.GetCurrentOrderAsync(customerId);
+        }
+
+        public Task<KoiOrder?> GetOrderByIdAsync(int orderId)
+        {
+            return _repository.GetOrderByIdAsync(orderId);
+        }
     }
 }
