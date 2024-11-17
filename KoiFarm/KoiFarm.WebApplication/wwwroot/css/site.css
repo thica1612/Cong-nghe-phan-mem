@@ -857,6 +857,8 @@ a:hover, a:active {
 
 .product-details {
     text-align: left;
+    position: relative;
+    left: 20px;
 }
 
     .product-details p {
@@ -938,12 +940,13 @@ tbody tr:hover {
 }
 
 .summary-box {
-    width: 300px; /* Chiều rộng hộp */
-    background-color: #EBE4E4; /* Màu nền */
-
-    border-radius: 8px; /* Bo góc */
-    padding: 20px; /* Khoảng cách bên trong */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+    position: relative;
+    left: 932px;
+    width: 300px;
+    background-color: #EBE4E4;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-family: Arial, sans-serif;
 }
 
@@ -1036,14 +1039,26 @@ tbody tr:hover {
     align-items: flex-start;
     gap: 20px;
 }
+
 .hinhKoi {
+    width: 81px;
+    height: auto;
+    overflow: hidden;
+}
+.hinhKoi img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hinhkoi {
     width: 516px;
     height: auto;
     margin-top: 79px;
     overflow: hidden;
     margin-left: 77px;
 }
-.hinhKoi img {
+.hinhkoi img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1217,4 +1232,14 @@ tbody tr:hover {
     right: 412px;
     position: absolute;
     bottom: 32px;
+}
+.solg1 {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    border: 0px;
 }

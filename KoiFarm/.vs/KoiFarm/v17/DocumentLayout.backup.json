@@ -3,8 +3,31 @@
   "WorkspaceRootPath": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{661AF498-FB88-4193-A684-03063C34040E}|KoiFarm.WebApplication\\KoiFarm.WebApplication.csproj|d:\\k\u00EC1-n\u0103m2\\cong-nghe-phan-mem\\koifarm\\koifarm.webapplication\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{661AF498-FB88-4193-A684-03063C34040E}|KoiFarm.WebApplication\\KoiFarm.WebApplication.csproj|solutionrelative:koifarm.webapplication\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{661AF498-FB88-4193-A684-03063C34040E}|KoiFarm.WebApplication\\KoiFarm.WebApplication.csproj|d:\\k\u00EC1-n\u0103m2\\cong-nghe-phan-mem\\koifarm\\koifarm.webapplication\\pages\\customer\\cart.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{661AF498-FB88-4193-A684-03063C34040E}|KoiFarm.WebApplication\\KoiFarm.WebApplication.csproj|solutionrelative:koifarm.webapplication\\pages\\customer\\cart.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{661AF498-FB88-4193-A684-03063C34040E}|KoiFarm.WebApplication\\KoiFarm.WebApplication.csproj|d:\\k\u00EC1-n\u0103m2\\cong-nghe-phan-mem\\koifarm\\koifarm.webapplication\\pages\\customer\\detailkois.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{661AF498-FB88-4193-A684-03063C34040E}|KoiFarm.WebApplication\\KoiFarm.WebApplication.csproj|solutionrelative:koifarm.webapplication\\pages\\customer\\detailkois.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ECB8FAA-E78C-4538-8F66-5F6D4295C9F9}|KoiFarm.Repositories\\KoiFarm.Repositories.csproj|d:\\k\u00EC1-n\u0103m2\\cong-nghe-phan-mem\\koifarm\\koifarm.repositories\\koiuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2ECB8FAA-E78C-4538-8F66-5F6D4295C9F9}|KoiFarm.Repositories\\KoiFarm.Repositories.csproj|solutionrelative:koifarm.repositories\\koiuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/LAPTOP_FOMTFDFM_SQLEXPRESS/KoiFarm/True/SqlTable/dbo.KoiUser.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{661AF498-FB88-4193-A684-03063C34040E}|KoiFarm.WebApplication\\KoiFarm.WebApplication.csproj|d:\\k\u00EC1-n\u0103m2\\cong-nghe-phan-mem\\koifarm\\koifarm.webapplication\\pages\\customer\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{661AF498-FB88-4193-A684-03063C34040E}|KoiFarm.WebApplication\\KoiFarm.WebApplication.csproj|solutionrelative:koifarm.webapplication\\pages\\customer\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{661AF498-FB88-4193-A684-03063C34040E}|KoiFarm.WebApplication\\KoiFarm.WebApplication.csproj|d:\\k\u00EC1-n\u0103m2\\cong-nghe-phan-mem\\koifarm\\koifarm.webapplication\\pages\\customer\\signin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{661AF498-FB88-4193-A684-03063C34040E}|KoiFarm.WebApplication\\KoiFarm.WebApplication.csproj|solutionrelative:koifarm.webapplication\\pages\\customer\\signin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{661AF498-FB88-4193-A684-03063C34040E}|KoiFarm.WebApplication\\KoiFarm.WebApplication.csproj|d:\\k\u00EC1-n\u0103m2\\cong-nghe-phan-mem\\koifarm\\koifarm.webapplication\\pages\\admin\\certifications\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,20 +38,8 @@
       "RelativeMoniker": "D:0:0:{661AF498-FB88-4193-A684-03063C34040E}|KoiFarm.WebApplication\\KoiFarm.WebApplication.csproj|solutionrelative:koifarm.webapplication\\pages\\admin\\orderdetail\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{661AF498-FB88-4193-A684-03063C34040E}|KoiFarm.WebApplication\\KoiFarm.WebApplication.csproj|d:\\k\u00EC1-n\u0103m2\\cong-nghe-phan-mem\\koifarm\\koifarm.webapplication\\pages\\customer\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{661AF498-FB88-4193-A684-03063C34040E}|KoiFarm.WebApplication\\KoiFarm.WebApplication.csproj|solutionrelative:koifarm.webapplication\\pages\\customer\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{661AF498-FB88-4193-A684-03063C34040E}|KoiFarm.WebApplication\\KoiFarm.WebApplication.csproj|d:\\k\u00EC1-n\u0103m2\\cong-nghe-phan-mem\\koifarm\\koifarm.webapplication\\pages\\customer\\detailkoisale.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{661AF498-FB88-4193-A684-03063C34040E}|KoiFarm.WebApplication\\KoiFarm.WebApplication.csproj|solutionrelative:koifarm.webapplication\\pages\\customer\\detailkoisale.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{661AF498-FB88-4193-A684-03063C34040E}|KoiFarm.WebApplication\\KoiFarm.WebApplication.csproj|d:\\k\u00EC1-n\u0103m2\\cong-nghe-phan-mem\\koifarm\\koifarm.webapplication\\pages\\customer\\detailkois.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{661AF498-FB88-4193-A684-03063C34040E}|KoiFarm.WebApplication\\KoiFarm.WebApplication.csproj|solutionrelative:koifarm.webapplication\\pages\\customer\\detailkois.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{661AF498-FB88-4193-A684-03063C34040E}|KoiFarm.WebApplication\\KoiFarm.WebApplication.csproj|d:\\k\u00EC1-n\u0103m2\\cong-nghe-phan-mem\\koifarm\\koifarm.webapplication\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{661AF498-FB88-4193-A684-03063C34040E}|KoiFarm.WebApplication\\KoiFarm.WebApplication.csproj|solutionrelative:koifarm.webapplication\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2ECB8FAA-E78C-4538-8F66-5F6D4295C9F9}|KoiFarm.Repositories\\KoiFarm.Repositories.csproj|d:\\k\u00EC1-n\u0103m2\\cong-nghe-phan-mem\\koifarm\\koifarm.repositories\\koisalerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -195,10 +206,6 @@
       "RelativeMoniker": "D:0:0:{2ECB8FAA-E78C-4538-8F66-5F6D4295C9F9}|KoiFarm.Repositories\\KoiFarm.Repositories.csproj|solutionrelative:koifarm.repositories\\entities\\koiorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{661AF498-FB88-4193-A684-03063C34040E}|KoiFarm.WebApplication\\KoiFarm.WebApplication.csproj|d:\\k\u00EC1-n\u0103m2\\cong-nghe-phan-mem\\koifarm\\koifarm.webapplication\\pages\\customer\\signin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{661AF498-FB88-4193-A684-03063C34040E}|KoiFarm.WebApplication\\KoiFarm.WebApplication.csproj|solutionrelative:koifarm.webapplication\\pages\\customer\\signin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{661AF498-FB88-4193-A684-03063C34040E}|KoiFarm.WebApplication\\KoiFarm.WebApplication.csproj|d:\\k\u00EC1-n\u0103m2\\cong-nghe-phan-mem\\koifarm\\koifarm.webapplication\\pages\\admin\\certifications\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{661AF498-FB88-4193-A684-03063C34040E}|KoiFarm.WebApplication\\KoiFarm.WebApplication.csproj|solutionrelative:koifarm.webapplication\\pages\\admin\\certifications\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -292,11 +299,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 309,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 32,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Program.cs",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Program.cs",
@@ -321,46 +328,82 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "KoiUserRepository.cs",
+              "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Repositories\\KoiUserRepository.cs",
+              "RelativeDocumentMoniker": "KoiFarm.Repositories\\KoiUserRepository.cs",
+              "ToolTip": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Repositories\\KoiUserRepository.cs",
+              "RelativeToolTip": "KoiFarm.Repositories\\KoiUserRepository.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAswFsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T14:02:39.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Cart.cshtml.cs",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Customer\\Cart.cshtml.cs",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Customer\\Cart.cshtml.cs",
               "ToolTip": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Customer\\Cart.cshtml.cs",
               "RelativeToolTip": "KoiFarm.WebApplication\\Pages\\Customer\\Cart.cshtml.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAkwCsAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAkwCIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-16T12:08:34.34Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\OrderDetail\\Index.cshtml",
-              "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\OrderDetail\\Index.cshtml",
-              "ToolTip": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\OrderDetail\\Index.cshtml",
-              "RelativeToolTip": "KoiFarm.WebApplication\\Pages\\Admin\\OrderDetail\\Index.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAABsAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-17T05:15:47.687Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Cart.cshtml",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Customer\\Cart.cshtml",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Customer\\Cart.cshtml",
               "ToolTip": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Customer\\Cart.cshtml",
               "RelativeToolTip": "KoiFarm.WebApplication\\Pages\\Customer\\Cart.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAB4AAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACAAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-16T11:36:40.966Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "DetailKois.cshtml",
+              "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Customer\\DetailKois.cshtml",
+              "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Customer\\DetailKois.cshtml",
+              "ToolTip": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Customer\\DetailKois.cshtml",
+              "RelativeToolTip": "KoiFarm.WebApplication\\Pages\\Customer\\DetailKois.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-16T06:29:50.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "site.css",
+              "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "KoiFarm.WebApplication\\wwwroot\\css\\site.css",
+              "ToolTip": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "KoiFarm.WebApplication\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAANIEAAAAAAAAAAAAANsEAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-17T06:53:13.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "dbo.KoiUser [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/LAPTOP_FOMTFDFM_SQLEXPRESS/KoiFarm/True/SqlTable/dbo.KoiUser.sql",
+              "ToolTip": "dbo.KoiUser [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-11-17T14:03:23.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\Certifications\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\Certifications\\Index.cshtml.cs",
@@ -368,12 +411,36 @@
               "RelativeToolTip": "KoiFarm.WebApplication\\Pages\\Admin\\Certifications\\Index.cshtml.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T16:34:30.243Z",
+              "WhenOpened": "2024-11-15T16:34:30.243Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SignIn.cshtml",
+              "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Customer\\SignIn.cshtml",
+              "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Customer\\SignIn.cshtml",
+              "ToolTip": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Customer\\SignIn.cshtml",
+              "RelativeToolTip": "KoiFarm.WebApplication\\Pages\\Customer\\SignIn.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T16:42:03.472Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\OrderDetail\\Index.cshtml",
+              "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\OrderDetail\\Index.cshtml",
+              "ToolTip": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\OrderDetail\\Index.cshtml",
+              "RelativeToolTip": "KoiFarm.WebApplication\\Pages\\Admin\\OrderDetail\\Index.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAABsAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-17T05:15:47.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "DetailKoiSale.cshtml",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Customer\\DetailKoiSale.cshtml",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Customer\\DetailKoiSale.cshtml",
@@ -381,24 +448,11 @@
               "RelativeToolTip": "KoiFarm.WebApplication\\Pages\\Customer\\DetailKoiSale.cshtml",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAACAAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-17T13:32:06.059Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T13:32:06.059Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DetailKois.cshtml",
-              "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Customer\\DetailKois.cshtml",
-              "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Customer\\DetailKois.cshtml",
-              "ToolTip": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Customer\\DetailKois.cshtml",
-              "RelativeToolTip": "KoiFarm.WebApplication\\Pages\\Customer\\DetailKois.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-16T06:29:50.078Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\Order\\Delete.cshtml",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\Order\\Delete.cshtml",
@@ -410,7 +464,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "KoiSaleRepository.cs",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Repositories\\KoiSaleRepository.cs",
               "RelativeDocumentMoniker": "KoiFarm.Repositories\\KoiSaleRepository.cs",
@@ -422,19 +476,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "site.css",
-              "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "KoiFarm.WebApplication\\wwwroot\\css\\site.css",
-              "ToolTip": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "KoiFarm.WebApplication\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAAK0EAAAAAAAAAAAAAL0EAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-17T06:53:13.653Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\Certifications\\Create.cshtml",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\Certifications\\Create.cshtml",
@@ -446,7 +488,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "_CertificationLayout.cshtml",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\Certifications\\_CertificationLayout.cshtml",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\Certifications\\_CertificationLayout.cshtml",
@@ -458,7 +500,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\appsettings.json",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\appsettings.json",
@@ -470,7 +512,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "SignIn.cshtml.cs",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Customer\\SignIn.cshtml.cs",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Customer\\SignIn.cshtml.cs",
@@ -482,7 +524,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "_Home.cshtml",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Shared\\_Home.cshtml",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Shared\\_Home.cshtml",
@@ -494,7 +536,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "_AdminLayout.cshtml",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\_AdminLayout.cshtml",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\_AdminLayout.cshtml",
@@ -506,7 +548,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\Order\\Create.cshtml",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\Order\\Create.cshtml",
@@ -518,7 +560,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\Order\\Details.cshtml",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\Order\\Details.cshtml",
@@ -530,7 +572,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\Order\\Edit.cshtml",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\Order\\Edit.cshtml",
@@ -542,7 +584,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\Order\\Index.cshtml",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\Order\\Index.cshtml",
@@ -554,7 +596,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "_CertificationKoiSalesLayout.cshtml",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\CertificationKoiSales\\_CertificationKoiSalesLayout.cshtml",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\CertificationKoiSales\\_CertificationKoiSalesLayout.cshtml",
@@ -566,7 +608,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 35,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\OrderDetail\\Delete.cshtml",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\OrderDetail\\Delete.cshtml",
@@ -578,7 +620,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "_OrderDetailLayout.cshtml",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\OrderDetail\\_OrderDetailLayout.cshtml",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\OrderDetail\\_OrderDetailLayout.cshtml",
@@ -590,7 +632,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 36,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\OrderDetail\\Create.cshtml",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\OrderDetail\\Create.cshtml",
@@ -602,7 +644,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 34,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\OrderDetail\\Details.cshtml",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\OrderDetail\\Details.cshtml",
@@ -614,7 +656,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 33,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\OrderDetail\\Edit.cshtml",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\OrderDetail\\Edit.cshtml",
@@ -626,7 +668,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 43,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\Kois\\Create.cshtml",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\Kois\\Create.cshtml",
@@ -638,7 +680,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 44,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\Kois\\Index.cshtml",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\Kois\\Index.cshtml",
@@ -650,7 +692,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 45,
               "Title": "DetailKois.cshtml.cs",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Customer\\DetailKois.cshtml.cs",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Customer\\DetailKois.cshtml.cs",
@@ -662,7 +704,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 46,
               "Title": "OrderService.cs",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Services\\OrderService.cs",
               "RelativeDocumentMoniker": "KoiFarm.Services\\OrderService.cs",
@@ -674,7 +716,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 47,
               "Title": "IOrderService.cs",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Services\\Interfaces\\IOrderService.cs",
               "RelativeDocumentMoniker": "KoiFarm.Services\\Interfaces\\IOrderService.cs",
@@ -686,7 +728,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 48,
               "Title": "IOrderRepository.cs",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Repositories\\Interfaces\\IOrderRepository.cs",
               "RelativeDocumentMoniker": "KoiFarm.Repositories\\Interfaces\\IOrderRepository.cs",
@@ -698,7 +740,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 49,
               "Title": "OrderRepository.cs",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Repositories\\OrderRepository.cs",
               "RelativeDocumentMoniker": "KoiFarm.Repositories\\OrderRepository.cs",
@@ -710,7 +752,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 50,
               "Title": "KoiOrder.cs",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Repositories\\Entities\\KoiOrder.cs",
               "RelativeDocumentMoniker": "KoiFarm.Repositories\\Entities\\KoiOrder.cs",
@@ -722,19 +764,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "SignIn.cshtml",
-              "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Customer\\SignIn.cshtml",
-              "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Customer\\SignIn.cshtml",
-              "ToolTip": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Customer\\SignIn.cshtml",
-              "RelativeToolTip": "KoiFarm.WebApplication\\Pages\\Customer\\SignIn.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABoAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-14T16:42:03.472Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 52,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\Feedback\\Edit.cshtml",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\Feedback\\Edit.cshtml",
@@ -746,7 +776,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 51,
               "Title": "Create.cshtml.cs",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\Certifications\\Create.cshtml.cs",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\Certifications\\Create.cshtml.cs",
@@ -758,7 +788,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 53,
               "Title": "admin.css",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\wwwroot\\css\\admin.css",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\wwwroot\\css\\admin.css",
@@ -770,7 +800,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 54,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\User\\Details.cshtml",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\User\\Details.cshtml",
@@ -782,7 +812,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 57,
               "Title": "FeedbackService.cs",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Services\\FeedbackService.cs",
               "RelativeDocumentMoniker": "KoiFarm.Services\\FeedbackService.cs",
@@ -794,7 +824,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 58,
               "Title": "IFeedbackService.cs",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Services\\Interfaces\\IFeedbackService.cs",
               "RelativeDocumentMoniker": "KoiFarm.Services\\Interfaces\\IFeedbackService.cs",
@@ -806,7 +836,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 56,
               "Title": "TransactionHistory.cs",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Repositories\\Entities\\TransactionHistory.cs",
               "RelativeDocumentMoniker": "KoiFarm.Repositories\\Entities\\TransactionHistory.cs",
@@ -818,7 +848,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 55,
               "Title": "KoiFarmContext.cs",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Repositories\\Entities\\KoiFarmContext.cs",
               "RelativeDocumentMoniker": "KoiFarm.Repositories\\Entities\\KoiFarmContext.cs",
@@ -830,7 +860,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 60,
               "Title": "IFeedbackRepository.cs",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Repositories\\Interfaces\\IFeedbackRepository.cs",
               "RelativeDocumentMoniker": "KoiFarm.Repositories\\Interfaces\\IFeedbackRepository.cs",
@@ -842,7 +872,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 59,
               "Title": "FeedbackRepository.cs",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Repositories\\FeedbackRepository.cs",
               "RelativeDocumentMoniker": "KoiFarm.Repositories\\FeedbackRepository.cs",
@@ -854,7 +884,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 61,
               "Title": "Feedback.cs",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Repositories\\Entities\\Feedback.cs",
               "RelativeDocumentMoniker": "KoiFarm.Repositories\\Entities\\Feedback.cs",
@@ -866,7 +896,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 63,
               "Title": "Details.cshtml.cs",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\Certifications\\Details.cshtml.cs",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\Certifications\\Details.cshtml.cs",
@@ -878,7 +908,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 29,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\Certifications\\Edit.cshtml",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\Certifications\\Edit.cshtml",
@@ -890,7 +920,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 62,
               "Title": "Edit.cshtml.cs",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\Certifications\\Edit.cshtml.cs",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\Certifications\\Edit.cshtml.cs",
@@ -902,7 +932,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 30,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\Certifications\\Index.cshtml",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\Certifications\\Index.cshtml",
@@ -914,7 +944,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\Certifications\\Details.cshtml",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\Certifications\\Details.cshtml",
@@ -926,7 +956,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\Certifications\\Delete.cshtml",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\Certifications\\Delete.cshtml",
@@ -938,7 +968,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 64,
               "Title": "Delete.cshtml.cs",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\Certifications\\Delete.cshtml.cs",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\Certifications\\Delete.cshtml.cs",
@@ -950,7 +980,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 38,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\CertificationKoiSales\\Create.cshtml",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\CertificationKoiSales\\Create.cshtml",
@@ -962,7 +992,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 37,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\CertificationKoiSales\\Delete.cshtml",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\CertificationKoiSales\\Delete.cshtml",
@@ -974,7 +1004,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 39,
               "Title": "Delete.cshtml.cs",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\CertificationKoiSales\\Delete.cshtml.cs",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\CertificationKoiSales\\Delete.cshtml.cs",
@@ -986,7 +1016,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 40,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\CertificationKoiSales\\Details.cshtml",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\CertificationKoiSales\\Details.cshtml",
@@ -998,7 +1028,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 65,
               "Title": "Details.cshtml.cs",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\CertificationKoiSales\\Details.cshtml.cs",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\CertificationKoiSales\\Details.cshtml.cs",
@@ -1010,7 +1040,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 42,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\CertificationKoiSales\\Edit.cshtml",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\CertificationKoiSales\\Edit.cshtml",
@@ -1022,7 +1052,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 66,
               "Title": "Edit.cshtml.cs",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\CertificationKoiSales\\Edit.cshtml.cs",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\CertificationKoiSales\\Edit.cshtml.cs",
@@ -1034,7 +1064,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 67,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\CertificationKoiSales\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\CertificationKoiSales\\Index.cshtml.cs",
@@ -1046,7 +1076,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 41,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\CertificationKoiSales\\Index.cshtml",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\CertificationKoiSales\\Index.cshtml",
@@ -1058,7 +1088,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 68,
               "Title": "customer.css",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\wwwroot\\css\\customer.css",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\wwwroot\\css\\customer.css",
@@ -1070,7 +1100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "_FeedbackLayout.cshtml",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\Feedback\\_FeedbackLayout.cshtml",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\Feedback\\_FeedbackLayout.cshtml",
@@ -1082,7 +1112,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 31,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\Feedback\\Index.cshtml",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\Feedback\\Index.cshtml",
@@ -1094,7 +1124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\Feedback\\Delete.cshtml",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\Feedback\\Delete.cshtml",
@@ -1106,7 +1136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 28,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Admin\\Feedback\\Details.cshtml",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Admin\\Feedback\\Details.cshtml",
@@ -1118,7 +1148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 70,
               "Title": "dbo.Koi.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/LAPTOP_FOMTFDFM_SQLEXPRESS/KoiFarm/True/SqlTable/dbo.Koi.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/LAPTOP_FOMTFDFM_SQLEXPRESS/KoiFarm/True/SqlTable/dbo.Koi.sql",
@@ -1127,7 +1157,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 69,
               "Title": "dbo.KoiSale.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/LAPTOP_FOMTFDFM_SQLEXPRESS/KoiFarm/True/SqlTable/dbo.KoiSale.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/LAPTOP_FOMTFDFM_SQLEXPRESS/KoiFarm/True/SqlTable/dbo.KoiSale.sql",
@@ -1136,7 +1166,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 71,
               "Title": "Sale.cshtml.cs",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\Pages\\Customer\\Sale.cshtml.cs",
               "RelativeDocumentMoniker": "KoiFarm.WebApplication\\Pages\\Customer\\Sale.cshtml.cs",
@@ -1148,7 +1178,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 72,
               "Title": "DashboardDataRepository.cs",
               "DocumentMoniker": "D:\\K\u00EC1-N\u0103m2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Repositories\\DashboardDataRepository.cs",
               "RelativeDocumentMoniker": "KoiFarm.Repositories\\DashboardDataRepository.cs",

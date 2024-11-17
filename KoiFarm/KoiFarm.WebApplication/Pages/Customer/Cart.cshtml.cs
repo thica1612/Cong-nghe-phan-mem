@@ -34,12 +34,6 @@ namespace KoiFarm.WebApplication.Pages
                 {
                     CurrentOrder = order;
                     CartItems = await _orderDetailService.GetAllOrderByUser(order.OrderId);
-                    Console.WriteLine($"OrderId: {order.OrderId}\nCartItems count: {CartItems.Count}");
-                }
-                else
-                {
-                    Console.WriteLine("Khong co");
-                    CartItems = new List<OrderDetail>();
                 }
             }
         }

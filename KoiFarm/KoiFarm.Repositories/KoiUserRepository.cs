@@ -97,7 +97,7 @@ namespace KoiFarm.Repositories
             }
             account.UserId = Guid.NewGuid();
             account.DateJoined = DateTime.Now;
-
+            account.UserRole = "User";
             Console.WriteLine($"UserName: {account.UserName}, Email: {account.Email}, Password: {account.UserPassword}");
 
             _context.KoiUsers.Add(account);
