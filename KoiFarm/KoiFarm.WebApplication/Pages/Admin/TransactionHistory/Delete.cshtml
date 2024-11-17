@@ -1,40 +1,40 @@
 ﻿@page
 @model KoiFarm.WebApplication.Pages.Customers.TransactionHistory.DeleteModel
-
-<h3>Are you sure you want to delete this?</h3>
+@{
+    ViewData["Title"] = "Xóa Lịch Sử Mua Hàng ";
+    Layout = "~/Pages/Admin/TransactionHistory/_Layout.cshtml";
+}
+<h3>Bạn có chắc muốn xóa lịch sử mua hàng dưới đây?</h3>
 <div>
-    <h4>TransactionHistory</h4>
+    <h4>LỊCH SỬ MUA HÀNG</h4>
     <hr />
-    <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.TransactionHistory.TransactionDate)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.TransactionHistory.TransactionDate)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.TransactionHistory.TransactionType)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.TransactionHistory.TransactionType)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.TransactionHistory.Amount)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.TransactionHistory.Amount)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.TransactionHistory.Customer)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.TransactionHistory.Customer.UserId)
-        </dd>
-    </dl>
-    
+    <table class="table table-bordered">
+        <tbody>
+            <tr>
+                <th>Mã giao dịch</th>
+                <td>@Model.TransactionHistory.TransactionId</td>
+            </tr>
+            <tr>
+                <th>Mã khách hàng</th>
+                <td>@Model.TransactionHistory.CustomerId</td>
+            <tr>
+                <th scope="row">Ngày giao dịch</th>
+                <td>@Model.TransactionHistory.TransactionDate</td>
+            </tr>
+            <tr>
+                <th scope="row">Loại giao dịch</th>
+                <td>@Model.TransactionHistory.TransactionType</td>
+            </tr>
+            <tr>
+                <th scope="row">Số tiền</th>
+                <td>@Model.TransactionHistory.Amount</td>
+            </tr>
+        </tbody>
+    </table>
+
     <form method="post">
         <input type="hidden" asp-for="TransactionHistory.TransactionId" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-page="./Index">Back to List</a>
+        <input type="submit" value="Xóa" class="btn btn-danger" /> |
+        <a asp-page="./Index">Danh sách lịch sử mua hàng</a>
     </form>
 </div>

@@ -10,18 +10,23 @@
     <div class="layout">
         <!-- Sidebar -->
         <aside class="sidebar">
+            <div class="user">
+                <h2>Nguyen Anh Huy (Manager)</h2>
+            </div>
             <nav class="sidebar-nav">
                 <ul>
                     <li><a href="/" class="sidebar-link">Trang chủ</a></li>
-                    <li><a href="Privacy" class="sidebar-link">Cài đặt</a></li>
+                    <li><a href="Order" class="sidebar-link">Đơn hàng</a></li>
+                    <li><a href="CertificationKoiSales" class="sidebar-link">Giấy chứng nhận cá Koi</a></li>
+                    <li><a href="/" class="sidebar-link">Đăng xuất</a></li>
                 </ul>
             </nav>
         </aside>
+        <!-- Header -->
         <header class="header">
-            <div class="user-info">
-                <p>NGUYEN ANH HUY (Manager)</p>
+            <div class="admin-info">
+                <p>Nguyen Anh Huy (Manager)</p>
             </div>
-
             <div class="header-logo">
                 <a href="@Url.Page("/Index")">
                     <img src="~/images/logot.png" alt="The Aqua Koi Logo" style="width: 150px;">
@@ -35,6 +40,7 @@
             <div class="table-container">
                 <!-- Nội dung động như khuyến mãi hoặc chiết khấu sẽ nằm ở đây -->
                 @RenderBody()
+                @RenderSection("Scripts", required: false)
             </div>
         </section>
         <!-- Footer -->

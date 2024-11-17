@@ -1,48 +1,53 @@
 ﻿@page
 @model KoiFarm.WebApplication.Pages.Admin.Promotion.CreateModel
-
-<h4>Promotion</h4>
+@{
+    ViewData["Title"] = "Khuyến mãi";
+    Layout = "~/Pages/Admin/Promotion/_Layout.cshtml";
+}
+<h4>KHUYẾN MÃI</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Promotion.PromotionId" class="control-label"></label>
+                <label asp-for="Promotion.PromotionId" class="control-label">Mã khuyến mãi</label>
                 <input asp-for="Promotion.PromotionId" class="form-control" />
                 <span asp-validation-for="Promotion.PromotionId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Promotion.PromotionName" class="control-label"></label>
+                <label asp-for="Promotion.PromotionName" class="control-label">Tên khuyến mãi</label>
                 <input asp-for="Promotion.PromotionName" class="form-control" />
                 <span asp-validation-for="Promotion.PromotionName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Promotion.DiscountPercentage" class="control-label"></label>
+                <label asp-for="Promotion.DiscountPercentage" class="control-label">Chiết khấu</label>
                 <input asp-for="Promotion.DiscountPercentage" class="form-control" />
                 <span asp-validation-for="Promotion.DiscountPercentage" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Promotion.StartDate" class="control-label"></label>
+                <label asp-for="Promotion.StartDate" class="control-label">Ngày bắt đầu</label>
                 <input asp-for="Promotion.StartDate" class="form-control" />
                 <span asp-validation-for="Promotion.StartDate" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Promotion.EndDate" class="control-label"></label>
+                <label asp-for="Promotion.EndDate" class="control-label">Ngày kết thúc</label>
                 <input asp-for="Promotion.EndDate" class="form-control" />
                 <span asp-validation-for="Promotion.EndDate" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Tạo" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-page="Index">Back to List</a>
+    <a asp-page="Index">Danh sách khuyến mãi</a>
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

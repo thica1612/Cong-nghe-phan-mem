@@ -16,10 +16,10 @@
             <nav class="sidebar-nav">
                 <ul>
                     <li><a href="/" class="sidebar-link">Trang chủ</a></li>
-                    <li><a href="#" class="sidebar-link">Lịch sử đơn hàng</a></li>
-                    <li><a href="#" class="sidebar-link">Đánh giá đơn hàng</a></li>
-                    <li><a href="#" class="sidebar-link">Hỗ trợ khách hàng</a></li>
-                    <li><a href="#" class="sidebar-link">Cài đặt</a></li>
+                    <li><a href="Feedback" class="sidebar-link">Đánh giá đơn hàng</a></li>
+                    <li><a href="CertificationKoiSales" class="sidebar-link">Giấy chứng nhận cá Koi</a></li>
+                    <li><a href="Order" class="sidebar-link">Đặt hàng</a></li>
+                    <li><a href="OrderDetail" class="sidebar-link">Chi tiết đơn hàng</a></li>
                     <li><a href="/" class="sidebar-link">Đăng xuất</a></li>
                 </ul>
             </nav>
@@ -45,6 +45,7 @@
         <div class="table-container">
             <!-- Nội dung động như bảng khách hàng hoặc danh sách đơn hàng sẽ nằm ở đây -->
             @RenderBody()
+            @RenderSection("Scripts", required: false)
         </div>
     </section>
 

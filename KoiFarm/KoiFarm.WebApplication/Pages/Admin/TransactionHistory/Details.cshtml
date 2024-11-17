@@ -1,37 +1,40 @@
 ﻿@page
 @model KoiFarm.WebApplication.Pages.Customers.TransactionHistory.DetailsModel
-
+@{
+    ViewData["Title"] = "Chi Tiết Lịch Sử Mua Hàng";
+    Layout = "~/Pages/Admin/TransactionHistory/_Layout.cshtml";
+}
 <div>
-    <h4>TransactionHistory</h4>
+    <h4>LỊCH SỬ MUA HÀNG</h4>
     <hr />
-    <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.TransactionHistory.TransactionDate)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.TransactionHistory.TransactionDate)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.TransactionHistory.TransactionType)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.TransactionHistory.TransactionType)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.TransactionHistory.Amount)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.TransactionHistory.Amount)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.TransactionHistory.Customer)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.TransactionHistory.Customer.UserId)
-        </dd>
-    </dl>
+    <div class="card-body">
+        <table class="table table-striped">
+            <tbody>
+                <tr>
+                    <th scope="row">Mã giao dịch</th>
+                    <td>@Model.TransactionHistory.TransactionId</td>
+                </tr>
+                <tr>
+                    <th scope="row">Mã khách hàng</th>
+                    <td>@Model.TransactionHistory.CustomerId</td>
+                </tr>
+                <tr>
+                    <th scope="row">Ngày giao dịch</th>
+                    <td>@Model.TransactionHistory.TransactionDate</td>
+                </tr>
+                <tr>
+                    <th scope="row">Loại giao dịch</th>
+                    <td>@Model.TransactionHistory.TransactionType</td>
+                </tr>
+                <tr>
+                    <th scope="row">Số tiền</th>
+                    <td>@Model.TransactionHistory.Amount</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
 <div>
-    <a asp-page="./Edit" asp-route-id="@Model.TransactionHistory.TransactionId">Edit</a> |
-    <a asp-page="./Index">Back to List</a>
+    <a asp-page="./Edit" asp-route-id="@Model.TransactionHistory.TransactionId">Chi tiết</a> |
+    <a asp-page="./Index">Danh sách Lịch sử mua hàng</a>
 </div>

@@ -1,9 +1,14 @@
 ﻿@page
 @model KoiFarm.WebApplication.Pages.Admin.Promotion.IndexModel
-
-<div style="text-align: right; margin-bottom: 15px;">
-    <a asp-page="./Create" class="btn-add">Thêm khuyến mãi mới</a>
-</div>
+@{
+    ViewData["Title"] = "Khuyến Mãi";
+    Layout = "~/Pages/Admin/Promotion/_Layout.cshtml";
+}
+<p>
+    <div style="text-align: left; margin-bottom: 15px;">
+        <a asp-page="./Create" class="btn-add">Thêm khuyến mãi mới</a>
+    </div>
+</p>
 <table class="table">
     <thead>
         <tr>
@@ -14,26 +19,27 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.Promotion) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.PromotionName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DiscountPercentage)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.StartDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.EndDate)
-            </td>
-            <td>
-                <a asp-page="./Edit" asp-route-id="@item.PromotionId">Sửa</a> |
-                <a asp-page="./Details" asp-route-id="@item.PromotionId">Chi tiết</a> |
-                <a asp-page="./Delete" asp-route-id="@item.PromotionId">Xóa</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model.Promotion)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PromotionName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DiscountPercentage)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StartDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EndDate)
+                </td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.PromotionId">Sửa</a> |
+                    <a asp-page="./Details" asp-route-id="@item.PromotionId">Chi tiết</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.PromotionId">Xóa</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

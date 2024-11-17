@@ -1,12 +1,14 @@
 ﻿@page
 @model KoiFarm.WebApplication.Pages.Customers.TransactionHistory.IndexModel
 @{
-    ViewData["Title"] = "Lịch sử mua hàng";
+    ViewData["Title"] = "Lịch Sử Mua Hàng";
     Layout = "~/Pages/Admin/TransactionHistory/_Layout.cshtml";
 }
-<div style="text-align: right; margin-bottom: 15px;">
-    <a asp-page="./Create" class="btn-add">Thêm giao dịch mới</a>
-</div>
+<p>
+    <div style="text-align: left; margin-bottom: 15px;">
+        <a asp-page="./Create" class="btn-add">Thêm giao dịch mới</a>
+    </div>
+</p>
 <table class="table">
     <thead>
         <tr>

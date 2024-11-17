@@ -1,47 +1,52 @@
 ﻿@page
 @model KoiFarm.WebApplication.Pages.Customers.TransactionHistory.CreateModel
-
-<h4>TransactionHistory</h4>
+@{
+    ViewData["Tittle"] = "Thêm giao dịch mới";
+    Layout = "~/Pages/Admin/TransactionHistory/_Layout.cshtml";
+}
+<h4>LỊCH SỬ MUA HÀNG</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="TransactionHistory.TransactionId" class="control-label"></label>
+                <label asp-for="TransactionHistory.TransactionId" class="control-label">Mã giao dịch </label>
                 <input asp-for="TransactionHistory.TransactionId" class="form-control" />
                 <span asp-validation-for="TransactionHistory.TransactionId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="TransactionHistory.CustomerId" class="control-label"></label>
-                <select asp-for="TransactionHistory.CustomerId" class ="form-control" asp-items="ViewBag.CustomerId"></select>
+                <label asp-for="TransactionHistory.CustomerId" class="control-label">Mã khách hàng</label>
+                <select asp-for="TransactionHistory.CustomerId" class="form-control" asp-items="ViewBag.CustomerId"></select>
             </div>
             <div class="form-group">
-                <label asp-for="TransactionHistory.TransactionDate" class="control-label"></label>
+                <label asp-for="TransactionHistory.TransactionDate" class="control-label">Ngày giao dịch</label>
                 <input asp-for="TransactionHistory.TransactionDate" class="form-control" />
                 <span asp-validation-for="TransactionHistory.TransactionDate" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="TransactionHistory.TransactionType" class="control-label"></label>
+                <label asp-for="TransactionHistory.TransactionType" class="control-label">Loại giao dịch</label>
                 <input asp-for="TransactionHistory.TransactionType" class="form-control" />
                 <span asp-validation-for="TransactionHistory.TransactionType" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="TransactionHistory.Amount" class="control-label"></label>
+                <label asp-for="TransactionHistory.Amount" class="control-label">Số tiền</label>
                 <input asp-for="TransactionHistory.Amount" class="form-control" />
                 <span asp-validation-for="TransactionHistory.Amount" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Tạo giao dịch mới" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-page="Index">Back to List</a>
+    <a asp-page="Index">Danh sách lịch sử mua hàng</a>
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }
