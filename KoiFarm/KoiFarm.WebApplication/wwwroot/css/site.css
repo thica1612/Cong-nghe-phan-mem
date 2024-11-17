@@ -1,20 +1,20 @@
 ﻿html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 
@@ -120,6 +120,7 @@ a:hover, a:active {
     border-radius: 8px;
     font-size: 11px;
 }
+
 .dky {
     position: absolute;
     top: 20px;
@@ -168,6 +169,7 @@ a:hover, a:active {
     align-items: center;
     color: #333333;
 }
+
 .google {
     font-family: 'Roboto';
     font-style: normal;
@@ -192,6 +194,7 @@ a:hover, a:active {
     border-radius: 8px;
     background: #FEF7FF;
 }
+
 .OR {
     overflow: hidden; /* Đảm bảo hình ảnh không vượt ra ngoài khung */
     position: absolute;
@@ -199,6 +202,7 @@ a:hover, a:active {
     left: 665px;
     top: 375px;
 }
+
     .OR img {
         width: 100%; /* Hình ảnh sẽ vừa với chiều rộng khung cha */
         height: 100%; /* Hình ảnh sẽ vừa với chiều cao khung cha */
@@ -487,6 +491,7 @@ a:hover, a:active {
     letter-spacing: 0.02em;
     color: #3C4242;
 }
+
     .txtkygui1 .btnfile1 {
         font-weight: 100;
         position: absolute;
@@ -558,9 +563,11 @@ a:hover, a:active {
     letter-spacing: 0.02em;
     color: #3C4242;
 }
-.nhap li {
-    margin-bottom: 60px;
-}
+
+    .nhap li {
+        margin-bottom: 60px;
+    }
+
 #gioitinh {
     display: flex;
     flex-direction: row;
@@ -575,6 +582,7 @@ a:hover, a:active {
     background: #FEF7FF;
     border-radius: 8px;
 }
+
 #namsinh {
     display: flex;
     flex-direction: row;
@@ -589,6 +597,7 @@ a:hover, a:active {
     background: #FEF7FF;
     border-radius: 8px;
 }
+
 #kichthuoc {
     display: flex;
     flex-direction: row;
@@ -603,6 +612,7 @@ a:hover, a:active {
     background: #FEF7FF;
     border-radius: 8px;
 }
+
 #giaban {
     display: flex;
     flex-direction: row;
@@ -698,47 +708,49 @@ a:hover, a:active {
     cursor: pointer;
 }
 
-        .buttongia1 a {
-            font-family: 'Anton', sans-serif;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 19px;
-            line-height: normal; /* Bỏ line-height quá lớn */
-            text-align: center;
-            color: #FFFFFF;
-            text-decoration: none;
-        }
-
-    .so-sanh {
-        position: absolute;
-        width: 94px;
-        height: 29px;
-        left: 40px;
-        top: 304px;
-        font-family: 'Inter';
+    .buttongia1 a {
+        font-family: 'Anton', sans-serif;
         font-style: normal;
-        font-weight: 50;
-        font-size: 18px;
-        line-height: 35px;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: normal; /* Bỏ line-height quá lớn */
         text-align: center;
+        color: #FFFFFF;
+        text-decoration: none;
     }
 
-        .so-sanh img {
-            width: 20px; /* Điều chỉnh kích thước theo ý muốn */
-            height: auto; /* Giữ tỉ lệ hình ảnh */
-            vertical-align: middle; /* Canh giữa với văn bản */
-        }
-    .mieuta {
-        font-style: normal;
-        font-weight: bold;
-        font-size: 15px;
-        font-family: 'Inter';
-        box-sizing: border-box;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+.so-sanh {
+    position: absolute;
+    width: 94px;
+    height: 29px;
+    left: 40px;
+    top: 304px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 50;
+    font-size: 18px;
+    line-height: 35px;
+    text-align: center;
+}
+
+    .so-sanh img {
+        width: 20px; /* Điều chỉnh kích thước theo ý muốn */
+        height: auto; /* Giữ tỉ lệ hình ảnh */
+        vertical-align: middle; /* Canh giữa với văn bản */
     }
+
+.mieuta {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Inter';
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 .tenca {
     font-weight: bolder;
     position: absolute;
@@ -754,6 +766,7 @@ a:hover, a:active {
     letter-spacing: 0.29228px;
     color: #060016;
 }
+
 .imgca {
     margin-top: 10px;
     width: 200px !important; /* Đặt chiều rộng cố định cho khung */
@@ -765,22 +778,24 @@ a:hover, a:active {
 }
 
 
-        .imgca img {
-            width: 207px;
-            height: 78px;
-            object-fit: cover;
-            z-index: 2;
-            object-position: center;
-        }
-    .blob {
-        position: absolute;
-        left: -3%;
-        top: 9.18%;
-        bottom: 123.71%;
-        background: #73ACCD;
-        width: 192px;
-        z-index:1;
+    .imgca img {
+        width: 207px;
+        height: 78px;
+        object-fit: cover;
+        z-index: 2;
+        object-position: center;
     }
+
+.blob {
+    position: absolute;
+    left: -3%;
+    top: 9.18%;
+    bottom: 123.71%;
+    background: #73ACCD;
+    width: 192px;
+    z-index: 1;
+}
+
 .sale {
     object-fit: cover;
     position: absolute;
@@ -823,7 +838,7 @@ a:hover, a:active {
 
 .pb-3 {
     min-height: 100vh;
-<<<<<<< HEAD
+    <<<<<<< HEAD
 }
 /* Table Layout */
 .bitcart table {
@@ -988,6 +1003,7 @@ tbody tr:hover {
     height: 120px;
     width: 1275px;
 }
+
 .total {
     position: absolute;
     width: 1255px;
@@ -1002,16 +1018,34 @@ tbody tr:hover {
     text-align: center; /* Căn giữa nội dung trong div */
 }
 
-.name {
-    background: white;
-    border: 0px;
+/*.name {
+    position: absolute;
+    top: -29px;
+    left: -138px;
     font-size: 14px;
+}*/
+.name {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
 }
+
+    .name:hover {
+        background-color: #0056b3;
+    }
+
 
 
 .signout-form {
-    margin-top: 2px; /* Khoảng cách giữa tên người dùng và nút đăng xuất */
+    margin-top: 5px; /* Khoảng cách giữa tên người dùng và nút đăng xuất */
 }
+
 .dxuat {
     position: absolute;
     top: -16px;
@@ -1031,6 +1065,7 @@ tbody tr:hover {
     font-size: 11px;
     margin-top: 10px;
 }
+
 .mainchitiet {
     margin-bottom: 125px;
     display: flex;
@@ -1044,11 +1079,12 @@ tbody tr:hover {
     height: auto;
     overflow: hidden;
 }
-.hinhKoi img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+
+    .hinhKoi img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 
 .hinhkoi {
     width: 516px;
@@ -1057,11 +1093,12 @@ tbody tr:hover {
     overflow: hidden;
     margin-left: 77px;
 }
-.hinhkoi img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+
+    .hinhkoi img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 /* Phần tử cha */
 .chu {
     position: relative;
@@ -1132,6 +1169,7 @@ tbody tr:hover {
     bottom: 10px;
     right: 10px;
 }
+
 .themgiothang {
     font-size: 12px;
     font-weight: bold;
@@ -1149,7 +1187,7 @@ tbody tr:hover {
     background-color: #04032B;
 }
 
-    .themgiothang a  {
+    .themgiothang a {
         font-family: 'Anton', sans-serif;
         font-style: normal;
         font-weight: 400;
@@ -1159,6 +1197,7 @@ tbody tr:hover {
         color: #FFFFFF;
         text-decoration: none;
     }
+
 .muangay {
     font-size: 12px;
     font-weight: bold;
@@ -1175,6 +1214,7 @@ tbody tr:hover {
     top: 512px;
     background-color: #030085;
 }
+
     .muangay a {
         font-family: 'Anton', sans-serif;
         font-style: normal;
@@ -1212,16 +1252,20 @@ tbody tr:hover {
         color: #FFFFFF;
         text-decoration: none;
     }
+
 .grid {
     color: black;
     text-decoration: none;
 }
- .grid:hover{
-     text-decoration: none;
- }
+
+    .grid:hover {
+        text-decoration: none;
+    }
+
 .modal {
     backdrop-filter: blur(5px); /* Hiệu ứng mờ nền */
 }
+
 .solg {
     border: 0.7px solid;
     background-clip: border-box;
@@ -1232,6 +1276,7 @@ tbody tr:hover {
     position: absolute;
     bottom: 32px;
 }
+
 .solg1 {
     margin: 0;
     font-family: inherit;

@@ -69,16 +69,16 @@
                                 <a class="nav-link" asp-area="" asp-page="/">QUẢN LÝ</a>
                                 <ul class="sub-menu">
                                     <li class="menu-item">
-                                        <a href="/Admin/User">Quản lý khách hàng</a>
+                                        <a href="/Admin/User">  QUẢN LÝ KHÁCH HÀNG</a>
                                     </li>
                                     <li class="menu-item">
-                                        <a href="/Admin/Order">Quản lý đơn hàng</a>
+                                        <a href="/Admin/Order"> QUẢN LÝ ĐƠN HÀNG</a>
                                     </li>
                                     <li class="menu-item">
-                                        <a href="/Admin/Certifications">Giấy chứng nhận cá Koi</a>
+                                        <a href="/Admin/Certifications">GIẤY CHỨNG NHẬN CÁ KOI</a>
                                     </li>
                                     <li class="menu-item">
-                                        <a href="/Admin/DashboardData">Báo cáo doanh thu</a>
+                                        <a href="/Admin/DashboardData">BÁO CÁO DOANH THU</a>
                                     </li>
                                 </ul>
                             </li>
@@ -112,22 +112,20 @@
                     <!--Sign in, sign up-->
                     @if (@Context.Session.GetString("Username") != null)
                     {
-                        <div class="dx" asp-page="User">
-                            <form>
+                        <div class="dx">
+                            <a asp-page="/Customer/Profile" asp-route-id=@Context.Session.GetString("CustomerId")>
                                 <button class="name">
-                                    <img src="~/images/user.png" /> @Context.Session.GetString("Username")
+                                    @Context.Session.GetString("Username")
                                 </button>
-                            </form>
-                            
-                            <form asp-page="/Customer/SignIn" method="post">
-                                <button class="dxuat">
-                                    Đăng xuất
-                                </button>
-                            </form>
+                            </a>
+                            @* <form asp-page="/Customer/SignIn" method="post" style="display: inline;">
+                        <button class="dxuat">
+                        Đăng xuất
+                        </button>
+                        </form> *@
                         </div>
-
-
                     }
+
                     else
                     {
                         <form type="submit" method="get" asp-page="/Customer/SignIn">
