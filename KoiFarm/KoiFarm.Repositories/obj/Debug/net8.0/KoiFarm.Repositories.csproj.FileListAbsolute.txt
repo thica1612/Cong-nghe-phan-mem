@@ -118,3 +118,18 @@ H:\KOI\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\obj\Debug\net8.0\refint\K
 H:\KOI\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\obj\Debug\net8.0\KoiFarm.Repositories.pdb
 H:\KOI\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\obj\Debug\net8.0\KoiFarm.Repositories.genruntimeconfig.cache
 H:\KOI\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\obj\Debug\net8.0\ref\KoiFarm.Repositories.dll
+D:\Cong nghe phan mem\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\bin\Debug\net8.0\KoiFarm.Repositories.deps.json
+D:\Cong nghe phan mem\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\bin\Debug\net8.0\KoiFarm.Repositories.runtimeconfig.json
+D:\Cong nghe phan mem\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\bin\Debug\net8.0\KoiFarm.Repositories.dll
+D:\Cong nghe phan mem\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\bin\Debug\net8.0\KoiFarm.Repositories.pdb
+D:\Cong nghe phan mem\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\obj\Debug\net8.0\KoiFarm.Repositories.csproj.AssemblyReference.cache
+D:\Cong nghe phan mem\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\obj\Debug\net8.0\KoiFarm.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+D:\Cong nghe phan mem\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\obj\Debug\net8.0\KoiFarm.Repositories.AssemblyInfoInputs.cache
+D:\Cong nghe phan mem\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\obj\Debug\net8.0\KoiFarm.Repositories.AssemblyInfo.cs
+D:\Cong nghe phan mem\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\obj\Debug\net8.0\KoiFarm.Repositories.csproj.CoreCompileInputs.cache
+D:\Cong nghe phan mem\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\obj\Debug\net8.0\KoiFarm.Repositories.sourcelink.json
+D:\Cong nghe phan mem\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\obj\Debug\net8.0\KoiFarm.Repositories.dll
+D:\Cong nghe phan mem\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\obj\Debug\net8.0\refint\KoiFarm.Repositories.dll
+D:\Cong nghe phan mem\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\obj\Debug\net8.0\KoiFarm.Repositories.pdb
+D:\Cong nghe phan mem\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\obj\Debug\net8.0\KoiFarm.Repositories.genruntimeconfig.cache
+D:\Cong nghe phan mem\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Repositories\obj\Debug\net8.0\ref\KoiFarm.Repositories.dll
