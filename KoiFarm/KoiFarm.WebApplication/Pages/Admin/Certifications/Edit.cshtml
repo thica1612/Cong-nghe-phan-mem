@@ -2,7 +2,7 @@
 @model KoiFarm.WebApplication.Pages.Certifications.EditModel
 @{
     ViewData["Tittle"] = "Chỉnh sửa giấy chứng nhận";
-    Layout = "_AdminLayout";
+    Layout = "~/Pages/Admin/Certifications/_CertificationLayout.cshtml";
 }
 <h4>Certification</h4>
 <hr />
@@ -12,27 +12,27 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Certification.CertificationId" />
             <div class="form-group">
-                <label asp-for="Certification.KoiId" class="control-label"></label>
+                <label asp-for="Certification.KoiId" class="control-label">Mã Koi</label>
                 <select asp-for="Certification.KoiId" class="form-control" asp-items="ViewBag.KoiId"></select>
                 <span asp-validation-for="Certification.KoiId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Certification.OriginCertificate" class="control-label"></label>
+                <label asp-for="Certification.OriginCertificate" class="control-label">Chứng nhận nguồn gốc</label>
                 <input asp-for="Certification.OriginCertificate" class="form-control" />
                 <span asp-validation-for="Certification.OriginCertificate" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Certification.HealthCertificate" class="control-label"></label>
+                <label asp-for="Certification.HealthCertificate" class="control-label">Chứng nhận sức khỏe</label>
                 <input asp-for="Certification.HealthCertificate" class="form-control" />
                 <span asp-validation-for="Certification.HealthCertificate" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Certification.CertificationDate" class="control-label"></label>
+                <label asp-for="Certification.CertificationDate" class="control-label">Ngày chứng nhận</label>
                 <input asp-for="Certification.CertificationDate" class="form-control" />
                 <span asp-validation-for="Certification.CertificationDate" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Lưu thay đổi" class="btn btn-primary" />
             </div>
         </form>
     </div>

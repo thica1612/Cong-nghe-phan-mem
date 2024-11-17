@@ -2,50 +2,45 @@
 @model KoiFarm.WebApplication.Pages.Certifications.IndexModel
 @{
     ViewData["Tittle"] = "Giấy chứng nhận";
-    Layout = "_AdminLayout";
+    Layout = "~/Pages/Admin/Certifications/_CertificationLayout.cshtml";
 }
 <p>
-    <a asp-page="Create">Thêm</a>
+    <div style="text-align: left; margin-bottom: 15px;">
+        <a asp-page="./Create" class="btn-add">Thêm chứng nhận mới</a>
+    </div>
 </p>
 <table class="table">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Certification[0].OriginCertificate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Certification[0].HealthCertificate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Certification[0].CertificationDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Certification[0].Koi)
-            </th>
-            <th></th>
+            <th>Nguồn gốc chứng nhận</th>
+            <th>Chứng nhận sức khỏe</th>
+            <th>Ngày chứng nhận</th>
+            <th>Mã Koi</th>
+            <th>Hành động</th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.Certification) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.OriginCertificate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.HealthCertificate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CertificationDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Koi.KoiId)
-            </td>
-            <td>
-                <a asp-page="./Edit" asp-route-id="@item.CertificationId">Sửa</a> |
-                <a asp-page="./Details" asp-route-id="@item.CertificationId">Chi tiết</a> |
-                <a asp-page="./Delete" asp-route-id="@item.CertificationId">Xóa</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model.Certification)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OriginCertificate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HealthCertificate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CertificationDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Koi.KoiId)
+                </td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.CertificationId">Sửa</a> |
+                    <a asp-page="./Details" asp-route-id="@item.CertificationId">Chi tiết</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.CertificationId">Xóa</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
