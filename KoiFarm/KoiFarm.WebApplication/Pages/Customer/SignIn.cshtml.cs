@@ -19,6 +19,7 @@ namespace KoiFarm.WebApplication.Pages
         {
 
             HttpContext.Session.Remove("Username");
+            HttpContext.Session.Remove("UserRole");
             int failedAttempts = HttpContext.Session.GetInt32("FailedLoginAttempts") ?? 0;
 
 
@@ -29,10 +30,11 @@ namespace KoiFarm.WebApplication.Pages
 
             var user = await _service.AuthenUser(userNameorEmail, userPassword);
 
-            if (user != null) 
+            if (user != null)
             {
                 HttpContext.Session.SetString("CustomerId", user.UserId.ToString());
                 HttpContext.Session.SetString("Username", userNameorEmail);
+                HttpContext.Session.SetString("userRole", user.UserRole);
                 return RedirectToPage("/Index");
             }
             else
@@ -41,7 +43,7 @@ namespace KoiFarm.WebApplication.Pages
                 failedAttempts++;
                 HttpContext.Session.SetInt32("FailedLoginAttempts", failedAttempts);
 
-              
+
                 // Lỗi đăng nhập
                 TempData["ErrorMessage"] = "Tên đăng nhập hoặc mật khẩu không hợp lệ";
                 return RedirectToPage("/Customer/SignIn");
