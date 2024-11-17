@@ -1018,28 +1018,19 @@ tbody tr:hover {
     text-align: center; /* Căn giữa nội dung trong div */
 }
 
-/*.name {
-    position: absolute;
-    top: -29px;
-    left: -138px;
-    font-size: 14px;
-}*/
 .name {
+    top: -36px;
+    position: relative;
+    font-size: 14px;
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
+    background-color: white;
+    color: black;
     text-decoration: none;
     border-radius: 5px;
     border: none;
-    cursor: pointer;
     text-align: center;
 }
-
-    .name:hover {
-        background-color: #0056b3;
-    }
-
 
 
 .signout-form {

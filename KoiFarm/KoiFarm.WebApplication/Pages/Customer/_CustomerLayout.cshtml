@@ -11,23 +11,23 @@
         <!-- Sidebar -->
         <aside class="sidebar">
             <div class="user">
-                <h2>NGUYEN THI HOA (Customer)</h2>
+                <h2>@Context.Session.GetString("Username") (Customer)</h2>
             </div>
             <nav class="sidebar-nav">
                 <ul>
-                    <li><a href="/" class="sidebar-link">Trang chủ</a></li>
+                    <li><a href="/Index" class="sidebar-link">Trang chủ</a></li>
                     <li><a href="Feedback" class="sidebar-link">Đánh giá đơn hàng</a></li>
                     <li><a href="CertificationKoiSales" class="sidebar-link">Giấy chứng nhận cá Koi</a></li>
                     <li><a href="Order" class="sidebar-link">Đặt hàng</a></li>
-                    <li><a href="OrderDetail" class="sidebar-link">Chi tiết đơn hàng</a></li>
-                    <li><a href="SignOut" class="sidebar-link">Đăng xuất</a></li>
+                    <li><a href="Cart" class="sidebar-link">Chi tiết đơn hàng</a></li>
+                    <li><a href="SignIn" class="sidebar-link">Đăng xuất</a></li>
                 </ul>
             </nav>
         </aside>
         <!-- Header -->
         <header class="header">
             <div class="user-info">
-                <p>NGUYEN THI HOA (Customer)</p>
+                <p>@Context.Session.GetString("Username") (Customer)</p>
             </div>
 
             <div class="header-logo">

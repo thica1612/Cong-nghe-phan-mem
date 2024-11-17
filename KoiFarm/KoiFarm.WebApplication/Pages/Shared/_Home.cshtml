@@ -113,9 +113,10 @@
                     @if (@Context.Session.GetString("Username") != null)
                     {
                         <div class="dx">
+                            
                             <a asp-page="/Customer/Profile" asp-route-id=@Context.Session.GetString("CustomerId")>
                                 <button class="name">
-                                    @Context.Session.GetString("Username")
+                                    <img src="~/images/user.png" /> @Context.Session.GetString("Username")
                                 </button>
                             </a>
                             @* <form asp-page="/Customer/SignIn" method="post" style="display: inline;">
