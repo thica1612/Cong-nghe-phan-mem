@@ -34,14 +34,14 @@ namespace KoiFarm.Repositories
             }
         }
 
-        public async Task<bool> AuthenUserAsync(string userNameorEmail, string userPassword)
+        public async Task<KoiUser?> AuthenUserAsync(string userNameorEmail, string userPassword)
         {
             var user = await _context.KoiUsers.Where(p => p.UserName.Equals(userNameorEmail) || p.Email.Equals(userNameorEmail)).FirstOrDefaultAsync();
             if (user != null && userPassword == user.UserPassword)
             {
-                return true;
+                return user;
             }
-            return false;
+            return null;
         }
 
         public bool DelKoiUser(Guid Id)

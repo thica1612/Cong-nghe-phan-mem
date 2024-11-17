@@ -47,5 +47,10 @@ namespace KoiFarm.Services
         {
             return await _repository.UpdateOrderDetail(orderDetail);
         }
+
+        public Task<List<OrderDetail>> GetAllOrderByUser(int orderId)
+        {
+            return _repository.GetAllOrderByUser(orderId);
+        }
     }
 }

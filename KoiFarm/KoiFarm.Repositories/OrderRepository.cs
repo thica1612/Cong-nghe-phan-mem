@@ -59,39 +59,67 @@ namespace KoiFarm.Repositories
         public async Task AddToOrderAsync(Guid customerId, string koiId, int quantity)
         {
             var currentOrder = await GetCurrentOrderAsync(customerId);
-
-            if(currentOrder == null)
+            var newOrderId = addOrderId();
+            var newOrderDetailId = addOrderDetailId();
+            if (currentOrder == null)
             {
                 currentOrder = new KoiOrder()
                 {
+                    OrderId = newOrderId,
                     CustomerId = customerId,
                     OrderDate = DateOnly.FromDateTime(DateTime.Now),
                     Status = "In Progress",
                     TotalAmount = 0,
+                    OrderDetails = new List<OrderDetail>()
                 };
+                await _dbcontext.KoiOrders.AddAsync(currentOrder);
+                await _dbcontext.SaveChangesAsync();
+            }
 
                 var koi = await _dbcontext.Kois.FindAsync(koiId);
-                if(koi != null)
+                if (koi == null)
+                {
+                    throw new Exception("Sản phẩm không tồn tại");
+                }
+
+                var existKoi = currentOrder.OrderDetails
+                    .FirstOrDefault(p => p.KoiId == koiId);
+
+                if (existKoi != null)
+                {
+                    existKoi.Quantity += quantity;
+                }
+                else
                 {
                     var orderDetail = new OrderDetail
                     {
+                        OrderDetailId = newOrderDetailId,
                         OrderId = currentOrder.OrderId,
                         KoiId = koiId,
                         Quantity = quantity,
                         UnitPrice = koi.KoiPrice,
                     };
-
                     currentOrder.OrderDetails.Add(orderDetail);
-                    currentOrder.TotalAmount += koi.KoiPrice * quantity;
-
-                    await _dbcontext.SaveChangesAsync();
                 }
-            }
+
+                currentOrder.TotalAmount = currentOrder.OrderDetails.Sum(p => p.Quantity * p.UnitPrice);
+                await _dbcontext.SaveChangesAsync();
+        }
+
+        public int addOrderId()
+        {
+            var max = _dbcontext.KoiOrders.Max(o => o.OrderId);
+            return max + 1;
+        }
+        public int addOrderDetailId()
+        {
+            var max = _dbcontext.OrderDetails.Max(o => o.OrderDetailId);
+            return max + 1;
         }
 
         public async Task<KoiOrder?> GetCurrentOrderAsync(Guid customerId)
         {
-            return await _dbcontext.KoiOrders.Include(o=>o.OrderDetails)
+            return await _dbcontext.KoiOrders.Include(o=>o.OrderDetails).ThenInclude(p => p.Koi)
                 .FirstOrDefaultAsync(p => p.CustomerId == customerId && p.Status == "In Progress");
         }
 

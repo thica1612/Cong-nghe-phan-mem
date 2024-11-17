@@ -654,7 +654,10 @@
           "Microsoft.IdentityModel.Protocols.OpenIdConnect": "8.2.0"
         },
         "runtime": {
-          "KoiFarm.Repositories.dll": {}
+          "KoiFarm.Repositories.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

@@ -41,15 +41,18 @@ namespace KoiFarm.WebApplication.Pages.Customer
         public async Task<IActionResult> OnPostCartAsync(string koiId, int quantity)
         {
             var userIdstr = HttpContext.Session.GetString("CustomerId");
+            Console.WriteLine($"\nSession: {userIdstr}");
             if (userIdstr == null)
             {
-                return Redirect("/Customer/Login");
+                return Redirect("/Customer/SignIn");
             }
 
             var userId = Guid.Parse(userIdstr);
 
             await _orderService.AddToOrderAsync(userId, koiId, quantity);
-            return Page();
+            
+            return RedirectToPage("/Customer/Cart");
+            
         }
     }
 }

@@ -29,8 +29,9 @@ namespace KoiFarm.WebApplication.Pages
 
             var user = await _service.AuthenUser(userNameorEmail, userPassword);
 
-            if (user) 
+            if (user != null) 
             {
+                HttpContext.Session.SetString("CustomerId", user.UserId.ToString());
                 HttpContext.Session.SetString("Username", userNameorEmail);
                 return RedirectToPage("/Index");
             }

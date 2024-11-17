@@ -18,5 +18,7 @@ namespace KoiFarm.Repositories.Interfaces
         Task<bool> DeleteOrderDetail(OrderDetail orderDetail);
         Task<bool> DelOrderDetail(int orderDetailId);
         Task<bool> DelOrderDetail(OrderDetail orderDetail);
+
+        Task<List<OrderDetail>> GetAllOrderByUser(int orderId);
     }
 }

@@ -15,6 +15,6 @@ namespace KoiFarm.Services.Interfaces
         Task<OrderDetail> GetOrderDetailById(int orderDetailId);
         Task<List<OrderDetail>> GetAllOrderDetails();
         Task<bool> UpdateOrderDetail(OrderDetail orderDetail);
-
+        Task<List<OrderDetail>> GetAllOrderByUser(int orderId);
     }
 }

@@ -17,65 +17,51 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>
-                    <div class="product-info">
-                        <img src="koi-bekko.jpg" alt="Koi Bekko" class="product-image">
-                        <div class="product-details">
-                            <p>Koi Bekko</p>
-                            <span>Giới tính: Koi cái</span>
-                            <span>Năm sinh: 2017</span>
-                        </div>
-                    </div>
-                </td>
-                <td>950.000 đ</td>
-                <td>
-                    <div class="quantity-control">
-                        <button class="btn-minus">-</button>
-                        <input type="number" value="1" min="1" readonly>
-                        <button class="btn-plus">+</button>
-                    </div>
-                </td>
-                <td>Miễn phí</td>
-                <td>950.000 đ</td>
-                <td>
-                    <button class="btn-remove">🗑</button>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="product-info">
-                        <img src="koi-tancho.jpg" alt="Koi Tancho" class="product-image">
-                        <div class="product-details">
-                            <p>Koi Tancho</p>
-                            <span>Giới tính: Koi đực</span>
-                            <span>Năm sinh: 2018</span>
-                        </div>
-                    </div>
-                </td>
-                <td>1.200.000 đ</td>
-                <td>
-                    <div class="quantity-control">
-                        <button class="btn-minus">-</button>
-                        <input type="number" value="2" min="1" readonly>
-                        <button class="btn-plus">+</button>
-                    </div>
-                </td>
-                <td>Miễn phí</td>
-                <td>2.400.000 đ</td>
-                <td>
-                    <button class="btn-remove">🗑</button>
-                </td>
-            </tr>
+            @foreach (var koi in Model.CartItems)
+                {
+                    <tr>
+                        <td>
+                            <div class="product-info">
+                                <img class="hinhKoi" src="@Url.Content("~/KoiImages2/" + @koi.Koi.KoiImage + ".png")" alt="Ảnh của @koi.Koi.KoiName" />
+                                <div class="product-details">
+                                    <p>@koi.Koi.KoiName</p>
+                                    <span>Giới tính: @koi.Koi.KoiGender</span>
+                                    <span>Năm sinh: @koi.Koi.KoiYear</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>@koi.UnitPrice đ</td>
+                        <td>
+                            <input type="number" value="@koi.Quantity" min="1" readonly>
+                        </td>
+                        <td>Miễn phí</td>
+                        <td>@koi.UnitPrice * @koi.Quantity đ</td>
+                        <td>
+                            <form method="post" action="/Cart/Remove">
+                                <input type="hidden" name="OrderDetailId" value="@koi.OrderDetailId" />
+                                <button type="submit" class="btn-remove">🗑</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                    </tr>
+                }
         </tbody>
     </table>
 </div>
 
-<div class="container">
+@{
+    decimal? totalAmount = 0;
+    if (Model.CartItems != null)
+    {
+        totalAmount = Model.CartItems.Sum(item => item.UnitPrice * item.Quantity);
+    }
+}
+
     <div class="summary-box">
-        <div class="summary-item">
+        <div class="summary-koi">
             <span class="label">Giá trị sản phẩm</span>
-            <span class="value">1.350.000đ</span>
+        <span class="value">@String.Format("{0:N0} đ", totalAmount)</></span>
         </div>
         <div class="summary-item">
             <span class="label">Phí vận chuyển</span>
@@ -83,8 +69,7 @@
         </div>
         <div class="summary-item-total">
             <span class="label">Tổng cộng</span>
-            <span class="value">1.350.000đ</span>
+        <span class="value">@String.Format("{0:N0} đ", totalAmount)</span>
         </div>
         <button class="checkout-btn">Thanh toán</button>
     </div>
-</div>

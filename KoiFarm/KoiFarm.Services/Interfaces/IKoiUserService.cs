@@ -15,7 +15,7 @@ namespace KoiFarm.Services.Interfaces
         Boolean AddKoiUser(KoiUser account);
         Boolean UpKoiUser(KoiUser account);
         Task<KoiUser> GetKoiUserById(Guid Id);
-        Task<bool> AuthenUser(string userNameorEmail, string userPassword);
+        Task<KoiUser?> AuthenUser(string userNameorEmail, string userPassword);
         Task<bool> SignUpUser(KoiUser account);
     }
 }

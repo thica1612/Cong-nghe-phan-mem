@@ -52,6 +52,17 @@ namespace KoiFarm.Repositories
             throw new NotImplementedException();
         }
 
+        public async Task<List<OrderDetail>> GetAllOrderByUser(int orderId)
+        {
+            var orderDetails = await _context.KoiOrders
+                    .Where(order => order.OrderId == orderId && order.Status != "Completed")
+                        .SelectMany(order => order.OrderDetails)
+                            .Include(detail => detail.Koi)
+                                .ToListAsync();
+
+            return orderDetails;
+        }
+
         public async Task<List<OrderDetail>> GetAllOrderDetails()
         {
             return await _context.OrderDetails.ToListAsync();
