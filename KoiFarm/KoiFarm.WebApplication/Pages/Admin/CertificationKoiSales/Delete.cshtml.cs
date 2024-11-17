@@ -53,5 +53,7 @@ namespace KoiFarm.WebApplication.Pages.CertificationKoiSales
 
             return RedirectToPage("./Index");
         }
+
+       
     }
 }

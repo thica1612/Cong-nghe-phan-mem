@@ -5,45 +5,40 @@
     Layout = "~/Pages/Admin/CertificationKoiSales/_CertificationKoiSalesLayout.cshtml";
 }
 
-<div class="container mt-4">
+<div class="container mt-5">
     <div class="card shadow-sm">
         <div class="card-header bg-primary text-white">
-            <h4 class="mb-0">Thông tin giấy chứng nhận</h4>
+            <h2 class="mb-0">THÔNG TIN GIẤY CHỨNG NHẬN</h2>
         </div>
         <div class="card-body">
-            <dl class="row mb-0">
-                <dt class="col-sm-3 font-weight-bold">
-                    @Html.DisplayNameFor(model => model.CertificationKoiSale.OriginCertificateKs)
-                </dt>
-                <dd class="col-sm-9">
-                    @Html.DisplayFor(model => model.CertificationKoiSale.OriginCertificateKs)
-                </dd>
-
-                <dt class="col-sm-3 font-weight-bold">
-                    @Html.DisplayNameFor(model => model.CertificationKoiSale.HealthCertificateKs)
-                </dt>
-                <dd class="col-sm-9">
-                    @Html.DisplayFor(model => model.CertificationKoiSale.HealthCertificateKs)
-                </dd>
-
-                <dt class="col-sm-3 font-weight-bold">
-                    @Html.DisplayNameFor(model => model.CertificationKoiSale.CertificationDateKs)
-                </dt>
-                <dd class="col-sm-9">
-                    @Html.DisplayFor(model => model.CertificationKoiSale.CertificationDateKs)
-                </dd>
-
-                <dt class="col-sm-3 font-weight-bold">
-                    @Html.DisplayNameFor(model => model.CertificationKoiSale.KoiSale)
-                </dt>
-                <dd class="col-sm-9">
-                    @Html.DisplayFor(model => model.CertificationKoiSale.KoiSale.KoiSaleId)
-                </dd>
-            </dl>
+            <table class="table table-striped">
+                <tbody>
+                    <tr>
+                        <th scope="row">@Html.DisplayNameFor(model => model.CertificationKoiSale.OriginCertificateKs)</th>
+                        <td>@Html.DisplayFor(model => model.CertificationKoiSale.OriginCertificateKs)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">@Html.DisplayNameFor(model => model.CertificationKoiSale.HealthCertificateKs)</th>
+                        <td>@Html.DisplayFor(model => model.CertificationKoiSale.HealthCertificateKs)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">@Html.DisplayNameFor(model => model.CertificationKoiSale.CertificationDateKs)</th>
+                        <td>@Html.DisplayFor(model => model.CertificationKoiSale.CertificationDateKs)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">@Html.DisplayNameFor(model => model.CertificationKoiSale.KoiSale)</th>
+                        <td>@Html.DisplayFor(model => model.CertificationKoiSale.KoiSale.KoiSaleId)</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
         <div class="card-footer text-end">
-            <a class="btn btn-warning me-2" asp-page="./Edit" asp-route-id="@Model.CertificationKoiSale.CertificationKsid">Sửa</a>
-            <a class="btn btn-secondary" asp-page="./Index">Danh sách giấy chứng nhận</a>
+            <a class="btn btn-warning me-2" asp-page="./Edit" asp-route-id="@Model.CertificationKoiSale.CertificationKsid">
+                <i class="bi bi-pencil-square"></i> Sửa
+            </a>
+            <a class="btn btn-secondary" asp-page="./Index">
+                <i class="bi bi-list"></i> Danh sách giấy chứng nhận
+            </a>
         </div>
     </div>
 </div>

@@ -5,46 +5,55 @@
     Layout = "~/Pages/Admin/CertificationKoiSales/_CertificationKoiSalesLayout.cshtml";
 }
 
+<div class="form-container">
+    <h2>THÊM GIẤY CHỨNG NHẬN</h2>
+    <!-- Form chính -->
+    <form method="post">
+        @Html.AntiForgeryToken()
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-<h4>CertificationKoiSale</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="CertificationKoiSale.CertificationKsid" class="control-label"></label>
+        <!-- Sắp xếp các trường input thành 2 cột -->
+        <div class="form-row">
+            <div class="input-group">
+                <label asp-for="CertificationKoiSale.CertificationKsid" class="control-label">Mã giấy chứng nhận</label>
                 <input asp-for="CertificationKoiSale.CertificationKsid" class="form-control" />
                 <span asp-validation-for="CertificationKoiSale.CertificationKsid" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="CertificationKoiSale.KoiSaleId" class="control-label"></label>
+
+            <div class="input-group">
+                <label asp-for="CertificationKoiSale.KoiSaleId" class="control-label">Mã Koi bán</label>
                 <select asp-for="CertificationKoiSale.KoiSaleId" class="form-control" asp-items="ViewBag.KoiSaleId"></select>
             </div>
-            <div class="form-group">
-                <label asp-for="CertificationKoiSale.OriginCertificateKs" class="control-label"></label>
+        </div>
+
+        <div class="form-row">
+            <div class="input-group">
+                <label asp-for="CertificationKoiSale.OriginCertificateKs" class="control-label">Chứng nhận nguồn gốc</label>
                 <input asp-for="CertificationKoiSale.OriginCertificateKs" class="form-control" />
                 <span asp-validation-for="CertificationKoiSale.OriginCertificateKs" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="CertificationKoiSale.HealthCertificateKs" class="control-label"></label>
+
+            <div class="input-group">
+                <label asp-for="CertificationKoiSale.HealthCertificateKs" class="control-label">Chứng nhận sức khỏe</label>
                 <input asp-for="CertificationKoiSale.HealthCertificateKs" class="form-control" />
                 <span asp-validation-for="CertificationKoiSale.HealthCertificateKs" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="CertificationKoiSale.CertificationDateKs" class="control-label"></label>
-                <input asp-for="CertificationKoiSale.CertificationDateKs" class="form-control" />
+        </div>
+
+        <div class="form-row">
+            <div class="input-group">
+                <label asp-for="CertificationKoiSale.CertificationDateKs" class="control-label">Ngày chứng nhận</label>
+                <input asp-for="CertificationKoiSale.CertificationDateKs" type="date" class="form-control" />
                 <span asp-validation-for="CertificationKoiSale.CertificationDateKs" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
+        </div>
 
-<div>
-    <a asp-page="Index">Danh sách giấy chứng nhận</a>
+        <!-- Nút lưu thay đổi và quay lại -->
+        <div class="button-container">
+            <button type="submit" class="btn-save">TẠO GIẤY CHỨNG NHẬN</button>
+            <a asp-page="./Index" class="btn btn-secondary">Danh sách giấy chứng nhận</a>
+        </div>
+    </form>
 </div>
 
 @section Scripts {
