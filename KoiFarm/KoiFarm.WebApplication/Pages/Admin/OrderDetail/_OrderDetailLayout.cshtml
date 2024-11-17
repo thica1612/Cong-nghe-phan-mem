@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Detail - The Aqua Koi</title>
+    <link rel="stylesheet" href="~/css/customer.css" />
+</head>
+<body>
+    <div class="layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="user">
+                <h2>NGUYEN THI HOA (Customer)</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="/" class="sidebar-link">Trang chủ</a></li>
+                    <li><a href="#" class="sidebar-link">Lịch sử đơn hàng</a></li>
+                    <li><a href="#" class="sidebar-link">Đánh giá đơn hàng</a></li>
+                    <li><a href="#" class="sidebar-link">Hỗ trợ khách hàng</a></li>
+                    <li><a href="#" class="sidebar-link">Cài đặt</a></li>
+                    <li><a href="#" class="sidebar-link">Đăng xuất</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <!-- Header -->
+        <header class="header">
+            <div class="user-info">
+                <p>NGUYEN THI HOA (Customer)</p>
+            </div>
+
+            <div class="header-logo">
+                <img src="~/images/logot.png" alt="The Aqua Koi Logo" style="width: 150px;">
+            </div>
+
+        </header>
+
+    </div>
+    <!-- Phần nội dung -->
+    <section class="content">
+        <div class="table-container">
+            <!-- Nội dung động như bảng khách hàng hoặc danh sách đơn hàng sẽ nằm ở đây -->
+            @RenderBody()
+            @RenderSection("Scripts", required: false)
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Thông tin liên hệ và hình ảnh trong footer -->
+        <img src="~/images/14.png" style="width: 100%; height: auto;">
+    </footer>
+
+</body>
+
+</html>

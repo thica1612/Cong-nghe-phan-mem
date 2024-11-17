@@ -2044,4 +2044,4 @@ D:\Kì1-Năm2\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0
 D:\Kì1-Năm2\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
 D:\Kì1-Năm2\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
 D:\Kì1-Năm2\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\obj\Debug\net8.0\KoiFarm.WebApplication.MvcApplicationPartsAssemblyInfo.cs
-D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\obj\Debug\net8.0\KoiFarm.WebApplication.csproj.CopyComplete
+D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\obj\Debug\net8.0\KoiFarm..905DBD40.Up2Date
