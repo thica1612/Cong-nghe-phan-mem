@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BcHcBR0iciHK62AjiYDfZEgqSy9dNXQq8golrwGu0HM=",
+  "Hash": "dfJojEb1FZwrbRizh7tSfyenMKuvfIoqNyrRxFPl4bg=",
   "Source": "KoiFarm.WebApplication",
   "BasePath": "_content/KoiFarm.WebApplication",
   "Mode": "Default",
@@ -1687,6 +1687,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\sale.png"
+    },
+    {
+      "Identity": "D:\\Kì1-Năm2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\wwwroot\\images\\user.png",
+      "SourceId": "KoiFarm.WebApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Kì1-Năm2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\wwwroot\\",
+      "BasePath": "_content/KoiFarm.WebApplication",
+      "RelativePath": "images/user.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\user.png"
     },
     {
       "Identity": "D:\\Kì1-Năm2\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\wwwroot\\js\\site.js",

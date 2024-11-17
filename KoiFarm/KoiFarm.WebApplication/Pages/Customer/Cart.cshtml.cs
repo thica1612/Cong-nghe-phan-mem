@@ -37,5 +37,10 @@ namespace KoiFarm.WebApplication.Pages
                 }
             }
         }
+
+        //public IActionResult OnPostRemove(int orderDetailId)
+        //{
+            
+        //}
     }
 }

@@ -112,10 +112,13 @@
                     <!--Sign in, sign up-->
                     @if (@Context.Session.GetString("Username") != null)
                     {
-                        <div class="dx">
-                            <span class="name">
-                                @Context.Session.GetString("Username")
-                            </span>
+                        <div class="dx" asp-page="User">
+                            <form>
+                                <button class="name">
+                                    <img src="~/images/user.png" /> @Context.Session.GetString("Username")
+                                </button>
+                            </form>
+                            
                             <form asp-page="/Customer/SignIn" method="post">
                                 <button class="dxuat">
                                     Đăng xuất

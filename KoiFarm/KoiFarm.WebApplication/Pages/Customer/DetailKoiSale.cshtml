@@ -22,7 +22,7 @@
                 Nguồn gốc: @Model.Koi.KoiSaleOrigin <br>
 
             </div>
-            <div class="giaca"> Giá: @Model.Koi.KoiSalePriceLater </div>
+            <div class="giaca"> Giá: @String.Format("{0:N0} đ", @Model.Koi.KoiSalePriceLater) </div>
 
             <form method="post" asp-page-handler="Cart">
                 <input type="hidden" name="koiId" value="@Model.Koi.KoiSaleId" />

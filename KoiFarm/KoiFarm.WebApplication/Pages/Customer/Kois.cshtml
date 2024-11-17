@@ -17,7 +17,7 @@
                 <img src="~/images/Blob(1).png" style="width: 100%; height: auto;" alt="Ảnh blob" />
             </div>
             <div class="buttongia1">
-                Giá @koi.KoiPrice
+                    Giá @String.Format("{0:N0} đ", @koi.KoiPrice)
             </div>
             <div class="tenca">@koi.KoiName</div>
             <div class="mieuta">
@@ -26,9 +26,9 @@
                 Năm sinh: @koi.KoiYear <br>
                 Kích thước: @koi.KoiSize cm <br>
             </div>
-            <div class="so-sanh">
-                <img src="~/images/iconplus.png" /> So sánh
-            </div>
+                <div class="so-sanh" asp-page="/SignIn">
+                    <img src="~/images/iconplus.png" /> So sánh
+                </div>
         </div>
     </a>
 }

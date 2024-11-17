@@ -1003,9 +1003,8 @@ tbody tr:hover {
 }
 
 .name {
-    position: absolute;
-    top: -29px;
-    left: -138px;
+    background: white;
+    border: 0px;
     font-size: 14px;
 }
 

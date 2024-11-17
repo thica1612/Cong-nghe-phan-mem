@@ -35,7 +35,7 @@
                             <input class="solg1" type="number" value="@koi.Quantity" min="1" readonly>
                         </td>
                         <td>Miễn phí</td>
-                        <td>@koi.UnitPrice * @koi.Quantity đ</td>
+                    <td>@String.Format("{0:N0} đ", @koi.UnitPrice * @koi.Quantity)</td>
                         <td>
                             <form method="post" action="/Cart/Remove">
                                 <input type="hidden" name="OrderDetailId" value="@koi.OrderDetailId" />
