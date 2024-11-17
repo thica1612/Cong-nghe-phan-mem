@@ -18,32 +18,30 @@ namespace KoiFarm.WebApplication.Pages
         }
 
         public KoiOrder CurrentOrder { get; set; } = null!;
-        public List<OrderDetail> CartItems { get; set; } = new List<OrderDetail>();
+        public List<OrderDetail> CartItems { get; set; } = default!;
 
-        public async Task<IActionResult> OnGetCartAsync()
+        public async Task OnGetAsync()
         {
             var userIdstr = HttpContext.Session.GetString("CustomerId");
-            if (userIdstr == null)
+            if (userIdstr != null)
             {
-                return RedirectToPage("/Customer/SignIn");
-            }
 
-            var userId = Guid.Parse(userIdstr);
+                var userId = Guid.Parse(userIdstr);
 
-            var order = await _service.GetCurrentOrderAsync(userId);
+                var order = await _service.GetCurrentOrderAsync(userId);
 
-            if (order != null)
-            {
-                CurrentOrder = order;
-                CartItems = await _orderDetailService.GetAllOrderByUser(order.OrderId);
-                Console.WriteLine($"OrderId: {order.OrderId}\nCartItems count: {CartItems.Count}");
+                if (order != null)
+                {
+                    CurrentOrder = order;
+                    CartItems = await _orderDetailService.GetAllOrderByUser(order.OrderId);
+                    Console.WriteLine($"OrderId: {order.OrderId}\nCartItems count: {CartItems.Count}");
+                }
+                else
+                {
+                    Console.WriteLine("Khong co");
+                    CartItems = new List<OrderDetail>();
+                }
             }
-            else
-            {
-                Console.WriteLine("Khong co");
-                CartItems = new List<OrderDetail>();
-            }
-            return Page();
         }
     }
 }
