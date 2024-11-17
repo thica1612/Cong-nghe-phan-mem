@@ -72,9 +72,20 @@
 
 
                     <!--Cart-->
-                    <a class="cart" asp-page="/Customer/Cart">
-                        <img src="~/images/Cart.png" />
-                    </a>
+                    @if (Context.Session.GetString("Username") != null)
+                    {
+                       
+                        <a class="cart" asp-page="/Customer/Cart">
+                            <img src="~/images/Cart.png" />
+                        </a>
+                    }
+                    else
+                    {
+                        
+                        <a class="cart" href="/Customer/SignIn" onclick="alert('Bạn cần đăng nhập để truy cập giỏ hàng!')">
+                            <img src="~/images/Cart.png" style="opacity: 0.5;" />
+                        </a>
+                    }
 
                     <!--Sign in, sign up-->
                     @if (@Context.Session.GetString("Username") != null)
