@@ -1208,3 +1208,13 @@ tbody tr:hover {
 .modal {
     backdrop-filter: blur(5px); /* Hiệu ứng mờ nền */
 }
+.solg {
+    border: 0.7px solid;
+    background-clip: border-box;
+    border-radius: 8px;
+    align-content: center;
+    width: 83px;
+    right: 412px;
+    position: absolute;
+    bottom: 32px;
+}

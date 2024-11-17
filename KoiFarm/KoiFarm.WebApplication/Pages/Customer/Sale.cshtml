@@ -8,7 +8,7 @@
 <div class="product-grid">
     @foreach (var koi in Model.KoiSale.Take(9))
     {
-        <a class="grid" asp-page="/Customer/DetailKoiSales" asp-route-id="@koi.KoiSaleId">
+        <a class="grid" asp-page="/Customer/DetailKoiSale" asp-route-id="@koi.KoiSaleId">
             <div class="ca">
                 <div class="imgca">
                     <img src="@Url.Content("~/KoiImages/" + koi.KoiImageKoiSale + ".png")" alt="Ảnh của @koi.KoiSaleName" />

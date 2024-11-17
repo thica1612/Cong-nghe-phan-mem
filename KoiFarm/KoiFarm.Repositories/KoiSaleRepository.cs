@@ -66,7 +66,7 @@ namespace KoiFarm.Repositories
 
         public async Task<KoiSale> GetKoiSaleById(string KoiSaleID)
         {
-            throw new NotImplementedException(); return await _context.KoiSales.Where(p => p.KoiSaleId.Equals(KoiSaleID)).FirstOrDefaultAsync();
+            return await _context.KoiSales.Where(p => p.KoiSaleId.Equals(KoiSaleID)).FirstOrDefaultAsync();
         }
 
         public bool UpdateKoiSale(KoiSale koisale)

@@ -1,0 +1,35 @@
+﻿@page
+@model KoiFarm.WebApplication.Pages.Customer.DetailKoiSaleModel
+@{
+    ViewData["Title"] = "Chi Tiết";
+    Layout = "_Home";
+}
+
+@if (Model.Koi != null)
+{
+    <div class="mainchitiet">
+        <div class="hinhKoi">
+            <img src="@Url.Content("~/KoiImages2/" + @Model.Koi.KoiImageKoiSale + ".png")" alt="Ảnh của @Model.Koi.KoiSaleName" />
+        </div>
+        <div class="chu">
+            <div class="nameKoi"> KOI @Model.Koi.KoiSaleName </div>
+            <div class="gioi thieu"></div>
+            <div class="thongtin">THÔNG TIN CHI TIẾT </div>
+            <div class="mieutachitiet">
+                Giới tính: @Model.Koi.KoiSaleGender <br>
+                Năm sinh: @Model.Koi.KoiSaleYear <br>
+                Kích thước: @Model.Koi.KoiSaleSize cm <br>
+                Nguồn gốc: @Model.Koi.KoiSaleOrigin <br>
+
+            </div>
+            <div class="giaca"> Giá: @Model.Koi.KoiSalePriceLater </div>
+
+            <form method="post" asp-page-handler="Cart">
+                <input type="hidden" name="koiId" value="@Model.Koi.KoiSaleId" />
+                <input class="solg" type="number" name="quantity" value="1" min="1" />
+                <button type="submit" class="themgiothang"> Thêm vào giỏ hàng </button>
+            </form>
+            <div class="muangay">Thanh toán ngay</div>
+        </div>
+    </div>
+}
