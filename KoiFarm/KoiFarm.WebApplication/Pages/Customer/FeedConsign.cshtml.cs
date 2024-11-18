@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -38,21 +38,21 @@ namespace KoiFarm.WebApplication.Pages
                 return RedirectToPage("/Customer/SignIn");
             }
 
-            // X? l� upload file ch?ng nh?n
+            // Xử lý upload file chứng nhận
             if (certificateFile != null)
             {
                 string certificateFileName = await UploadFile(certificateFile, "certificates");
                 FeedConsignment.Certificate = certificateFileName;
             }
 
-            // X? l� upload h�nh ?nh
+            // Xử lý upload hình ảnh
             if (imageFile != null)
             {
                 string imageFileName = await UploadFile(imageFile, "images");
                 FeedConsignment.Image = imageFileName;
             }
 
-            // Ki?m tra t�nh h?p l? c?a d? li?u sau khi c�c tr??ng ?� ???c g�n gi� tr?
+            // Kiểm tra tính hợp lệ của dữ liệu sau khi các trường đã được gán giá trị
             if (!ModelState.IsValid)
             {
                 return Page();
