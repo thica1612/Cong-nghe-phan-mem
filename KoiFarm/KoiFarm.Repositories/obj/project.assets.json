@@ -4291,19 +4291,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MSI HAO\\.nuget\\packages\\": {}
+    "C:\\Users\\yennh\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\KOI\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Repositories\\KoiFarm.Repositories.csproj",
+      "projectUniqueName": "D:\\CNPM\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Repositories\\KoiFarm.Repositories.csproj",
       "projectName": "KoiFarm.Repositories",
-      "projectPath": "H:\\KOI\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Repositories\\KoiFarm.Repositories.csproj",
-      "packagesPath": "C:\\Users\\MSI HAO\\.nuget\\packages\\",
-      "outputPath": "H:\\KOI\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Repositories\\obj\\",
+      "projectPath": "D:\\CNPM\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Repositories\\KoiFarm.Repositories.csproj",
+      "packagesPath": "C:\\Users\\yennh\\.nuget\\packages\\",
+      "outputPath": "D:\\CNPM\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.Repositories\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\MSI HAO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\yennh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
