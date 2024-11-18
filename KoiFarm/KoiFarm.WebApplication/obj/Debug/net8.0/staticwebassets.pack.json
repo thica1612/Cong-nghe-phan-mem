@@ -77,10 +77,6 @@
       "PackagePath": "staticwebassets\\css\\admin.css"
     },
     {
-      "Id": "D:\\CNPM\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\wwwroot\\css\\customer.css",
-      "PackagePath": "staticwebassets\\css\\customer.css"
-    },
-    {
       "Id": "D:\\CNPM\\Cong-nghe-phan-mem\\KoiFarm\\KoiFarm.WebApplication\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
