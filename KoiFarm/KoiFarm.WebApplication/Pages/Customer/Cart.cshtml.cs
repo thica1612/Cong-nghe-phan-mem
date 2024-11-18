@@ -1,4 +1,4 @@
-using KoiFarm.Repositories.Entities;
+﻿using KoiFarm.Repositories.Entities;
 using KoiFarm.Services;
 using KoiFarm.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
@@ -54,6 +54,11 @@ namespace KoiFarm.WebApplication.Pages
                 }
             }
             return RedirectToPage();
+        }
+
+        public IActionResult OnPostPayment()
+        {
+            return RedirectToPage("/Index");
         }
     }
 }

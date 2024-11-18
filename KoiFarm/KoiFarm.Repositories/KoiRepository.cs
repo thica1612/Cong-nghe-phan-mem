@@ -65,6 +65,11 @@ namespace KoiFarm.Repositories
             return await _context.Kois.Where(p => p.KoiId.Equals(KoiID)).FirstOrDefaultAsync();
         }
 
+        public async Task<Koi> GetKoiByName(string nameKoi)
+        {
+            return await _context.Kois.Where(p => p.KoiName.Equals(nameKoi)).FirstOrDefaultAsync();
+        }
+
         public bool UpdateKoi(Koi koi)
         {
             try

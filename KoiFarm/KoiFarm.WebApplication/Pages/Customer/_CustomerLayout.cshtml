@@ -10,27 +10,26 @@
     <div class="layout">
         <!-- Sidebar -->
         <aside class="sidebar">
-            <div class="user">
+            @* <div class="user">
                 <h2>@Context.Session.GetString("Username") (Customer)</h2>
-            </div>
+            </div> *@
             <nav class="sidebar-nav">
                 <ul>
                     <li><a href="/Index" class="sidebar-link">Trang chủ</a></li>
-                    <li><a href="Feedback" class="sidebar-link">Đánh giá đơn hàng</a></li>
-                    <li><a href="Certifications" class="sidebar-link">Giấy chứng nhận cá Koi</a></li>
-                    <li><a href="CertificationKoiSale" class="sidebar-link">Giấy chứng nhận cá Koi</a></li>
-                    <li><a href="Order" class="sidebar-link">Đặt hàng</a></li>
+                    @* <li><a href="/Admin/Certifications" class="sidebar-link">Giấy chứng nhận cá Koi</a></li>
+                    <li><a href="/Admin/CertificationKoiSales" class="sidebar-link">Giấy chứng nhận cá Koi Sale</a></li> *@
+                    <li><a href="/Admin/Order" class="sidebar-link">Đặt hàng</a></li>
                     <li><a href="Cart" class="sidebar-link">Chi tiết đơn hàng</a></li>
-                    <li><a href="/Admin/TransactionHistory" class="sidebar-link">Lịch sử giao dịch</a></li>
+         @*            <li><a href="/Admin/TransactionHistory" class="sidebar-link">Lịch sử giao dịch</a></li> *@
                     <li><a href="SignIn" class="sidebar-link">Đăng xuất</a></li>
                 </ul>
             </nav>
         </aside>
         <!-- Header -->
         <header class="header">
-            <div class="user-info">
+            @* <div class="user-info">
                 <p>@Context.Session.GetString("Username") (Customer)</p>
-            </div>
+            </div> *@
 
             <div class="header-logo">
                 <a href="@Url.Page("/Index")">

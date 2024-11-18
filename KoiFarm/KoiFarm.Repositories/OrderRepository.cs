@@ -27,17 +27,24 @@ namespace KoiFarm.Repositories
 
         public async Task<bool> DelOrder(int orderId)
         {
-            var order = await GetOrderById(orderId);
-            if (order == null) return false;
-
-            _dbcontext.Set<KoiOrder>().Remove(order);
-            return await _dbcontext.SaveChangesAsync() > 0;
+            var orderDetail = await _dbcontext.OrderDetails.FindAsync(orderId);
+            if (orderDetail != null)
+            {
+                _dbcontext.OrderDetails.Remove(orderDetail);
+                return true;
+            }
+            return false;
         }
 
         public async Task<bool> DelOrder(KoiOrder order)
         {
-            _dbcontext.Set<KoiOrder>().Remove(order);
-            return await _dbcontext.SaveChangesAsync() > 0;
+            try
+            {
+                _dbcontext.KoiOrders.Remove(order);
+                _dbcontext.SaveChanges();
+                return true;
+            }
+            catch (Exception ex) { throw new NotImplementedException(ex.ToString()); return false; }
         }
 
         public async Task<KoiOrder> GetOrderById(int orderId)

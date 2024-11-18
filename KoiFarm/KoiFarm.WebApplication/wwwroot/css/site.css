@@ -306,7 +306,7 @@ a:hover, a:active {
 .dangky1 {
     position: absolute;
     height: 60px;
-    right: 290px;
+    right: 260px;
     top: 180px;
     font-family: 'Anton', sans-serif;
     font-style: normal;
@@ -316,6 +316,7 @@ a:hover, a:active {
     display: flex;
     align-items: center;
     color: #333333;
+    right: 493px;
 }
 
 #form1 {

@@ -71,5 +71,8 @@
             <span class="label">Tổng cộng</span>
         <span class="value">@String.Format("{0:N0} đ", totalAmount)</span>
         </div>
-        <button class="checkout-btn">Thanh toán</button>
+    <form method="post" asp-page-handler="Payment">
+        <input type="hidden" name="OrderId" value="@Model.CurrentOrder" />
+        <button type="submit" class="checkout-btn"> Thanh toán </button>
+    </form>
     </div>

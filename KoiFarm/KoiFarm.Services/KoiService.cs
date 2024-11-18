@@ -37,6 +37,11 @@ namespace KoiFarm.Services
             return _repository.GetKoiById(KoiID);
         }
 
+        public Task<Koi> GetKoiByName(string nameKoi)
+        {
+            return _repository.GetKoiByName(nameKoi);
+        }
+
         public Task<List<Koi>> KoiSales()
         {
             return _repository.GetAllKoi();

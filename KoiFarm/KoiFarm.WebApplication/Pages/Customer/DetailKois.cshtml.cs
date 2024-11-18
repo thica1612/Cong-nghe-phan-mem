@@ -1,7 +1,10 @@
 using KoiFarm.Repositories.Entities;
+using KoiFarm.Services;
 using KoiFarm.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.Drawing.Printing;
+using System.Net.WebSockets;
 
 namespace KoiFarm.WebApplication.Pages.Customer
 {
@@ -17,6 +20,8 @@ namespace KoiFarm.WebApplication.Pages.Customer
             _orderService = orderService;
         }
         public Koi Koi { get; set; } = default!;
+        public KoiOrder CurrentOrder { get; set; } = null!;
+
 
         public async Task<IActionResult> OnGetAsync(string id)
         {
