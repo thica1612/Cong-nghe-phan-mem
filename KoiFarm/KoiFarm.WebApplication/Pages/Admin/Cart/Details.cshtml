@@ -1,0 +1,61 @@
+﻿@page
+@model KoiFarm.WebApplication.Pages.Admin.Cart.DetailsModel
+@{
+    ViewData["Title"] = "Chi tiết sản phẩm";
+    Layout = "~/Pages/Admin/_AdminLayout.cshtml";
+}
+<div class="container mt-5">
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+            <h2 class="mb-0">Thông tin chi tiết</h2>
+        </div>
+        <div class="card-body">
+
+            <table class="table table-striped">
+                <tbody>
+                    <tr>
+                        <th scope="row">Tên sản phẩm</th>
+                        <td>@Model.Koi.KoiName</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Xuất xứ</th>
+                        <td>@Model.Koi.KoiOrigin</td>
+                    <tr>
+                        <th scope="row">Giới tính</th>
+                        <td>@Model.Koi.KoiGender</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Năm sinh</th>
+                        <td>@Model.Koi.KoiYear</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Kích thước (cm)</th>
+                        <td>@Model.Koi.KoiSize</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Giá bán</th>
+                        <td>@Model.Koi.KoiPrice</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Tồn kho</th>
+                        <td>@Model.Koi.Stock</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Thức ăn hàng ngày (kg)</th>
+                        <td>@Model.Koi.Dailyfood</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Tỷ lệ sàng lọc (%)</th>
+                        <td>@Model.Koi.Screeningrate</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="card-footer text-end">
+            <a asp-page="./Index" class="btn btn-secondary">
+                <i class="bi bi-arrow-left"></i> Quay lại
+            </a>
+        </div>
+    </div>
+</div>

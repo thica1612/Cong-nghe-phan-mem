@@ -1,0 +1,95 @@
+﻿@page
+@model KoiFarm.WebApplication.Pages.Admin.Cart.EditModel
+@{
+    ViewData["Title"] = "Quản lý Giỏ hàng";
+    Layout = "~/Pages/Admin/_AdminLayout.cshtml";
+}
+<h4 class="text-primary">Chỉnh sửa thông tin Koi</h4>
+<hr />
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form method="post" class="shadow p-4 rounded bg-light">
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+                <input type="hidden" asp-for="Koi.KoiId" />
+
+                <div class="mb-3">
+                    <label asp-for="Koi.KoiName" class="form-label fw-bold">Tên sản phẩm</label>
+                    <input asp-for="Koi.KoiName" class="form-control" placeholder="Nhập tên Koi" />
+                    <span asp-validation-for="Koi.KoiName" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Koi.KoiOrigin" class="form-label fw-bold">Xuất xứ</label>
+                    <input asp-for="Koi.KoiOrigin" class="form-control" placeholder="Nhập xuất xứ Koi" />
+                    <span asp-validation-for="Koi.KoiOrigin" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Koi.KoiGender" class="form-label fw-bold">Giới tính</label>
+                    <select asp-for="Koi.KoiGender" class="form-select">
+                        <option value="">Chọn giới tính</option>
+                        <option value="Cái">Cái</option>
+                        <option value="Đực">Đực</option>
+                    </select>
+                    <span asp-validation-for="Koi.KoiGender" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Koi.KoiYear" class="form-label fw-bold">Năm sinh</label>
+                    <input asp-for="Koi.KoiYear" type="number" class="form-control" placeholder="Nhập năm sinh" />
+                    <span asp-validation-for="Koi.KoiYear" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Koi.KoiSize" class="form-label fw-bold">Kích thước (cm)</label>
+                    <input asp-for="Koi.KoiSize" type="number" class="form-control" placeholder="Nhập kích thước" />
+                    <span asp-validation-for="Koi.KoiSize" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Koi.KoiPrice" class="form-label fw-bold">Giá bán (VND)</label>
+                    <input asp-for="Koi.KoiPrice" type="number" class="form-control" placeholder="Nhập giá bán" />
+                    <span asp-validation-for="Koi.KoiPrice" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Koi.Stock" class="form-label fw-bold">Tồn kho</label>
+                    <input asp-for="Koi.Stock" type="number" class="form-control" placeholder="Nhập số lượng tồn kho" />
+                    <span asp-validation-for="Koi.Stock" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Koi.KoiImage" class="form-label fw-bold">URL Hình ảnh</label>
+                    <input asp-for="Koi.KoiImage" type="url" class="form-control" placeholder="Nhập URL hình ảnh" />
+                    <span asp-validation-for="Koi.KoiImage" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Koi.Dailyfood" class="form-label fw-bold">Thức ăn hàng ngày (kg)</label>
+                    <input asp-for="Koi.Dailyfood" type="number" step="0.01" class="form-control" placeholder="Nhập lượng thức ăn hàng ngày" />
+                    <span asp-validation-for="Koi.Dailyfood" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Koi.Screeningrate" class="form-label fw-bold">Tỷ lệ sàng lọc (%)</label>
+                    <input asp-for="Koi.Screeningrate" type="number" step="0.01" class="form-control" placeholder="Nhập tỷ lệ sàng lọc" />
+                    <span asp-validation-for="Koi.Screeningrate" class="text-danger"></span>
+                </div>
+
+                <div class="d-flex justify-content-between mt-4">
+                    <a asp-page="./Index" class="btn btn-secondary">Hủy</a>
+                    <input type="submit" value="Lưu" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+

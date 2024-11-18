@@ -1,0 +1,97 @@
+﻿@page
+@model KoiFarm.WebApplication.Pages.Admin.Cart.CreateModel
+@{
+    ViewData["Title"] = "Thêm sản phẩm mới";
+    Layout = "~/Pages/Admin/_AdminLayout.cshtml";
+}
+
+<div class="form-container">
+    <h2>Sản phẩm</h2>
+    <!-- Form chính -->
+    <form method="post">
+        @Html.AntiForgeryToken()
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <!-- Sắp xếp các trường input thành 2 cột -->
+        <div class="form-row">
+            <div class="input-group">
+                <label asp-for="Koi.KoiName" class="control-label">Nhập tên sản phẩm</label>
+                <input asp-for="Koi.KoiName" class="form-control" />
+                <span asp-validation-for="Koi.KoiName" class="text-danger"></span>
+            </div>
+
+            <div class="input-group">
+                <label asp-for="Koi.KoiOrigin" class="control-label">Nhập xuất xứ</label>
+                <select asp-for="Koi.KoiOrigin" class="form-control" asp-items="ViewBag.OrderId"></select>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="input-group">
+                <label asp-for="Koi.KoiGender" class="form-label"></label>
+                <select asp-for="Koi.KoiGender" class="form-select">
+                    <option value="">Chọn giới tính</option>
+                    <option value="Male">Đực</option>
+                    <option value="Female">Cái</option>
+                </select>
+                <span asp-validation-for="Koi.KoiGender" class="text-danger"></span>
+            </div>
+
+            <div class="input-group">
+                <label asp-for="Koi.KoiSize" class="form-label"></label>
+                <input asp-for="Koi.KoiSize" type="number" class="form-control" placeholder="Nhập kích thước (cm)" />
+                <span asp-validation-for="Koi.KoiSize" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="input-group">
+                <label asp-for="Koi.KoiPrice" class="form-label"></label>
+                <input asp-for="Koi.KoiPrice" type="number" class="form-control" placeholder="Nhập giá bán (VND)" />
+                <span asp-validation-for="Koi.KoiPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="Koi.Stock" class="form-label"></label>
+                <input asp-for="Koi.Stock" type="number" class="form-control" placeholder="Nhập số lượng tồn kho" />
+                <span asp-validation-for="Koi.Stock" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="Koi.KoiImage" class="form-label"></label>
+                <input asp-for="Koi.KoiImage" class="form-control" placeholder="Nhập URL hình ảnh" oninput="updateImagePreview()" />
+                <span asp-validation-for="Koi.KoiImage" class="text-danger"></span>
+                <div class="mt-2">
+                    <img id="imagePreview" src="" alt="Image preview" class="img-fluid rounded" style="max-width: 100%; height: auto;">
+                </div>
+            </div>
+
+            <!-- Thức ăn hàng ngày -->
+            <div class="form-group mb-3">
+                <label asp-for="Koi.Dailyfood" class="form-label"></label>
+                <input asp-for="Koi.Dailyfood" type="number" class="form-control" placeholder="Nhập lượng thức ăn hàng ngày (kg)" />
+                <span asp-validation-for="Koi.Dailyfood" class="text-danger"></span>
+            </div>
+
+            <!-- Tỷ lệ sàng lọc -->
+            <div class="form-group mb-3">
+                <label asp-for="Koi.Screeningrate" class="form-label"></label>
+                <input asp-for="Koi.Screeningrate" type="number" class="form-control" placeholder="Nhập tỷ lệ sàng lọc (%)" />
+                <span asp-validation-for="Koi.Screeningrate" class="text-danger"></span>
+            </div>
+
+
+            <!-- Nút lưu thay đổi và quay lại -->
+            <div class="d-flex justify-content-between">
+                <button type="submit" class="btn btn-success">
+                    <i class="bi bi-plus-circle"></i> Tạo sản phẩm
+                </button>
+                <a asp-page="./Index" class="btn btn-secondary">Quay lại</a>
+            </div>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

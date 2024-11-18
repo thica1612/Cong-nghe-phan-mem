@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - The Aqua Koi</title>
+    <link rel="stylesheet" href="~/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/admin.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="cart-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">The Aqua Koi</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Koi">Koi của chúng tôi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Cart">Giỏ hàng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Admin/Pay">Thanh toán</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mt-4">
+        @RenderBody()
+    </main>
+
+    <!-- Footer -->
+    <footer class="cart-footer bg-dark text-white mt-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>The Aqua Koi</h5>
+                    <p>Chuyên cung cấp các loại cá Koi Nhật Bản chất lượng cao, uy tín và giá cả hợp lý.</p>
+                    <p>Liên hệ: 0909-XXX-XXX</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <p>&copy; 2024 The Aqua Koi. All Rights Reserved.</p>
+                    <p>Thiết kế bởi đội ngũ The Aqua Koi.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        $(document).ready(function () {
+            // Cập nhật số lượng sản phẩm
+            $(".solg1").on("change", function () {
+                const quantity = $(this).val();
+                if (quantity < 1) {
+                    $(this).val(1);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

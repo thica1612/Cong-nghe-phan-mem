@@ -2044,7 +2044,6 @@ D:\Kì1-Năm2\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0
 D:\Kì1-Năm2\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
 D:\Kì1-Năm2\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
 D:\Kì1-Năm2\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\obj\Debug\net8.0\KoiFarm.WebApplication.MvcApplicationPartsAssemblyInfo.cs
-D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\obj\Debug\net8.0\KoiFarm.WebApplication.csproj.CopyComplete
 D:\Cong nghe phan mem\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\appsettings.Development.json
 D:\Cong nghe phan mem\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\appsettings.json
 D:\Cong nghe phan mem\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\bin\Debug\net8.0\KoiFarm.WebApplication.staticwebassets.runtime.json
@@ -2328,3 +2327,4 @@ D:\Cong nghe phan mem\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\obj\Debu
 D:\Cong nghe phan mem\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\obj\Debug\net8.0\KoiFarm.WebApplication.pdb
 D:\Cong nghe phan mem\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\obj\Debug\net8.0\KoiFarm.WebApplication.genruntimeconfig.cache
 D:\Cong nghe phan mem\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\obj\Debug\net8.0\ref\KoiFarm.WebApplication.dll
+D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.WebApplication\obj\Debug\net8.0\KoiFarm..905DBD40.Up2Date

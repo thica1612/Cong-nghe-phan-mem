@@ -93,9 +93,43 @@ body {
     margin-top: 0;
 }
 
-    .btn-add:hover {
-        background-color: #7a75d1; /* Màu khi hover */
+.action-btn {
+    margin: 5px 0; /* Khoảng cách giữa các nút */
+    width: 80px; /* Đặt chiều rộng cố định cho các nút */
+}
+
+/* Căn chỉnh chiều cao các nút */
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    /* Chỉnh sửa nút để nằm trên cùng hàng */
+    .btn-group .btn {
+        display: inline-block;
+        vertical-align: middle;
     }
+
+
+.btn-add:hover {
+    background-color: #7a75d1; /* Màu khi hover */
+}
+/* Căn chỉnh container của nút "Thêm sản phẩm mới" */
+.add-product-container {
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    margin: 20px 0; /* Khoảng cách trên dưới */
+}
+
+/* Định dạng nút "Thêm sản phẩm mới" */
+.add-product-btn {
+    padding: 30px 20px;
+    font-size: 14px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
 
 .content {
     margin-left: 220px;
@@ -228,8 +262,8 @@ h2, h3, h4, h5 {
 }
 
 .btn-secondary {
-    margin-top: 1000px;  Giãn cách giữa nút và các dòng trên 
-    text-align: center;
+    margin-top: 1000px;
+    Giãn cách giữa nút và các dòng trên text-align: center;
 }
 
 .form-container {

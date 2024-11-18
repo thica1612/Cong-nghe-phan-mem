@@ -1,0 +1,81 @@
+﻿@page
+@model KoiFarm.WebApplication.Pages.Admin.Cart.IndexModel
+@{
+    ViewData["Title"] = "Quản lý Giỏ hàng";
+    Layout = "~/Pages/Admin/_AdminLayout.cshtml";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4">Danh sách các sản phẩm Koi trong giỏ hàng</h2>
+    <a class="btn btn-primary mb-3" asp-page="Create">Thêm sản phẩm mới</a>
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered align-middle">
+            <thead class="table-dark text-center">
+                <tr>
+                    <th>Hình ảnh</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Xuất xứ</th>
+                    <th>Giới tính</th>
+                    <th>Năm sinh</th>
+                    <th>Kích thước (cm)</th>
+                    <th>Giá bán (VND)</th>
+                    <th>Tồn kho</th>
+                    <th>Thức ăn hàng ngày</th>
+                    <th>Tỉ lệ sàng lọc</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Koi)
+                {
+                    <tr>
+                        <!-- Hình ảnh sản phẩm -->
+                        <td class="text-center">
+                            <img src="@Url.Content("~/KoiImages2/" + item.KoiImage + ".png")"
+                                 alt="Ảnh của @item.KoiName"
+                                 style="width: 80px; height: 80px; object-fit: cover; border-radius: 8px;">
+                        </td>
+
+                        <!-- Thông tin sản phẩm -->
+                        <td>@item.KoiName</td>
+                        <td>@item.KoiOrigin</td>
+                        <td>@(item.KoiGender == "Male" ? "Đực" : "Cái")</td>
+                        <td>@item.KoiYear</td>
+                        <td>@item.KoiSize</td>
+                        <td>@String.Format("{0:N0} đ", item.KoiPrice)</td>
+                        <td>@item.Stock</td>
+                        <td>@item.Dailyfood</td>
+                        <td>@item.Screeningrate %</td>
+
+                        <!-- Hành động -->
+                        <td class="text-center">
+                            <div class="btn-group" role="group">
+                                <a class="btn btn-sm btn-warning"
+                                   asp-page="./Edit"
+                                   asp-route-id="@item.KoiId">Chỉnh sửa</a>
+
+                                <a class="btn btn-sm btn-info text-white"
+                                   asp-page="./Details"
+                                   asp-route-id="@item.KoiId">Chi tiết</a>
+
+                                <a class="btn btn-sm btn-danger"
+                                   asp-page="./Delete"
+                                   asp-route-id="@item.KoiId">Xóa</a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Nút Thanh toán -->
+    <div class="d-flex justify-content-end mt-4">
+        <form method="post" action="/Admin/Pay">
+            <button type="submit" class="btn btn-success btn-lg">
+                Thanh toán
+            </button>
+        </form>
+    </div>
+</div>
+

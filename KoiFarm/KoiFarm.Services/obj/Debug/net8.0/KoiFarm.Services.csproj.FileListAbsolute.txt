@@ -125,7 +125,6 @@ H:\KOI\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\KoiFarm.Serv
 H:\KOI\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\refint\KoiFarm.Services.dll
 H:\KOI\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\KoiFarm.Services.pdb
 H:\KOI\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\ref\KoiFarm.Services.dll
-D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\KoiFarm.Services.csproj.CopyComplete
 D:\Cong nghe phan mem\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\bin\Debug\net8.0\KoiFarm.Services.deps.json
 D:\Cong nghe phan mem\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\bin\Debug\net8.0\KoiFarm.Services.dll
 D:\Cong nghe phan mem\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\bin\Debug\net8.0\KoiFarm.Services.pdb
@@ -142,3 +141,4 @@ D:\Cong nghe phan mem\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8
 D:\Cong nghe phan mem\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\refint\KoiFarm.Services.dll
 D:\Cong nghe phan mem\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\KoiFarm.Services.pdb
 D:\Cong nghe phan mem\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\ref\KoiFarm.Services.dll
+D:\CNPM\Cong-nghe-phan-mem\KoiFarm\KoiFarm.Services\obj\Debug\net8.0\KoiFarm..C30C0949.Up2Date
