@@ -1,28 +1,28 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.IO;
 using System.Threading.Tasks;
-using KoiFarm.WebApplication.Models;
-using Microsoft.AspNetCore.Http;
+using KoiFarm.Services.Interfaces;
 using KoiFarm.Repositories.Entities;
+using KoiFarm.WebApplication.Models;
 
 namespace KoiFarm.WebApplication.Pages
 {
     public class FeedConsignModel : PageModel
     {
-        private readonly ApplicationDbContext _context;
+        private readonly IFeedConsignmentService _feedConsignmentService;
         private readonly IWebHostEnvironment _webHostEnvironment;
         private readonly UserManager<ApplicationUser> _userManager;
 
         public FeedConsignModel(
-            ApplicationDbContext context,
+            IFeedConsignmentService feedConsignmentService,
             IWebHostEnvironment webHostEnvironment,
             UserManager<ApplicationUser> userManager)
         {
-            _context = context;
+            _feedConsignmentService = feedConsignmentService;
             _webHostEnvironment = webHostEnvironment;
             _userManager = userManager;
         }
@@ -38,41 +38,36 @@ namespace KoiFarm.WebApplication.Pages
                 return RedirectToPage("/Customer/SignIn");
             }
 
-            // Xử lý upload file chứng nhận
+            string certificateFileName = null;
+            string imageFileName = null;
+
+            // Upload certificate file
             if (certificateFile != null)
             {
-                string certificateFileName = await UploadFile(certificateFile, "certificates");
-                FeedConsignment.Certificate = certificateFileName;
+                certificateFileName = await UploadFile(certificateFile, "certificates");
             }
 
-            // Xử lý upload hình ảnh
+            // Upload image file
             if (imageFile != null)
             {
-                string imageFileName = await UploadFile(imageFile, "images");
-                FeedConsignment.Image = imageFileName;
+                imageFileName = await UploadFile(imageFile, "images");
             }
 
-            // Kiểm tra tính hợp lệ của dữ liệu sau khi các trường đã được gán giá trị
-            if (!ModelState.IsValid)
-            {
-                return Page();
-            }
-
-            FeedConsignment.CreatedDate = DateTime.Now;
             FeedConsignment.UserId = user.Id;
 
-            _context.FeedConsignments.Add(FeedConsignment);
-            await _context.SaveChangesAsync();
+            var success = await _feedConsignmentService.AddAsync(FeedConsignment, certificateFileName, imageFileName);
+
+            if (!success)
+            {
+                ModelState.AddModelError("", "Failed to save feed consignment");
+                return Page();
+            }
 
             return RedirectToPage("./Index");
         }
 
-
         private async Task<string> UploadFile(IFormFile file, string folderPath)
         {
-            if (file == null || file.Length == 0)
-                return null;
-
             string uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, folderPath);
             if (!Directory.Exists(uploadsFolder))
                 Directory.CreateDirectory(uploadsFolder);

@@ -65,6 +65,11 @@ builder.Services.AddScoped<IPromotionRepository, PromotionRepository>();
 //DI Services Promotion
 builder.Services.AddScoped<IPromotionService, PromotionService>();
 
+builder.Services.AddScoped<ISellConsignmentRepository, SellConsignmentRepository>();
+builder.Services.AddScoped<ISellConsignmentService, SellConsignmentService>();
+
+builder.Services.AddScoped<IFeedConsignmentRepository, FeedConsignmentRepository>();
+builder.Services.AddScoped<IFeedConsignmentService, FeedConsignmentService>();
 
 //DI Repository TransactionHistory
 builder.Services.AddScoped<ITransactionHistoryRepository, TransactionHistoryRepository>();

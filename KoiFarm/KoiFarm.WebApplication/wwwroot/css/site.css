@@ -168,6 +168,7 @@ a:hover, a:active {
     display: flex;
     align-items: center;
     color: #333333;
+    right: 493px;
 }
 
 .google {
