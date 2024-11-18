@@ -1,0 +1,316 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    position: relative;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.user-info {
+    width: 100%;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #ccc;
+    text-align: right;
+    padding-right: 20px;
+    font-weight: 600;
+}
+
+.header-logo {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    border-bottom: 5px solid #ccc;
+    width: 100%;
+}
+
+.sidebar {
+    height: 507px;
+    width: 200px;
+    background-color: #d1d8e0;
+    position: absolute;
+    top: 180px; /* Điều chỉnh để bắt đầu ngay dưới thanh logo */
+    bottom: 10px; /* Điều chỉnh để dừng trên footer */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+    .sidebar .user {
+        background-color: #8d86e6;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 10px;
+    }
+
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        .sidebar ul li {
+            padding: 10px 20px;
+        }
+
+            .sidebar ul li a {
+                text-decoration: none;
+                color: #333;
+                display: block;
+            }
+
+                .sidebar ul li a:hover {
+                    background-color: #b0bec5;
+                }
+
+.btn-add {
+    background-color: #8d86e6; /* Màu nền mới */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    float: right;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.action-btn {
+    margin: 5px 0; /* Khoảng cách giữa các nút */
+    width: 80px; /* Đặt chiều rộng cố định cho các nút */
+}
+
+/* Căn chỉnh chiều cao các nút */
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    /* Chỉnh sửa nút để nằm trên cùng hàng */
+    .btn-group .btn {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+
+.btn-add:hover {
+    background-color: #7a75d1; /* Màu khi hover */
+}
+/* Căn chỉnh container của nút "Thêm sản phẩm mới" */
+.add-product-container {
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    margin: 20px 0; /* Khoảng cách trên dưới */
+}
+
+/* Định dạng nút "Thêm sản phẩm mới" */
+.add-product-btn {
+    padding: 30px 20px;
+    font-size: 14px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.content {
+    margin-left: 220px;
+    padding: 20px;
+    height: calc(100vh - 60px);
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+    .content .title {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+
+    .content .table-container {
+        max-height: 400px; /* Chiều cao tối đa */
+        overflow-y: auto; /* Hiển thị thanh cuộn khi cần */
+        background-color: #cdd4f0;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 0;
+    }
+
+        .content .table-container table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+
+            .content .table-container table th,
+            .content .table-container table td {
+                padding: 10px;
+                text-align: left;
+                border-bottom: 1px solid #ccc;
+            }
+
+            .content .table-container table th {
+                background-color: #c5cae9;
+                color: #333;
+            }
+
+        .content .table-container .btn {
+            background-color: #8e9eab;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+    .footer p {
+        margin: 5px 0;
+    }
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Chia thành 2 cột */
+    gap: 20px; /* Khoảng cách giữa các cột */
+    margin-bottom: 15px; /* Khoảng cách giữa các hàng */
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Chia thành 2 cột */
+    gap: 20px; /* Khoảng cách giữa các cột */
+    margin-bottom: 15px; /* Khoảng cách giữa các hàng */
+    margin-top: 15px;
+}
+
+.input-group {
+    margin-bottom: 10px; /* Khoảng cách dưới mỗi input */
+}
+
+    .input-group label {
+        display: block; /* Đảm bảo label nằm phía trên input */
+        margin-bottom: 5px; /* Khoảng cách giữa label và input */
+        font-weight: bold;
+    }
+
+    .input-group input {
+        width: 100%; /* Đảm bảo input chiếm hết chiều rộng */
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+    }
+
+/* Center the button */
+.button-container {
+    text-align: center; /* Đặt nút vào giữa */
+    margin-top: 20px; /* Khoảng cách giữa các input và nút */
+}
+
+.btn-save {
+    background-color: #8d86e6; /* Màu nền mới */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto; /* Căn giữa nút */
+    display: block;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu */
+}
+
+    .btn-save:hover {
+        background-color: #7a75d1; /* Màu khi hover */
+    }
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 32px
+}
+
+h2, h3, h4, h5 {
+    margin-bottom: 15px; /* Giãn cách giữa các dòng */
+    font-size: 16px;
+}
+
+.btn-secondary {
+    margin-top: 1000px;
+    Giãn cách giữa nút và các dòng trên text-align: center;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    flex: 0 0 48%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-save {
+    background-color: #8d86e6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn-secondary {
+    background-color: #8d86e6;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.btn-save:hover {
+    background-color: #7a75d1;
+}
+
+.btn-secondary:hover {
+    background-color: #7a75d1;
+}

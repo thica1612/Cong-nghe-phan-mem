@@ -36,10 +36,10 @@ namespace KoiFarm.WebApplication.Pages
                 HttpContext.Session.SetString("Username", user.UserName.ToString());
                 HttpContext.Session.SetString("userRole", user.UserRole);
                 var admin = HttpContext.Session.GetString("userRole");
-                if(admin == "Manager")
-                {
-                    return RedirectToPage("/Admin/User");
-                }
+                //if(user.UserRole == "Manager")
+                //{
+                //    return RedirectToPage("/Admin/User");
+                //}
                 return RedirectToPage("/Index");
             }
             else
