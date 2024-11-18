@@ -1019,22 +1019,14 @@ tbody tr:hover {
 }
 
 .name {
-    top: -36px;
-    position: relative;
+    background: white;
+    border: 0px;
     font-size: 14px;
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: white;
-    color: black;
-    text-decoration: none;
-    border-radius: 5px;
-    border: none;
-    text-align: center;
 }
 
 
 .signout-form {
-    margin-top: 5px; /* Khoảng cách giữa tên người dùng và nút đăng xuất */
+    margin-top: 2px; /* Khoảng cách giữa tên người dùng và nút đăng xuất */
 }
 
 .dxuat {
@@ -1277,4 +1269,31 @@ tbody tr:hover {
     align-content: center;
     justify-items: center;
     border: 0px;
+}
+
+.custom-file {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.custom-file-input {
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.is-invalid {
+    border-color: #dc3545;
+}
+
+.text-danger {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
 }

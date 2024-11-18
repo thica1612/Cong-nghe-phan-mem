@@ -4,6 +4,7 @@ using KoiFarm.Repositories.Entities;
 using KoiFarm.Repositories.Interfaces;
 using KoiFarm.Services;
 using KoiFarm.Services.Interfaces;
+using KoiFarm.WebApplication.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -24,7 +25,10 @@ builder.Services.AddSession(options =>
 // Add services to the container.
 builder.Services.AddRazorPages();
 //DI 
-builder.Services.AddDbContext<KoiFarmContext>(options=>
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddDbContext<KoiFarmContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 //DI Repository
 builder.Services.AddScoped<IKoiUserRepository, KoiUserRepository>();
@@ -67,6 +71,9 @@ builder.Services.AddScoped<ITransactionHistoryRepository, TransactionHistoryRepo
 //DI Services TransactionHistory
 builder.Services.AddScoped<ITransactionHistoryService, TransactionHistoryService>();
 
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+    .AddEntityFrameworkStores<ApplicationDbContext>()
+    .AddDefaultTokenProviders();
 
 //DI Repository Consignment
 builder.Services.AddScoped<IConsignmentRepository, ConsignmentRepository>();
@@ -117,3 +124,5 @@ app.UseAuthorization();
 app.MapRazorPages();
 
 app.Run();
+
+

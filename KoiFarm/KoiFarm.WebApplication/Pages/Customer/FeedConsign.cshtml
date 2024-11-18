@@ -1,42 +1,117 @@
 ﻿@page
 @model KoiFarm.WebApplication.Pages.FeedConsignModel
 @{
-    ViewData["Title"] = "Ký gửi nuôi";
+    ViewData["Title"] = "Ký gửi nuôi cá";
     Layout = "_Home";
 }
 
+
 <div>
-    <div class="hinhca">
-        <img src="~/images/22.png" />
-    </div>
-    <div class="kygui">THÔNG TIN KÝ GỬI NUÔI</div>
-    <div class="txtkygui1">
-        <span>Upload giấy chứng nhận của cá</span>
-        <button class="btnfile1">
-            Chọn file<i class="fas fa-arrow-right"></i>
+    <form method="post" enctype="multipart/form-data">
+        <div class="hinhca">
+            <img src="~/images/21.png" />
+        </div>
+        <div class="kygui">THÔNG TIN KÝ GỬI NUÔI CÁ</div>
+
+        <div class="txtkygui1">
+            <span>Upload giấy chứng nhận của cá</span>
+            <div class="custom-file">
+                <!-- Input file hidden -->
+                <input type="file" class="custom-file-input" name="certificateFile" accept=".pdf,.jpg,.jpeg,.png" required id="certificateFile" style="display:none;">
+                <!-- Button to trigger file input -->
+                <button type="button" class="btn btn-primary" id="certificateFileBtn">Chọn file</button>
+                <!-- File name display -->
+                <span id="certificateFileName"></span>
+            </div>
+            <span asp-validation-for="FeedConsignment.Certificate" class="text-danger"></span>
+        </div>
+
+        <div class="txtkygui2">
+            <span>Upload hình ảnh của cá</span>
+            <div class="custom-file">
+                <!-- Input file hidden -->
+                <input type="file" class="custom-file-input" name="imageFile" accept="image/*" required id="imageFile" style="display:none;">
+                <!-- Button to trigger file input -->
+                <button type="button" class="btn btn-primary" id="imageFileBtn">Chọn file</button>
+                <!-- File name display -->
+                <span id="imageFileName"></span>
+            </div>
+            <span asp-validation-for="FeedConsignment.Image" class="text-danger"></span>
+        </div>
+
+        <ul class="nhap">
+            <li>
+                <span>Giới tính</span>
+                <input type="text" asp-for="FeedConsignment.Gender" id="gioitinh" required />
+                <span asp-validation-for="FeedConsignment.Gender" class="text-danger"></span>
+            </li>
+            <li>
+                <span>Năm sinh</span>
+                <input type="number" asp-for="FeedConsignment.BirthYear" id="namsinh" required />
+                <span asp-validation-for="FeedConsignment.BirthYear" class="text-danger"></span>
+            </li>
+            <li>
+                <span>Kích thước (cm)</span>
+                <input type="number" asp-for="FeedConsignment.Size" id="kichthuoc" step="0.1" required />
+                <span asp-validation-for="FeedConsignment.Size" class="text-danger"></span>
+            </li>
+            <li>
+                <span>Giá muốn bán (VNĐ)</span>
+                <input type="number" asp-for="FeedConsignment.Price" id="giaban" required />
+                <span asp-validation-for="FeedConsignment.Price" class="text-danger"></span>
+            </li>
+        </ul>
+
+        <button class="submitsell" type="submit">
+            GỬI THÔNG TIN
         </button>
-    </div>
-    <div class="txtkygui2">
-        <span>Upload hình ảnh của cá</span>
-        <button class="btnfile2">
-            Chọn file<i class="fas fa-arrow-right"></i>
-        </button>
-    </div>
-    <ul class="nhap">
-        <li>
-            <span>Giới tính</span>
-            <input type="text" id="gioitinh" />
-        </li>
-        <li>
-            <span>Năm sinh</span>
-            <input type="text" id="namsinh" />
-        </li>
-        <li>
-            <span>Kích thước (cm)</span>
-            <input type="text" id="kichthuoc" />
-        </li>
-    </ul>
-    <button class="submitbuy" type="submit">
-        GỬI THÔNG TIN
-    </button>
+    </form>
 </div>
+
+@section Scripts {
+    <script>
+        // Sự kiện khi nhấn nút chọn file (certificate)
+        document.getElementById('certificateFileBtn').addEventListener('click', function () {
+            document.getElementById('certificateFile').click();
+        });
+
+        // Hiển thị tên file khi chọn (certificate)
+        document.getElementById('certificateFile').addEventListener('change', function (e) {
+            let fileName = e.target.files[0].name;
+            document.getElementById('certificateFileName').innerText = fileName;
+        });
+
+        // Sự kiện khi nhấn nút chọn file (image)
+        document.getElementById('imageFileBtn').addEventListener('click', function () {
+            document.getElementById('imageFile').click();
+        });
+
+        // Hiển thị tên file khi chọn (image)
+        document.getElementById('imageFile').addEventListener('change', function (e) {
+            let fileName = e.target.files[0].name;
+            document.getElementById('imageFileName').innerText = fileName;
+        });
+
+        // Validate form trước khi submit
+        document.querySelector('form').addEventListener('submit', function (e) {
+            let inputs = this.querySelectorAll('input[required]');
+            let valid = true;
+
+            inputs.forEach(input => {
+                if (!input.value) {
+                    valid = false;
+                    input.classList.add('is-invalid');
+                } else {
+                    input.classList.remove('is-invalid');
+                }
+            });
+
+            if (!valid) {
+                e.preventDefault();
+                alert('Vui lòng điền đầy đủ thông tin!');
+            }
+        });
+    </script>
+}
+
+
