@@ -18,39 +18,49 @@ namespace KoiFarm.Services
             _repository = repository;
         }
 
-        public async Task<bool> AddOrderDetail(OrderDetail orderDetail)
+        public Task<bool> AddOrderDetail(OrderDetail orderDetail)
         {
-            return await _repository.AddOrderDetail(orderDetail);
+            return _repository.AddOrderDetail(orderDetail);
         }
 
-        public async Task<bool> DelOrderDetail(int orderDetailId)
+        public Task<bool> DeleteOrderDetail(int orderDetailId)
         {
-            return await _repository.DelOrderDetail(orderDetailId);
+            return _repository.DeleteOrderDetail(orderDetailId);
         }
 
-        public async Task<bool> DelOrderDetail(OrderDetail orderDetail)
+        public Task<bool> DeleteOrderDetail(OrderDetail orderDetail)
         {
-            return await _repository.DelOrderDetail(orderDetail);
+            return _repository.DelOrderDetail(orderDetail);
         }
 
-        public async Task<OrderDetail> GetOrderDetailById(int orderDetailId)
+        public bool DelOrderDetail(int orderDetailId)
         {
-            return await _repository.GetOrderDetailById(orderDetailId);
+            return _repository.DelOrderDetail(orderDetailId);
         }
 
-        public async Task<List<OrderDetail>> GetAllOrderDetails()
+        public Task<bool> DelOrderDetail(OrderDetail orderDetail)
         {
-            return await _repository.GetAllOrderDetails();
-        }
-
-        public async Task<bool> UpdateOrderDetail(OrderDetail orderDetail)
-        {
-            return await _repository.UpdateOrderDetail(orderDetail);
+          return _repository.DelOrderDetail(orderDetail);
         }
 
         public Task<List<OrderDetail>> GetAllOrderByUser(int orderId)
         {
             return _repository.GetAllOrderByUser(orderId);
+        }
+
+        public Task<List<OrderDetail>> GetAllOrderDetails()
+        {
+            return _repository.GetAllOrderDetails();
+            }
+
+        public Task<OrderDetail> GetOrderDetailById(int orderDetailId)
+        {
+            return _repository.GetOrderDetailById(orderDetailId);
+        }
+
+        public bool UpdateOrderDetail(OrderDetail orderDetail)
+        {
+           return (_repository.UpdateOrderDetail(orderDetail));
         }
     }
 }

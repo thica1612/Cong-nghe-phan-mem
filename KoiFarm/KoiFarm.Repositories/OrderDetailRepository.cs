@@ -42,10 +42,25 @@ namespace KoiFarm.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<bool> DelOrderDetail(int orderDetailId)
+        public bool DelOrderDetail(int orderDetailId)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var objDel = _context.OrderDetails.Where(p => p.OrderDetailId == orderDetailId).FirstOrDefault();
+                if (objDel != null)
+                {
+                    _context.OrderDetails.Remove(objDel);
+                    _context.SaveChanges();
+                    return true;
+                }
+                return false;
+            }
+            catch(Exception ex)
+            {
+                throw new NotImplementedException(ex.ToString());
+            }
         }
+
 
         public Task<bool> DelOrderDetail(OrderDetail orderDetail)
         {
@@ -73,16 +88,25 @@ namespace KoiFarm.Repositories
             return await _context.OrderDetails.FindAsync(orderDetailId);
         }
 
-        public async Task<bool> UpdateOrderDetail(OrderDetail orderDetail)
+        Boolean UpdateOrderDetail(OrderDetail orderDetail)
         {
-            if (orderDetail == null) return false; 
-            _context.OrderDetails.Update(orderDetail);
-            return await Save();
+            try
+            {
+                _context.OrderDetails.Update(orderDetail);
+                _context.SaveChanges();
+                return true;
+            }
+            catch (Exception ex) { return false; }
         }
 
         private async Task<bool> Save()
         {
             return await _context.SaveChangesAsync() >= 0;
+        }
+
+        bool IOrderDetailRepository.UpdateOrderDetail(OrderDetail orderDetail)
+        {
+            throw new NotImplementedException();
         }
     }
 }

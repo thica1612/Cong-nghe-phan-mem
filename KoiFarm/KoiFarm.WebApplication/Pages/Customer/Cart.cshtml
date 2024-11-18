@@ -37,10 +37,10 @@
                         <td>Miễn phí</td>
                     <td>@String.Format("{0:N0} đ", @koi.UnitPrice * @koi.Quantity)</td>
                         <td>
-                            <form method="post" action="/Cart/Remove">
-                                <input type="hidden" name="OrderDetailId" value="@koi.OrderDetailId" />
-                                <button type="submit" class="btn-remove">🗑</button>
-                            </form>
+                        <form method="post" asp-page-handler="Remove">
+                            <input type="hidden" name="OrderDetailId" value="@koi.OrderDetailId" />
+                            <button type="submit" class="btn-remove">🗑</button>
+                        </form>
                         </td>
                     </tr>
                     <tr>

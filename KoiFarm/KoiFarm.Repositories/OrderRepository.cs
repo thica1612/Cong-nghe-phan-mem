@@ -50,10 +50,15 @@ namespace KoiFarm.Repositories
             return await _dbcontext.Set<KoiOrder>().ToListAsync();
         }
 
-        public async Task<bool> UpdateOrder(KoiOrder order)
+        public bool UpdateOrder(KoiOrder order)
         {
-            _dbcontext.Set<KoiOrder>().Update(order);
-            return await _dbcontext.SaveChangesAsync() > 0;
+            try
+            {
+                _dbcontext.KoiOrders.Update(order);
+                _dbcontext.SaveChanges();
+                return true;
+            }
+            catch (Exception ex) { return false; }
         }
 
         public async Task AddToOrderAsync(Guid customerId, string koiId, int quantity)

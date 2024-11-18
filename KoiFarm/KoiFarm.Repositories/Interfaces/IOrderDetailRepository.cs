@@ -13,10 +13,10 @@ namespace KoiFarm.Repositories.Interfaces
         Task<List<OrderDetail>> GetAllOrderDetails();
         Task<OrderDetail> GetOrderDetailById(int orderDetailId);
         Task<bool> AddOrderDetail(OrderDetail orderDetail);
-        Task<bool> UpdateOrderDetail(OrderDetail orderDetail);
+        Boolean UpdateOrderDetail(OrderDetail orderDetail);
         Task<bool> DeleteOrderDetail(int orderDetailId);
         Task<bool> DeleteOrderDetail(OrderDetail orderDetail);
-        Task<bool> DelOrderDetail(int orderDetailId);
+        Boolean DelOrderDetail(int orderDetailId);
         Task<bool> DelOrderDetail(OrderDetail orderDetail);
 
         Task<List<OrderDetail>> GetAllOrderByUser(int orderId);

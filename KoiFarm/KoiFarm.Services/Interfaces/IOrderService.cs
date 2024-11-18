@@ -12,7 +12,7 @@ namespace KoiFarm.Services.Interfaces
         Task<bool> DelOrder(KoiOrder order);
         Task<KoiOrder> GetOrderById(int orderId);
         Task<List<KoiOrder>> GetAllOrders();
-        Task<bool> UpdateOrder(KoiOrder order);
+        Boolean UpdateOrder(KoiOrder order);
 
         Task AddToOrderAsync(Guid customerId, string koiId, int quantity);
         Task<KoiOrder?> GetCurrentOrderAsync(Guid customerId);

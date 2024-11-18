@@ -38,9 +38,22 @@ namespace KoiFarm.WebApplication.Pages
             }
         }
 
-        //public IActionResult OnPostRemove(int orderDetailId)
-        //{
-            
-        //}
+        public IActionResult OnPostRemove(int orderDetailId)
+        {
+
+            var orderDetail = _orderDetailService.GetOrderDetailById(orderDetailId);
+            if (orderDetail != null)
+            {
+                _orderDetailService.DelOrderDetail(orderDetailId);
+            }
+            if (CurrentOrder != null)
+            {
+                if (orderDetail == null)
+                {
+                    return Page();
+                }
+            }
+            return RedirectToPage();
+        }
     }
 }

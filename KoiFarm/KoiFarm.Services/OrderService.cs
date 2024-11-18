@@ -41,9 +41,9 @@ namespace KoiFarm.Services
             return await _repository.GetAllOrders();
         }
 
-        public async Task<bool> UpdateOrder(KoiOrder order)
+        public bool UpdateOrder(KoiOrder order)
         {
-            return await _repository.UpdateOrder(order);
+            return _repository.UpdateOrder(order);
         }
 
         public Task AddToOrderAsync(Guid customerId, string koiId, int quantity)
